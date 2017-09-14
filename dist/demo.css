@@ -14,12 +14,6 @@
   text-align: center;
 }
 
-@media (max-width: 840px) {
-  .section-ad {
-    display: none;
-  }
-}
-
 .section-device {
   padding-bottom: 3rem;
   padding-top: 2rem;
