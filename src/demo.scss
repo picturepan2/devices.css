@@ -3,7 +3,7 @@
 @import "variables";
 
 .version::after {
-  content: "0.1.5";
+  content: "0.1.6";
 }
 
 /*  Core style */
@@ -119,4 +119,8 @@
 
 .bg-pink {
   background: #f9f0eb;
+}
+
+@media (max-width: $size-2x) {
+  
 }

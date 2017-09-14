@@ -1,0 +1,102 @@
+// Surface Studio
+$device-silver: #e2e3e4;
+$device-silver-dark: darken($device-silver, 10%);
+$device-silver-panel: #222;
+
+.device-surface-studio {
+  display: block;
+  height: 535px;
+  position: relative;
+  width: 640px;
+  z-index: 1;
+
+  .device-frame {
+    background: $device-silver-panel;
+    border-radius: 10px;
+    height: 440px;
+    padding: 20px;
+    width: 640px;
+
+    // 4500-by-3000-pixel resolution
+    .device-content {
+      background-color: #fff;
+      background-image: url("../src/img/bg-01.jpg");
+      background-position: center center;
+      background-size: cover;
+      border: 2px solid #222;
+      border-radius: 4px;
+      display: block;
+      height: 400px;
+      position: relative;
+      width: 600px;
+    }
+  }
+
+  .device-power {
+    background: $device-silver;
+    border-radius: 2px;
+    display: block;
+    height: 32px;
+    margin: 50px auto 0 auto;
+    position: relative;
+    width: 250px;
+
+    &::after,
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+    }
+    &::after {
+      background: #222;
+      height: 2px;
+      top: 2px;
+      width: 250px;
+    }
+    &::before {
+      border: 10px solid transparent;
+      border-top: 0;
+      border-bottom-color: $device-silver-dark;
+      height: 10px;
+      top: -10px;
+      width: 250px;
+    }
+  }
+
+  .device-home {
+    background: #222;
+    border-radius: 0 0 2px 2px;
+    display: block;
+    height: 4px;
+    margin: 0 auto;
+    position: relative;
+    width: 240px;
+
+    &::after,
+    &::before {
+      content: "";
+      display: block;
+      left: 50%;
+      position: absolute;
+      top: -95px;
+    }
+    &::after {
+      border: 9px solid darken($device-silver-dark, 5%);
+      border-top: 0;
+      border-radius: 0 0 18px 18px;
+      height: 70px;
+      margin-left: -142px;
+      width: 284px;
+      z-index: -1;
+    }
+    &::before {
+      border: 15px solid darken($device-silver, 5%);
+      border-top: 0;
+      border-radius: 0 0 5px 5px;
+      height: 80px;
+      margin-left: -150px;
+      width: 300px;
+      z-index: -2;
+    }
+  }
+}

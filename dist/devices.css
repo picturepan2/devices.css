@@ -460,3 +460,104 @@
 .device-ipad-pro.device-spacegray .device-home {
   border-color: #818187;
 }
+
+.device-surface-studio {
+  display: block;
+  height: 535px;
+  position: relative;
+  width: 640px;
+  z-index: 1;
+}
+
+.device-surface-studio .device-frame {
+  background: #222;
+  border-radius: 10px;
+  height: 440px;
+  padding: 20px;
+  width: 640px;
+}
+
+.device-surface-studio .device-frame .device-content {
+  background-color: #fff;
+  background-image: url("../src/img/bg-01.jpg");
+  background-position: center center;
+  background-size: cover;
+  border: 2px solid #222;
+  border-radius: 4px;
+  display: block;
+  height: 400px;
+  position: relative;
+  width: 600px;
+}
+
+.device-surface-studio .device-power {
+  background: #e2e3e4;
+  border-radius: 2px;
+  display: block;
+  height: 32px;
+  margin: 50px auto 0 auto;
+  position: relative;
+  width: 250px;
+}
+
+.device-surface-studio .device-power::after,
+.device-surface-studio .device-power::before {
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+.device-surface-studio .device-power::after {
+  background: #222;
+  height: 2px;
+  top: 2px;
+  width: 250px;
+}
+
+.device-surface-studio .device-power::before {
+  border: 10px solid transparent;
+  border-bottom-color: #c8cacb;
+  border-top: 0;
+  height: 10px;
+  top: -10px;
+  width: 250px;
+}
+
+.device-surface-studio .device-home {
+  background: #222;
+  border-radius: 0 0 2px 2px;
+  display: block;
+  height: 4px;
+  margin: 0 auto;
+  position: relative;
+  width: 240px;
+}
+
+.device-surface-studio .device-home::after,
+.device-surface-studio .device-home::before {
+  content: "";
+  display: block;
+  left: 50%;
+  position: absolute;
+  top: -95px;
+}
+
+.device-surface-studio .device-home::after {
+  border: 9px solid #babdbf;
+  border-radius: 0 0 18px 18px;
+  border-top: 0;
+  height: 70px;
+  margin-left: -142px;
+  width: 284px;
+  z-index: -1;
+}
+
+.device-surface-studio .device-home::before {
+  border: 15px solid #d5d6d8;
+  border-radius: 0 0 5px 5px;
+  border-top: 0;
+  height: 80px;
+  margin-left: -150px;
+  width: 300px;
+  z-index: -2;
+}

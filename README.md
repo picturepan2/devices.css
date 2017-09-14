@@ -4,6 +4,12 @@ Devices.css - Modern devices in pure CSS
 
 All devices are elegantly developed in pure CSS. The first are newly announced iPhone X and iPhone 8. More devices are coming. You can use these minimal devices in landing and screenshot showcase pages.
 
+## Devices
+
+- iPhone X (Silver)
+- iPhone 8 (Silver, Gold and Space Gray)
+- iPad Pro (Silver, Gold, Rose Gold and Space Gray)
+
 ## What's next
 - Add more devices and form factors
 - Add transition effects when change among devices
