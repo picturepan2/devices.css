@@ -17,7 +17,9 @@
 
     // 2436-by-1125-pixel resolution
     .device-content {
-      background: #fff url(../src/img/bg-00.jpg) center center / cover;
+      background: #fff url("../src/img/bg-00.jpg");
+      background-position: center center;
+      background-size: cover;
       display: block;
       height: 650px;
       position: relative;
@@ -29,8 +31,8 @@
   .device-stripe {
     &::after,
     &::before {
-      border-left: 6px solid rgba(#333, .25);
-      border-right: 6px solid rgba(#333, .25);
+      border: solid rgba(#333, .25);
+      border-width: 0 6px;
       content: "";
       display: block;
       height: 5px;

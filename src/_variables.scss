@@ -6,9 +6,6 @@ $secondary-color: lighten($primary-color, 40%) !default;
 $secondary-color-dark: darken($secondary-color, 3%) !default;
 $secondary-color-light: lighten($secondary-color, 3%) !default;
 
-$link-color: $primary-color !default;
-$link-color-dark: darken($link-color, 5%) !default;
-
 // Gray colors
 $dark-color: #454d5d !default;
 $light-color: #fff !default;
@@ -16,59 +13,14 @@ $gray-color: lighten($dark-color, 40%) !default;
 $gray-color-dark: darken($gray-color, 20%) !default;
 $gray-color-light: lighten($gray-color, 20%) !default;
 
-$border-color: lighten($dark-color, 60%) !default;
-$border-color-dark: darken($border-color, 10%) !default;
 $bg-color: lighten($dark-color, 66%) !default;
 $bg-color-dark: darken($bg-color, 3%) !default;
 $bg-color-light: $light-color !default;
 
-// Other colors
-$code-color: #e06870 !default;
-$highlight-color: #ffe9b3 !default;
-$body-bg: $bg-color-light !default;
-$body-font-color: lighten($dark-color, 5%) !default;
-
-// Unit sizes
-$unit-o: .05rem !default;
-$unit-h: .1rem !default;
-$unit-1: .2rem !default;
-$unit-2: .4rem !default;
-$unit-3: .6rem !default;
-$unit-4: .8rem !default;
-$unit-5: 1rem !default;
-$unit-6: 1.2rem !default;
-$unit-7: 1.4rem !default;
-$unit-8: 1.6rem !default;
-$unit-9: 1.8rem !default;
-$unit-10: 2rem !default;
-$unit-12: 2.4rem !default;
-$unit-16: 3.2rem !default;
-
-// Font sizes
-$html-font-size: 20px !default;
-$html-line-height: 1.428571429 !default;
-$font-size: .7rem !default;
-$font-size-sm: .6rem !default;
-$font-size-lg: .8rem !default;
-$line-height: 1rem !default;
-
 // Sizes
-$layout-spacing: $unit-2 !default;
-$layout-spacing-sm: $unit-1 !default;
-$layout-spacing-lg: $unit-4 !default;
-$border-radius: $unit-h !default;
-$border-width: $unit-o !default;
-$border-width-lg: $unit-h !default;
-$control-size: $unit-8 !default;
-$control-size-sm: $unit-6 !default;
-$control-size-lg: $unit-10 !default;
-$control-padding-h: $unit-2 !default;
-$control-padding-v: ($control-size - $line-height) / 2 - $border-width !default;
-$control-padding-v-sm: ($control-size-sm - $line-height) / 2 - $border-width !default;
-$control-padding-v-lg: ($control-size-lg - $line-height) / 2 - $border-width !default;
-$control-icon-size: .7rem !default;
-$control-min-width: 180px !default;
-$control-max-width: 320px !default;
+$layout-spacing: .4rem !default;
+$layout-spacing-sm: .2rem !default;
+$layout-spacing-lg: .8rem !default;
 
 // Responsive breakpoints
 $size-xs: 480px !default;
@@ -78,9 +30,7 @@ $size-lg: 960px !default;
 $size-xl: 1280px !default;
 $size-2x: 1440px !default;
 
-// Z-index
-$zindex-0: 1 !default;
-$zindex-1: 100 !default;
-$zindex-2: 200 !default;
-$zindex-3: 300 !default;
-$zindex-4: 400 !default;
+// Device colors
+$iphone-silver: #d0d0d4 !default;
+$iphone-spacegray: #9b9ba0 !default;
+$iphone-gold: #d4bba3 !default;

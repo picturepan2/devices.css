@@ -3,7 +3,7 @@
 @import "variables";
 
 .version::after {
-  content: "0.1.1";
+  content: "0.1.3";
 }
 
 /*  Core style */
@@ -30,7 +30,7 @@
     position: absolute;
     text-align: center;
     width: 0;
-    z-index: $zindex-1;
+    z-index: 100;
     &:focus,
     &:hover {
       box-shadow: none;
@@ -40,12 +40,11 @@
     }
   }
   
-  .s-title,
-  .s-subtitle {
+  .s-title {
     line-height: 1.6rem;
     margin-bottom: 0;
     padding-top: 1rem;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
     position: static;
 
     &:hover {
@@ -54,14 +53,15 @@
         width: 1em;
       }
     }
+  }
 
-    & + .docs-note {
-      margin-top: .4rem;
-    }
+  .column {
+    padding-bottom: 1rem;
+    padding-top: 1rem;
   }
 
   .code {
-    color: lighten($body-font-color, 10%);
+    color: lighten($dark-color, 15%);
 
     .com {
       color: $gray-color;
@@ -70,7 +70,7 @@
       color: $primary-color;
     }
     .atn {
-      color: lighten($body-font-color, 10%);
+      color: lighten($dark-color, 15%);
     }
     .atv {
       color: #e06870;
@@ -96,13 +96,13 @@
   position: relative;
 
   h1 {
-    color: $body-font-color;
+    color: lighten($dark-color, 5%);
     font-size: 1.6rem;
     margin-bottom: 1rem;
   }
 
   h2 {
-    color: lighten($body-font-color, 5%);
+    color: lighten($dark-color, 5%);
     font-size: .8rem;
     font-weight: 400;
     margin-bottom: 1.5rem;
@@ -111,8 +111,17 @@
 
 // Devices
 .device {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 1rem auto;
+}
+
+.col-6 {
+  .device {
+  }
+}
+
+.col-4 {
+  .device {
+  }
 }
 
 .bg-pink {
