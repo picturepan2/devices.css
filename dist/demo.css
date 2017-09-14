@@ -3,6 +3,28 @@
   content: "0.1.1";
 }
 
+/*  Core style */
+.section-hero {
+  padding: 1rem .5rem;
+}
+
+.section-ad {
+  background: #f0f1f4;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+@media (max-width: 840px) {
+  .section-ad {
+    display: none;
+  }
+}
+
+.section-device {
+  padding-bottom: 3rem;
+  padding-top: 2rem;
+}
+
 .section-device .anchor {
   color: #626fca;
   height: 0;
@@ -63,25 +85,6 @@
   color: #e06870;
 }
 
-.s-footer {
-  color: #acb3c2;
-  padding: .5rem .5rem 1.5rem .5rem;
-}
-
-.s-footer a {
-  color: #727e96;
-}
-
-/*  Homepage style */
-.section-hero {
-  padding: 1rem .5rem;
-}
-
-.section-device {
-  padding-bottom: 2rem;
-  padding-top: 2rem;
-}
-
 .section-footer {
   color: #acb3c2;
   padding: 1.8rem .75rem 1rem .75rem;
@@ -116,4 +119,8 @@
 .device {
   margin-left: auto;
   margin-right: auto;
+}
+
+.bg-pink {
+  background: #f9f0eb;
 }

@@ -7,6 +7,7 @@
   padding: 6px;
   position: relative;
   width: 342px;
+  z-index: 1;
 }
 
 .device-iphone-x .device-frame {
@@ -154,6 +155,7 @@
   padding: 6px;
   position: relative;
   width: 336px;
+  z-index: 1;
 }
 
 .device-iphone-8 .device-frame {
