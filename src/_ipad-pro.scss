@@ -1,0 +1,77 @@
+// iPad Pro
+$device-silver: #e2e3e4;
+$device-silver-dark: darken($device-silver, 10%);
+$device-silver-panel: #fff;
+
+.device-ipad-pro {
+  background: $device-silver-panel;
+  border-radius: 38px;
+  box-shadow: inset 0 0 0 2px $device-silver-dark, inset 0 0 0 6px $device-silver;
+  display: block;
+  height: 1048px;
+  padding: 6px;
+  position: relative;
+  width: 729px;
+  z-index: 1;
+
+  .device-frame {
+    border-radius: 32px;
+    height: 1036px;
+    padding: 73px 25px;
+    width: 717px;
+
+    // 2224-by-1668-pixel resolution
+    .device-content {
+      background-color: #fff;
+      background-image: url("../src/img/bg-02.jpg");
+      background-position: center center;
+      background-size: cover;
+      border: 2px solid #222;
+      border-radius: 2px;
+      display: block;
+      height: 890px;
+      position: relative;
+      width: 667px;
+      z-index: -1;
+    }
+  }
+
+  .device-header {
+    display: block;
+    height: 73px;
+    left: 50%;
+    margin-left: -5px;
+    position: absolute;
+    top: 6px;
+    width: 10px;
+    z-index: 199;
+  }
+
+  .device-sensors {
+    &::before {
+      background: #666;
+      border-radius: 50%;
+      content: "";
+      display: block;
+      height: 10px;
+      left: 50%;
+      margin-left: -5px;
+      margin-top: -5px;
+      position: absolute;
+      top: 50%;
+      width: 10px;
+    }
+  }
+
+  .device-home {
+    border: 2px solid $device-silver-dark;
+    border-radius: 50%;
+    bottom: 19px;
+    display: block;
+    height: 44px;
+    left: 50%;
+    margin-left: -22px;
+    position: absolute;
+    width: 44px;
+  }
+}

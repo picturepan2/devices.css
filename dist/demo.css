@@ -14,7 +14,7 @@
   text-align: center;
 }
 
-.section-device {
+.section-device .container {
   padding-bottom: 3rem;
   padding-top: 2rem;
 }
@@ -40,6 +40,7 @@
 }
 
 .section-device .s-title {
+  color: #454d5d;
   line-height: 1.6rem;
   margin-bottom: 0;
   padding-bottom: 1rem;
@@ -96,13 +97,13 @@
 }
 
 .grid-hero h1 {
-  color: #50596c;
+  color: #454d5d;
   font-size: 1.6rem;
   margin-bottom: 1rem;
 }
 
 .grid-hero h2 {
-  color: #50596c;
+  color: #454d5d;
   font-size: .8rem;
   font-weight: 400;
   margin-bottom: 1.5rem;

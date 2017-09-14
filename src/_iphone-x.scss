@@ -1,7 +1,12 @@
 // iPhone X
+$device-silver: #e2e3e4;
+$device-silver-dark: darken($device-silver, 10%);
+$device-silver-panel: #222;
+
 .device-iphone-x {
+  background: $device-silver-panel;
   border-radius: 54px;
-  box-shadow: inset 0 0 0 2px #eee, inset 0 0 0 6px #ccc;
+  box-shadow: inset 0 0 0 2px $device-silver, inset 0 0 0 6px $device-silver-dark;
   display: block;
   height: 694px;
   padding: 6px;
@@ -10,16 +15,18 @@
   z-index: 1;
 
   .device-frame {
-    border: 16px solid #333;
     border-radius: 48px;
     height: 682px;
+    padding: 16px;
     width: 330px;
 
     // 2436-by-1125-pixel resolution
     .device-content {
-      background: #fff url("../src/img/bg-00.jpg");
+      background-color: #fff;
+      background-image: url("../src/img/bg-00.jpg");
       background-position: center center;
       background-size: cover;
+      border-radius: 32px;
       display: block;
       height: 650px;
       position: relative;
@@ -50,7 +57,7 @@
   }
 
   .device-header {
-    background: #333;
+    background: $device-silver-panel;
     border-bottom-left-radius: 16px;
     border-bottom-right-radius: 16px;
     display: block;
@@ -72,11 +79,11 @@
       width: 6px;
     }
     &::after {
-      background: radial-gradient(circle at bottom left, transparent 0, transparent 75%, #333 75%, #333 100%);
+      background: radial-gradient(circle at bottom left, transparent 0, transparent 75%, $device-silver-panel 75%, $device-silver-panel 100%);
       left: -6px;
     }
     &::before {
-      background: radial-gradient(circle at bottom right, transparent 0, transparent 75%, #333 75%, #333 100%);
+      background: radial-gradient(circle at bottom right, transparent 0, transparent 75%, $device-silver-panel 75%, $device-silver-panel 100%);
       right: -6px;
     }
   }
@@ -109,7 +116,7 @@
   }
 
   .device-btns {
-    background: #ccc;
+    background: $device-silver-dark;
     display: block;
     height: 26px;
     left: -1px;
@@ -119,7 +126,7 @@
 
     &::after,
     &::before {
-      background: #ccc;
+      background: $device-silver-dark;
       content: "";
       display: block;
       height: 50px;
@@ -137,7 +144,7 @@
   }
 
   .device-power {
-    background: #ccc;
+    background: $device-silver-dark;
     display: block;
     height: 80px;
     right: -1px;

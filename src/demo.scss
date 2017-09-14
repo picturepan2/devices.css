@@ -18,8 +18,10 @@
 }
 
 .section-device {
-  padding-bottom: 3rem;
-  padding-top: 2rem;
+  .container {
+    padding-bottom: 3rem;
+    padding-top: 2rem;
+  }
 
   .anchor {
     color: $primary-color-light;
@@ -41,6 +43,7 @@
   }
   
   .s-title {
+    color: $dark-color;
     line-height: 1.6rem;
     margin-bottom: 0;
     padding-top: 1rem;
@@ -96,13 +99,13 @@
   position: relative;
 
   h1 {
-    color: lighten($dark-color, 5%);
+    color: $dark-color;
     font-size: 1.6rem;
     margin-bottom: 1rem;
   }
 
   h2 {
-    color: lighten($dark-color, 5%);
+    color: $dark-color;
     font-size: .8rem;
     font-weight: 400;
     margin-bottom: 1.5rem;
@@ -112,16 +115,6 @@
 // Devices
 .device {
   margin: 1rem auto;
-}
-
-.col-6 {
-  .device {
-  }
-}
-
-.col-4 {
-  .device {
-  }
 }
 
 .bg-pink {
