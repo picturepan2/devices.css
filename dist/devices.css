@@ -3,23 +3,23 @@
   border-radius: 54px;
   box-shadow: inset 0 0 0 2px #eee, inset 0 0 0 6px #ccc;
   display: block;
-  height: 696px;
+  height: 694px;
   padding: 6px;
   position: relative;
-  width: 344px;
+  width: 342px;
 }
 
 .device-iphone-x .device-frame {
   border: 16px solid #333;
   border-radius: 48px;
-  height: 684px;
-  width: 332px;
+  height: 682px;
+  width: 330px;
 }
 
 .device-iphone-x .device-frame .device-content {
-  background: #fff url(img/bg.jpg) center center/cover;
+  background: #fff url(../src/img/bg-00.jpg) center center/cover;
   display: block;
-  height: 652px;
+  height: 650px;
   position: relative;
   width: 300px;
   z-index: -1;
@@ -111,10 +111,10 @@
   background: #ccc;
   display: block;
   height: 26px;
-  left: 0;
+  left: -1px;
   position: absolute;
   top: 92px;
-  width: 2px;
+  width: 3px;
 }
 
 .device-iphone-x .device-btns::after,
@@ -123,17 +123,16 @@
   content: "";
   display: block;
   height: 50px;
+  left: 0;
   position: absolute;
-  width: 2px;
+  width: 3px;
 }
 
 .device-iphone-x .device-btns::after {
-  left: 0; 
   top: 48px;
 }
 
 .device-iphone-x .device-btns::before {
-  left: 0; 
   top: 112px;
 }
 
@@ -142,7 +141,159 @@
   display: block;
   height: 80px;
   position: absolute;
-  right: 0;
+  right: -1px;
+  top: 160px;
+  width: 3px;
+}
+
+.device-iphone-8 {
+  border-radius: 54px;
+  box-shadow: inset 0 0 0 2px #ccc, inset 0 0 0 6px #eee;
+  display: block;
+  height: 698px;
+  padding: 6px;
+  position: relative;
+  width: 336px;
+}
+
+.device-iphone-8 .device-frame {
+  border: solid #fff;
+  border-radius: 48px;
+  border-width: 76px 12px;
+  height: 686px;
+  width: 324px;
+}
+
+.device-iphone-8 .device-frame .device-content {
+  background: #fff url(../src/img/bg-01.jpg) center center/cover;
+  border: 2px solid #333;
+  border-radius: 2px;
+  display: block;
+  height: 534px;
+  position: relative;
+  width: 300px;
+  z-index: -1;
+}
+
+.device-iphone-8 .device-stripe::after,
+.device-iphone-8 .device-stripe::before {
+  border-left: 6px solid rgba(51, 51, 51, .25);
+  border-right: 6px solid rgba(51, 51, 51, .25);
+  content: "";
+  display: block;
+  height: 5px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 9;
+}
+
+.device-iphone-8 .device-stripe::after {
+  top: 55px;
+}
+
+.device-iphone-8 .device-stripe::before {
+  bottom: 55px;
+}
+
+.device-iphone-8 .device-header {
+  display: block;
+  height: 36px;
+  left: 50%;
+  margin-left: -64px;
+  position: absolute;
+  top: 26px;
+  width: 128px;
+  z-index: 199;
+}
+
+.device-iphone-8 .device-header::after {
+  background: #ccc;
+  border-radius: 2.5px;
+  content: "";
+  display: block;
+  height: 5px;
+  left: 50%;
+  margin-left: -30px;
+  margin-top: -2.5px;
+  position: absolute;
+  top: 50%;
+  width: 60px;
+}
+
+.device-iphone-8 .device-sensors::after,
+.device-iphone-8 .device-sensors::before {
+  background: #ccc;
+  border-radius: 50%;
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+.device-iphone-8 .device-sensors::after {
+  height: 8px;
+  left: 50%;
+  margin-left: -4px;
+  margin-top: -4px;
+  top: 0;
+  width: 8px;
+}
+
+.device-iphone-8 .device-sensors::before {
+  height: 10px;
+  left: 0;
+  margin-top: -5px;
+  top: 50%;
+  width: 10px;
+}
+
+.device-iphone-8 .device-btns {
+  background: #ccc;
+  display: block;
+  height: 24px;
+  left: -1px;
+  position: absolute;
+  top: 82px;
+  width: 3px;
+}
+
+.device-iphone-8 .device-btns::after,
+.device-iphone-8 .device-btns::before {
+  background: #ccc;
+  content: "";
+  display: block;
+  height: 45px;
+  left: 0;
+  position: absolute;
+  width: 3px;
+}
+
+.device-iphone-8 .device-btns::after {
+  top: 50px;
+}
+
+.device-iphone-8 .device-btns::before {
+  top: 106px;
+}
+
+.device-iphone-8 .device-power {
+  background: #ccc;
+  display: block;
+  height: 80px;
+  position: absolute;
+  right: -1px;
   top: 160px;
   width: 2px;
+}
+
+.device-iphone-8 .device-home {
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  bottom: 20px;
+  display: block;
+  height: 46px;
+  left: 50%;
+  margin-left: -23px;
+  position: absolute;
+  width: 46px;
 }

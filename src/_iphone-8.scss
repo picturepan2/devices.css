@@ -1,24 +1,27 @@
-// iPhone X
-.device-iphone-x {
+// iPhone 8
+.device-iphone-8 {
   border-radius: 54px;
-  box-shadow: inset 0 0 0 2px #eee, inset 0 0 0 6px #ccc;
+  box-shadow: inset 0 0 0 2px #ccc, inset 0 0 0 6px #eee;
   display: block;
-  height: 694px;
+  height: 698px;
   padding: 6px;
   position: relative;
-  width: 342px;
+  width: 336px;
 
   .device-frame {
-    border: 16px solid #333;
+    border: solid #fff;
+    border-width: 76px 12px;
     border-radius: 48px;
-    height: 682px;
-    width: 330px;
+    height: 686px;
+    width: 324px;
 
-    // 2436-by-1125-pixel resolution
+    // 1334-by-750-pixel resolution
     .device-content {
-      background: #fff url(../src/img/bg-00.jpg) center center / cover;
+      background: #fff url(../src/img/bg-01.jpg) center center / cover;
+      border: 2px solid #333;
+      border-radius: 2px;
       display: block;
-      height: 650px;
+      height: 534px;
       position: relative;
       width: 300px;
       z-index: -1;
@@ -39,79 +42,71 @@
       z-index: 9;
     }
     &::after {
-      top: 68px;
+      top: 55px;
     }
     &::before {
-      bottom: 68px;
+      bottom: 55px;
     }
   }
 
   .device-header {
-    background: #333;
-    border-bottom-left-radius: 16px;
-    border-bottom-right-radius: 16px;
     display: block;
-    height: 24px;
+    height: 36px;
     left: 50%;
-    margin-left: -82px;
+    margin-left: -64px;
     position: absolute;
-    top: 22px;
-    width: 164px;
+    top: 26px;
+    width: 128px;
     z-index: 199;
 
-    &::after,
-    &::before {
+    &::after {
+      background: #ccc;
+      border-radius: 2.5px;
       content: "";
       display: block;
-      height: 6px;
+      height: 5px;
+      left: 50%;
+      margin-left: -30px;
+      margin-top: -2.5px;
       position: absolute;
-      top: 0;
-      width: 6px;
-    }
-    &::after {
-      background: radial-gradient(circle at bottom left, transparent 0, transparent 75%, #333 75%, #333 100%);
-      left: -6px;
-    }
-    &::before {
-      background: radial-gradient(circle at bottom right, transparent 0, transparent 75%, #333 75%, #333 100%);
-      right: -6px;
+      top: 50%;
+      width: 60px;
     }
   }
 
   .device-sensors {
     &::after,
     &::before {
+      background: #ccc;
+      border-radius: 50%;
       content: "";
       display: block;
       position: absolute;
     }
-    &::after {
-      background: #444;
-      border-radius: 2.5px;
-      height: 5px;
+    &::after {  
+      height: 8px;
       left: 50%;
-      margin-left: -20px;
-      top: 4px;
-      width: 40px;
+      margin-left: -4px;
+      margin-top: -4px;
+      top: 0;
+      width: 8px;
     }
     &::before {
-      background: #444;
-      border-radius: 50%;
-      height: 11px;
-      left: 50%;
-      margin-left: 30px;
-      top: 1px;
-      width: 11px;
+      height: 10px;
+      left: 0;
+      margin-top: -5px;
+      top: 50%;
+      width: 10px;
     }
   }
 
   .device-btns {
     background: #ccc;
     display: block;
-    height: 26px;
+    height: 24px;
     left: -1px;
     position: absolute;
-    top: 92px;
+    top: 82px;
     width: 3px;
 
     &::after,
@@ -119,17 +114,17 @@
       background: #ccc;
       content: "";
       display: block;
-      height: 50px;
+      height: 45px;
       left: 0;
       position: absolute;
       width: 3px;
     }
 
     &::after {
-      top: 48px;
+      top: 50px;
     }
     &::before {
-      top: 112px;
+      top: 106px;
     }
   }
 
@@ -140,6 +135,18 @@
     right: -1px;
     position: absolute;
     top: 160px;
-    width: 3px;
+    width: 2px;
+  }
+
+  .device-home {
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    bottom: 20px;
+    display: block;
+    height: 46px;
+    left: 50%;
+    margin-left: -23px;
+    position: absolute;
+    width: 46px;
   }
 }
