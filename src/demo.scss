@@ -3,7 +3,7 @@
 @import "variables";
 
 .version::after {
-  content: "0.1.7";
+  content: "0.1.8";
 }
 
 /*  Core style */
@@ -85,7 +85,10 @@
   color: $gray-color;
   padding: 1.8rem .75rem 1rem .75rem;
   position: relative;
-  z-index: 200;
+
+  p {
+    line-height: 1;
+  }
 
   a {
     color: $gray-color-dark;

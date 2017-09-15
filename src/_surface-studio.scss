@@ -25,7 +25,7 @@ $device-silver-panel: #0d0d0d;
       background-position: center center;
       background-size: cover;
       border: 2px solid #222;
-      border-radius: 4px;
+      border-radius: 2px;
       display: block;
       height: 400px;
       position: relative;
@@ -36,8 +36,8 @@ $device-silver-panel: #0d0d0d;
   .device-power {
     background: lighten($device-silver, 5%);
     border: solid $device-silver;
-    border-width: 0 4px;
     border-radius: 0 0 2px 2px;
+    border-width: 0 4px 2px 4px;
     display: block;
     height: 32px;
     margin: 50px auto 0 auto;
@@ -51,7 +51,7 @@ $device-silver-panel: #0d0d0d;
       position: absolute;
     }
     &::after {
-      background: $device-silver-dark;
+      background: darken($device-silver-dark, 10%);
       height: 2px;
       left: -4px;
       top: 4px;
@@ -60,7 +60,7 @@ $device-silver-panel: #0d0d0d;
     &::before {
       border: 10px solid transparent;
       border-top: 0;
-      border-bottom-color: lighten($device-silver-dark, 5%);
+      border-bottom-color: $device-silver-dark;
       height: 10px;
       left: -4px;
       top: -10px;
@@ -83,13 +83,13 @@ $device-silver-panel: #0d0d0d;
       display: block;
       left: 50%;
       position: absolute;
-      top: -90px;
+      top: -85px;
     }
     &::after {
-      border: 6px solid lighten($device-silver-dark, 5%);
+      border: 6px solid darken($device-silver, 5%);
       border-top: 0;
       border-radius: 0 0 18px 18px;
-      box-shadow: inset 0 0 0 2px lighten($device-silver-dark, 2%);
+      box-shadow: inset 0 0 0 2px darken($device-silver, 8%);
       height: 60px;
       margin-left: -140px;
       width: 280px;

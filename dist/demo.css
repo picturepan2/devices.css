@@ -1,6 +1,6 @@
 /*! Devices.css | MIT License | github.com/picturepan2/devices.css */
 .version::after {
-  content: "0.1.7";
+  content: "0.1.8";
 }
 
 /*  Core style */
@@ -82,7 +82,10 @@
   color: #acb3c2;
   padding: 1.8rem .75rem 1rem .75rem;
   position: relative;
-  z-index: 200;
+}
+
+.section-footer p {
+  line-height: 1;
 }
 
 .section-footer a {
