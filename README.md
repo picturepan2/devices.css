@@ -9,6 +9,7 @@ All devices are elegantly developed in pure CSS. The first are newly announced i
 - iPhone X (Silver)
 - iPhone 8 (Silver, Gold and Space Gray)
 - iPad Pro (Silver, Gold, Rose Gold and Space Gray)
+- Surface Studio
 
 ## What's next
 - Add more devices and form factors
@@ -23,6 +24,10 @@ Download the compiled and minified [Devices.css files](https://github.com/pictur
 Go to [Demo page](https://picturepan2.github.io/devices.css/) to copy the device HTML source code and paste it to anywhere you want.
 
 You can add any content or screenshots to the `device-content`div. The resolution aspect ratios are based on real ones.
+
+## Custom
+
+You can custom Devices.css by modifing SASS .scss files located in `src` folder.
 
 ## Browser support
 Devices.css uses [Autoprefixer](https://github.com/postcss/autoprefixer) to make most styles compatible with earlier browsers. For best compatibility, these browsers are recommended:
