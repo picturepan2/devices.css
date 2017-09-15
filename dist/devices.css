@@ -293,7 +293,7 @@
   position: absolute;
   right: -1px;
   top: 160px;
-  width: 2px;
+  width: 3px;
 }
 
 .device-iphone-8 .device-home {
@@ -332,7 +332,7 @@
 
 .device-iphone-8.device-spacegray {
   background: #222;
-  box-shadow: inset 0 0 0 2px #818187, inset 0 0 0 6px #9b9ba0;
+  box-shadow: inset 0 0 0 2px #74747a, inset 0 0 0 6px #9b9ba0;
 }
 
 .device-iphone-8.device-spacegray .device-content {
@@ -347,11 +347,186 @@
 .device-iphone-8.device-spacegray .device-btns,
 .device-iphone-8.device-spacegray .device-btns::after,
 .device-iphone-8.device-spacegray .device-btns::before {
-  background: #818187;
+  background: #74747a;
 }
 
 .device-iphone-8.device-spacegray .device-power {
-  background: #818187;
+  background: #74747a;
+}
+
+.device-galaxy-s8 {
+  background: #222;
+  border: solid #cfcfcf;
+  border-radius: 46px;
+  border-width: 4px 0;
+  box-shadow: inset 0 0 0 2px #9c9c9c;
+  display: block;
+  height: 686px;
+  position: relative;
+  width: 316px;
+  z-index: 1;
+}
+
+.device-galaxy-s8 .device-frame {
+  border-radius: 48px;
+  height: 686px;
+  padding: 40px 8px 34px 8px;
+  width: 316px;
+}
+
+.device-galaxy-s8 .device-frame .device-content {
+  background-color: #fff;
+  background-image: url("../src/img/bg-04.jpg");
+  background-position: center center;
+  background-size: cover;
+  border: 2px solid #222;
+  border-radius: 28px;
+  display: block;
+  height: 617px;
+  position: relative;
+  width: 300px;
+  z-index: -1;
+}
+
+.device-galaxy-s8 .device-stripe::after,
+.device-galaxy-s8 .device-stripe::before {
+  border: solid rgba(51, 51, 51, .15);
+  border-width: 4px 0;
+  content: "";
+  display: block;
+  height: 686px;
+  position: absolute;
+  top: -4px;
+  width: 5px;
+  z-index: 9;
+}
+
+.device-galaxy-s8 .device-stripe::after {
+  left: 40px;
+}
+
+.device-galaxy-s8 .device-stripe::before {
+  right: 40px;
+}
+
+.device-galaxy-s8 .device-header {
+  display: block;
+  height: 36px;
+  left: 50%;
+  margin-left: -95px;
+  position: absolute;
+  top: 4px;
+  width: 190px;
+  z-index: 199;
+}
+
+.device-galaxy-s8 .device-header::after {
+  background: #666;
+  border-radius: 2.5px;
+  content: "";
+  display: block;
+  height: 4px;
+  left: 50%;
+  margin-left: -20px;
+  margin-top: -2px;
+  position: absolute;
+  top: 50%;
+  width: 40px;
+}
+
+.device-galaxy-s8 .device-sensors::after,
+.device-galaxy-s8 .device-sensors::before {
+  background: #666;
+  border-radius: 50%;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+}
+
+.device-galaxy-s8 .device-sensors::after {
+  box-shadow: -160px 0 #333, -145px 0 #333, -200px 0 #333;
+  height: 6px;
+  margin-top: -3px;
+  right: 0;
+  width: 6px;
+}
+
+.device-galaxy-s8 .device-sensors::before {
+  box-shadow: 155px 0 #666;
+  height: 10px;
+  left: 0;
+  margin-top: -5px;
+  width: 10px;
+}
+
+.device-galaxy-s8 .device-btns {
+  background: #9c9c9c;
+  border-radius: 2px 0 0 2px;
+  display: block;
+  height: 98px;
+  left: -1px;
+  position: absolute;
+  top: 120px;
+  width: 3px;
+}
+
+.device-galaxy-s8 .device-btns::after {
+  background: #9c9c9c;
+  border-radius: 2px 0 0 2px;
+  content: "";
+  display: block;
+  height: 45px;
+  left: 0;
+  position: absolute;
+  top: 138px;
+  width: 3px;
+}
+
+.device-galaxy-s8 .device-power {
+  background: #9c9c9c;
+  border-radius: 0 2px 2px 0;
+  display: block;
+  height: 46px;
+  position: absolute;
+  right: -1px;
+  top: 218px;
+  width: 3px;
+}
+
+.device-galaxy-s8 .device-home {
+  border: 2px solid #9c9c9c;
+  border-radius: 50%;
+  bottom: 20px;
+  display: block;
+  height: 46px;
+  left: 50%;
+  margin-left: -23px;
+  position: absolute;
+  width: 46px;
+}
+
+.device-galaxy-s8.device-blue {
+  border-color: #a3c5e8;
+  box-shadow: inset 0 0 0 2px #5192d4;
+}
+
+.device-galaxy-s8.device-blue .device-content {
+  background-image: url("../src/img/bg-05.jpg");
+}
+
+.device-galaxy-s8.device-blue .device-stripe::after,
+.device-galaxy-s8.device-blue .device-stripe::before {
+  border-color: rgba(204, 204, 204, .35);
+}
+
+.device-galaxy-s8.device-blue .device-btns,
+.device-galaxy-s8.device-blue .device-btns::after {
+  background: #5192d4;
+}
+
+.device-galaxy-s8.device-blue .device-power {
+  background: #5192d4;
 }
 
 .device-ipad-pro {
@@ -544,17 +719,17 @@
   display: block;
   left: 50%;
   position: absolute;
-  top: -95px;
+  top: -90px;
 }
 
 .device-surface-studio .device-home::after {
-  border: 4px solid #d5d6d8;
+  border: 6px solid #d5d6d8;
   border-radius: 0 0 18px 18px;
   border-top: 0;
   box-shadow: inset 0 0 0 2px #cdcfd0;
-  height: 70px;
-  margin-left: -142px;
-  width: 284px;
+  height: 60px;
+  margin-left: -140px;
+  width: 280px;
   z-index: -1;
 }
 
@@ -562,7 +737,7 @@
   border: 15px solid #e2e3e4;
   border-radius: 0 0 4px 4px;
   border-top: 0;
-  height: 80px;
+  height: 70px;
   margin-left: -150px;
   width: 300px;
   z-index: -2;

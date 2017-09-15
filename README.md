@@ -9,6 +9,7 @@ All devices are elegantly developed in pure CSS. The first are newly announced i
 - iPhone X (Silver)
 - iPhone 8 (Silver, Gold and Space Gray)
 - iPad Pro (Silver, Gold, Rose Gold and Space Gray)
+- Samsung Galaxy S8 ( Midnight Black and Coral Blue)
 - Surface Studio
 
 ## What's next
@@ -27,7 +28,7 @@ You can add any content or screenshots to the `device-content`div. The resolutio
 
 ## Custom
 
-You can custom Devices.css by modifing SASS .scss files located in `src` folder.
+You can custom Devices.css by modifing SASS `.scss` files located in `src` folder.
 
 ## Browser support
 Devices.css uses [Autoprefixer](https://github.com/postcss/autoprefixer) to make most styles compatible with earlier browsers. For best compatibility, these browsers are recommended:

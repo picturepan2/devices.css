@@ -83,23 +83,23 @@ $device-silver-panel: #0d0d0d;
       display: block;
       left: 50%;
       position: absolute;
-      top: -95px;
+      top: -90px;
     }
     &::after {
-      border: 4px solid lighten($device-silver-dark, 5%);
+      border: 6px solid lighten($device-silver-dark, 5%);
       border-top: 0;
       border-radius: 0 0 18px 18px;
       box-shadow: inset 0 0 0 2px lighten($device-silver-dark, 2%);
-      height: 70px;
-      margin-left: -142px;
-      width: 284px;
+      height: 60px;
+      margin-left: -140px;
+      width: 280px;
       z-index: -1;
     }
     &::before {
       border: 15px solid $device-silver;
       border-top: 0;
       border-radius: 0 0 4px 4px;
-      height: 80px;
+      height: 70px;
       margin-left: -150px;
       width: 300px;
       z-index: -2;
