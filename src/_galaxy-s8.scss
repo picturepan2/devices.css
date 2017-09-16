@@ -43,7 +43,7 @@ $device-blue-panel: #222;
   .device-stripe {
     &::after,
     &::before {
-      border: solid rgba(#333, .15);
+      border: solid rgba(#333, .10);
       border-width: 4px 0;
       content: "";
       display: block;
@@ -170,7 +170,7 @@ $device-blue-panel: #222;
     .device-stripe {
       &::after,
       &::before {
-        border-color: rgba(#ccc, .35);
+        border-color: rgba(#fff, .35);
       }
     }
 

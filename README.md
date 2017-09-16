@@ -8,9 +8,11 @@ All devices are elegantly developed in pure CSS. The first are newly announced i
 
 - iPhone X (Silver)
 - iPhone 8 (Silver, Gold and Space Gray)
-- iPad Pro (Silver, Gold, Rose Gold and Space Gray)
 - Samsung Galaxy S8 ( Midnight Black and Coral Blue)
+- iPad Pro (Silver, Gold, Rose Gold and Space Gray)
+- MacBook Pro (Silver and Space Gray)
 - Surface Studio
+- iMac Pro
 
 ## What's next
 - Add more devices and form factors

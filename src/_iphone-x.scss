@@ -1,12 +1,12 @@
 // iPhone X
 $device-silver: #e2e3e4;
-$device-silver-dark: darken($device-silver, 10%);
+$device-silver-dark: darken($device-silver, 50%);
 $device-silver-panel: #222;
 
 .device-iphone-x {
   background: $device-silver-panel;
   border-radius: 54px;
-  box-shadow: inset 0 0 0 2px $device-silver, inset 0 0 0 6px $device-silver-dark;
+  box-shadow: inset 0 0 0 2px $device-silver-dark, inset 0 0 0 6px $device-silver;
   display: block;
   height: 694px;
   padding: 6px;

@@ -1,8 +1,9 @@
+@charset "UTF-8";
 /*! Devices.css | MIT License | github.com/picturepan2/devices.css */
 .device-iphone-x {
   background: #222;
   border-radius: 54px;
-  box-shadow: inset 0 0 0 2px #e2e3e4, inset 0 0 0 6px #c8cacb;
+  box-shadow: inset 0 0 0 2px #606467, inset 0 0 0 6px #e2e3e4;
   display: block;
   height: 694px;
   padding: 6px;
@@ -114,7 +115,7 @@
 }
 
 .device-iphone-x .device-btns {
-  background: #c8cacb;
+  background: #606467;
   display: block;
   height: 26px;
   left: -1px;
@@ -125,7 +126,7 @@
 
 .device-iphone-x .device-btns::after,
 .device-iphone-x .device-btns::before {
-  background: #c8cacb;
+  background: #606467;
   content: "";
   display: block;
   height: 50px;
@@ -143,7 +144,7 @@
 }
 
 .device-iphone-x .device-power {
-  background: #c8cacb;
+  background: #606467;
   display: block;
   height: 80px;
   position: absolute;
@@ -390,7 +391,7 @@
 
 .device-galaxy-s8 .device-stripe::after,
 .device-galaxy-s8 .device-stripe::before {
-  border: solid rgba(51, 51, 51, .15);
+  border: solid rgba(51, 51, 51, .1);
   border-width: 4px 0;
   content: "";
   display: block;
@@ -517,7 +518,7 @@
 
 .device-galaxy-s8.device-blue .device-stripe::after,
 .device-galaxy-s8.device-blue .device-stripe::before {
-  border-color: rgba(204, 204, 204, .35);
+  border-color: rgba(255, 255, 255, .35);
 }
 
 .device-galaxy-s8.device-blue .device-btns,
@@ -773,7 +774,7 @@
   background-image: url("../src/img/bg-surface-studio.jpg");
   background-position: center center;
   background-size: cover;
-  border: 2px solid #222;
+  border: 2px solid #121212;
   border-radius: 2px;
   display: block;
   height: 400px;
@@ -856,4 +857,85 @@
   margin-left: -150px;
   width: 300px;
   z-index: -2;
+}
+
+.device-imac-pro {
+  display: block;
+  height: 535px;
+  position: relative;
+  width: 624px;
+  z-index: 1;
+}
+
+.device-imac-pro .device-frame {
+  background: #0d0d0d;
+  border-radius: 18px;
+  box-shadow: inset 0 0 0 2px #080808;
+  height: 428px;
+  padding: 24px 24px 80px 24px;
+  position: relative;
+  width: 624px;
+}
+
+.device-imac-pro .device-frame .device-content {
+  background-color: #fff;
+  background-image: url("../src/img/bg-08.jpg");
+  background-position: center center;
+  background-size: cover;
+  border: 2px solid #121212;
+  border-radius: 2px;
+  display: block;
+  height: 324px;
+  position: relative;
+  width: 576px;
+}
+
+.device-imac-pro .device-frame::after {
+  background: #2f2e33;
+  border-radius: 0 0 18px 18px;
+  bottom: 2px;
+  content: "";
+  display: block;
+  height: 54px;
+  left: 2px;
+  position: absolute;
+  width: 620px;
+}
+
+.device-imac-pro .device-frame::before {
+  bottom: 15px;
+  color: #0d0d0d;
+  content: "";
+  font-size: 24px;
+  height: 24px;
+  left: 50%;
+  line-height: 24px;
+  margin-left: -100px;
+  position: absolute;
+  text-align: center;
+  width: 200px;
+  z-index: 1;
+}
+
+.device-imac-pro .device-power {
+  border: solid transparent;
+  border-bottom-color: #54525b;
+  border-width: 0 8px 50px 8px;
+  display: block;
+  height: 50px;
+  margin: 0 auto;
+  width: 138px;
+}
+
+.device-imac-pro .device-home {
+  border: solid transparent;
+  border-bottom-color: #6d6a76;
+  border-radius: 6px;
+  border-width: 0 26px 16px 26px;
+  box-shadow: 0 4px 0 -2px #232226;
+  display: block;
+  height: 16px;
+  margin: 0 auto;
+  position: relative;
+  width: 190px;
 }
