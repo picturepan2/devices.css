@@ -10,6 +10,7 @@ All devices are elegantly developed in pure CSS. The first are newly announced i
 - [iPhone 8](https://picturepan2.github.io/devices.css/#iphone-8) (Silver, Gold and Space Gray)
 - [Samsung Galaxy S8](https://picturepan2.github.io/devices.css/#galaxy-s8) ( Midnight Black and Coral Blue)
 - [iPad Pro](https://picturepan2.github.io/devices.css/#ipad-pro) (Silver, Gold, Rose Gold and Space Gray)
+- [MacBook Pro](https://picturepan2.github.io/devices.css/#macbook) (Silver, Gold, Rose Gold and Space Gray)
 - [MacBook Pro](https://picturepan2.github.io/devices.css/#macbook-pro) (Silver and Space Gray)
 - [Surface Studio](https://picturepan2.github.io/devices.css/#surface-studio)
 - [iMac Pro](https://picturepan2.github.io/devices.css/#imac-pro)

@@ -1,0 +1,175 @@
+// MacBook
+$device-silver: #e2e3e4;
+$device-silver-dark: darken($device-silver, 10%);
+$device-silver-panel: #0d0d0d;
+$device-spacegray: #83878a;
+$device-spacegray-dark: darken($device-spacegray, 5%);
+$device-spacegray-panel: #0d0d0d;
+$device-gold: #f7e8dd;
+$device-gold-dark: darken($device-gold, 10%);
+$device-gold-panel: #0d0d0d;
+$device-rosegold: #facfc9;
+$device-rosegold-dark: darken($device-rosegold, 10%);
+$device-rosegold-panel: #0d0d0d;
+
+.device-macbook {
+  display: block;
+  height: 496px;
+  position: relative;
+  width: 740px;
+  z-index: 1;
+
+  .device-frame {
+    background: $device-silver-panel;
+    border-radius: 20px;
+    box-shadow: inset 0 0 0 2px $device-silver-dark;
+    height: 428px;
+    margin: 0 auto;
+    padding: 29px 19px 39px 19px;
+    position: relative;
+    width: 614px;
+
+    // 1440-by-900-pixel resolution
+    .device-content {
+      background-color: #fff;
+      background-image: url("../src/img/bg-07.jpg");
+      background-position: center center;
+      background-size: cover;
+      border: 2px solid #222;
+      border-radius: 2px;
+      display: block;
+      height: 360px;
+      position: relative;
+      width: 576px;
+    }
+
+    &::after {
+      background: lighten($device-silver-panel, 10%);
+      border-radius: 0 0 20px 20px;
+      bottom: 2px;
+      content: "";
+      display: block;
+      height: 26px;
+      left: 2px;
+      position: absolute;
+      width: 610px;
+    }
+    &::before {
+      bottom: 10px;
+      color: $device-silver-dark;
+      content: "MacBook";
+      font-size: 12px;
+      height: 16px;
+      left: 50%;
+      line-height: 16px;
+      margin-left: -100px;
+      position: absolute;
+      text-align: center;
+      width: 200px;
+      z-index: 1;
+    }
+  }
+
+  .device-power {
+    background: $device-silver;
+    border: solid darken($device-silver, 5%);
+    border-radius: 2px 2px 0 0;
+    border-width: 0 4px;
+    display: block;
+    height: 4px;
+    margin-top: -10px;
+    position: relative;
+    width: 740px;
+
+    &::after {
+      background: radial-gradient(circle at center, $device-silver 0, $device-silver 85%, darken($device-silver-dark, 15%) 100%);
+      border: solid darken($device-silver-dark, 10%);
+      border-width: 0 2px;
+      content: "";
+      display: block;
+      height: 4px;
+      left: 50%;
+      margin-left: -60px;
+      position: absolute;
+      width: 120px;
+      z-index: 1;
+    }
+  }
+
+  .device-home {
+    background: darken($device-silver-dark, 15%);
+    border-radius: 0 0 180px 180px/ 0 0 10px 10px;
+    box-shadow: inset 0 -2px 6px 0 darken($device-silver-dark, 50%);
+    display: block;
+    height: 10px;
+    margin: 0 auto;
+    position: relative;
+    width: 740px;
+  }
+
+  // Gold edition
+  &.device-gold {
+    .device-frame {
+      box-shadow: inset 0 0 0 2px $device-gold-dark;
+    }
+
+    .device-power {
+      background: $device-gold;
+      border-color: $device-gold-dark;
+
+      &::after {
+        background: radial-gradient(circle at center, $device-gold 0, $device-gold 85%, darken($device-gold-dark, 15%) 100%);
+        border-color: darken($device-gold-dark, 10%);
+      }
+    }
+
+    .device-home {
+      background: $device-gold-dark;
+      box-shadow: inset 0 -2px 6px 0 darken($device-gold-dark, 50%);
+    }
+  }
+
+  // Rose Gold edition 
+  &.device-rosegold {
+    .device-frame {
+      box-shadow: inset 0 0 0 2px $device-rosegold-dark;
+    }
+
+    .device-power {
+      background: $device-rosegold;
+      border-color: $device-rosegold-dark;
+
+      &::after {
+        background: radial-gradient(circle at center, $device-rosegold 0, $device-rosegold 85%, darken($device-rosegold-dark, 15%) 100%);
+        border-color: $device-rosegold-dark;
+      }
+    }
+
+    .device-home {
+      background: $device-rosegold-dark;
+      box-shadow: inset 0 -2px 6px 0 darken($device-rosegold-dark, 50%);
+    }
+  }
+
+  // Space Gray edition
+  &.device-spacegray {
+    .device-frame {
+      box-shadow: inset 0 0 0 2px $device-spacegray-dark;
+    }
+
+    .device-power {
+      background: lighten($device-spacegray, 5%);
+      border-color: $device-spacegray-dark;
+
+      &::after {
+        background: radial-gradient(circle at center, lighten($device-spacegray, 5%) 0, lighten($device-spacegray, 5%) 85%, darken($device-spacegray-dark, 15%) 100%);
+        border-color: darken($device-spacegray-dark, 10%);
+      }
+    }
+
+    .device-home {
+      background: darken($device-spacegray-dark, 15%);
+      box-shadow: inset 0 -2px 6px 0 darken($device-spacegray-dark, 50%);
+    }
+  }
+}
