@@ -17,17 +17,17 @@ $device-spacegray-panel: #222;
   border-radius: 38px;
   box-shadow: inset 0 0 0 2px $device-silver-dark, inset 0 0 0 6px $device-silver;
   display: block;
-  height: 1048px;
+  height: 804px;
   padding: 6px;
   position: relative;
-  width: 729px;
+  width: 560px;
   z-index: 1;
 
   .device-frame {
     border-radius: 32px;
-    height: 1036px;
-    padding: 73px 25px;
-    width: 717px;
+    height: 792px;
+    padding: 56px 19px;
+    width: 548px;
 
     // 2224-by-1668-pixel resolution
     .device-content {
@@ -38,16 +38,16 @@ $device-spacegray-panel: #222;
       border: 2px solid #222;
       border-radius: 2px;
       display: block;
-      height: 890px;
+      height: 680px;
       position: relative;
-      width: 667px;
+      width: 510px;
       z-index: -1;
     }
   }
 
   .device-header {
     display: block;
-    height: 73px;
+    height: 56px;
     left: 50%;
     margin-left: -5px;
     position: absolute;
@@ -75,13 +75,13 @@ $device-spacegray-panel: #222;
   .device-home {
     border: 2px solid $device-silver-dark;
     border-radius: 50%;
-    bottom: 19px;
+    bottom: 17px;
     display: block;
-    height: 44px;
+    height: 34px;
     left: 50%;
-    margin-left: -22px;
+    margin-left: -17px;
     position: absolute;
-    width: 44px;
+    width: 34px;
   }
 
   // Gold edition 

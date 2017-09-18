@@ -535,18 +535,18 @@
   border-radius: 38px;
   box-shadow: inset 0 0 0 2px #c8cacb, inset 0 0 0 6px #e2e3e4;
   display: block;
-  height: 1048px;
+  height: 804px;
   padding: 6px;
   position: relative;
-  width: 729px;
+  width: 560px;
   z-index: 1;
 }
 
 .device-ipad-pro .device-frame {
   border-radius: 32px;
-  height: 1036px;
-  padding: 73px 25px;
-  width: 717px;
+  height: 792px;
+  padding: 56px 19px;
+  width: 548px;
 }
 
 .device-ipad-pro .device-frame .device-content {
@@ -557,15 +557,15 @@
   border: 2px solid #222;
   border-radius: 2px;
   display: block;
-  height: 890px;
+  height: 680px;
   position: relative;
-  width: 667px;
+  width: 510px;
   z-index: -1;
 }
 
 .device-ipad-pro .device-header {
   display: block;
-  height: 73px;
+  height: 56px;
   left: 50%;
   margin-left: -5px;
   position: absolute;
@@ -591,13 +591,13 @@
 .device-ipad-pro .device-home {
   border: 2px solid #c8cacb;
   border-radius: 50%;
-  bottom: 19px;
+  bottom: 17px;
   display: block;
-  height: 44px;
+  height: 34px;
   left: 50%;
-  margin-left: -22px;
+  margin-left: -17px;
   position: absolute;
-  width: 44px;
+  width: 34px;
 }
 
 .device-ipad-pro.device-gold {
@@ -699,6 +699,7 @@
 .device-macbook-pro .device-power {
   background: #e2e3e4;
   border: solid #d5d6d8;
+  border-radius: 2px 2px 0 0;
   border-width: 2px 4px 0 4px;
   display: block;
   height: 14px;
@@ -771,7 +772,7 @@
 
 .device-surface-studio .device-frame .device-content {
   background-color: #fff;
-  background-image: url("../src/img/bg-surface-studio.jpg");
+  background-image: url("../src/img/bg-09.jpg");
   background-position: center center;
   background-size: cover;
   border: 2px solid #121212;
@@ -839,10 +840,10 @@
 }
 
 .device-surface-studio .device-home::after {
-  border: 6px solid #d5d6d8;
+  border: 6px solid #babdbf;
   border-radius: 0 0 18px 18px;
   border-top: 0;
-  box-shadow: inset 0 0 0 2px #c8cacb;
+  box-shadow: inset 0 0 0 2px #a0a3a7;
   height: 60px;
   margin-left: -140px;
   width: 280px;
@@ -850,7 +851,7 @@
 }
 
 .device-surface-studio .device-home::before {
-  border: 15px solid #e2e3e4;
+  border: 15px solid #c8cacb;
   border-radius: 0 0 4px 4px;
   border-top: 0;
   height: 70px;
@@ -920,12 +921,12 @@
 .device-imac-pro .device-power {
   border: solid transparent;
   border-bottom-color: #272626;
-  border-width: 0 4px 50px 4px;
+  border-width: 0 2px 50px 2px;
   display: block;
   height: 50px;
   margin: 0 auto;
   position: relative;
-  width: 126px;
+  width: 122px;
 }
 
 .device-imac-pro .device-power::after,
@@ -951,24 +952,22 @@
 .device-imac-pro .device-home {
   border: solid transparent;
   border-bottom-color: #48464e;
-  border-radius: 6px;
-  border-width: 0 25px 16px 25px;
-  box-shadow: 0 4px 0 -2px #0d0d0d;
+  border-width: 0 26px 12px 26px;
   display: block;
-  height: 16px;
+  height: 12px;
   margin: 0 auto;
   position: relative;
   width: 194px;
 }
 
 .device-imac-pro .device-home::after {
-  background: black;
-  border-radius: 0 0 6px 6px;
+  background: #2f2e33;
+  border-radius: 0 0 4px 4px;
   content: "";
   display: block;
-  height: 6px;
-  left: -23px;
+  height: 4px;
+  left: -25px;
   position: absolute;
-  top: 16px;
-  width: 190px;
+  top: 12px;
+  width: 194px;
 }

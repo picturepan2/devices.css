@@ -67,6 +67,7 @@ $device-spacegray-panel: #0d0d0d;
   .device-power {
     background: $device-silver;
     border: solid darken($device-silver, 5%);
+    border-radius: 2px 2px 0 0;
     border-width: 2px 4px 0 4px;
     display: block;
     height: 14px;

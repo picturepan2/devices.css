@@ -63,12 +63,12 @@ $device-spacegray-panel: #0d0d0d;
   .device-power {
     border: solid transparent;
     border-bottom-color: lighten($device-spacegray-panel, 10%);
-    border-width: 0 4px 50px 4px;
+    border-width: 0 2px 50px 2px;
     display: block;
     height: 50px;
     margin: 0 auto;
     position: relative;
-    width: 126px;
+    width: 122px;
 
     &::after,
     &::before {
@@ -92,25 +92,23 @@ $device-spacegray-panel: #0d0d0d;
   .device-home {
     border: solid transparent;
     border-bottom-color: lighten($device-spacegray-dark, 10%);
-    border-radius: 6px;
-    border-width: 0 25px 16px 25px;
-    height: 16px;
-    box-shadow: 0px 4px 0px -2px $device-spacegray-panel;
+    border-width: 0 26px 12px 26px;
+    height: 12px;
     display: block;
     margin: 0 auto;
     position: relative;
     width: 194px;
 
     &::after {
-      background: darken($device-spacegray-panel, 5%);
-      border-radius: 0 0 6px 6px;
+      background: $device-spacegray-dark;
+      border-radius: 0 0 4px 4px;
       content: "";
       display: block;
-      height: 6px;
-      left: -23px;
+      height: 4px;
+      left: -25px;
       position: absolute;
-      top: 16px;
-      width: 190px;
+      top: 12px;
+      width: 194px;
     }
   }
 }

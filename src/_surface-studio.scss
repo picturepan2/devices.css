@@ -21,7 +21,7 @@ $device-silver-panel: #0d0d0d;
     // 4500-by-3000-pixel resolution
     .device-content {
       background-color: #fff;
-      background-image: url("../src/img/bg-surface-studio.jpg");
+      background-image: url("../src/img/bg-09.jpg");
       background-position: center center;
       background-size: cover;
       border: 2px solid lighten($device-silver-panel, 2%);
@@ -86,17 +86,17 @@ $device-silver-panel: #0d0d0d;
       top: -85px;
     }
     &::after {
-      border: 6px solid darken($device-silver, 5%);
+      border: 6px solid darken($device-silver-dark, 5%);
       border-top: 0;
       border-radius: 0 0 18px 18px;
-      box-shadow: inset 0 0 0 2px $device-silver-dark;
+      box-shadow: inset 0 0 0 2px darken($device-silver-dark, 15%);
       height: 60px;
       margin-left: -140px;
       width: 280px;
       z-index: -1;
     }
     &::before {
-      border: 15px solid $device-silver;
+      border: 15px solid $device-silver-dark;
       border-top: 0;
       border-radius: 0 0 4px 4px;
       height: 70px;
