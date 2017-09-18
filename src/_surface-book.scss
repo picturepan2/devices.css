@@ -1,0 +1,92 @@
+// Surface Book
+$device-silver: #eee;
+$device-silver-dark: darken($device-silver, 15%);
+$device-silver-panel: #0d0d0d;
+
+.device-surface-book {
+  height: 424px;
+  position: relative;
+  width: 728px;
+  z-index: 1;
+
+  .device-frame {
+    background: $device-silver-panel;
+    border-radius: 12px;
+    box-shadow: inset 0 0 0 2px $device-silver-dark;
+    height: 408px;
+    margin: 0 auto;
+    padding: 24px 22px;
+    position: relative;
+    width: 584px;
+
+    // 3000-by-2000-pixel resolution
+    .device-content {
+      background-color: #fff;
+      background-image: url("../src/img/bg-09.jpg");
+      background-position: center center;
+      background-size: cover;
+      border: 2px solid lighten($device-silver-panel, 2%);
+      border-radius: 2px;
+      height: 360px;
+      position: relative;
+      width: 540px;
+    }
+  }
+
+  .device-btns {
+    &::after,
+    &::before {
+      background: $device-silver-dark;
+      content: "";
+      height: 2px;
+      position: absolute;
+      top: -2px;
+      width: 3px;
+    }
+
+    &::after {
+      left: 122px;
+      width: 20px;
+    }
+    &::before {
+      left: 168px;
+      width: 44px;
+    }
+  }
+
+  .device-power {
+    background: linear-gradient(to bottom, $device-silver, $device-silver-dark);
+    border: solid $device-silver-dark;
+    border-radius: 2px;
+    border-width: 0 2px;
+    height: 12px;
+    margin-top: 4px;
+    position: relative;
+    width: 728px;
+
+    &::after {
+      background: radial-gradient(circle at center, $device-silver 0, $device-silver 95%, darken($device-silver-dark, 15%) 100%);;
+      border-radius: 0 0 6px 6px;
+      content: "";
+      height: 8px;
+      left: 50%;
+      margin-left: -125px;
+      position: absolute;
+      top: 0;
+      width: 250px;
+      z-index: 1;
+    }
+  }
+
+  .device-home {
+    background: linear-gradient(to bottom, $device-silver, $device-silver-dark);
+    border-radius: 2px 2px 0 0;
+    bottom: 12px;
+    height: 8px;
+    left: 50%;
+    margin-left: -292px;
+    position: absolute;
+    width: 584px;
+    z-index: -1;
+  }
+}

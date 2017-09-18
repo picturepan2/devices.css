@@ -1,10 +1,19 @@
 @charset "UTF-8";
 /*! Devices.css | MIT License | github.com/picturepan2/devices.css */
+.device,
+.device::before,
+.device::after,
+.device *,
+.device *::before,
+.device *::after {
+  box-sizing: border-box;
+  display: block;
+}
+
 .device-iphone-x {
   background: #222;
   border-radius: 54px;
   box-shadow: inset 0 0 0 2px #606467, inset 0 0 0 6px #e2e3e4;
-  display: block;
   height: 694px;
   padding: 6px;
   position: relative;
@@ -25,7 +34,6 @@
   background-position: center center;
   background-size: cover;
   border-radius: 32px;
-  display: block;
   height: 650px;
   position: relative;
   width: 300px;
@@ -37,7 +45,6 @@
   border: solid rgba(51, 51, 51, .25);
   border-width: 0 6px;
   content: "";
-  display: block;
   height: 5px;
   left: 0;
   position: absolute;
@@ -57,7 +64,6 @@
   background: #222;
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
-  display: block;
   height: 24px;
   left: 50%;
   margin-left: -82px;
@@ -70,7 +76,6 @@
 .device-iphone-x .device-header::after,
 .device-iphone-x .device-header::before {
   content: "";
-  display: block;
   height: 6px;
   position: absolute;
   top: 0;
@@ -90,7 +95,6 @@
 .device-iphone-x .device-sensors::after,
 .device-iphone-x .device-sensors::before {
   content: "";
-  display: block;
   position: absolute;
 }
 
@@ -116,9 +120,8 @@
 
 .device-iphone-x .device-btns {
   background: #606467;
-  display: block;
   height: 26px;
-  left: -1px;
+  left: -2px;
   position: absolute;
   top: 92px;
   width: 3px;
@@ -128,7 +131,6 @@
 .device-iphone-x .device-btns::before {
   background: #606467;
   content: "";
-  display: block;
   height: 50px;
   left: 0;
   position: absolute;
@@ -145,10 +147,9 @@
 
 .device-iphone-x .device-power {
   background: #606467;
-  display: block;
   height: 80px;
   position: absolute;
-  right: -1px;
+  right: -2px;
   top: 160px;
   width: 3px;
 }
@@ -157,7 +158,6 @@
   background: #fff;
   border-radius: 54px;
   box-shadow: inset 0 0 0 2px #c8cacb, inset 0 0 0 6px #e2e3e4;
-  display: block;
   height: 698px;
   padding: 6px;
   position: relative;
@@ -179,7 +179,6 @@
   background-size: cover;
   border: 2px solid #222;
   border-radius: 4px;
-  display: block;
   height: 534px;
   position: relative;
   width: 300px;
@@ -191,7 +190,6 @@
   border: solid rgba(51, 51, 51, .15);
   border-width: 0 6px;
   content: "";
-  display: block;
   height: 5px;
   left: 0;
   position: absolute;
@@ -208,7 +206,6 @@
 }
 
 .device-iphone-8 .device-header {
-  display: block;
   height: 36px;
   left: 50%;
   margin-left: -64px;
@@ -222,7 +219,6 @@
   background: #666;
   border-radius: 2.5px;
   content: "";
-  display: block;
   height: 5px;
   left: 50%;
   margin-left: -30px;
@@ -237,7 +233,6 @@
   background: #666;
   border-radius: 50%;
   content: "";
-  display: block;
   position: absolute;
 }
 
@@ -260,9 +255,8 @@
 
 .device-iphone-8 .device-btns {
   background: #c8cacb;
-  display: block;
   height: 24px;
-  left: -1px;
+  left: -2px;
   position: absolute;
   top: 82px;
   width: 3px;
@@ -272,7 +266,6 @@
 .device-iphone-8 .device-btns::before {
   background: #c8cacb;
   content: "";
-  display: block;
   height: 45px;
   left: 0;
   position: absolute;
@@ -289,10 +282,9 @@
 
 .device-iphone-8 .device-power {
   background: #c8cacb;
-  display: block;
   height: 80px;
   position: absolute;
-  right: -1px;
+  right: -2px;
   top: 160px;
   width: 3px;
 }
@@ -301,7 +293,6 @@
   border: 2px solid #c8cacb;
   border-radius: 50%;
   bottom: 20px;
-  display: block;
   height: 46px;
   left: 50%;
   margin-left: -23px;
@@ -361,7 +352,6 @@
   border-radius: 46px;
   border-width: 4px 0;
   box-shadow: inset 0 0 0 2px #9c9c9c;
-  display: block;
   height: 686px;
   position: relative;
   width: 316px;
@@ -382,7 +372,6 @@
   background-size: cover;
   border: 2px solid #222;
   border-radius: 28px;
-  display: block;
   height: 617px;
   position: relative;
   width: 300px;
@@ -394,7 +383,6 @@
   border: solid rgba(51, 51, 51, .1);
   border-width: 4px 0;
   content: "";
-  display: block;
   height: 686px;
   position: absolute;
   top: -4px;
@@ -411,7 +399,6 @@
 }
 
 .device-galaxy-s8 .device-header {
-  display: block;
   height: 36px;
   left: 50%;
   margin-left: -95px;
@@ -425,7 +412,6 @@
   background: #666;
   border-radius: 2.5px;
   content: "";
-  display: block;
   height: 4px;
   left: 50%;
   margin-left: -20px;
@@ -440,7 +426,6 @@
   background: #666;
   border-radius: 50%;
   content: "";
-  display: block;
   position: absolute;
   top: 50%;
 }
@@ -464,7 +449,6 @@
 .device-galaxy-s8 .device-btns {
   background: #9c9c9c;
   border-radius: 2px 0 0 2px;
-  display: block;
   height: 98px;
   left: -1px;
   position: absolute;
@@ -476,7 +460,6 @@
   background: #9c9c9c;
   border-radius: 2px 0 0 2px;
   content: "";
-  display: block;
   height: 45px;
   left: 0;
   position: absolute;
@@ -487,7 +470,6 @@
 .device-galaxy-s8 .device-power {
   background: #9c9c9c;
   border-radius: 0 2px 2px 0;
-  display: block;
   height: 46px;
   position: absolute;
   right: -1px;
@@ -499,7 +481,6 @@
   border: 2px solid #9c9c9c;
   border-radius: 50%;
   bottom: 20px;
-  display: block;
   height: 46px;
   left: 50%;
   margin-left: -23px;
@@ -534,7 +515,6 @@
   background: #fff;
   border-radius: 38px;
   box-shadow: inset 0 0 0 2px #c8cacb, inset 0 0 0 6px #e2e3e4;
-  display: block;
   height: 804px;
   padding: 6px;
   position: relative;
@@ -556,7 +536,6 @@
   background-size: cover;
   border: 2px solid #222;
   border-radius: 2px;
-  display: block;
   height: 680px;
   position: relative;
   width: 510px;
@@ -564,7 +543,6 @@
 }
 
 .device-ipad-pro .device-header {
-  display: block;
   height: 56px;
   left: 50%;
   margin-left: -5px;
@@ -578,7 +556,6 @@
   background: #666;
   border-radius: 50%;
   content: "";
-  display: block;
   height: 10px;
   left: 50%;
   margin-left: -5px;
@@ -592,7 +569,6 @@
   border: 2px solid #c8cacb;
   border-radius: 50%;
   bottom: 17px;
-  display: block;
   height: 34px;
   left: 50%;
   margin-left: -17px;
@@ -637,9 +613,94 @@
   border-color: #818187;
 }
 
+.device-surface-book {
+  height: 424px;
+  position: relative;
+  width: 728px;
+  z-index: 1;
+}
+
+.device-surface-book .device-frame {
+  background: #0d0d0d;
+  border-radius: 12px;
+  box-shadow: inset 0 0 0 2px #c8c8c8;
+  height: 408px;
+  margin: 0 auto;
+  padding: 24px 22px;
+  position: relative;
+  width: 584px;
+}
+
+.device-surface-book .device-frame .device-content {
+  background-color: #fff;
+  background-image: url("../src/img/bg-09.jpg");
+  background-position: center center;
+  background-size: cover;
+  border: 2px solid #121212;
+  border-radius: 2px;
+  height: 360px;
+  position: relative;
+  width: 540px;
+}
+
+.device-surface-book .device-btns::after,
+.device-surface-book .device-btns::before {
+  background: #c8c8c8;
+  content: "";
+  height: 2px;
+  position: absolute;
+  top: -2px;
+  width: 3px;
+}
+
+.device-surface-book .device-btns::after {
+  left: 122px;
+  width: 20px;
+}
+
+.device-surface-book .device-btns::before {
+  left: 168px;
+  width: 44px;
+}
+
+.device-surface-book .device-power {
+  background: linear-gradient(to bottom, #eee, #c8c8c8);
+  border: solid #c8c8c8;
+  border-radius: 2px;
+  border-width: 0 2px;
+  height: 12px;
+  margin-top: 4px;
+  position: relative;
+  width: 728px;
+}
+
+.device-surface-book .device-power::after {
+  background: radial-gradient(circle at center, #eee 0, #eee 95%, #a2a1a1 100%);
+  border-radius: 0 0 6px 6px;
+  content: "";
+  height: 8px;
+  left: 50%;
+  margin-left: -125px;
+  position: absolute;
+  top: 0;
+  width: 250px;
+  z-index: 1;
+}
+
+.device-surface-book .device-home {
+  background: linear-gradient(to bottom, #eee, #c8c8c8);
+  border-radius: 2px 2px 0 0;
+  bottom: 12px;
+  height: 8px;
+  left: 50%;
+  margin-left: -292px;
+  position: absolute;
+  width: 584px;
+  z-index: -1;
+}
+
 .device-macbook-pro {
-  display: block;
-  height: 496px;
+  height: 444px;
   position: relative;
   width: 740px;
   z-index: 1;
@@ -661,9 +722,8 @@
   background-image: url("../src/img/bg-07.jpg");
   background-position: center center;
   background-size: cover;
-  border: 2px solid #222;
+  border: 2px solid #121212;
   border-radius: 2px;
-  display: block;
   height: 360px;
   position: relative;
   width: 576px;
@@ -674,7 +734,6 @@
   border-radius: 0 0 20px 20px;
   bottom: 2px;
   content: "";
-  display: block;
   height: 26px;
   left: 2px;
   position: absolute;
@@ -701,7 +760,6 @@
   border: solid #d5d6d8;
   border-radius: 2px 2px 0 0;
   border-width: 2px 4px 0 4px;
-  display: block;
   height: 14px;
   margin-top: -10px;
   position: relative;
@@ -713,7 +771,6 @@
   border-radius: 0 0 10px 10px;
   box-shadow: inset 0 0 4px 2px #babdbf;
   content: "";
-  display: block;
   height: 10px;
   left: 50%;
   margin-left: -60px;
@@ -727,7 +784,6 @@
   background: #a0a3a7;
   border-radius: 0 0 180px 180px/ 0 0 12px 12px;
   box-shadow: inset 0 -2px 6px 0 #474a4d;
-  display: block;
   height: 12px;
   margin: 0 auto;
   position: relative;
@@ -754,8 +810,7 @@
 }
 
 .device-macbook {
-  display: block;
-  height: 496px;
+  height: 432px;
   position: relative;
   width: 740px;
   z-index: 1;
@@ -777,9 +832,8 @@
   background-image: url("../src/img/bg-07.jpg");
   background-position: center center;
   background-size: cover;
-  border: 2px solid #222;
+  border: 2px solid #121212;
   border-radius: 2px;
-  display: block;
   height: 360px;
   position: relative;
   width: 576px;
@@ -790,7 +844,6 @@
   border-radius: 0 0 20px 20px;
   bottom: 2px;
   content: "";
-  display: block;
   height: 26px;
   left: 2px;
   position: absolute;
@@ -817,7 +870,6 @@
   border: solid #d5d6d8;
   border-radius: 2px 2px 0 0;
   border-width: 0 4px;
-  display: block;
   height: 4px;
   margin-top: -10px;
   position: relative;
@@ -829,7 +881,6 @@
   border: solid #adb0b3;
   border-width: 0 2px;
   content: "";
-  display: block;
   height: 4px;
   left: 50%;
   margin-left: -60px;
@@ -842,7 +893,6 @@
   background: #a0a3a7;
   border-radius: 0 0 180px 180px/ 0 0 10px 10px;
   box-shadow: inset 0 -2px 6px 0 #474a4d;
-  display: block;
   height: 10px;
   margin: 0 auto;
   position: relative;
@@ -907,8 +957,7 @@
 }
 
 .device-surface-studio {
-  display: block;
-  height: 535px;
+  height: 526px;
   position: relative;
   width: 640px;
   z-index: 1;
@@ -930,7 +979,6 @@
   background-size: cover;
   border: 2px solid #121212;
   border-radius: 2px;
-  display: block;
   height: 400px;
   position: relative;
   width: 600px;
@@ -941,7 +989,6 @@
   border: solid #e2e3e4;
   border-radius: 0 0 2px 2px;
   border-width: 0 4px 2px 4px;
-  display: block;
   height: 32px;
   margin: 50px auto 0 auto;
   position: relative;
@@ -951,7 +998,6 @@
 .device-surface-studio .device-power::after,
 .device-surface-studio .device-power::before {
   content: "";
-  display: block;
   position: absolute;
 }
 
@@ -976,7 +1022,6 @@
 .device-surface-studio .device-home {
   background: #444;
   border-radius: 0 0 2px 2px;
-  display: block;
   height: 4px;
   margin: 0 auto;
   position: relative;
@@ -986,7 +1031,6 @@
 .device-surface-studio .device-home::after,
 .device-surface-studio .device-home::before {
   content: "";
-  display: block;
   left: 50%;
   position: absolute;
   top: -85px;
@@ -1014,8 +1058,7 @@
 }
 
 .device-imac-pro {
-  display: block;
-  height: 535px;
+  height: 494px;
   position: relative;
   width: 624px;
   z-index: 1;
@@ -1038,7 +1081,6 @@
   background-size: cover;
   border: 2px solid #121212;
   border-radius: 2px;
-  display: block;
   height: 324px;
   position: relative;
   width: 576px;
@@ -1049,7 +1091,6 @@
   border-radius: 0 0 18px 18px;
   bottom: 2px;
   content: "";
-  display: block;
   height: 54px;
   left: 2px;
   position: absolute;
@@ -1075,7 +1116,6 @@
   border: solid transparent;
   border-bottom-color: #272626;
   border-width: 0 2px 50px 2px;
-  display: block;
   height: 50px;
   margin: 0 auto;
   position: relative;
@@ -1085,7 +1125,6 @@
 .device-imac-pro .device-power::after,
 .device-imac-pro .device-power::before {
   content: "";
-  display: block;
   height: 50px;
   position: absolute;
   top: 0;
@@ -1106,7 +1145,6 @@
   border: solid transparent;
   border-bottom-color: #48464e;
   border-width: 0 26px 12px 26px;
-  display: block;
   height: 12px;
   margin: 0 auto;
   position: relative;
@@ -1117,7 +1155,6 @@
   background: #2f2e33;
   border-radius: 0 0 4px 4px;
   content: "";
-  display: block;
   height: 4px;
   left: -26px;
   position: absolute;

@@ -1,6 +1,7 @@
 /*! Devices.css | MIT License | github.com/picturepan2/devices.css */
-// Core variables and mixins
+// Core reset and variables 
 @import "variables";
+@import "reset";
 
 // Phones
 @import "iphone-x";
@@ -11,6 +12,7 @@
 @import "ipad-pro";
 
 // Laptops
+@import "surface-book";
 @import "macbook-pro";
 @import "macbook";
 

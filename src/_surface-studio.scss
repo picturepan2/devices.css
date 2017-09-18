@@ -4,8 +4,7 @@ $device-silver-dark: darken($device-silver, 10%);
 $device-silver-panel: #0d0d0d;
 
 .device-surface-studio {
-  display: block;
-  height: 535px;
+  height: 526px;
   position: relative;
   width: 640px;
   z-index: 1;
@@ -26,7 +25,6 @@ $device-silver-panel: #0d0d0d;
       background-size: cover;
       border: 2px solid lighten($device-silver-panel, 2%);
       border-radius: 2px;
-      display: block;
       height: 400px;
       position: relative;
       width: 600px;
@@ -38,7 +36,6 @@ $device-silver-panel: #0d0d0d;
     border: solid $device-silver;
     border-radius: 0 0 2px 2px;
     border-width: 0 4px 2px 4px;
-    display: block;
     height: 32px;
     margin: 50px auto 0 auto;
     position: relative;
@@ -47,7 +44,6 @@ $device-silver-panel: #0d0d0d;
     &::after,
     &::before {
       content: "";
-      display: block;
       position: absolute;
     }
     &::after {
@@ -71,7 +67,6 @@ $device-silver-panel: #0d0d0d;
   .device-home {
     background: #444;
     border-radius: 0 0 2px 2px;
-    display: block;
     height: 4px;
     margin: 0 auto;
     position: relative;
@@ -80,7 +75,6 @@ $device-silver-panel: #0d0d0d;
     &::after,
     &::before {
       content: "";
-      display: block;
       left: 50%;
       position: absolute;
       top: -85px;

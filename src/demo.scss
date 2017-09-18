@@ -120,8 +120,8 @@
   margin: 1rem auto;
 }
 
-.bg-pink {
-  background: #f9f0eb;
+.section-device:nth-of-type(even) {
+  background: #f8f9fa;
 }
 
 @media (max-width: $size-sm) {
