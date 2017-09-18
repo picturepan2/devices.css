@@ -119,3 +119,13 @@
 .bg-pink {
   background: #f9f0eb;
 }
+
+@media (max-width: 600px) {
+  .device-ipad-pro,
+  .device-surface-studio,
+  .device-macbook-pro,
+  .device-imac-pro {
+    left: 50%;
+    transform: translateX(-50%) scale(.5);
+  }
+}

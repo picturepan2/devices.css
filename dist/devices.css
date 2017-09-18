@@ -820,7 +820,7 @@
 }
 
 .device-surface-studio .device-home {
-  background: #222;
+  background: #444;
   border-radius: 0 0 2px 2px;
   display: block;
   height: 4px;
@@ -842,7 +842,7 @@
   border: 6px solid #d5d6d8;
   border-radius: 0 0 18px 18px;
   border-top: 0;
-  box-shadow: inset 0 0 0 2px #cdcfd0;
+  box-shadow: inset 0 0 0 2px #c8cacb;
   height: 60px;
   margin-left: -140px;
   width: 280px;
@@ -919,23 +919,56 @@
 
 .device-imac-pro .device-power {
   border: solid transparent;
-  border-bottom-color: #54525b;
-  border-width: 0 8px 50px 8px;
+  border-bottom-color: #272626;
+  border-width: 0 4px 50px 4px;
   display: block;
   height: 50px;
   margin: 0 auto;
-  width: 138px;
+  position: relative;
+  width: 126px;
+}
+
+.device-imac-pro .device-power::after,
+.device-imac-pro .device-power::before {
+  content: "";
+  display: block;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  width: 200px;
+}
+
+.device-imac-pro .device-power::after {
+  background: radial-gradient(circle at top left, transparent 0, transparent 85%, #272626 85%, #272626 100%);
+  left: -180px;
+}
+
+.device-imac-pro .device-power::before {
+  background: radial-gradient(circle at top right, transparent 0, transparent 85%, #272626 85%, #272626 100%);
+  right: -180px;
 }
 
 .device-imac-pro .device-home {
   border: solid transparent;
-  border-bottom-color: #6d6a76;
+  border-bottom-color: #48464e;
   border-radius: 6px;
-  border-width: 0 26px 16px 26px;
-  box-shadow: 0 4px 0 -2px #232226;
+  border-width: 0 25px 16px 25px;
+  box-shadow: 0 4px 0 -2px #0d0d0d;
   display: block;
   height: 16px;
   margin: 0 auto;
   position: relative;
+  width: 194px;
+}
+
+.device-imac-pro .device-home::after {
+  background: black;
+  border-radius: 0 0 6px 6px;
+  content: "";
+  display: block;
+  height: 6px;
+  left: -23px;
+  position: absolute;
+  top: 16px;
   width: 190px;
 }

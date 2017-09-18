@@ -1,6 +1,6 @@
 // iMac Pro
-$device-spacegray: #2f2e33;
-$device-spacegray-dark: darken($device-spacegray, 5%);
+$device-spacegray: #54525b;
+$device-spacegray-dark: darken($device-spacegray, 15%);
 $device-spacegray-panel: #0d0d0d;
 
 .device-imac-pro {
@@ -34,7 +34,7 @@ $device-spacegray-panel: #0d0d0d;
     }
 
     &::after {
-      background: $device-spacegray;
+      background: $device-spacegray-dark;
       border-radius: 0 0 18px 18px;
       bottom: 2px;
       content: "";
@@ -62,24 +62,55 @@ $device-spacegray-panel: #0d0d0d;
 
   .device-power {
     border: solid transparent;
-    border-bottom-color: lighten($device-spacegray, 15%);
-    border-width: 0 8px 50px 8px;
+    border-bottom-color: lighten($device-spacegray-panel, 10%);
+    border-width: 0 4px 50px 4px;
     display: block;
     height: 50px;
     margin: 0 auto;
-    width: 138px;
+    position: relative;
+    width: 126px;
+
+    &::after,
+    &::before {
+      content: "";
+      display: block;
+      height: 50px;
+      position: absolute;
+      top: 0;
+      width: 200px;
+    }
+    &::after {
+      background: radial-gradient(circle at top left, transparent 0, transparent 85%, lighten($device-spacegray-panel, 10%) 85%, lighten($device-spacegray-panel, 10%) 100%);
+      left: -180px;
+    }
+    &::before {
+      background: radial-gradient(circle at top right, transparent 0, transparent 85%, lighten($device-spacegray-panel, 10%) 85%, lighten($device-spacegray-panel, 10%) 100%);
+      right: -180px;
+    }
   }
 
   .device-home {
     border: solid transparent;
-    border-bottom-color: lighten($device-spacegray, 25%);
+    border-bottom-color: lighten($device-spacegray-dark, 10%);
     border-radius: 6px;
-    border-width: 0 26px 16px 26px;
-    box-shadow: 0px 4px 0px -2px $device-spacegray-dark;
-    display: block;
+    border-width: 0 25px 16px 25px;
     height: 16px;
+    box-shadow: 0px 4px 0px -2px $device-spacegray-panel;
+    display: block;
     margin: 0 auto;
     position: relative;
-    width: 190px;
+    width: 194px;
+
+    &::after {
+      background: darken($device-spacegray-panel, 5%);
+      border-radius: 0 0 6px 6px;
+      content: "";
+      display: block;
+      height: 6px;
+      left: -23px;
+      position: absolute;
+      top: 16px;
+      width: 190px;
+    }
   }
 }

@@ -124,6 +124,12 @@
   background: #f9f0eb;
 }
 
-@media (max-width: $size-2x) {
-  
+@media (max-width: $size-sm) {
+  .device-ipad-pro,
+  .device-surface-studio,
+  .device-macbook-pro,
+  .device-imac-pro {
+    left: 50%;
+    transform: translateX(-50%) scale(.5);
+  }
 }

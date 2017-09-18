@@ -6,17 +6,17 @@ All devices are elegantly developed in pure CSS. The first are newly announced i
 
 ## Devices
 
-- iPhone X (Silver)
-- iPhone 8 (Silver, Gold and Space Gray)
-- Samsung Galaxy S8 ( Midnight Black and Coral Blue)
-- iPad Pro (Silver, Gold, Rose Gold and Space Gray)
-- MacBook Pro (Silver and Space Gray)
-- Surface Studio
-- iMac Pro
+- [iPhone X](https://picturepan2.github.io/devices.css/#iphone-x) (Silver)
+- [iPhone 8](https://picturepan2.github.io/devices.css/#iphone-8) (Silver, Gold and Space Gray)
+- [Samsung Galaxy S8](https://picturepan2.github.io/devices.css/#galaxy-s8) ( Midnight Black and Coral Blue)
+- [iPad Pro](https://picturepan2.github.io/devices.css/#ipad-pro) (Silver, Gold, Rose Gold and Space Gray)
+- [MacBook Pro](https://picturepan2.github.io/devices.css/#macbook-pro) (Silver and Space Gray)
+- [Surface Studio](https://picturepan2.github.io/devices.css/#surface-studio)
+- [iMac Pro](https://picturepan2.github.io/devices.css/#imac-pro)
 
 ## What's next
+
 - Add more devices and form factors
-- Add transition effects when change among devices
 
 ## Getting started
 
@@ -24,9 +24,23 @@ Download the compiled and minified [Devices.css files](https://github.com/pictur
 
 `<link rel="stylesheet" href="dist/devices.css">`
 
-Go to [Demo page](https://picturepan2.github.io/devices.css/) to copy the device HTML source code and paste it to anywhere you want.
+Go to [Demo page](https://picturepan2.github.io/devices.css/) to copy the device HTML source code and paste it to anywhere you want. All devices use the same HTML structure with different `device-xxx` classes.
 
-You can add any content or screenshots to the `device-content`div. The resolution aspect ratios are based on real ones.
+```
+<div class="device device-iphone-x">
+  <div class="device-frame">
+    <div class="device-content"></div>
+  </div>
+  <div class="device-stripe"></div>
+  <div class="device-header">
+    <div class="device-sensors"></div>
+  </div>
+  <div class="device-btns"></div>
+  <div class="device-power"></div>
+</div>
+```
+
+You can add any content or screenshots to the `device-content` div. The resolution aspect ratios are based on real ones.
 
 ## Custom
 
