@@ -1253,10 +1253,10 @@
 }
 
 .device-surface-studio .device-home::after {
-  border: 6px solid #babdbf;
+  border: 6px solid #d5d6d8;
   border-radius: 0 0 18px 18px;
   border-top: 0;
-  box-shadow: inset 0 0 0 2px #babdbf;
+  box-shadow: inset 0 0 0 4px #c8cacb;
   height: 60px;
   margin-left: -140px;
   width: 280px;
@@ -1264,7 +1264,7 @@
 }
 
 .device-surface-studio .device-home::before {
-  border: 15px solid #c8cacb;
+  border: 15px solid #e2e3e4;
   border-radius: 0 0 4px 4px;
   border-top: 0;
   height: 70px;
