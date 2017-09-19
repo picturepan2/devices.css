@@ -1,0 +1,77 @@
+// Surface Pro
+$device-silver: #eee;
+$device-silver-dark: darken($device-silver, 15%);
+$device-silver-panel: #0d0d0d;
+
+.device-surface-pro {
+  height: 394px;
+  position: relative;
+  width: 561px;
+  z-index: 1;
+
+  .device-frame {
+    background: $device-silver-panel;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 2px $device-silver-dark;
+    height: 394px;
+    margin: 0 auto;
+    padding: 26px 24px;
+    position: relative;
+    width: 561px;
+
+    // 2736-by-1824-pixel resolution
+    .device-content {
+      background-color: #fff;
+      background-image: url("../src/img/bg-09.jpg");
+      background-position: center center;
+      background-size: cover;
+      border: 2px solid lighten($device-silver-panel, 2%);
+      border-radius: 2px;
+      height: 342px;
+      position: relative;
+      width: 513px;
+    }
+  }
+
+  .device-btns {
+    &::after,
+    &::before {
+      background: $device-silver-dark;
+      content: "";
+      height: 2px;
+      position: absolute;
+      top: -2px;
+    }
+
+    &::after {
+      left: 48px;
+      width: 26px;
+    }
+    &::before {
+      left: 94px;
+      width: 48px;
+    }
+  }
+
+  .device-header {
+    height: 24px;
+    left: 50%;
+    margin-left: -24px;
+    position: absolute;
+    top: 2px;
+    width: 48px;
+
+    &::after {
+      background: #333;
+      border-radius: 50%;
+      content: "";
+      height: 6px;
+      left: 50%;
+      margin-left: -3px;
+      margin-top: -3px;
+      position: absolute;
+      top: 50%;
+      width: 6px;
+    }
+  }
+}

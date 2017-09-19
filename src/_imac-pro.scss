@@ -86,7 +86,7 @@ $device-spacegray-panel: #0d0d0d;
 
   .device-home {
     border: solid transparent;
-    border-bottom-color: lighten($device-spacegray-dark, 10%);
+    border-bottom-color: $device-spacegray;
     border-width: 0 26px 12px 26px;
     height: 12px;
     margin: 0 auto;

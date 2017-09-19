@@ -416,7 +416,7 @@
 }
 
 .device-google-pixel .device-header::after {
-  background: #ccc;
+  background: #ddd;
   border-radius: 2.5px;
   content: "";
   height: 5px;
@@ -788,6 +788,77 @@
   border-color: #818187;
 }
 
+.device-surface-pro {
+  height: 394px;
+  position: relative;
+  width: 561px;
+  z-index: 1;
+}
+
+.device-surface-pro .device-frame {
+  background: #0d0d0d;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 2px #c8c8c8;
+  height: 394px;
+  margin: 0 auto;
+  padding: 26px 24px;
+  position: relative;
+  width: 561px;
+}
+
+.device-surface-pro .device-frame .device-content {
+  background-color: #fff;
+  background-image: url("../src/img/bg-09.jpg");
+  background-position: center center;
+  background-size: cover;
+  border: 2px solid #121212;
+  border-radius: 2px;
+  height: 342px;
+  position: relative;
+  width: 513px;
+}
+
+.device-surface-pro .device-btns::after,
+.device-surface-pro .device-btns::before {
+  background: #c8c8c8;
+  content: "";
+  height: 2px;
+  position: absolute;
+  top: -2px;
+}
+
+.device-surface-pro .device-btns::after {
+  left: 48px;
+  width: 26px;
+}
+
+.device-surface-pro .device-btns::before {
+  left: 94px;
+  width: 48px;
+}
+
+.device-surface-pro .device-header {
+  height: 24px;
+  left: 50%;
+  margin-left: -24px;
+  position: absolute;
+  top: 2px;
+  width: 48px;
+}
+
+.device-surface-pro .device-header::after {
+  background: #333;
+  border-radius: 50%;
+  content: "";
+  height: 6px;
+  left: 50%;
+  margin-left: -3px;
+  margin-top: -3px;
+  position: absolute;
+  top: 50%;
+  width: 6px;
+}
+
 .device-surface-book {
   height: 424px;
   position: relative;
@@ -825,7 +896,6 @@
   height: 2px;
   position: absolute;
   top: -2px;
-  width: 3px;
 }
 
 .device-surface-book .device-btns::after {
@@ -1215,7 +1285,7 @@
   border: 6px solid #babdbf;
   border-radius: 0 0 18px 18px;
   border-top: 0;
-  box-shadow: inset 0 0 0 2px #a0a3a7;
+  box-shadow: inset 0 0 0 2px #babdbf;
   height: 60px;
   margin-left: -140px;
   width: 280px;
@@ -1318,7 +1388,7 @@
 
 .device-imac-pro .device-home {
   border: solid transparent;
-  border-bottom-color: #48464e;
+  border-bottom-color: #54525b;
   border-width: 0 26px 12px 26px;
   height: 12px;
   margin: 0 auto;
