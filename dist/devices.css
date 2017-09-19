@@ -346,6 +346,181 @@
   background: #74747a;
 }
 
+.device-google-pixel {
+  background: #f7f7f8;
+  border-radius: 54px;
+  box-shadow: inset 0 0 0 2px #c8cacb, inset 0 0 0 6px #e2e3e4, inset 0 0 0 10px white;
+  height: 744px;
+  position: relative;
+  width: 360px;
+  z-index: 1;
+}
+
+.device-google-pixel .device-frame {
+  border-radius: 48px;
+  height: 744px;
+  padding: 82px 18px 86px 18px;
+  width: 360px;
+}
+
+.device-google-pixel .device-frame .device-content {
+  background-color: #fff;
+  background-image: url("../src/img/bg-06.jpg");
+  background-position: center center;
+  background-size: cover;
+  border: 2px solid #222;
+  border-radius: 2px;
+  height: 576px;
+  position: relative;
+  width: 324px;
+  z-index: -1;
+}
+
+.device-google-pixel .device-stripe {
+  border-top: 6px solid rgba(51, 51, 51, .15);
+  bottom: 0;
+  left: 254px;
+  position: absolute;
+  top: 0;
+  width: 8px;
+}
+
+.device-google-pixel .device-stripe::after,
+.device-google-pixel .device-stripe::before {
+  border: solid rgba(51, 51, 51, .15);
+  border-width: 0 6px;
+  content: "";
+  height: 10px;
+  left: -254px;
+  position: absolute;
+  width: 360px;
+  z-index: 9;
+}
+
+.device-google-pixel .device-stripe::after {
+  top: 60px;
+}
+
+.device-google-pixel .device-stripe::before {
+  bottom: 46px;
+}
+
+.device-google-pixel .device-header {
+  height: 82px;
+  left: 50%;
+  margin-left: -120px;
+  position: absolute;
+  top: 0;
+  width: 240px;
+  z-index: 199;
+}
+
+.device-google-pixel .device-header::after {
+  background: #ccc;
+  border-radius: 2.5px;
+  content: "";
+  height: 5px;
+  left: 50%;
+  margin-left: -39px;
+  margin-top: -2.5px;
+  position: absolute;
+  top: 50%;
+  width: 78px;
+}
+
+.device-google-pixel .device-sensors::after,
+.device-google-pixel .device-sensors::before {
+  background: #333;
+  border-radius: 6px;
+  content: "";
+  position: absolute;
+}
+
+.device-google-pixel .device-sensors::after {
+  bottom: 10px;
+  height: 12px;
+  left: 50%;
+  margin-left: -14px;
+  width: 28px;
+}
+
+.device-google-pixel .device-sensors::before {
+  height: 10px;
+  left: 0;
+  margin-top: -5px;
+  top: 50%;
+  width: 10px;
+}
+
+.device-google-pixel .device-btns {
+  background: #c8cacb;
+  height: 102px;
+  position: absolute;
+  right: -2px;
+  top: 298px;
+  width: 3px;
+}
+
+.device-google-pixel .device-power {
+  background: #c8cacb;
+  height: 50px;
+  position: absolute;
+  right: -2px;
+  top: 184px;
+  width: 3px;
+}
+
+.device-google-pixel.device-black {
+  background: #211d1c;
+  box-shadow: inset 0 0 0 2px #363635, inset 0 0 0 6px #6a6967, inset 0 0 0 10px #3d3533;
+}
+
+.device-google-pixel.device-black .device-content {
+  background-image: url("../src/img/bg-04.jpg");
+}
+
+.device-google-pixel.device-black .device-stripe,
+.device-google-pixel.device-black .device-stripe::after,
+.device-google-pixel.device-black .device-stripe::before {
+  border-color: rgba(13, 13, 13, .35);
+}
+
+.device-google-pixel.device-black .device-header::after {
+  background: #444;
+}
+
+.device-google-pixel.device-black .device-header .device-sensors::after {
+  background: #0d0d0d;
+}
+
+.device-google-pixel.device-black .device-btns,
+.device-google-pixel.device-black .device-btns::after,
+.device-google-pixel.device-black .device-btns::before {
+  background: #363635;
+}
+
+.device-google-pixel.device-black .device-power {
+  background: #363635;
+}
+
+.device-google-pixel.device-blue {
+  box-shadow: inset 0 0 0 2px #2a5aff, inset 0 0 0 6px #7695ff, inset 0 0 0 10px white;
+}
+
+.device-google-pixel.device-blue .device-content {
+  background-image: url("../src/img/bg-04.jpg");
+}
+
+.device-google-pixel.device-blue .device-btns,
+.device-google-pixel.device-blue .device-btns::after,
+.device-google-pixel.device-blue .device-btns::before {
+  background: #2a5aff;
+}
+
+.device-google-pixel.device-blue .device-power {
+  background: #2a5aff;
+}
+
 .device-galaxy-s8 {
   background: #222;
   border: solid #cfcfcf;
