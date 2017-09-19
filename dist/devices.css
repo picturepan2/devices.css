@@ -1406,3 +1406,148 @@
   top: 12px;
   width: 194px;
 }
+
+.device-apple-watch {
+  height: 374px;
+  padding: 70px 0;
+  position: relative;
+  width: 200px;
+  z-index: 1;
+}
+
+.device-apple-watch .device-frame {
+  background: #0d0d0d;
+  border-radius: 40px;
+  box-shadow: inset 0 0 2px 2px #3c3b3b, inset 0 0 0 8px #555, inset 0 0 0 10px #3c3b3b;
+  height: 234px;
+  padding: 32px;
+  position: relative;
+  width: 200px;
+}
+
+.device-apple-watch .device-frame .device-content {
+  background-color: #fff;
+  background-image: url("../src/img/bg-02.jpg");
+  background-position: center center;
+  background-size: cover;
+  border: 2px solid #222;
+  border-radius: 2px;
+  height: 170px;
+  position: relative;
+  width: 136px;
+}
+
+.device-apple-watch .device-frame::before {
+  box-shadow: 0 -2px 24px 0 #3c3b3b, 0 2px 24px 0 #3c3b3b;
+  content: "";
+  height: 234px;
+  left: 50%;
+  margin-left: -68px;
+  position: absolute;
+  top: 0;
+  width: 136px;
+  z-index: -1;
+}
+
+.device-apple-watch .device-btns {
+  background: #555;
+  border-left: 2px solid #222;
+  border-radius: 8px 4px 4px 8px / 20px 4px 4px 20px;
+  box-shadow: inset 0 0 2px 2px #3c3b3b;
+  height: 44px;
+  position: absolute;
+  right: -10px;
+  top: 122px;
+  width: 16px;
+}
+
+.device-apple-watch .device-btns::after {
+  background: #555;
+  border-left: 2px solid #2f2f2f;
+  border-radius: 4px 2px 2px 4px / 10px 2px 2px 10px;
+  box-shadow: inset 0 0 1px 2px #3c3b3b;
+  content: "";
+  height: 66px;
+  position: absolute;
+  right: 6px;
+  top: 66px;
+  width: 8px;
+}
+
+.device-apple-watch .device-btns::before {
+  background: #3c3b3b;
+  box-shadow: 0 -16px #3c3b3b, 0 -12px #3c3b3b, 0 -8px #3c3b3b, 0 -4px #3c3b3b, 0 4px #3c3b3b, 0 8px #3c3b3b, 0 12px #3c3b3b, 0 16px #3c3b3b;
+  content: "";
+  height: 2px;
+  margin-top: -1px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 6px;
+}
+
+.device-apple-watch .device-power {
+  background: linear-gradient(to top, #484848 5%, #555 35%, #555 100%);
+  border-radius: 0 0 200px 200px / 0 0 60px 60px;
+  bottom: 0;
+  box-shadow: 0 2px 0 0 #3c3b3b;
+  height: 80px;
+  left: 50%;
+  margin-left: -60px;
+  position: absolute;
+  width: 120px;
+  z-index: -2;
+}
+
+.device-apple-watch .device-power::after,
+.device-apple-watch .device-power::before {
+  bottom: 25px;
+  content: "";
+  height: 70px;
+  position: absolute;
+  width: 100px;
+  z-index: -10;
+}
+
+.device-apple-watch .device-power::after {
+  background: radial-gradient(circle at bottom left, transparent 0, transparent 75%, #555 75%, #555 100%);
+  left: -92px;
+}
+
+.device-apple-watch .device-power::before {
+  background: radial-gradient(circle at bottom right, transparent 0, transparent 75%, #555 75%, #555 100%);
+  right: -92px;
+}
+
+.device-apple-watch .device-home {
+  background: linear-gradient(to bottom, #484848 5%, #555 35%, #555 100%);
+  border-radius: 200px 200px 0 0 / 60px 60px 0 0;
+  box-shadow: 0 -2px 0 0 #3c3b3b;
+  height: 80px;
+  left: 50%;
+  margin-left: -60px;
+  position: absolute;
+  top: 0;
+  width: 120px;
+  z-index: -2;
+}
+
+.device-apple-watch .device-home::after,
+.device-apple-watch .device-home::before {
+  content: "";
+  height: 70px;
+  position: absolute;
+  top: 25px;
+  width: 100px;
+  z-index: -10;
+}
+
+.device-apple-watch .device-home::after {
+  background: radial-gradient(circle at top left, transparent 0, transparent 75%, #555 75%, #555 100%);
+  left: -92px;
+}
+
+.device-apple-watch .device-home::before {
+  background: radial-gradient(circle at top right, transparent 0, transparent 75%, #555 75%, #555 100%);
+  right: -92px;
+}

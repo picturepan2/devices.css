@@ -1,34 +1,25 @@
-// iPad Pro
-$device-silver: #e2e3e4;
-$device-silver-dark: darken($device-silver, 10%);
-$device-silver-panel: #fff;
-$device-gold: #f7e8dd;
-$device-gold-dark: darken($device-gold, 20%);
-$device-gold-panel: #fff;
-$device-rosegold: #facfc9;
-$device-rosegold-dark: darken($device-rosegold, 10%);
-$device-rosegold-panel: #fff;
-$device-spacegray: #9b9ba0;
-$device-spacegray-dark: darken($device-spacegray, 10%);
-$device-spacegray-panel: #222;
+// Apple Watch
+$device-gray: #555;
+$device-gray-dark: darken($device-gray, 10%);
+$device-gray-panel: #0d0d0d;
 
-.device-ipad-pro {
-  background: $device-silver-panel;
-  border-radius: 38px;
-  box-shadow: inset 0 0 0 2px $device-silver-dark, inset 0 0 0 6px $device-silver;
-  height: 1048px;
-  padding: 6px;
+.device-apple-watch {
+  height: 374px;
+  padding: 70px 0;
   position: relative;
-  width: 729px;
+  width: 200px;
   z-index: 1;
 
   .device-frame {
-    border-radius: 32px;
-    height: 1036px;
-    padding: 73px 25px;
-    width: 717px;
+    background: $device-gray-panel;
+    border-radius: 40px;
+    box-shadow: inset 0 0 2px 2px $device-gray-dark, inset 0 0 0 8px $device-gray, inset 0 0 0 10px $device-gray-dark;
+    height: 234px;
+    padding: 32px;
+    position: relative;
+    width: 200px;
 
-    // 2224-by-1668-pixel resolution
+    // 272-by-340-pixel resolution
     .device-content {
       background-color: #fff;
       background-image: url("../src/img/bg-02.jpg");
@@ -36,46 +27,120 @@ $device-spacegray-panel: #222;
       background-size: cover;
       border: 2px solid #222;
       border-radius: 2px;
-      height: 890px;
+      height: 170px;
       position: relative;
-      width: 667px;
+      width: 136px;
+    }
+
+    &::before {
+      box-shadow: 0 -2px 24px 0 $device-gray-dark, 0 2px 24px 0 $device-gray-dark;
+      content: "";
+      height: 234px;
+      left: 50%;
+      margin-left: -68px;
+      position: absolute;
+      top: 0;
+      width: 136px;
       z-index: -1;
     }
   }
 
-  .device-header {
-    height: 73px;
-    left: 50%;
-    margin-left: -5px;
+  .device-btns {
+    background: $device-gray;
+    border-left: 2px solid darken($device-gray-dark, 10%);
+    border-radius: 8px 4px 4px 8px / 20px 4px 4px 20px;
+    box-shadow: inset 0 0 2px 2px $device-gray-dark;
+    height: 44px;
     position: absolute;
-    top: 6px;
-    width: 10px;
-    z-index: 199;
+    right: -10px;
+    top: 122px;
+    width: 16px;
+
+    &::after {
+      background: $device-gray;
+      border-left: 2px solid darken($device-gray-dark, 5%);
+      border-radius: 4px 2px 2px 4px / 10px 2px 2px 10px;
+      box-shadow: inset 0 0 1px 2px $device-gray-dark;
+      content: "";
+      height: 66px;
+      right: 6px;
+      position: absolute;
+      top: 66px;
+      width: 8px;
+    }
+    
+    &::before {
+      background: $device-gray-dark;
+      box-shadow: 0 -16px $device-gray-dark, 0 -12px $device-gray-dark, 0 -8px $device-gray-dark, 0 -4px $device-gray-dark, 0 4px $device-gray-dark, 0 8px $device-gray-dark, 0 12px $device-gray-dark, 0 16px $device-gray-dark;
+      content: "";
+      height: 2px;
+      margin-top: -1px;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      width: 6px;
+    }
   }
 
-  .device-sensors {
+  .device-power {
+    background: linear-gradient(to top, lighten($device-gray-dark, 5%) 5%, $device-gray 35%, $device-gray 100%);
+    border-radius: 0 0 200px 200px / 0 0 60px 60px;
+    bottom: 0;
+    box-shadow: 0 2px 0 0 $device-gray-dark;
+    height: 80px;
+    left: 50%;
+    margin-left: -60px;
+    position: absolute;
+    width: 120px;
+    z-index: -2;
+
+    &::after,
     &::before {
-      background: #666;
-      border-radius: 50%;
+      bottom: 25px;
       content: "";
-      height: 10px;
-      left: 50%;
-      margin-left: -5px;
-      margin-top: -5px;
+      height: 70px;
       position: absolute;
-      top: 50%;
-      width: 10px;
+      width: 100px;
+      z-index: -10;
+    }
+    &::after {
+      background: radial-gradient(circle at bottom left, transparent 0, transparent 75%, $device-gray 75%, $device-gray 100%);
+      left: -92px;
+    }
+    &::before {
+      background: radial-gradient(circle at bottom right, transparent 0, transparent 75%, $device-gray 75%, $device-gray 100%);
+      right: -92px;
     }
   }
 
   .device-home {
-    border: 2px solid $device-silver-dark;
-    border-radius: 50%;
-    bottom: 19px;
-    height: 44px;
+    background: linear-gradient(to bottom, lighten($device-gray-dark, 5%) 5%, $device-gray 35%, $device-gray 100%);
+    border-radius: 200px 200px 0 0 / 60px 60px 0 0;
+    box-shadow: 0 -2px 0 0 $device-gray-dark;
+    height: 80px;
     left: 50%;
-    margin-left: -22px;
+    margin-left: -60px;
     position: absolute;
-    width: 44px;
+    top: 0;
+    width: 120px;
+    z-index: -2;
+
+    &::after,
+    &::before {
+      content: "";
+      height: 70px;
+      position: absolute;
+      top: 25px;
+      width: 100px;
+      z-index: -10;
+    }
+    &::after {
+      background: radial-gradient(circle at top left, transparent 0, transparent 75%, $device-gray 75%, $device-gray 100%);
+      left: -92px;
+    }
+    &::before {
+      background: radial-gradient(circle at top right, transparent 0, transparent 75%, $device-gray 75%, $device-gray 100%);
+      right: -92px;
+    }
   }
 }

@@ -15,6 +15,7 @@ All devices are elegantly developed in pure CSS. The first are newly announced i
 - [MacBook Pro](https://picturepan2.github.io/devices.css/#macbook-pro) (Silver and Space Gray)
 - [Surface Studio](https://picturepan2.github.io/devices.css/#surface-studio)
 - [iMac Pro](https://picturepan2.github.io/devices.css/#imac-pro)
+- [Apple Watch](https://picturepan2.github.io/devices.css/#apple-watch)
 
 ## What's next
 
