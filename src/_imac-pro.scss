@@ -5,9 +5,7 @@ $device-spacegray-panel: #0d0d0d;
 
 .device-imac-pro {
   height: 494px;
-  position: relative;
   width: 624px;
-  z-index: 1;
 
   .device-frame {
     background: $device-spacegray-panel;
@@ -17,19 +15,6 @@ $device-spacegray-panel: #0d0d0d;
     padding: 24px 24px 80px 24px;
     position: relative;
     width: 624px;
-
-    // 5120‑by‑2880-pixel resolution
-    .device-content {
-      background-color: #fff;
-      background-image: url("../src/img/bg-08.jpg");
-      background-position: center center;
-      background-size: cover;
-      border: 2px solid lighten($device-spacegray-panel, 2%);
-      border-radius: 2px;
-      height: 324px;
-      position: relative;
-      width: 576px;
-    }
 
     &::after {
       background: $device-spacegray-dark;
@@ -55,6 +40,19 @@ $device-spacegray-panel: #0d0d0d;
       width: 200px;
       z-index: 1;
     }
+  }
+
+  // 5120‑by‑2880-pixel resolution
+  .device-content {
+    background-color: #fff;
+    background-image: url("../src/img/bg-08.jpg");
+    background-position: center center;
+    background-size: cover;
+    border: 2px solid lighten($device-spacegray-panel, 2%);
+    border-radius: 2px;
+    height: 324px;
+    position: relative;
+    width: 576px;
   }
 
   .device-power {

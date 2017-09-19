@@ -14,9 +14,7 @@ $device-rosegold-panel: #0d0d0d;
 
 .device-macbook {
   height: 432px;
-  position: relative;
   width: 740px;
-  z-index: 1;
 
   .device-frame {
     background: $device-silver-panel;
@@ -27,19 +25,6 @@ $device-rosegold-panel: #0d0d0d;
     padding: 29px 19px 39px 19px;
     position: relative;
     width: 614px;
-
-    // 1440-by-900-pixel resolution
-    .device-content {
-      background-color: #fff;
-      background-image: url("../src/img/bg-07.jpg");
-      background-position: center center;
-      background-size: cover;
-      border: 2px solid lighten($device-silver-panel, 2%);
-      border-radius: 2px;
-      height: 360px;
-      position: relative;
-      width: 576px;
-    }
 
     &::after {
       background: lighten($device-silver-panel, 10%);
@@ -65,6 +50,19 @@ $device-rosegold-panel: #0d0d0d;
       width: 200px;
       z-index: 1;
     }
+  }
+
+  // 1440-by-900-pixel resolution
+  .device-content {
+    background-color: #fff;
+    background-image: url("../src/img/bg-07.jpg");
+    background-position: center center;
+    background-size: cover;
+    border: 2px solid lighten($device-silver-panel, 2%);
+    border-radius: 2px;
+    height: 360px;
+    position: relative;
+    width: 576px;
   }
 
   .device-power {

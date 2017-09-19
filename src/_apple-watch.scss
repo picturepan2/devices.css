@@ -6,9 +6,7 @@ $device-gray-panel: #0d0d0d;
 .device-apple-watch {
   height: 374px;
   padding: 70px 0;
-  position: relative;
   width: 200px;
-  z-index: 1;
 
   .device-frame {
     background: $device-gray-panel;
@@ -22,10 +20,10 @@ $device-gray-panel: #0d0d0d;
     // 272-by-340-pixel resolution
     .device-content {
       background-color: #fff;
-      background-image: url("../src/img/bg-02.jpg");
+      background-image: url("../src/img/bg-08.jpg");
       background-position: center center;
       background-size: cover;
-      border: 2px solid #222;
+      border: 2px solid lighten($device-silver-panel, 2%);
       border-radius: 2px;
       height: 170px;
       position: relative;

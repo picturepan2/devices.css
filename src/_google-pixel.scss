@@ -10,33 +10,29 @@ $device-blue-dark: darken($device-blue, 15%);
 $device-blue-panel: #f7f7f8;
 
 .device-google-pixel {
-  background: $device-silver-panel;
-  border-radius: 54px;
-  box-shadow: inset 0 0 0 2px $device-silver-dark, inset 0 0 0 6px $device-silver, inset 0 0 0 10px lighten($device-silver-panel, 10%);
   height: 744px;
-  position: relative;
   width: 360px;
-  z-index: 1;
 
   .device-frame {
-    border-radius: 48px;
+    background: $device-silver-panel;
+    border-radius: 54px;
+    box-shadow: inset 0 0 0 2px $device-silver-dark, inset 0 0 0 6px $device-silver, inset 0 0 0 10px lighten($device-silver-panel, 10%);
     height: 744px;
     padding: 82px 18px 86px 18px;
     width: 360px;
+  }
 
-    // 1920-by-1080-pixel resolution
-    .device-content {
-      background-color: #fff;
-      background-image: url("../src/img/bg-06.jpg");
-      background-position: center center;
-      background-size: cover;
-      border: 2px solid #222;
-      border-radius: 2px;
-      height: 576px;
-      position: relative;
-      width: 324px;
-      z-index: -1;
-    }
+  // 1920-by-1080-pixel resolution
+  .device-content {
+    background-color: #fff;
+    background-image: url("../src/img/bg-06.jpg");
+    background-position: center center;
+    background-size: cover;
+    border: 2px solid #222;
+    border-radius: 2px;
+    height: 576px;
+    position: relative;
+    width: 324px;
   }
 
   .device-stripe {
@@ -133,8 +129,10 @@ $device-blue-panel: #f7f7f8;
 
   // Black edition 
   &.device-black {
-    background: $device-black-panel;
-    box-shadow: inset 0 0 0 2px $device-black-dark, inset 0 0 0 6px $device-black, inset 0 0 0 10px lighten($device-black-panel, 10%);
+    .device-frame {
+      background: $device-black-panel;
+      box-shadow: inset 0 0 0 2px $device-black-dark, inset 0 0 0 6px $device-black, inset 0 0 0 10px lighten($device-black-panel, 10%);
+    }
 
     .device-content {
       background-image: url("../src/img/bg-04.jpg");
@@ -152,11 +150,11 @@ $device-blue-panel: #f7f7f8;
       &::after {
         background: #444;
       }
+    }
 
-      .device-sensors {
-        &::after {
-          background: #0d0d0d;
-        }
+    .device-sensors {
+      &::after {
+        background: #0d0d0d;
       }
     }
 
@@ -175,7 +173,9 @@ $device-blue-panel: #f7f7f8;
 
   // Blue edition
   &.device-blue {
-    box-shadow: inset 0 0 0 2px $device-blue-dark, inset 0 0 0 6px $device-blue, inset 0 0 0 10px lighten($device-blue-panel, 10%);
+    .device-frame {
+      box-shadow: inset 0 0 0 2px $device-blue-dark, inset 0 0 0 6px $device-blue, inset 0 0 0 10px lighten($device-blue-panel, 10%);
+    }
 
     .device-content {
       background-image: url("../src/img/bg-04.jpg");

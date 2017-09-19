@@ -7,46 +7,42 @@ $device-blue-dark: darken($device-blue, 20%);
 $device-blue-panel: #222;
 
 .device-galaxy-s8 {
-  background: $device-black-panel;
-  border: solid $device-black;
-  border-radius: 46px;
-  border-width: 4px 0;
-  box-shadow: inset 0 0 0 2px $device-black-dark;
   height: 686px;
-  position: relative;
   width: 316px;
-  z-index: 1;
 
   .device-frame {
-    border-radius: 48px;
+    background: $device-black-panel;
+    border: solid $device-black;
+    border-radius: 46px;
+    border-width: 4px 0;
+    box-shadow: inset 0 0 0 2px $device-black-dark;
     height: 686px;
     padding: 40px 8px 34px 8px;
     width: 316px;
+  }
 
-    // 2960-by-1440-pixel resolution
-    .device-content {
-      background-color: #fff;
-      background-image: url("../src/img/bg-04.jpg");
-      background-position: center center;
-      background-size: cover;
-      border: 2px solid #222;
-      border-radius: 28px;
-      height: 617px;
-      position: relative;
-      width: 300px;
-      z-index: -1;
-    }
+  // 2960-by-1440-pixel resolution
+  .device-content {
+    background-color: #fff;
+    background-image: url("../src/img/bg-04.jpg");
+    background-position: center center;
+    background-size: cover;
+    border: 2px solid #222;
+    border-radius: 28px;
+    height: 617px;
+    position: relative;
+    width: 300px;
   }
 
   .device-stripe {
     &::after,
     &::before {
-      border: solid rgba(#333, .10);
+      border: solid rgba(#333, .15);
       border-width: 4px 0;
       content: "";
       height: 686px;
       position: absolute;
-      top: -4px;
+      top: 0;
       width: 5px;
       z-index: 9;
     }
@@ -59,11 +55,11 @@ $device-blue-panel: #222;
   }
 
   .device-header {
-    height: 36px;
+    height: 40px;
     left: 50%;
     margin-left: -95px;
     position: absolute;
-    top: 4px;
+    top: 6px;
     width: 190px;
     z-index: 199;
 
@@ -110,7 +106,7 @@ $device-blue-panel: #222;
     background: $device-black-dark;
     border-radius: 2px 0 0 2px;
     height: 98px;
-    left: -1px;
+    left: -2px;
     position: absolute;
     top: 120px;
     width: 3px;
@@ -131,7 +127,7 @@ $device-blue-panel: #222;
     background: $device-black-dark;
     border-radius: 0 2px 2px 0;
     height: 46px;
-    right: -1px;
+    right: -2px;
     position: absolute;
     top: 218px;
     width: 3px;
@@ -150,8 +146,10 @@ $device-blue-panel: #222;
 
   // Coral Blue edition
   &.device-blue {
-    border-color: $device-blue;
-    box-shadow: inset 0 0 0 2px $device-blue-dark;
+    .device-frame {
+      border-color: $device-blue;
+      box-shadow: inset 0 0 0 2px $device-blue-dark;
+    }
 
     .device-content {
       background-image: url("../src/img/bg-05.jpg");

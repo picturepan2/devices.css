@@ -5,9 +5,7 @@ $device-silver-panel: #0d0d0d;
 
 .device-surface-studio {
   height: 526px;
-  position: relative;
   width: 640px;
-  z-index: 1;
 
   .device-frame {
     background: $device-silver-panel;
@@ -16,19 +14,19 @@ $device-silver-panel: #0d0d0d;
     height: 440px;
     padding: 20px;
     width: 640px;
+  }
 
-    // 4500-by-3000-pixel resolution
-    .device-content {
-      background-color: #fff;
-      background-image: url("../src/img/bg-09.jpg");
-      background-position: center center;
-      background-size: cover;
-      border: 2px solid lighten($device-silver-panel, 2%);
-      border-radius: 2px;
-      height: 400px;
-      position: relative;
-      width: 600px;
-    }
+  // 4500-by-3000-pixel resolution
+  .device-content {
+    background-color: #fff;
+    background-image: url("../src/img/bg-09.jpg");
+    background-position: center center;
+    background-size: cover;
+    border: 2px solid lighten($device-silver-panel, 2%);
+    border-radius: 2px;
+    height: 400px;
+    position: relative;
+    width: 600px;
   }
 
   .device-power {
