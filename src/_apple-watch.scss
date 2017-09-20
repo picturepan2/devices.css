@@ -16,31 +16,30 @@ $device-gray-panel: #0d0d0d;
     padding: 32px;
     position: relative;
     width: 200px;
+  }
 
-    // 272-by-340-pixel resolution
-    .device-content {
-      background-color: #fff;
-      background-image: url("../src/img/bg-08.jpg");
-      background-position: center center;
-      background-size: cover;
-      border: 2px solid lighten($device-silver-panel, 2%);
-      border-radius: 2px;
-      height: 170px;
-      position: relative;
-      width: 136px;
-    }
+  // 272-by-340-pixel resolution
+  .device-content {
+    background-color: #fff;
+    background-image: url("../src/img/bg-08.jpg");
+    background-position: center center;
+    background-size: cover;
+    border: 2px solid lighten($device-silver-panel, 2%);
+    border-radius: 2px;
+    height: 170px;
+    position: relative;
+    width: 136px;
+  }
 
-    &::before {
-      box-shadow: 0 -2px 24px 0 $device-gray-dark, 0 2px 24px 0 $device-gray-dark;
-      content: "";
-      height: 234px;
-      left: 50%;
-      margin-left: -68px;
-      position: absolute;
-      top: 0;
-      width: 136px;
-      z-index: -1;
-    }
+  .device-header {
+    box-shadow: 0 -2px 24px 0 $device-gray-dark, 0 2px 24px 0 $device-gray-dark;
+    height: 234px;
+    left: 50%;
+    margin-left: -68px;
+    position: absolute;
+    top: 70px;
+    width: 136px;
+    z-index: -1;
   }
 
   .device-btns {

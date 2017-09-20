@@ -14,6 +14,10 @@
   position: relative;
 }
 
+.device .device-frame {
+  z-index: 1;
+}
+
 .device-iphone-x {
   height: 694px;
   width: 342px;
@@ -918,7 +922,6 @@
   margin-left: -292px;
   position: absolute;
   width: 584px;
-  z-index: -1;
 }
 
 .device-macbook-pro {
@@ -984,6 +987,7 @@
   margin-top: -10px;
   position: relative;
   width: 740px;
+  z-index: 3;
 }
 
 .device-macbook-pro .device-power::after {
@@ -997,7 +1001,6 @@
   position: absolute;
   top: -2px;
   width: 120px;
-  z-index: 1;
 }
 
 .device-macbook-pro .device-home {
@@ -1008,6 +1011,7 @@
   margin: 0 auto;
   position: relative;
   width: 740px;
+  z-index: 2;
 }
 
 .device-macbook-pro.device-spacegray .device-frame {
@@ -1092,6 +1096,7 @@
   margin-top: -10px;
   position: relative;
   width: 740px;
+  z-index: 3;
 }
 
 .device-macbook .device-power::after {
@@ -1104,7 +1109,6 @@
   margin-left: -60px;
   position: absolute;
   width: 120px;
-  z-index: 1;
 }
 
 .device-macbook .device-home {
@@ -1115,6 +1119,7 @@
   margin: 0 auto;
   position: relative;
   width: 740px;
+  z-index: 2;
 }
 
 .device-macbook.device-gold .device-frame {
@@ -1392,7 +1397,7 @@
   width: 200px;
 }
 
-.device-apple-watch .device-frame .device-content {
+.device-apple-watch .device-content {
   background-color: #fff;
   background-image: url("../src/img/bg-08.jpg");
   background-position: center center;
@@ -1404,14 +1409,13 @@
   width: 136px;
 }
 
-.device-apple-watch .device-frame::before {
+.device-apple-watch .device-header {
   box-shadow: 0 -2px 24px 0 #3c3b3b, 0 2px 24px 0 #3c3b3b;
-  content: "";
   height: 234px;
   left: 50%;
   margin-left: -68px;
   position: absolute;
-  top: 0;
+  top: 70px;
   width: 136px;
   z-index: -1;
 }

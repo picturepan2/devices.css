@@ -68,6 +68,7 @@ $device-spacegray-panel: #0d0d0d;
     margin-top: -10px;
     position: relative;
     width: 740px;
+    z-index: 3;
 
     &::after {
       background: lighten($device-silver-dark, 5%);
@@ -80,7 +81,6 @@ $device-spacegray-panel: #0d0d0d;
       position: absolute;
       top: -2px;
       width: 120px;
-      z-index: 1;
     }
   }
 
@@ -92,6 +92,7 @@ $device-spacegray-panel: #0d0d0d;
     margin: 0 auto;
     position: relative;
     width: 740px;
+    z-index: 2;
   }
 
   // Space Gray edition
