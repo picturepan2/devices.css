@@ -11,7 +11,9 @@ gulp.task('watch', function() {
 
 gulp.task('build', function() {
   gulp.src('./src/*.scss')
-    .pipe(sass({outputStyle: 'compact', precision: 10}))
+    .pipe(sass({outputStyle: 'compact', precision: 10})
+      .on('error', sass.logError)
+    )
     .pipe(autoprefixer())
     .pipe(csscomb())
     .pipe(gulp.dest('./dist'))
