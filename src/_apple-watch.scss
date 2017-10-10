@@ -4,8 +4,7 @@ $device-gray-dark: darken($device-gray, 10%);
 $device-gray-panel: #0d0d0d;
 
 .device-apple-watch {
-  height: 374px;
-  padding: 70px 0;
+  height: 234px;
   width: 200px;
 
   .device-frame {
@@ -31,17 +30,6 @@ $device-gray-panel: #0d0d0d;
     width: 136px;
   }
 
-  .device-header {
-    box-shadow: 0 -2px 24px 0 $device-gray-dark, 0 2px 24px 0 $device-gray-dark;
-    height: 234px;
-    left: 50%;
-    margin-left: -68px;
-    position: absolute;
-    top: 70px;
-    width: 136px;
-    z-index: -1;
-  }
-
   .device-btns {
     background: $device-gray;
     border-left: 2px solid darken($device-gray-dark, 10%);
@@ -50,8 +38,9 @@ $device-gray-panel: #0d0d0d;
     height: 44px;
     position: absolute;
     right: -10px;
-    top: 122px;
+    top: 52px;
     width: 16px;
+    z-index: 99;
 
     &::after {
       background: $device-gray;
@@ -76,68 +65,6 @@ $device-gray-panel: #0d0d0d;
       right: 0;
       top: 50%;
       width: 6px;
-    }
-  }
-
-  .device-power {
-    background: linear-gradient(to top, lighten($device-gray-dark, 5%) 5%, $device-gray 35%, $device-gray 100%);
-    border-radius: 0 0 200px 200px / 0 0 60px 60px;
-    bottom: 0;
-    box-shadow: 0 2px 0 0 $device-gray-dark;
-    height: 80px;
-    left: 50%;
-    margin-left: -60px;
-    position: absolute;
-    width: 120px;
-    z-index: -2;
-
-    &::after,
-    &::before {
-      bottom: 25px;
-      content: "";
-      height: 70px;
-      position: absolute;
-      width: 100px;
-      z-index: -10;
-    }
-    &::after {
-      background: radial-gradient(circle at bottom left, transparent 0, transparent 75%, $device-gray 75%, $device-gray 100%);
-      left: -92px;
-    }
-    &::before {
-      background: radial-gradient(circle at bottom right, transparent 0, transparent 75%, $device-gray 75%, $device-gray 100%);
-      right: -92px;
-    }
-  }
-
-  .device-home {
-    background: linear-gradient(to bottom, lighten($device-gray-dark, 5%) 5%, $device-gray 35%, $device-gray 100%);
-    border-radius: 200px 200px 0 0 / 60px 60px 0 0;
-    box-shadow: 0 -2px 0 0 $device-gray-dark;
-    height: 80px;
-    left: 50%;
-    margin-left: -60px;
-    position: absolute;
-    top: 0;
-    width: 120px;
-    z-index: -2;
-
-    &::after,
-    &::before {
-      content: "";
-      height: 70px;
-      position: absolute;
-      top: 25px;
-      width: 100px;
-      z-index: -10;
-    }
-    &::after {
-      background: radial-gradient(circle at top left, transparent 0, transparent 75%, $device-gray 75%, $device-gray 100%);
-      left: -92px;
-    }
-    &::before {
-      background: radial-gradient(circle at top right, transparent 0, transparent 75%, $device-gray 75%, $device-gray 100%);
-      right: -92px;
     }
   }
 }

@@ -4,7 +4,7 @@ $device-spacegray-dark: darken($device-spacegray, 15%);
 $device-spacegray-panel: #0d0d0d;
 
 .device-imac-pro {
-  height: 494px;
+  height: 484px;
   width: 624px;
 
   .device-frame {
@@ -29,7 +29,7 @@ $device-spacegray-panel: #0d0d0d;
     &::before {
       bottom: 15px;
       color: $device-spacegray-panel;
-      content: "";
+      content: "";
       font-size: 24px;
       height: 24px;
       left: 50%;
@@ -57,49 +57,20 @@ $device-spacegray-panel: #0d0d0d;
 
   .device-power {
     border: solid transparent;
-    border-bottom-color: lighten($device-spacegray-panel, 10%);
-    border-width: 0 2px 50px 2px;
+    border-bottom-color: lighten($device-spacegray-panel, 15%);
+    border-width: 0 8px 50px 8px;
     height: 50px;
     margin: 0 auto;
     position: relative;
-    width: 122px;
-
-    &::after,
-    &::before {
-      content: "";
-      height: 50px;
-      position: absolute;
-      top: 0;
-      width: 200px;
-    }
-    &::after {
-      background: radial-gradient(circle at top left, transparent 0, transparent 85%, lighten($device-spacegray-panel, 10%) 85%, lighten($device-spacegray-panel, 10%) 100%);
-      left: -180px;
-    }
-    &::before {
-      background: radial-gradient(circle at top right, transparent 0, transparent 85%, lighten($device-spacegray-panel, 10%) 85%, lighten($device-spacegray-panel, 10%) 100%);
-      right: -180px;
-    }
+    width: 130px;
   }
 
   .device-home {
-    border: solid transparent;
-    border-bottom-color: $device-spacegray;
-    border-width: 0 26px 12px 26px;
-    height: 12px;
+    background: darken($device-spacegray-dark, 5%);
+    border-radius: 2px;
+    height: 6px;
     margin: 0 auto;
     position: relative;
-    width: 194px;
-
-    &::after {
-      background: $device-spacegray-dark;
-      border-radius: 0 0 4px 4px;
-      content: "";
-      height: 4px;
-      left: -26px;
-      position: absolute;
-      top: 12px;
-      width: 194px;
-    }
+    width: 180px;
   }
 }

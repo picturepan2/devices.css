@@ -35,29 +35,17 @@ $device-silver-panel: #0d0d0d;
     border-radius: 0 0 2px 2px;
     border-width: 0 4px 2px 4px;
     height: 32px;
-    margin: 50px auto 0 auto;
+    margin: 30px auto 0 auto;
     position: relative;
     width: 250px;
 
-    &::after,
-    &::before {
-      content: "";
-      position: absolute;
-    }
     &::after {
       background: darken($device-silver-dark, 10%);
+      content: "";
       height: 2px;
       left: -4px;
+      position: absolute;
       top: 4px;
-      width: 250px;
-    }
-    &::before {
-      border: 10px solid transparent;
-      border-top: 0;
-      border-bottom-color: $device-silver-dark;
-      height: 10px;
-      left: -4px;
-      top: -10px;
       width: 250px;
     }
   }
@@ -75,7 +63,7 @@ $device-silver-panel: #0d0d0d;
       content: "";
       left: 50%;
       position: absolute;
-      top: -85px;
+      top: -75px;
     }
     &::after {
       border: 6px solid darken($device-silver, 5%);

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*! Devices.css | MIT License | github.com/picturepan2/devices.css */
 .device,
 .device::before,
@@ -12,6 +11,7 @@
 
 .device {
   position: relative;
+  z-index: 1;
 }
 
 .device .device-frame {
@@ -1297,32 +1297,18 @@
   border-radius: 0 0 2px 2px;
   border-width: 0 4px 2px 4px;
   height: 32px;
-  margin: 50px auto 0 auto;
+  margin: 30px auto 0 auto;
   position: relative;
   width: 250px;
 }
 
-.device-surface-studio .device-power::after,
-.device-surface-studio .device-power::before {
-  content: "";
-  position: absolute;
-}
-
 .device-surface-studio .device-power::after {
   background: #adb0b3;
+  content: "";
   height: 2px;
   left: -4px;
+  position: absolute;
   top: 4px;
-  width: 250px;
-}
-
-.device-surface-studio .device-power::before {
-  border: 10px solid transparent;
-  border-bottom-color: #c8cacb;
-  border-top: 0;
-  height: 10px;
-  left: -4px;
-  top: -10px;
   width: 250px;
 }
 
@@ -1340,7 +1326,7 @@
   content: "";
   left: 50%;
   position: absolute;
-  top: -85px;
+  top: -75px;
 }
 
 .device-surface-studio .device-home::after {
@@ -1365,7 +1351,7 @@
 }
 
 .device-imac-pro {
-  height: 494px;
+  height: 484px;
   width: 624px;
 }
 
@@ -1393,7 +1379,7 @@
 .device-imac-pro .device-frame::before {
   bottom: 15px;
   color: #0d0d0d;
-  content: "";
+  content: "";
   font-size: 24px;
   height: 24px;
   left: 50%;
@@ -1419,57 +1405,25 @@
 
 .device-imac-pro .device-power {
   border: solid transparent;
-  border-bottom-color: #272626;
-  border-width: 0 2px 50px 2px;
+  border-bottom-color: #333;
+  border-width: 0 8px 50px 8px;
   height: 50px;
   margin: 0 auto;
   position: relative;
-  width: 122px;
-}
-
-.device-imac-pro .device-power::after,
-.device-imac-pro .device-power::before {
-  content: "";
-  height: 50px;
-  position: absolute;
-  top: 0;
-  width: 200px;
-}
-
-.device-imac-pro .device-power::after {
-  background: radial-gradient(circle at top left, transparent 0, transparent 85%, #272626 85%, #272626 100%);
-  left: -180px;
-}
-
-.device-imac-pro .device-power::before {
-  background: radial-gradient(circle at top right, transparent 0, transparent 85%, #272626 85%, #272626 100%);
-  right: -180px;
+  width: 130px;
 }
 
 .device-imac-pro .device-home {
-  border: solid transparent;
-  border-bottom-color: #54525b;
-  border-width: 0 26px 12px 26px;
-  height: 12px;
+  background: #222225;
+  border-radius: 2px;
+  height: 6px;
   margin: 0 auto;
   position: relative;
-  width: 194px;
-}
-
-.device-imac-pro .device-home::after {
-  background: #2f2e33;
-  border-radius: 0 0 4px 4px;
-  content: "";
-  height: 4px;
-  left: -26px;
-  position: absolute;
-  top: 12px;
-  width: 194px;
+  width: 180px;
 }
 
 .device-apple-watch {
-  height: 374px;
-  padding: 70px 0;
+  height: 234px;
   width: 200px;
 }
 
@@ -1495,17 +1449,6 @@
   width: 136px;
 }
 
-.device-apple-watch .device-header {
-  box-shadow: 0 -2px 24px 0 #3c3b3b, 0 2px 24px 0 #3c3b3b;
-  height: 234px;
-  left: 50%;
-  margin-left: -68px;
-  position: absolute;
-  top: 70px;
-  width: 136px;
-  z-index: -1;
-}
-
 .device-apple-watch .device-btns {
   background: #555;
   border-left: 2px solid #222;
@@ -1514,8 +1457,9 @@
   height: 44px;
   position: absolute;
   right: -10px;
-  top: 122px;
+  top: 52px;
   width: 16px;
+  z-index: 99;
 }
 
 .device-apple-watch .device-btns::after {
@@ -1541,70 +1485,4 @@
   right: 0;
   top: 50%;
   width: 6px;
-}
-
-.device-apple-watch .device-power {
-  background: linear-gradient(to top, #484848 5%, #555 35%, #555 100%);
-  border-radius: 0 0 200px 200px / 0 0 60px 60px;
-  bottom: 0;
-  box-shadow: 0 2px 0 0 #3c3b3b;
-  height: 80px;
-  left: 50%;
-  margin-left: -60px;
-  position: absolute;
-  width: 120px;
-  z-index: -2;
-}
-
-.device-apple-watch .device-power::after,
-.device-apple-watch .device-power::before {
-  bottom: 25px;
-  content: "";
-  height: 70px;
-  position: absolute;
-  width: 100px;
-  z-index: -10;
-}
-
-.device-apple-watch .device-power::after {
-  background: radial-gradient(circle at bottom left, transparent 0, transparent 75%, #555 75%, #555 100%);
-  left: -92px;
-}
-
-.device-apple-watch .device-power::before {
-  background: radial-gradient(circle at bottom right, transparent 0, transparent 75%, #555 75%, #555 100%);
-  right: -92px;
-}
-
-.device-apple-watch .device-home {
-  background: linear-gradient(to bottom, #484848 5%, #555 35%, #555 100%);
-  border-radius: 200px 200px 0 0 / 60px 60px 0 0;
-  box-shadow: 0 -2px 0 0 #3c3b3b;
-  height: 80px;
-  left: 50%;
-  margin-left: -60px;
-  position: absolute;
-  top: 0;
-  width: 120px;
-  z-index: -2;
-}
-
-.device-apple-watch .device-home::after,
-.device-apple-watch .device-home::before {
-  content: "";
-  height: 70px;
-  position: absolute;
-  top: 25px;
-  width: 100px;
-  z-index: -10;
-}
-
-.device-apple-watch .device-home::after {
-  background: radial-gradient(circle at top left, transparent 0, transparent 75%, #555 75%, #555 100%);
-  left: -92px;
-}
-
-.device-apple-watch .device-home::before {
-  background: radial-gradient(circle at top right, transparent 0, transparent 75%, #555 75%, #555 100%);
-  right: -92px;
 }
