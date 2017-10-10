@@ -8,6 +8,7 @@ All devices are elegantly developed in pure CSS. The first are newly announced i
 
 - [iPhone X](https://picturepan2.github.io/devices.css/#iphone-x) (Silver)
 - [iPhone 8](https://picturepan2.github.io/devices.css/#iphone-8) (Silver, Gold and Space Gray)
+- [Google Pixel 2 XL](https://picturepan2.github.io/devices.css/#google-pixel-2-xl) (Black)
 - [Google Pixel](https://picturepan2.github.io/devices.css/#google-pixel) (Very Silver, Quite Black and Really Blue)
 - [Samsung Galaxy S8](https://picturepan2.github.io/devices.css/#galaxy-s8) (Midnight Black and Coral Blue)
 - [iPad Pro](https://picturepan2.github.io/devices.css/#ipad-pro) (Silver, Gold, Rose Gold and Space Gray)
