@@ -1,9 +1,9 @@
-/*! Devices.css | MIT License | github.com/picturepan2/devices.css */
-// Core variables and mixins
+// Variables and mixins
 @import "variables";
 
+/*! Devices.css v#{$version} | MIT License | github.com/picturepan2/devices.css */
 .version::after {
-  content: "0.1.12";
+  content: "#{$version}";
 }
 
 /*  Core style */
