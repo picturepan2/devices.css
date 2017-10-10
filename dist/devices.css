@@ -26,7 +26,7 @@
 .device-iphone-x .device-frame {
   background: #222;
   border-radius: 54px;
-  box-shadow: inset 0 0 0 2px #606467, inset 0 0 0 6px #e2e3e4;
+  box-shadow: inset 0 0 2px 2px #c8cacb, inset 0 0 0 6px #e2e3e4;
   height: 694px;
   padding: 22px;
   width: 342px;
@@ -122,7 +122,7 @@
 }
 
 .device-iphone-x .device-btns {
-  background: #606467;
+  background: #c8cacb;
   height: 26px;
   left: -2px;
   position: absolute;
@@ -132,7 +132,7 @@
 
 .device-iphone-x .device-btns::after,
 .device-iphone-x .device-btns::before {
-  background: #606467;
+  background: #c8cacb;
   content: "";
   height: 50px;
   left: 0;
@@ -149,7 +149,7 @@
 }
 
 .device-iphone-x .device-power {
-  background: #606467;
+  background: #c8cacb;
   height: 80px;
   position: absolute;
   right: -2px;
@@ -1430,11 +1430,22 @@
 .device-apple-watch .device-frame {
   background: #0d0d0d;
   border-radius: 40px;
-  box-shadow: inset 0 0 2px 2px #3c3b3b, inset 0 0 0 8px #555, inset 0 0 0 10px #3c3b3b;
+  box-shadow: inset 0 0 2px 2px #adb0b3, inset 0 0 0 6px #e2e3e4, inset 0 0 0 8px #e2e3e4;
   height: 234px;
   padding: 32px;
   position: relative;
   width: 200px;
+}
+
+.device-apple-watch .device-frame::after {
+  border-radius: 30px;
+  box-shadow: inset 0 0 25px 0 rgba(255, 255, 255, .75);
+  content: "";
+  height: 216px;
+  left: 9px;
+  position: absolute;
+  top: 9px;
+  width: 182px;
 }
 
 .device-apple-watch .device-content {
@@ -1450,10 +1461,10 @@
 }
 
 .device-apple-watch .device-btns {
-  background: #555;
-  border-left: 2px solid #222;
+  background: #e2e3e4;
+  border-left: 2px solid #adb0b3;
   border-radius: 8px 4px 4px 8px / 20px 4px 4px 20px;
-  box-shadow: inset 0 0 2px 2px #3c3b3b;
+  box-shadow: inset 0 0 2px 2px #adb0b3;
   height: 44px;
   position: absolute;
   right: -10px;
@@ -1463,10 +1474,10 @@
 }
 
 .device-apple-watch .device-btns::after {
-  background: #555;
-  border-left: 2px solid #2f2f2f;
+  background: #e2e3e4;
+  border-left: 2px solid #adb0b3;
   border-radius: 4px 2px 2px 4px / 10px 2px 2px 10px;
-  box-shadow: inset 0 0 1px 2px #3c3b3b;
+  box-shadow: inset 0 0 1px 2px #adb0b3;
   content: "";
   height: 66px;
   position: absolute;
@@ -1476,8 +1487,8 @@
 }
 
 .device-apple-watch .device-btns::before {
-  background: #3c3b3b;
-  box-shadow: 0 -16px #3c3b3b, 0 -12px #3c3b3b, 0 -8px #3c3b3b, 0 -4px #3c3b3b, 0 4px #3c3b3b, 0 8px #3c3b3b, 0 12px #3c3b3b, 0 16px #3c3b3b;
+  background: #adb0b3;
+  box-shadow: 0 -16px #adb0b3, 0 -12px #adb0b3, 0 -8px #adb0b3, 0 -4px #adb0b3, 0 4px #adb0b3, 0 8px #adb0b3, 0 12px #adb0b3, 0 16px #adb0b3;
   content: "";
   height: 2px;
   margin-top: -1px;

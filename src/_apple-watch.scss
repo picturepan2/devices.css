@@ -1,6 +1,6 @@
 // Apple Watch
-$device-gray: #555;
-$device-gray-dark: darken($device-gray, 10%);
+$device-gray: #e2e3e4;
+$device-gray-dark: darken($device-gray, 20%);
 $device-gray-panel: #0d0d0d;
 
 .device-apple-watch {
@@ -10,11 +10,22 @@ $device-gray-panel: #0d0d0d;
   .device-frame {
     background: $device-gray-panel;
     border-radius: 40px;
-    box-shadow: inset 0 0 2px 2px $device-gray-dark, inset 0 0 0 8px $device-gray, inset 0 0 0 10px $device-gray-dark;
+    box-shadow: inset 0 0 2px 2px $device-gray-dark, inset 0 0 0 6px $device-gray, inset 0 0 0 8px $device-gray;
     height: 234px;
     padding: 32px;
     position: relative;
     width: 200px;
+
+    &::after {
+      border-radius: 30px;
+      box-shadow: inset 0 0 25px 0 rgba(255, 255, 255, .75);
+      content: "";
+      height: 216px;
+      left: 9px;
+      position: absolute;
+      top: 9px;
+      width: 182px;
+    }
   }
 
   // 272-by-340-pixel resolution
@@ -32,7 +43,7 @@ $device-gray-panel: #0d0d0d;
 
   .device-btns {
     background: $device-gray;
-    border-left: 2px solid darken($device-gray-dark, 10%);
+    border-left: 2px solid $device-gray-dark;
     border-radius: 8px 4px 4px 8px / 20px 4px 4px 20px;
     box-shadow: inset 0 0 2px 2px $device-gray-dark;
     height: 44px;
@@ -44,7 +55,7 @@ $device-gray-panel: #0d0d0d;
 
     &::after {
       background: $device-gray;
-      border-left: 2px solid darken($device-gray-dark, 5%);
+      border-left: 2px solid $device-gray-dark;
       border-radius: 4px 2px 2px 4px / 10px 2px 2px 10px;
       box-shadow: inset 0 0 1px 2px $device-gray-dark;
       content: "";
