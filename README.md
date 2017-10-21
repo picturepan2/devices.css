@@ -36,9 +36,8 @@ Go to [Demo page](https://picturepan2.github.io/devices.css/) to copy the device
     <div class="device-content"></div>
   </div>
   <div class="device-stripe"></div>
-  <div class="device-header">
-    <div class="device-sensors"></div>
-  </div>
+  <div class="device-header"></div>
+  <div class="device-sensors"></div>
   <div class="device-btns"></div>
   <div class="device-power"></div>
 </div>

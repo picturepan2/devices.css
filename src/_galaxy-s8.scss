@@ -54,30 +54,17 @@ $device-blue-panel: #222;
     }
   }
 
-  .device-header {
-    height: 40px;
-    left: 50%;
-    margin-left: -95px;
-    position: absolute;
-    top: 6px;
-    width: 190px;
-    z-index: 199;
-
-    &::after {
-      background: #666;
-      border-radius: 2.5px;
-      content: "";
-      height: 4px;
-      left: 50%;
-      margin-left: -20px;
-      margin-top: -2px;
-      position: absolute;
-      top: 50%;
-      width: 40px;
-    }
-  }
-
   .device-sensors {
+    background: #666;
+    border-radius: 2.5px;
+    height: 4px;
+    left: 50%;
+    margin-left: -20px;
+    margin-top: -2px;
+    position: absolute;
+    top: 26px;
+    width: 40px;
+
     &::after,
     &::before {
       background: #666;
@@ -89,14 +76,14 @@ $device-blue-panel: #222;
     &::after {
       box-shadow: -160px 0 #333, -145px 0 #333, -200px 0 #333;
       height: 6px;
-      right: 0;
+      right: -75px;
       margin-top: -3px;
       width: 6px;
     }
     &::before {
       box-shadow: 155px 0 #666;
       height: 10px;
-      left: 0;
+      left: -75px;
       margin-top: -5px;
       width: 10px;
     }
@@ -131,17 +118,6 @@ $device-blue-panel: #222;
     position: absolute;
     top: 218px;
     width: 3px;
-  }
-
-  .device-home {
-    border: 2px solid $device-black-dark;
-    border-radius: 50%;
-    bottom: 20px;
-    height: 46px;
-    left: 50%;
-    margin-left: -23px;
-    position: absolute;
-    width: 46px;
   }
 
   // Coral Blue edition

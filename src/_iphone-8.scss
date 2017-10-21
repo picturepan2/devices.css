@@ -55,30 +55,28 @@ $device-spacegray-panel: #222;
     }
   }
 
+  // Home button
   .device-header {
-    height: 36px;
+    border: 2px solid $device-silver-dark;
+    border-radius: 50%;
+    bottom: 20px;
+    height: 46px;
     left: 50%;
-    margin-left: -64px;
+    margin-left: -23px;
     position: absolute;
-    top: 26px;
-    width: 128px;
-    z-index: 199;
-
-    &::after {
-      background: #666;
-      border-radius: 2.5px;
-      content: "";
-      height: 5px;
-      left: 50%;
-      margin-left: -30px;
-      margin-top: -2.5px;
-      position: absolute;
-      top: 50%;
-      width: 60px;
-    }
+    width: 46px;
   }
 
   .device-sensors {
+    background: #666;
+    border-radius: 2.5px;
+    height: 5px;
+    left: 50%;
+    margin-left: -30px;
+    position: absolute;
+    top: 41.5px;
+    width: 60px;
+
     &::after,
     &::before {
       background: #666;
@@ -90,13 +88,12 @@ $device-spacegray-panel: #222;
       height: 8px;
       left: 50%;
       margin-left: -4px;
-      margin-top: -4px;
-      top: 0;
+      top: -20px;
       width: 8px;
     }
     &::before {
       height: 10px;
-      left: 0;
+      left: -34px;
       margin-top: -5px;
       top: 50%;
       width: 10px;
@@ -138,17 +135,6 @@ $device-spacegray-panel: #222;
     width: 3px;
   }
 
-  .device-home {
-    border: 2px solid $device-silver-dark;
-    border-radius: 50%;
-    bottom: 20px;
-    height: 46px;
-    left: 50%;
-    margin-left: -23px;
-    position: absolute;
-    width: 46px;
-  }
-
   // Gold edition 
   &.device-gold {
     .device-frame {
@@ -157,6 +143,10 @@ $device-spacegray-panel: #222;
 
     .device-content {
       background-image: url("../src/img/bg-02.jpg");
+    }
+
+    .device-header {
+      border-color: $device-gold-dark;
     }
 
     .device-btns {
@@ -169,10 +159,6 @@ $device-spacegray-panel: #222;
 
     .device-power {
       background: $device-gold-dark;
-    }
-
-    .device-home {
-      border-color: $device-gold-dark;
     }
   }
 
@@ -200,10 +186,6 @@ $device-spacegray-panel: #222;
       &::before {
         background: $device-spacegray-dark;
       }
-    }
-
-    .device-power {
-      background: $device-spacegray-dark;
     }
   }
 }

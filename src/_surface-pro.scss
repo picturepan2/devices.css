@@ -14,7 +14,6 @@ $device-silver-panel: #0d0d0d;
     height: 394px;
     margin: 0 auto;
     padding: 26px 24px;
-    position: relative;
     width: 561px;
   }
 
@@ -51,25 +50,15 @@ $device-silver-panel: #0d0d0d;
     }
   }
 
-  .device-header {
-    height: 24px;
+  .device-sensors {
+    background: #333;
+    border-radius: 50%;
+    height: 6px;
     left: 50%;
-    margin-left: -24px;
+    margin-left: -3px;
+    margin-top: -3px;
     position: absolute;
-    top: 2px;
-    width: 48px;
-
-    &::after {
-      background: #333;
-      border-radius: 50%;
-      content: "";
-      height: 6px;
-      left: 50%;
-      margin-left: -3px;
-      margin-top: -3px;
-      position: absolute;
-      top: 50%;
-      width: 6px;
-    }
+    top: 14px;
+    width: 6px;
   }
 }

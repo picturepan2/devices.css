@@ -4,7 +4,7 @@ $device-silver-dark: darken($device-silver, 10%);
 $device-silver-panel: #0d0d0d;
 
 .device-surface-studio {
-  height: 526px;
+  height: 506px;
   width: 640px;
 
   .device-frame {
@@ -29,33 +29,14 @@ $device-silver-panel: #0d0d0d;
     width: 600px;
   }
 
-  .device-power {
-    background: lighten($device-silver, 5%);
-    border: solid $device-silver;
-    border-radius: 0 0 2px 2px;
-    border-width: 0 4px 2px 4px;
-    height: 32px;
-    margin: 30px auto 0 auto;
-    position: relative;
-    width: 250px;
-
-    &::after {
-      background: darken($device-silver-dark, 10%);
-      content: "";
-      height: 2px;
-      left: -4px;
-      position: absolute;
-      top: 4px;
-      width: 250px;
-    }
-  }
-
-  .device-home {
+  .device-stripe {
     background: #444;
     border-radius: 0 0 2px 2px;
+    bottom: 0;
     height: 4px;
-    margin: 0 auto;
-    position: relative;
+    left: 50%;
+    margin-left: -117px;
+    position: absolute;
     width: 234px;
 
     &::after,
@@ -83,6 +64,27 @@ $device-silver-panel: #0d0d0d;
       margin-left: -150px;
       width: 300px;
       z-index: -2;
+    }
+  }
+
+  .device-power {
+    background: lighten($device-silver, 5%);
+    border: solid $device-silver;
+    border-radius: 0 0 2px 2px;
+    border-width: 0 4px 2px 4px;
+    height: 32px;
+    margin: 30px auto 0 auto;
+    position: relative;
+    width: 250px;
+
+    &::after {
+      background: darken($device-silver-dark, 10%);
+      content: "";
+      height: 2px;
+      left: -4px;
+      position: absolute;
+      top: 4px;
+      width: 250px;
     }
   }
 }

@@ -58,17 +58,14 @@ $device-black-panel: #121212;
   }
 
   .device-sensors {
-    &::before {
-      background: #333;
-      border-radius: 5px;
-      content: "";
-      height: 12px;
-      left: 0;
-      margin-top: -6px;
-      position: absolute;
-      top: 32px;
-      width: 12px;
-    }
+    background: #333;
+    border-radius: 5px;
+    height: 12px;
+    left: 45px;
+    margin-top: -6px;
+    position: absolute;
+    top: 32px;
+    width: 12px;
   }
 
   .device-btns {

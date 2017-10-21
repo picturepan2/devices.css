@@ -69,30 +69,32 @@ $device-spacegray-panel: #0d0d0d;
     position: relative;
     width: 740px;
     z-index: 3;
-
+    
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+    }
     &::after {
       background: lighten($device-silver-dark, 5%);
       border-radius: 0 0 10px 10px;
       box-shadow: inset 0 0 4px 2px darken($device-silver-dark, 5%);
-      content: "";
       height: 10px;
       left: 50%;
       margin-left: -60px;
-      position: absolute;
       top: -2px;
       width: 120px;
     }
-  }
-
-  .device-home {
-    background: darken($device-silver-dark, 15%);
-    border-radius: 0 0 180px 180px/ 0 0 12px 12px;
-    box-shadow: inset 0 -2px 6px 0 darken($device-silver-dark, 50%);
-    height: 12px;
-    margin: 0 auto;
-    position: relative;
-    width: 740px;
-    z-index: 2;
+    &::before {
+      background: darken($device-silver-dark, 15%);
+      border-radius: 0 0 180px 180px/ 0 0 12px 12px;
+      box-shadow: inset 0 -2px 6px 0 darken($device-silver-dark, 50%);
+      height: 12px;
+      left: -4px;
+      margin: 0 auto;
+      top: 10px;
+      width: 740px;
+    }
   }
 
   // Space Gray edition
@@ -109,11 +111,10 @@ $device-spacegray-panel: #0d0d0d;
         background: lighten($device-spacegray-dark, 5%);
         box-shadow: inset 0 0 4px 2px darken($device-spacegray-dark, 5%);
       }
-    }
-
-    .device-home {
-      background: darken($device-spacegray-dark, 15%);
-      box-shadow: inset 0 -2px 6px 0 darken($device-spacegray-dark, 50%);
+      &::before {
+        background: darken($device-spacegray-dark, 15%);
+        box-shadow: inset 0 -2px 6px 0 darken($device-spacegray-dark, 50%);
+      }
     }
   }
 }

@@ -62,30 +62,17 @@ $device-blue-panel: #f7f7f8;
     }
   }
 
-  .device-header {
-    height: 82px;
-    left: 50%;
-    margin-left: -120px;
-    position: absolute;
-    top: 0;
-    width: 240px;
-    z-index: 199;
-
-    &::after {
-      background: #ddd;
-      border-radius: 2.5px;
-      content: "";
-      height: 5px;
-      left: 50%;
-      margin-left: -39px;
-      margin-top: -2.5px;
-      position: absolute;
-      top: 50%;
-      width: 78px;
-    }
-  }
-
   .device-sensors {
+    background: #ddd;
+    border-radius: 2.5px;
+    height: 5px;
+    left: 50%;
+    margin-left: -39px;
+    margin-top: -2.5px;
+    position: absolute;
+    top: 41px;
+    width: 78px;
+
     &::after,
     &::before {
       background: #333;
@@ -94,15 +81,15 @@ $device-blue-panel: #f7f7f8;
       position: absolute;
     }
     &::after {
-      bottom: 10px;
       height: 12px;
       left: 50%;
       margin-left: -14px;
+      top: 21.5px;
       width: 28px;
     }
     &::before {
       height: 10px;
-      left: 0;
+      left: -81px;
       margin-top: -5px;
       top: 50%;
       width: 10px;
@@ -146,13 +133,9 @@ $device-blue-panel: #f7f7f8;
       }
     }
 
-    .device-header {
-      &::after {
-        background: #444;
-      }
-    }
-
     .device-sensors {
+      background: #444;
+
       &::after {
         background: #0d0d0d;
       }

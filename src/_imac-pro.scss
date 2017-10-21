@@ -56,21 +56,26 @@ $device-spacegray-panel: #0d0d0d;
   }
 
   .device-power {
-    border: solid transparent;
-    border-bottom-color: lighten($device-spacegray-panel, 15%);
-    border-width: 0 8px 50px 8px;
-    height: 50px;
-    margin: 0 auto;
-    position: relative;
-    width: 130px;
-  }
-
-  .device-home {
-    background: darken($device-spacegray-dark, 5%);
-    border-radius: 2px;
-    height: 6px;
-    margin: 0 auto;
-    position: relative;
-    width: 180px;
+    &::after,
+    &::before {
+      content: "";
+    }
+    &::after {
+      background: darken($device-spacegray-dark, 5%);
+      border-radius: 2px;
+      height: 6px;
+      margin: 0 auto;
+      position: relative;
+      width: 180px;
+    }
+    &::before {
+      border: solid transparent;
+      border-bottom-color: lighten($device-spacegray-panel, 15%);
+      border-width: 0 8px 50px 8px;
+      height: 50px;
+      margin: 0 auto;
+      position: relative;
+      width: 130px;
+    }
   }
 }

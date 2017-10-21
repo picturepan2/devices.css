@@ -76,28 +76,30 @@ $device-rosegold-panel: #0d0d0d;
     width: 740px;
     z-index: 3;
 
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+    }
     &::after {
       background: radial-gradient(circle at center, $device-silver 0, $device-silver 85%, darken($device-silver-dark, 15%) 100%);
       border: solid darken($device-silver-dark, 10%);
       border-width: 0 2px;
-      content: "";
       height: 4px;
       left: 50%;
       margin-left: -60px;
-      position: absolute;
       width: 120px;
     }
-  }
-
-  .device-home {
-    background: darken($device-silver-dark, 15%);
-    border-radius: 0 0 180px 180px/ 0 0 10px 10px;
-    box-shadow: inset 0 -2px 6px 0 darken($device-silver-dark, 50%);
-    height: 10px;
-    margin: 0 auto;
-    position: relative;
-    width: 740px;
-    z-index: 2;
+    &::before {
+      background: darken($device-silver-dark, 15%);
+      border-radius: 0 0 180px 180px/ 0 0 10px 10px;
+      box-shadow: inset 0 -2px 6px 0 darken($device-silver-dark, 50%);
+      height: 10px;
+      left: -4px;
+      margin: 0 auto;
+      top: 4px;
+      width: 740px;
+    }
   }
 
   // Gold edition
@@ -114,11 +116,10 @@ $device-rosegold-panel: #0d0d0d;
         background: radial-gradient(circle at center, $device-gold 0, $device-gold 85%, darken($device-gold-dark, 15%) 100%);
         border-color: darken($device-gold-dark, 10%);
       }
-    }
-
-    .device-home {
-      background: $device-gold-dark;
-      box-shadow: inset 0 -2px 6px 0 darken($device-gold-dark, 50%);
+      &::before {
+        background: $device-gold-dark;
+        box-shadow: inset 0 -2px 6px 0 darken($device-gold-dark, 50%);
+      }
     }
   }
 
@@ -136,11 +137,10 @@ $device-rosegold-panel: #0d0d0d;
         background: radial-gradient(circle at center, $device-rosegold 0, $device-rosegold 85%, darken($device-rosegold-dark, 15%) 100%);
         border-color: $device-rosegold-dark;
       }
-    }
-
-    .device-home {
-      background: $device-rosegold-dark;
-      box-shadow: inset 0 -2px 6px 0 darken($device-rosegold-dark, 50%);
+      &::before {
+        background: $device-rosegold-dark;
+        box-shadow: inset 0 -2px 6px 0 darken($device-rosegold-dark, 50%);
+      }
     }
   }
 
@@ -158,11 +158,10 @@ $device-rosegold-panel: #0d0d0d;
         background: radial-gradient(circle at center, lighten($device-spacegray, 5%) 0, lighten($device-spacegray, 5%) 85%, darken($device-spacegray-dark, 15%) 100%);
         border-color: darken($device-spacegray-dark, 10%);
       }
-    }
-
-    .device-home {
-      background: darken($device-spacegray-dark, 15%);
-      box-shadow: inset 0 -2px 6px 0 darken($device-spacegray-dark, 50%);
+      &::before {
+        background: darken($device-spacegray-dark, 15%);
+        box-shadow: inset 0 -2px 6px 0 darken($device-spacegray-dark, 50%);
+      }
     }
   }
 }

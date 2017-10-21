@@ -61,28 +61,29 @@ $device-silver-panel: #0d0d0d;
     position: relative;
     width: 728px;
 
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+    }
     &::after {
       background: radial-gradient(circle at center, $device-silver 0, $device-silver 95%, darken($device-silver-dark, 15%) 100%);;
       border-radius: 0 0 6px 6px;
-      content: "";
       height: 8px;
       left: 50%;
       margin-left: -125px;
-      position: absolute;
       top: 0;
       width: 250px;
       z-index: 1;
     }
-  }
-
-  .device-home {
-    background: linear-gradient(to bottom, $device-silver, $device-silver-dark);
-    border-radius: 2px 2px 0 0;
-    bottom: 12px;
-    height: 8px;
-    left: 50%;
-    margin-left: -292px;
-    position: absolute;
-    width: 584px;
+    &::before {
+      background: linear-gradient(to bottom, $device-silver, $device-silver-dark);
+      border-radius: 2px 2px 0 0;
+      bottom: 12px;
+      height: 8px;
+      left: 50%;
+      margin-left: -292px;
+      width: 584px;
+    }
   }
 }

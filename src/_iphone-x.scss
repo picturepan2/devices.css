@@ -58,7 +58,6 @@ $device-silver-panel: #222;
     position: absolute;
     top: 22px;
     width: 164px;
-    z-index: 199;
 
     &::after,
     &::before {
@@ -90,7 +89,7 @@ $device-silver-panel: #222;
       height: 5px;
       left: 50%;
       margin-left: -20px;
-      top: 4px;
+      top: 26px;
       width: 40px;
     }
     &::before {
@@ -99,7 +98,7 @@ $device-silver-panel: #222;
       height: 11px;
       left: 50%;
       margin-left: 30px;
-      top: 1px;
+      top: 23px;
       width: 11px;
     }
   }
