@@ -12,6 +12,8 @@ All devices are elegantly developed in pure CSS. The first are newly announced i
 - [Google Pixel](https://picturepan2.github.io/devices.css/#google-pixel) (Very Silver, Quite Black and Really Blue)
 - [Samsung Galaxy S8](https://picturepan2.github.io/devices.css/#galaxy-s8) (Midnight Black and Coral Blue)
 - [iPad Pro](https://picturepan2.github.io/devices.css/#ipad-pro) (Silver, Gold, Rose Gold and Space Gray)
+- [Surface Pro](https://picturepan2.github.io/devices.css/#surface-pro)
+- [Surface Book](https://picturepan2.github.io/devices.css/#surface-book)
 - [MacBook](https://picturepan2.github.io/devices.css/#macbook) (Silver, Gold, Rose Gold and Space Gray)
 - [MacBook Pro](https://picturepan2.github.io/devices.css/#macbook-pro) (Silver and Space Gray)
 - [Surface Studio](https://picturepan2.github.io/devices.css/#surface-studio)
@@ -21,6 +23,8 @@ All devices are elegantly developed in pure CSS. The first are newly announced i
 ## What's next
 
 - Add more devices and form factors
+- Add landscape support
+- Add responsive support
 
 ## Getting started
 
