@@ -28,7 +28,7 @@ Download the compiled and minified [Devices.css files](https://github.com/pictur
 
 `<link rel="stylesheet" href="dist/devices.css">`
 
-Go to [Demo page](https://picturepan2.github.io/devices.css/) to copy the device HTML source code and paste it to anywhere you want. All devices use the same HTML structure with different `device-xxx` classes.
+Go to [Demo page](https://picturepan2.github.io/devices.css/) to copy the device HTML source code and paste it to anywhere you want. All devices use the same HTML structure with different `device-[device-name]` classes.
 
 ```
 <div class="device device-iphone-x">
@@ -42,6 +42,7 @@ Go to [Demo page](https://picturepan2.github.io/devices.css/) to copy the device
   <div class="device-power"></div>
 </div>
 ```
+Also, there are optional `device-[device-color]` classes for different color variants.
 
 You can add any content or screenshots to the `device-content` div. The resolution aspect ratios are based on real ones.
 
