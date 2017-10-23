@@ -28,7 +28,6 @@
   position: absolute;
   text-align: center;
   width: 0;
-  z-index: 100;
 }
 
 .section-device .anchor:focus,

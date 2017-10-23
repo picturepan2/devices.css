@@ -354,7 +354,6 @@
   position: absolute;
   top: 0;
   width: 270px;
-  z-index: 199;
 }
 
 .device-google-pixel-2-xl .device-header::after,
@@ -974,7 +973,7 @@
   margin-top: -10px;
   position: relative;
   width: 740px;
-  z-index: 3;
+  z-index: 9;
 }
 
 .device-macbook-pro .device-power::after,
@@ -1083,7 +1082,7 @@
   margin-top: -10px;
   position: relative;
   width: 740px;
-  z-index: 3;
+  z-index: 9;
 }
 
 .device-macbook .device-power::after,
@@ -1291,7 +1290,7 @@
   position: absolute;
   text-align: center;
   width: 200px;
-  z-index: 1;
+  z-index: 9;
 }
 
 .device-imac-pro .device-content {
@@ -1370,7 +1369,7 @@
   right: -10px;
   top: 52px;
   width: 16px;
-  z-index: 99;
+  z-index: 9;
 }
 
 .device-apple-watch .device-btns::after {
