@@ -18,13 +18,9 @@ $device-black-panel: #121212;
 
   // 2880-by-1440-pixel resolution
   .device-content {
-    background-color: #fff;
     background-image: url("../src/img/bg-06.jpg");
-    background-position: center center;
-    background-size: cover;
     border-radius: 24px;
     height: 640px;
-    position: relative;
     width: 320px;
   }
 

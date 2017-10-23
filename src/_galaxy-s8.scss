@@ -23,14 +23,10 @@ $device-blue-panel: #222;
 
   // 2960-by-1440-pixel resolution
   .device-content {
-    background-color: #fff;
     background-image: url("../src/img/bg-04.jpg");
-    background-position: center center;
-    background-size: cover;
     border: 2px solid #222;
     border-radius: 28px;
     height: 617px;
-    position: relative;
     width: 300px;
   }
 

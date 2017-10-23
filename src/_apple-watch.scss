@@ -30,14 +30,10 @@ $device-gray-panel: #0d0d0d;
 
   // 272-by-340-pixel resolution
   .device-content {
-    background-color: #fff;
     background-image: url("../src/img/bg-08.jpg");
-    background-position: center center;
-    background-size: cover;
     border: 2px solid lighten($device-silver-panel, 2%);
     border-radius: 2px;
     height: 170px;
-    position: relative;
     width: 136px;
   }
 

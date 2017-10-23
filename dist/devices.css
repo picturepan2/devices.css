@@ -19,6 +19,13 @@
   z-index: 1;
 }
 
+.device .device-content {
+  background-color: #fff;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+
 .device-iphone-x {
   height: 694px;
   width: 342px;
@@ -34,13 +41,9 @@
 }
 
 .device-iphone-x .device-content {
-  background-color: #fff;
   background-image: url("../src/img/bg-00.jpg");
-  background-position: center center;
-  background-size: cover;
   border-radius: 32px;
   height: 650px;
-  position: relative;
   width: 300px;
 }
 
@@ -172,14 +175,10 @@
 }
 
 .device-iphone-8 .device-content {
-  background-color: #fff;
   background-image: url("../src/img/bg-01.jpg");
-  background-position: center center;
-  background-size: cover;
   border: 2px solid #222;
   border-radius: 4px;
   height: 534px;
-  position: relative;
   width: 300px;
 }
 
@@ -342,13 +341,9 @@
 }
 
 .device-google-pixel-2-xl .device-content {
-  background-color: #fff;
   background-image: url("../src/img/bg-06.jpg");
-  background-position: center center;
-  background-size: cover;
   border-radius: 24px;
   height: 640px;
-  position: relative;
   width: 320px;
 }
 
@@ -427,14 +422,10 @@
 }
 
 .device-google-pixel .device-content {
-  background-color: #fff;
   background-image: url("../src/img/bg-06.jpg");
-  background-position: center center;
-  background-size: cover;
   border: 2px solid #222;
   border-radius: 2px;
   height: 576px;
-  position: relative;
   width: 324px;
 }
 
@@ -589,14 +580,10 @@
 }
 
 .device-galaxy-s8 .device-content {
-  background-color: #fff;
   background-image: url("../src/img/bg-04.jpg");
-  background-position: center center;
-  background-size: cover;
   border: 2px solid #222;
   border-radius: 28px;
   height: 617px;
-  position: relative;
   width: 300px;
 }
 
@@ -726,14 +713,10 @@
 }
 
 .device-ipad-pro .device-content {
-  background-color: #fff;
   background-image: url("../src/img/bg-02.jpg");
-  background-position: center center;
-  background-size: cover;
   border: 2px solid #222;
   border-radius: 2px;
   height: 680px;
-  position: relative;
   width: 510px;
 }
 
@@ -813,14 +796,10 @@
 }
 
 .device-surface-pro .device-content {
-  background-color: #fff;
   background-image: url("../src/img/bg-09.jpg");
-  background-position: center center;
-  background-size: cover;
   border: 2px solid #121212;
   border-radius: 2px;
   height: 342px;
-  position: relative;
   width: 513px;
 }
 
@@ -872,14 +851,10 @@
 }
 
 .device-surface-book .device-content {
-  background-color: #fff;
   background-image: url("../src/img/bg-09.jpg");
-  background-position: center center;
-  background-size: cover;
   border: 2px solid #121212;
   border-radius: 2px;
   height: 360px;
-  position: relative;
   width: 540px;
 }
 
@@ -983,14 +958,10 @@
 }
 
 .device-macbook-pro .device-content {
-  background-color: #fff;
   background-image: url("../src/img/bg-07.jpg");
-  background-position: center center;
-  background-size: cover;
   border: 2px solid #121212;
   border-radius: 2px;
   height: 360px;
-  position: relative;
   width: 576px;
 }
 
@@ -1096,14 +1067,10 @@
 }
 
 .device-macbook .device-content {
-  background-color: #fff;
   background-image: url("../src/img/bg-07.jpg");
-  background-position: center center;
-  background-size: cover;
   border: 2px solid #121212;
   border-radius: 2px;
   height: 360px;
-  position: relative;
   width: 576px;
 }
 
@@ -1218,14 +1185,10 @@
 }
 
 .device-surface-studio .device-content {
-  background-color: #fff;
   background-image: url("../src/img/bg-09.jpg");
-  background-position: center center;
-  background-size: cover;
   border: 2px solid #121212;
   border-radius: 2px;
   height: 400px;
-  position: relative;
   width: 600px;
 }
 
@@ -1332,14 +1295,10 @@
 }
 
 .device-imac-pro .device-content {
-  background-color: #fff;
   background-image: url("../src/img/bg-08.jpg");
-  background-position: center center;
-  background-size: cover;
   border: 2px solid #121212;
   border-radius: 2px;
   height: 324px;
-  position: relative;
   width: 576px;
 }
 
@@ -1394,14 +1353,10 @@
 }
 
 .device-apple-watch .device-content {
-  background-color: #fff;
   background-image: url("../src/img/bg-08.jpg");
-  background-position: center center;
-  background-size: cover;
   border: 2px solid #121212;
   border-radius: 2px;
   height: 170px;
-  position: relative;
   width: 136px;
 }
 

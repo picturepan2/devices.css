@@ -24,14 +24,10 @@ $device-spacegray-panel: #222;
 
   // 1334-by-750-pixel resolution
   .device-content {
-    background-color: #fff;
     background-image: url("../src/img/bg-01.jpg");
-    background-position: center center;
-    background-size: cover;
     border: 2px solid #222;
     border-radius: 4px;
     height: 534px;
-    position: relative;
     width: 300px;
   }
 

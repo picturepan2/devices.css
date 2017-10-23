@@ -18,13 +18,9 @@ $device-silver-panel: #222;
 
   // 2436-by-1125-pixel resolution
   .device-content {
-    background-color: #fff;
     background-image: url("../src/img/bg-00.jpg");
-    background-position: center center;
-    background-size: cover;
     border-radius: 32px;
     height: 650px;
-    position: relative;
     width: 300px;
   }
 

@@ -17,4 +17,11 @@
   .device-frame {
     z-index: 1;
   }
+
+  .device-content {
+    background-color: #fff;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+  }
 }

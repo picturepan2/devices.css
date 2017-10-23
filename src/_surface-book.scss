@@ -20,14 +20,10 @@ $device-silver-panel: #0d0d0d;
 
   // 3000-by-2000-pixel resolution
   .device-content {
-    background-color: #fff;
     background-image: url("../src/img/bg-09.jpg");
-    background-position: center center;
-    background-size: cover;
     border: 2px solid lighten($device-silver-panel, 2%);
     border-radius: 2px;
     height: 360px;
-    position: relative;
     width: 540px;
   }
 
