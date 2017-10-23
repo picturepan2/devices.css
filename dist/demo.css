@@ -78,6 +78,20 @@
   color: #e06870;
 }
 
+.section-device .dots {
+  text-align: center;
+}
+
+.section-device .dots .dot {
+  background: #eee;
+  border: 1px solid rgba(0, 0, 0, .05);
+  border-radius: 50%;
+  display: inline-block;
+  height: 1rem;
+  margin: 0 .2rem;
+  width: 1rem;
+}
+
 .section-footer {
   color: #acb3c2;
   padding: 1.8rem .75rem 1rem .75rem;

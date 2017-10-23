@@ -79,6 +79,20 @@
       color: #e06870;
     }
   }
+
+  .dots {
+    text-align: center;
+
+    .dot {
+      background: #eee;
+      border: 1px solid rgba(0, 0, 0, .05);
+      border-radius: 50%;
+      display: inline-block;
+      height: 1rem;
+      margin: 0 .2rem;
+      width: 1rem;
+    }
+  }
 }
 
 .section-footer {
