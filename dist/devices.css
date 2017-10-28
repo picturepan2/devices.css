@@ -41,10 +41,15 @@
 }
 
 .device-iphone-x .device-content {
-  background-image: url("../src/img/bg-00.jpg");
   border-radius: 32px;
   height: 650px;
   width: 300px;
+}
+video {
+    border-radius: 32px;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: fill; !important;
 }
 
 .device-iphone-x .device-stripe::after,
