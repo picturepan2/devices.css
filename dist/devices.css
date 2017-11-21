@@ -1,4 +1,4 @@
-/*! Devices.css v0.1.14 | MIT License | github.com/picturepan2/devices.css */
+/*! Devices.css v0.1.15 | MIT License | github.com/picturepan2/devices.css */
 .device,
 .device::before,
 .device::after,
@@ -23,6 +23,7 @@
   background-color: #fff;
   background-position: center center;
   background-size: cover;
+  object-fit: cover;
   position: relative;
 }
 
@@ -41,7 +42,6 @@
 }
 
 .device-iphone-x .device-content {
-  background-image: url("../src/img/bg-00.jpg");
   border-radius: 32px;
   height: 650px;
   width: 300px;
@@ -175,7 +175,6 @@
 }
 
 .device-iphone-8 .device-content {
-  background-image: url("../src/img/bg-01.jpg");
   border: 2px solid #222;
   border-radius: 4px;
   height: 534px;
@@ -288,10 +287,6 @@
   box-shadow: inset 0 0 0 2px #e4b08a, inset 0 0 0 6px #f7e8dd;
 }
 
-.device-iphone-8.device-gold .device-content {
-  background-image: url("../src/img/bg-02.jpg");
-}
-
 .device-iphone-8.device-gold .device-header {
   border-color: #e4b08a;
 }
@@ -309,10 +304,6 @@
 .device-iphone-8.device-spacegray .device-frame {
   background: #222;
   box-shadow: inset 0 0 0 2px #74747a, inset 0 0 0 6px #9b9ba0;
-}
-
-.device-iphone-8.device-spacegray .device-content {
-  background-image: url("../src/img/bg-03.jpg");
 }
 
 .device-iphone-8.device-spacegray .device-stripe::after,
@@ -341,7 +332,6 @@
 }
 
 .device-google-pixel-2-xl .device-content {
-  background-image: url("../src/img/bg-06.jpg");
   border-radius: 24px;
   height: 640px;
   width: 320px;
@@ -421,7 +411,6 @@
 }
 
 .device-google-pixel .device-content {
-  background-image: url("../src/img/bg-06.jpg");
   border: 2px solid #222;
   border-radius: 2px;
   height: 576px;
@@ -516,10 +505,6 @@
   box-shadow: inset 0 0 0 2px #363635, inset 0 0 0 6px #6a6967, inset 0 0 0 10px #3d3533;
 }
 
-.device-google-pixel.device-black .device-content {
-  background-image: url("../src/img/bg-04.jpg");
-}
-
 .device-google-pixel.device-black .device-stripe,
 .device-google-pixel.device-black .device-stripe::after,
 .device-google-pixel.device-black .device-stripe::before {
@@ -546,10 +531,6 @@
 
 .device-google-pixel.device-blue .device-frame {
   box-shadow: inset 0 0 0 2px #2a5aff, inset 0 0 0 6px #7695ff, inset 0 0 0 10px white;
-}
-
-.device-google-pixel.device-blue .device-content {
-  background-image: url("../src/img/bg-04.jpg");
 }
 
 .device-google-pixel.device-blue .device-btns,
@@ -579,7 +560,6 @@
 }
 
 .device-galaxy-s8 .device-content {
-  background-image: url("../src/img/bg-04.jpg");
   border: 2px solid #222;
   border-radius: 28px;
   height: 617px;
@@ -679,10 +659,6 @@
   box-shadow: inset 0 0 0 2px #5192d4;
 }
 
-.device-galaxy-s8.device-blue .device-content {
-  background-image: url("../src/img/bg-05.jpg");
-}
-
 .device-galaxy-s8.device-blue .device-stripe::after,
 .device-galaxy-s8.device-blue .device-stripe::before {
   border-color: rgba(255, 255, 255, .35);
@@ -712,7 +688,6 @@
 }
 
 .device-ipad-pro .device-content {
-  background-image: url("../src/img/bg-02.jpg");
   border: 2px solid #222;
   border-radius: 2px;
   height: 680px;
@@ -746,20 +721,12 @@
   box-shadow: inset 0 0 0 2px #e4b08a, inset 0 0 0 6px #f7e8dd;
 }
 
-.device-ipad-pro.device-gold .device-content {
-  background-image: url("../src/img/bg-02.jpg");
-}
-
 .device-ipad-pro.device-gold .device-header {
   border-color: #e4b08a;
 }
 
 .device-ipad-pro.device-rosegold .device-frame {
   box-shadow: inset 0 0 0 2px #f6a69a, inset 0 0 0 6px #facfc9;
-}
-
-.device-ipad-pro.device-rosegold .device-content {
-  background-image: url("../src/img/bg-01.jpg");
 }
 
 .device-ipad-pro.device-rosegold .device-header {
@@ -769,10 +736,6 @@
 .device-ipad-pro.device-spacegray .device-frame {
   background: #222;
   box-shadow: inset 0 0 0 2px #818187, inset 0 0 0 6px #9b9ba0;
-}
-
-.device-ipad-pro.device-spacegray .device-content {
-  background-image: url("../src/img/bg-01.jpg");
 }
 
 .device-ipad-pro.device-spacegray .device-header {
@@ -795,7 +758,6 @@
 }
 
 .device-surface-pro .device-content {
-  background-image: url("../src/img/bg-09.jpg");
   border: 2px solid #121212;
   border-radius: 2px;
   height: 342px;
@@ -850,7 +812,6 @@
 }
 
 .device-surface-book .device-content {
-  background-image: url("../src/img/bg-09.jpg");
   border: 2px solid #121212;
   border-radius: 2px;
   height: 360px;
@@ -957,7 +918,6 @@
 }
 
 .device-macbook-pro .device-content {
-  background-image: url("../src/img/bg-07.jpg");
   border: 2px solid #121212;
   border-radius: 2px;
   height: 360px;
@@ -1066,7 +1026,6 @@
 }
 
 .device-macbook .device-content {
-  background-image: url("../src/img/bg-07.jpg");
   border: 2px solid #121212;
   border-radius: 2px;
   height: 360px;
@@ -1184,7 +1143,6 @@
 }
 
 .device-surface-studio .device-content {
-  background-image: url("../src/img/bg-09.jpg");
   border: 2px solid #121212;
   border-radius: 2px;
   height: 400px;
@@ -1294,7 +1252,6 @@
 }
 
 .device-imac-pro .device-content {
-  background-image: url("../src/img/bg-08.jpg");
   border: 2px solid #121212;
   border-radius: 2px;
   height: 324px;
@@ -1352,7 +1309,6 @@
 }
 
 .device-apple-watch .device-content {
-  background-image: url("../src/img/bg-08.jpg");
   border: 2px solid #121212;
   border-radius: 2px;
   height: 170px;

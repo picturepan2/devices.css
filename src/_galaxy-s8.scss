@@ -23,7 +23,6 @@ $device-blue-panel: #222;
 
   // 2960-by-1440-pixel resolution
   .device-content {
-    background-image: url("../src/img/bg-04.jpg");
     border: 2px solid #222;
     border-radius: 28px;
     height: 617px;
@@ -121,10 +120,6 @@ $device-blue-panel: #222;
     .device-frame {
       border-color: $device-blue;
       box-shadow: inset 0 0 0 2px $device-blue-dark;
-    }
-
-    .device-content {
-      background-image: url("../src/img/bg-05.jpg");
     }
 
     .device-stripe {

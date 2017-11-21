@@ -24,7 +24,6 @@ $device-blue-panel: #f7f7f8;
 
   // 1920-by-1080-pixel resolution
   .device-content {
-    background-image: url("../src/img/bg-06.jpg");
     border: 2px solid #222;
     border-radius: 2px;
     height: 576px;
@@ -117,10 +116,6 @@ $device-blue-panel: #f7f7f8;
       box-shadow: inset 0 0 0 2px $device-black-dark, inset 0 0 0 6px $device-black, inset 0 0 0 10px lighten($device-black-panel, 10%);
     }
 
-    .device-content {
-      background-image: url("../src/img/bg-04.jpg");
-    }
-
     .device-stripe {
       &,
       &::after,
@@ -154,10 +149,6 @@ $device-blue-panel: #f7f7f8;
   &.device-blue {
     .device-frame {
       box-shadow: inset 0 0 0 2px $device-blue-dark, inset 0 0 0 6px $device-blue, inset 0 0 0 10px lighten($device-blue-panel, 10%);
-    }
-
-    .device-content {
-      background-image: url("../src/img/bg-04.jpg");
     }
 
     .device-btns {

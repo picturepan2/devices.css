@@ -37,7 +37,7 @@ Go to [Demo page](https://picturepan2.github.io/devices.css/) to copy the device
 ```
 <div class="device device-iphone-x">
   <div class="device-frame">
-    <div class="device-content"></div>
+    <img class="device-content" src="...">
   </div>
   <div class="device-stripe"></div>
   <div class="device-header"></div>
@@ -48,7 +48,7 @@ Go to [Demo page](https://picturepan2.github.io/devices.css/) to copy the device
 ```
 Also, there are optional `device-[device-color]` classes for different color variants.
 
-You can add any content or screenshots to the `device-content` div. The resolution aspect ratios are based on real ones.
+You can add any screenshot or video with the `device-content` class. The resolution aspect ratios are based on real ones.
 
 ## Custom
 

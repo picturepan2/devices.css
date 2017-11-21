@@ -44,7 +44,6 @@ $device-spacegray-panel: #0d0d0d;
 
   // 5120‑by‑2880-pixel resolution
   .device-content {
-    background-image: url("../src/img/bg-08.jpg");
     border: 2px solid lighten($device-spacegray-panel, 2%);
     border-radius: 2px;
     height: 324px;
