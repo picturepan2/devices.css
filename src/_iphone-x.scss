@@ -4,23 +4,23 @@ $device-silver-dark: darken($device-silver, 10%);
 $device-silver-panel: #222;
 
 .device-iphone-x {
-  height: 694px;
-  width: 342px;
+  height: 868px;
+  width: 428px;
 
   .device-frame {
     background: $device-silver-panel;
-    border-radius: 54px;
+    border-radius: 68px;
     box-shadow: inset 0 0 2px 2px $device-silver-dark, inset 0 0 0 6px $device-silver;
-    height: 694px;
-    padding: 22px;
-    width: 342px;
+    height: 868px;
+    padding: 28px;
+    width: 428px;
   }
 
   // 2436-by-1125-pixel resolution
   .device-content {
-    border-radius: 32px;
-    height: 650px;
-    width: 300px;
+    border-radius: 40px;
+    height: 812px;
+    width: 375px;
   }
 
   .device-stripe {
@@ -29,30 +29,30 @@ $device-silver-panel: #222;
       border: solid rgba(#333, .25);
       border-width: 0 6px;
       content: "";
-      height: 5px;
+      height: 6px;
       left: 0;
       position: absolute;
       width: 100%;
       z-index: 9;
     }
     &::after {
-      top: 68px;
+      top: 85px;
     }
     &::before {
-      bottom: 68px;
+      bottom: 85px;
     }
   }
 
   .device-header {
     background: $device-silver-panel;
-    border-bottom-left-radius: 16px;
-    border-bottom-right-radius: 16px;
-    height: 24px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: 30px;
     left: 50%;
-    margin-left: -82px;
+    margin-left: -102px;
     position: absolute;
-    top: 22px;
-    width: 164px;
+    top: 28px;
+    width: 204px;
 
     &::after,
     &::before {
@@ -80,56 +80,56 @@ $device-silver-panel: #222;
     }
     &::after {
       background: #444;
-      border-radius: 2.5px;
-      height: 5px;
+      border-radius: 3px;
+      height: 6px;
       left: 50%;
-      margin-left: -20px;
-      top: 26px;
-      width: 40px;
+      margin-left: -25px;
+      top: 32px;
+      width: 50px;
     }
     &::before {
       background: #444;
       border-radius: 50%;
-      height: 11px;
+      height: 14px;
       left: 50%;
-      margin-left: 30px;
-      top: 23px;
-      width: 11px;
+      margin-left: 40px;
+      top: 28px;
+      width: 14px;
     }
   }
 
   .device-btns {
     background: $device-silver-dark;
-    height: 26px;
-    left: -2px;
+    height: 32px;
+    left: -3px;
     position: absolute;
-    top: 92px;
+    top: 115px;
     width: 3px;
 
     &::after,
     &::before {
       background: $device-silver-dark;
       content: "";
-      height: 50px;
+      height: 62px;
       left: 0;
       position: absolute;
       width: 3px;
     }
 
     &::after {
-      top: 48px;
+      top: 60px;
     }
     &::before {
-      top: 112px;
+      top: 140px;
     }
   }
 
   .device-power {
     background: $device-silver-dark;
-    height: 80px;
-    right: -2px;
+    height: 100px;
+    right: -3px;
     position: absolute;
-    top: 160px;
+    top: 200px;
     width: 3px;
   }
 }
