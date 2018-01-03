@@ -35,7 +35,7 @@
 .device-iphone-x .device-frame {
   background: #222;
   border-radius: 68px;
-  box-shadow: inset 0 0 2px 2px #c8cacb, inset 0 0 0 6px #e2e3e4;
+  box-shadow: inset 0 0 2px 2px #c8cacb, inset 0 0 0 7px #e2e3e4;
   height: 868px;
   padding: 28px;
   width: 428px;
@@ -50,9 +50,9 @@
 .device-iphone-x .device-stripe::after,
 .device-iphone-x .device-stripe::before {
   border: solid rgba(51, 51, 51, .25);
-  border-width: 0 6px;
+  border-width: 0 7px;
   content: "";
-  height: 6px;
+  height: 7px;
   left: 0;
   position: absolute;
   width: 100%;
@@ -82,20 +82,20 @@
 .device-iphone-x .device-header::after,
 .device-iphone-x .device-header::before {
   content: "";
-  height: 6px;
+  height: 10px;
   position: absolute;
   top: 0;
-  width: 6px;
+  width: 10px;
 }
 
 .device-iphone-x .device-header::after {
   background: radial-gradient(circle at bottom left, transparent 0, transparent 75%, #222 75%, #222 100%);
-  left: -6px;
+  left: -10px;
 }
 
 .device-iphone-x .device-header::before {
   background: radial-gradient(circle at bottom right, transparent 0, transparent 75%, #222 75%, #222 100%);
-  right: -6px;
+  right: -10px;
 }
 
 .device-iphone-x .device-sensors::after,
@@ -161,32 +161,32 @@
 }
 
 .device-iphone-8 {
-  height: 698px;
-  width: 336px;
+  height: 871px;
+  width: 419px;
 }
 
 .device-iphone-8 .device-frame {
   background: #fff;
-  border-radius: 54px;
-  box-shadow: inset 0 0 0 2px #c8cacb, inset 0 0 0 6px #e2e3e4;
-  height: 698px;
-  padding: 82px 18px;
-  width: 336px;
+  border-radius: 68px;
+  box-shadow: inset 0 0 0 2px #c8cacb, inset 0 0 0 7px #e2e3e4;
+  height: 871px;
+  padding: 102px 22px;
+  width: 419px;
 }
 
 .device-iphone-8 .device-content {
   border: 2px solid #222;
   border-radius: 4px;
-  height: 534px;
-  width: 300px;
+  height: 667px;
+  width: 375px;
 }
 
 .device-iphone-8 .device-stripe::after,
 .device-iphone-8 .device-stripe::before {
   border: solid rgba(51, 51, 51, .15);
-  border-width: 0 6px;
+  border-width: 0 7px;
   content: "";
-  height: 5px;
+  height: 6px;
   left: 0;
   position: absolute;
   width: 100%;
@@ -194,33 +194,33 @@
 }
 
 .device-iphone-8 .device-stripe::after {
-  top: 55px;
+  top: 68px;
 }
 
 .device-iphone-8 .device-stripe::before {
-  bottom: 55px;
+  bottom: 68px;
 }
 
 .device-iphone-8 .device-header {
   border: 2px solid #c8cacb;
   border-radius: 50%;
-  bottom: 20px;
-  height: 46px;
+  bottom: 25px;
+  height: 58px;
   left: 50%;
-  margin-left: -23px;
+  margin-left: -29px;
   position: absolute;
-  width: 46px;
+  width: 58px;
 }
 
 .device-iphone-8 .device-sensors {
   background: #666;
-  border-radius: 2.5px;
-  height: 5px;
+  border-radius: 3px;
+  height: 6px;
   left: 50%;
-  margin-left: -30px;
+  margin-left: -38px;
   position: absolute;
-  top: 41.5px;
-  width: 60px;
+  top: 52px;
+  width: 76px;
 }
 
 .device-iphone-8 .device-sensors::after,
@@ -232,27 +232,27 @@
 }
 
 .device-iphone-8 .device-sensors::after {
-  height: 8px;
+  height: 10px;
   left: 50%;
-  margin-left: -4px;
-  top: -20px;
-  width: 8px;
+  margin-left: -5px;
+  top: -25px;
+  width: 10px;
 }
 
 .device-iphone-8 .device-sensors::before {
-  height: 10px;
-  left: -34px;
-  margin-top: -5px;
+  height: 12px;
+  left: -42px;
+  margin-top: -6px;
   top: 50%;
-  width: 10px;
+  width: 12px;
 }
 
 .device-iphone-8 .device-btns {
   background: #c8cacb;
-  height: 24px;
-  left: -2px;
+  height: 30px;
+  left: -3px;
   position: absolute;
-  top: 82px;
+  top: 102px;
   width: 3px;
 }
 
@@ -260,18 +260,18 @@
 .device-iphone-8 .device-btns::before {
   background: #c8cacb;
   content: "";
-  height: 45px;
+  height: 56px;
   left: 0;
   position: absolute;
   width: 3px;
 }
 
 .device-iphone-8 .device-btns::after {
-  top: 50px;
+  top: 62px;
 }
 
 .device-iphone-8 .device-btns::before {
-  top: 106px;
+  top: 132px;
 }
 
 .device-iphone-8 .device-power {
@@ -284,7 +284,7 @@
 }
 
 .device-iphone-8.device-gold .device-frame {
-  box-shadow: inset 0 0 0 2px #e4b08a, inset 0 0 0 6px #f7e8dd;
+  box-shadow: inset 0 0 0 2px #e4b08a, inset 0 0 0 7px #f7e8dd;
 }
 
 .device-iphone-8.device-gold .device-header {
@@ -303,7 +303,7 @@
 
 .device-iphone-8.device-spacegray .device-frame {
   background: #222;
-  box-shadow: inset 0 0 0 2px #74747a, inset 0 0 0 6px #9b9ba0;
+  box-shadow: inset 0 0 0 2px #74747a, inset 0 0 0 7px #9b9ba0;
 }
 
 .device-iphone-8.device-spacegray .device-stripe::after,

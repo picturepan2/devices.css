@@ -10,43 +10,43 @@ $device-spacegray-dark: darken($device-spacegray, 15%);
 $device-spacegray-panel: #222;
 
 .device-iphone-8 {
-  height: 698px;
-  width: 336px;
+  height: 871px;
+  width: 419px;
 
   .device-frame {
     background: $device-silver-panel;
-    border-radius: 54px;
-    box-shadow: inset 0 0 0 2px $device-silver-dark, inset 0 0 0 6px $device-silver;
-    height: 698px;
-    padding: 82px 18px;
-    width: 336px;
+    border-radius: 68px;
+    box-shadow: inset 0 0 0 2px $device-silver-dark, inset 0 0 0 7px $device-silver;
+    height: 871px;
+    padding: 102px 22px;
+    width: 419px;
   }
 
   // 1334-by-750-pixel resolution
   .device-content {
     border: 2px solid #222;
     border-radius: 4px;
-    height: 534px;
-    width: 300px;
+    height: 667px;
+    width: 375px;
   }
 
   .device-stripe {
     &::after,
     &::before {
       border: solid rgba(#333, .15);
-      border-width: 0 6px;
+      border-width: 0 7px;
       content: "";
-      height: 5px;
+      height: 6px;
       left: 0;
       position: absolute;
       width: 100%;
       z-index: 9;
     }
     &::after {
-      top: 55px;
+      top: 68px;
     }
     &::before {
-      bottom: 55px;
+      bottom: 68px;
     }
   }
 
@@ -54,23 +54,23 @@ $device-spacegray-panel: #222;
   .device-header {
     border: 2px solid $device-silver-dark;
     border-radius: 50%;
-    bottom: 20px;
-    height: 46px;
+    bottom: 25px;
+    height: 58px;
     left: 50%;
-    margin-left: -23px;
+    margin-left: -29px;
     position: absolute;
-    width: 46px;
+    width: 58px;
   }
 
   .device-sensors {
     background: #666;
-    border-radius: 2.5px;
-    height: 5px;
+    border-radius: 3px;
+    height: 6px;
     left: 50%;
-    margin-left: -30px;
+    margin-left: -38px;
     position: absolute;
-    top: 41.5px;
-    width: 60px;
+    top: 52px;
+    width: 76px;
 
     &::after,
     &::before {
@@ -80,44 +80,44 @@ $device-spacegray-panel: #222;
       position: absolute;
     }
     &::after {  
-      height: 8px;
+      height: 10px;
       left: 50%;
-      margin-left: -4px;
-      top: -20px;
-      width: 8px;
+      margin-left: -5px;
+      top: -25px;
+      width: 10px;
     }
     &::before {
-      height: 10px;
-      left: -34px;
-      margin-top: -5px;
+      height: 12px;
+      left: -42px;
+      margin-top: -6px;
       top: 50%;
-      width: 10px;
+      width: 12px;
     }
   }
 
   .device-btns {
     background: $device-silver-dark;
-    height: 24px;
-    left: -2px;
+    height: 30px;
+    left: -3px;
     position: absolute;
-    top: 82px;
+    top: 102px;
     width: 3px;
 
     &::after,
     &::before {
       background: $device-silver-dark;
       content: "";
-      height: 45px;
+      height: 56px;
       left: 0;
       position: absolute;
       width: 3px;
     }
 
     &::after {
-      top: 50px;
+      top: 62px;
     }
     &::before {
-      top: 106px;
+      top: 132px;
     }
   }
 
@@ -133,7 +133,7 @@ $device-spacegray-panel: #222;
   // Gold edition 
   &.device-gold {
     .device-frame {
-      box-shadow: inset 0 0 0 2px $device-gold-dark, inset 0 0 0 6px $device-gold;
+      box-shadow: inset 0 0 0 2px $device-gold-dark, inset 0 0 0 7px $device-gold;
     }
 
     .device-header {
@@ -157,7 +157,7 @@ $device-spacegray-panel: #222;
   &.device-spacegray {
     .device-frame {
       background: $device-spacegray-panel;
-      box-shadow: inset 0 0 0 2px $device-spacegray-dark, inset 0 0 0 6px $device-spacegray;
+      box-shadow: inset 0 0 0 2px $device-spacegray-dark, inset 0 0 0 7px $device-spacegray;
     }
 
     .device-stripe {

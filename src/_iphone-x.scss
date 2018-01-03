@@ -10,7 +10,7 @@ $device-silver-panel: #222;
   .device-frame {
     background: $device-silver-panel;
     border-radius: 68px;
-    box-shadow: inset 0 0 2px 2px $device-silver-dark, inset 0 0 0 6px $device-silver;
+    box-shadow: inset 0 0 2px 2px $device-silver-dark, inset 0 0 0 7px $device-silver;
     height: 868px;
     padding: 28px;
     width: 428px;
@@ -27,9 +27,9 @@ $device-silver-panel: #222;
     &::after,
     &::before {
       border: solid rgba(#333, .25);
-      border-width: 0 6px;
+      border-width: 0 7px;
       content: "";
-      height: 6px;
+      height: 7px;
       left: 0;
       position: absolute;
       width: 100%;
@@ -57,18 +57,18 @@ $device-silver-panel: #222;
     &::after,
     &::before {
       content: "";
-      height: 6px;
+      height: 10px;
       position: absolute;
       top: 0;
-      width: 6px;
+      width: 10px;
     }
     &::after {
       background: radial-gradient(circle at bottom left, transparent 0, transparent 75%, $device-silver-panel 75%, $device-silver-panel 100%);
-      left: -6px;
+      left: -10px;
     }
     &::before {
       background: radial-gradient(circle at bottom right, transparent 0, transparent 75%, $device-silver-panel 75%, $device-silver-panel 100%);
-      right: -6px;
+      right: -10px;
     }
   }
 
