@@ -318,8 +318,8 @@
 }
 
 .device-google-pixel-2-xl {
-  height: 836px;
-  width: 408px;
+  height: 832px;
+  width: 404px;
 }
 
 .device-google-pixel-2-xl .device-frame {
@@ -371,7 +371,7 @@
   background: #333;
   border-radius: 7px;
   height: 14px;
-  left: 50px;
+  left: 54px;
   margin-top: -7px;
   position: absolute;
   top: 36px;
@@ -380,19 +380,19 @@
 
 .device-google-pixel-2-xl .device-btns {
   background: #cfcfcf;
-  height: 94px;
+  height: 102px;
   position: absolute;
-  right: -2px;
-  top: 274px;
+  right: -3px;
+  top: 306px;
   width: 3px;
 }
 
 .device-google-pixel-2-xl .device-power {
   background: #cfcfcf;
-  height: 48px;
+  height: 58px;
   position: absolute;
-  right: -2px;
-  top: 174px;
+  right: -3px;
+  top: 194px;
   width: 3px;
 }
 

@@ -4,8 +4,8 @@ $device-black-dark: darken($device-black, 20%);
 $device-black-panel: #121212;
 
 .device-google-pixel-2-xl {
-  height: 836px;
-  width: 408px;
+  height: 832px;
+  width: 404px;
 
   .device-frame {
     background: $device-black-panel;
@@ -55,7 +55,7 @@ $device-black-panel: #121212;
     background: #333;
     border-radius: 7px;
     height: 14px;
-    left: 50px;
+    left: 54px;
     margin-top: -7px;
     position: absolute;
     top: 36px;
@@ -64,19 +64,19 @@ $device-black-panel: #121212;
 
   .device-btns {
     background: $device-black;
-    height: 94px;
+    height: 102px;
     position: absolute;
-    right: -2px;
-    top: 274px;
+    right: -3px;
+    top: 306px;
     width: 3px;
   }
 
   .device-power {
     background: $device-black;
-    height: 48px;
+    height: 58px;
     position: absolute;
-    right: -2px;
-    top: 174px;
+    right: -3px;
+    top: 194px;
     width: 3px;
   }
 }
