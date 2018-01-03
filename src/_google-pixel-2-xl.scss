@@ -4,62 +4,62 @@ $device-black-dark: darken($device-black, 20%);
 $device-black-panel: #121212;
 
 .device-google-pixel-2-xl {
-  height: 744px;
-  width: 360px;
+  height: 836px;
+  width: 408px;
 
   .device-frame {
     background: $device-black-panel;
     border-radius: 36px;
-    box-shadow: inset 0 0 0 2px $device-black, inset 0 0 0 6px $device-black-dark;
-    height: 740px;
-    padding: 50px 20px;
-    width: 360px;
+    box-shadow: inset 0 0 0 2px $device-black, inset 0 0 0 7px $device-black-dark;
+    height: 832px;
+    padding: 56px 22px;
+    width: 404px;
   }
 
   // 2880-by-1440-pixel resolution
   .device-content {
-    border-radius: 24px;
-    height: 640px;
-    width: 320px;
+    border-radius: 27px;
+    height: 720px;
+    width: 360px;
   }
 
   .device-header {
-    height: 740px;
+    height: 832px;
     left: 50%;
-    margin-left: -135px;
+    margin-left: -150px;
     position: absolute;
     top: 0;
-    width: 270px;
+    width: 300px;
 
     &::after,
     &::before {
       background: #333;
-      border-radius: 2.5px;
+      border-radius: 3px;
       content: "";
-      height: 5px;
+      height: 6px;
       left: 50%;
-      margin-left: -65px;
-      margin-top: -2.5px;
+      margin-left: -73px;
+      margin-top: -3px;
       position: absolute;
-      width: 130px;
+      width: 146px;
     }
     &::after {
-      top: 20px;
+      top: 24px;
     }
     &::before {
-      bottom: 26px;
+      bottom: 28px;
     }
   }
 
   .device-sensors {
     background: #333;
-    border-radius: 5px;
-    height: 12px;
-    left: 45px;
-    margin-top: -6px;
+    border-radius: 7px;
+    height: 14px;
+    left: 50px;
+    margin-top: -7px;
     position: absolute;
-    top: 32px;
-    width: 12px;
+    top: 36px;
+    width: 14px;
   }
 
   .device-btns {
