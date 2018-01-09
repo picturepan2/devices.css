@@ -544,58 +544,58 @@
 }
 
 .device-galaxy-s8 {
-  height: 686px;
-  width: 316px;
+  height: 828px;
+  width: 380px;
 }
 
 .device-galaxy-s8 .device-frame {
   background: #222;
   border: solid #cfcfcf;
-  border-radius: 46px;
-  border-width: 4px 0;
+  border-radius: 55px;
+  border-width: 5px 0;
   box-shadow: inset 0 0 0 2px #9c9c9c;
-  height: 686px;
-  padding: 40px 8px 34px 8px;
-  width: 316px;
+  height: 828px;
+  padding: 48px 10px 40px 10px;
+  width: 380px;
 }
 
 .device-galaxy-s8 .device-content {
   border: 2px solid #222;
-  border-radius: 28px;
-  height: 617px;
-  width: 300px;
+  border-radius: 34px;
+  height: 740px;
+  width: 360px;
 }
 
 .device-galaxy-s8 .device-stripe::after,
 .device-galaxy-s8 .device-stripe::before {
   border: solid rgba(51, 51, 51, .15);
-  border-width: 4px 0;
+  border-width: 5px 0;
   content: "";
-  height: 686px;
+  height: 828px;
   position: absolute;
   top: 0;
-  width: 5px;
+  width: 6px;
   z-index: 9;
 }
 
 .device-galaxy-s8 .device-stripe::after {
-  left: 40px;
+  left: 48px;
 }
 
 .device-galaxy-s8 .device-stripe::before {
-  right: 40px;
+  right: 48px;
 }
 
 .device-galaxy-s8 .device-sensors {
   background: #666;
-  border-radius: 2.5px;
-  height: 4px;
+  border-radius: 3px;
+  height: 6px;
   left: 50%;
-  margin-left: -20px;
-  margin-top: -2px;
+  margin-left: -24px;
+  margin-top: -3px;
   position: absolute;
-  top: 26px;
-  width: 40px;
+  top: 32px;
+  width: 48px;
 }
 
 .device-galaxy-s8 .device-sensors::after,
@@ -608,49 +608,49 @@
 }
 
 .device-galaxy-s8 .device-sensors::after {
-  box-shadow: -160px 0 #333, -145px 0 #333, -200px 0 #333;
-  height: 6px;
-  margin-top: -3px;
-  right: -75px;
-  width: 6px;
+  box-shadow: -192px 0 #333, -174px 0 #333, -240px 0 #333;
+  height: 8px;
+  margin-top: -4px;
+  right: -90px;
+  width: 8px;
 }
 
 .device-galaxy-s8 .device-sensors::before {
-  box-shadow: 155px 0 #666;
-  height: 10px;
-  left: -75px;
-  margin-top: -5px;
-  width: 10px;
+  box-shadow: 186px 0 #666;
+  height: 12px;
+  left: -90px;
+  margin-top: -6px;
+  width: 12px;
 }
 
 .device-galaxy-s8 .device-btns {
   background: #9c9c9c;
-  border-radius: 2px 0 0 2px;
-  height: 98px;
-  left: -2px;
+  border-radius: 3px 0 0 3px;
+  height: 116px;
+  left: -3px;
   position: absolute;
-  top: 120px;
+  top: 144px;
   width: 3px;
 }
 
 .device-galaxy-s8 .device-btns::after {
   background: #9c9c9c;
-  border-radius: 2px 0 0 2px;
+  border-radius: 3px 0 0 3px;
   content: "";
-  height: 45px;
+  height: 54px;
   left: 0;
   position: absolute;
-  top: 138px;
+  top: 164px;
   width: 3px;
 }
 
 .device-galaxy-s8 .device-power {
   background: #9c9c9c;
-  border-radius: 0 2px 2px 0;
-  height: 46px;
+  border-radius: 0 3px 3px 0;
+  height: 54px;
   position: absolute;
-  right: -2px;
-  top: 218px;
+  right: -3px;
+  top: 260px;
   width: 3px;
 }
 
