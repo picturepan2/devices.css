@@ -62,23 +62,6 @@
     padding-top: 1rem;
   }
 
-  .code {
-    color: lighten($dark-color, 15%);
-
-    .com {
-      color: $gray-color;
-    }
-    .tag {
-      color: $primary-color;
-    }
-    .atn {
-      color: lighten($dark-color, 15%);
-    }
-    .atv {
-      color: #e06870;
-    }
-  }
-
   .dots {
     text-align: center;
 
@@ -144,5 +127,48 @@
   .device-imac-pro {
     left: 50%;
     transform: translateX(-50%) scale(.5);
+  }
+}
+
+.docs-ad {
+  background: $bg-color;
+  border-radius: .1rem;
+  display: block;
+  margin: 2rem 0;
+  padding: $layout-spacing;
+  position: relative;
+
+  ins {
+    line-height: 1;
+    vertical-align: middle;
+  }
+
+  .carbon-wrap {
+    .carbon-img {
+      display: block;
+    }
+  
+    .carbon-text {
+      color: $gray-color-dark;
+      display: block;
+      font-size: .7rem;
+    }
+  }
+  
+  .carbon-poweredby {
+    color: $gray-color;
+    font-size: .6rem;
+  }
+}
+
+@media (min-width: 1366px) {
+  .docs-ad {
+    &.docs-ad-sidebar {
+      bottom: 1rem;
+      margin: 0;
+      position: fixed;
+      right: 1rem;
+      width: 7.3rem;
+    }
   }
 }

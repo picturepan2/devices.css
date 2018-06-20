@@ -57,26 +57,6 @@
   padding-top: 1rem;
 }
 
-.section-device .code {
-  color: #667189;
-}
-
-.section-device .code .com {
-  color: #acb3c2;
-}
-
-.section-device .code .tag {
-  color: #5764c6;
-}
-
-.section-device .code .atn {
-  color: #667189;
-}
-
-.section-device .code .atv {
-  color: #e06870;
-}
-
 .section-device .dots {
   text-align: center;
 }
@@ -140,5 +120,44 @@
   .device-imac-pro {
     left: 50%;
     transform: translateX(-50%) scale(.5);
+  }
+}
+
+.docs-ad {
+  background: #f8f9fa;
+  border-radius: .1rem;
+  display: block;
+  margin: 2rem 0;
+  padding: .4rem;
+  position: relative;
+}
+
+.docs-ad ins {
+  line-height: 1;
+  vertical-align: middle;
+}
+
+.docs-ad .carbon-wrap .carbon-img {
+  display: block;
+}
+
+.docs-ad .carbon-wrap .carbon-text {
+  color: #727e96;
+  display: block;
+  font-size: .7rem;
+}
+
+.docs-ad .carbon-poweredby {
+  color: #acb3c2;
+  font-size: .6rem;
+}
+
+@media (min-width: 1366px) {
+  .docs-ad.docs-ad-sidebar {
+    bottom: 1rem;
+    margin: 0;
+    position: fixed;
+    right: 1rem;
+    width: 7.3rem;
   }
 }
