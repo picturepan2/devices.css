@@ -27,7 +27,7 @@ function css() {
 
 function web_css() {
   return gulp
-    .src(['./src/devices.scss', './src/demo.scss'])
+    .src(['./src/devices.scss', './docs/scss/demo.scss'])
     .pipe(sass({outputStyle: 'compact', precision: 2})
       .on('error', sass.logError)
     )
@@ -42,7 +42,7 @@ function web_css() {
 
 function web_docs() {
   return gulp
-    .src('./pug/!(_)*.pug')
+    .src('./docs/pug/!(_)*.pug')
     .pipe(plumber())
     .pipe(pug({
       pretty: true

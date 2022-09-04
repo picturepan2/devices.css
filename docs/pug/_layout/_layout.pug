@@ -1,0 +1,83 @@
+block global
+  - var domain = 'https://devicescss.xyz'
+  - var url = domain
+
+block variables
+  - var slug = 'index'
+  - var parent = 'index'
+  - var title = 'Devices.css - Modern devices in pure CSS'
+  - var description = 'Devices.css - Modern devices in pure CSS'
+
+if slug == parent
+  if slug == 'index'
+    - var url = domain 
+  else
+    - var url = domain + slug + '.html'
+else 
+  - var url = domain + parent + '/' + slug + '.html'
+
+doctype html
+html(lang='en')
+  head
+    title= title
+    meta(charset='utf-8')
+    meta(name='robots' content='index, follow')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0, shrink-to-fit=no')
+    meta(http-equiv='x-ua-compatible' content='ie=edge')
+    meta(name='description' content= description)
+    meta(name='author' content='@picturepan2')
+    meta(property='og:url' content= url)
+    meta(property='og:title' content= title)
+    meta(property='og:type' content='website')
+    meta(property='og:description' content= description)
+    //- meta(property='og:image' content= domain + '/assets/img/devices-image.jpg')
+    meta(name='twitter:card' content='summary')
+    meta(name='twitter:site' content='@picturepan2')
+    meta(name='twitter:creator' content='@picturepan2')
+    if slug != parent
+      link(rel='icon' href='../assets/favicons/favicon.png')
+      link(rel='stylesheet' href='../assets/css/demo.min.css')
+      link(rel='stylesheet' href='../assets/css/devices.min.css')
+    else 
+      link(rel='icon' href='assets/favicons/favicon.png')
+      link(rel='stylesheet' href='assets/css/demo.min.css')
+      link(rel='stylesheet' href='assets/css/devices.min.css')
+    link(rel='canonical' href= url)
+    
+  body
+    input(type="checkbox" id="rework-switch" class="rework-switch" name="rework-switch" hidden)
+    .rework-container
+      label.rework-overlay(for="rework-switch")
+      .rework-brand.rework-brand-fixed
+        a.brand-logo(href="/")
+          span.brand-primary D
+          span.brand-secondary.ml-1 DEVICES
+          span.brand-extra.ml-1 .CSS
+        label.brand-homebtn.c-hand(for="rework-switch")
+          .icon-menu
+      .section-aside
+        include _aside.pug
+      main.section-main
+        block content
+
+        footer.section-footer
+          .container.grid-lg
+            span Crafted with 
+              span.text-error ♥ 
+              span by 
+              a(href="https://twitter.com/picturepan2" target="_blank" rel="noopener noreferrer")
+                strong Yan Zhu
+            span.ml-1.mr-1 ·
+            a(href="https://github.com/picturepan2/devices.css" target="_blank" rel="noopener noreferrer")
+              strong GitHub
+            
+              
+
+
+    script(async="" src="https://www.googletagmanager.com/gtag/js?id=UA-2702768-16")
+    script.
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-2702768-16');
