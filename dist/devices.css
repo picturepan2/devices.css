@@ -1,4 +1,4 @@
-/*! Devices.css v0.1.16 | MIT License | github.com/picturepan2/devices.css */
+/*! Devices.css v0.2.0 | MIT License | github.com/picturepan2/devices.css */
 .device,
 .device::before,
 .device::after,
@@ -855,7 +855,7 @@
 }
 
 .device-surface-book .device-power::after {
-  background: radial-gradient(circle at center, #eee 0, #eee 95%, #a2a1a1 100%);
+  background: radial-gradient(circle at center, #eee 0, #eee 95%, #a2a2a2 100%);
   border-radius: 0 0 6px 6px;
   height: 8px;
   left: 50%;
@@ -892,7 +892,7 @@
 }
 
 .device-macbook-pro .device-frame::after {
-  background: #272626;
+  background: #272727;
   border-radius: 0 0 20px 20px;
   bottom: 2px;
   content: "";
@@ -1000,7 +1000,7 @@
 }
 
 .device-macbook .device-frame::after {
-  background: #272626;
+  background: #272727;
   border-radius: 0 0 20px 20px;
   bottom: 2px;
   content: "";

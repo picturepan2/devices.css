@@ -1,0 +1,158 @@
+extends _layout/_layout.pug
+
+block variables
+  - var slug = 'careers'
+  - var parent = 'careers'
+  - var title = 'Careers - Winkrypto'
+  - var description = 'Careers @ Winkrypto - Start a New Life of “All in Web3”.'
+
+block content
+  .section-navbar
+    .container.grid-lg
+      header.navbar
+        .navbar-section
+          a.navbar-brand(href="/")
+            img.winkrypto-logo(src="assets/img/logo-winkrypto-2022.svg")
+          a.navbar-link.text-bold(href="/careers.html")
+            | HIRING
+        .navbar-section
+          a.btn.btn-link.hide-sm(href="#services") Services
+          a.btn.btn-link.hide-md(href="#clients") Clients
+          a.btn.btn-link.hide-md(href="#advisors") Advisors
+          a.btn.btn-link.hide-sm(href="#partners") Partners
+          a.btn.btn-link(href="https://docsend.com/view/bxyncymyt8fn5jmp" target="_blank") Deck
+          a.btn-social(href="https://twitter.com/winkrypto/" target="_blank")
+            img(src="assets/img/icon-twitter.svg")
+          a.btn.ml-2(href="#contact") Contact
+    
+  #hero.section.section-hero
+    .container.grid-lg.text-center
+      h1.is-reveal 
+        div Careers @ Winkrypto
+        div Start a New Life of “All in Web3”
+      h2.is-reveal
+        small
+          a.text-bold(href="#builder") Crypto Market Builder
+        span.text-normal |
+        small
+          a.text-bold(href="#researcher") Researcher
+        span.text-normal |
+        small
+          a.text-bold(href="#editor") Editor
+      .icon-connector
+
+  #builder.section.section-career
+    .container.grid-lg.text-center
+      .h6.text-uppercase.text-bold.mb-4.is-reveal
+        span.text-error.mr-1 3 positions
+      h1.is-reveal 
+        a(href="#builder") Crypto Market Builder
+      h2.h6.is-reveal
+        div.text-bold.text-uppercase Europe, America and African markets
+      
+    .content-container.container.grid-xs.text-center
+      .h6.text-uppercase.text-highlight.text-bold.is-reveal.mt-8 Job Description
+      p
+        ol
+          li Discover and explore new projects at early stage through the emerging trends in crypto space from an investment perspective, identify new (non)obvious opportunities and bring new investment/cooperation opportunities for Winkrypto through pitching them Winkrypto's products/services, finalizing commercials and agreements through business negotiations, and maintaining relationship.
+          li Evaluate and formulate business, technical, and fundraising resource requirements for crypto projects, fill in resource gaps across institutions, media, communities and facilitate cooperative resource sharing and profit maximizing.
+          li Assisting team members in formulating and conducting Chinese local projects 'Going Global Strategy', including but not limited to connecting and filling in resources gaps like global medias, influencers across platforms, communities and venture funds, purchasing medias and performing content marketing to reach the measurable target audiences.
+          li Be responsible for scaling and nurturing Winkrypto’s partnership with projects, communities, influencers, fund ventures.
+          li Be able to identify inefficiencies and suggest improvements to existing processes and be responsible for the sales result to meet performance objectives.
+      .h6.text-uppercase.text-highlight.text-bold.is-reveal.mt-8 Qualifications
+      p
+        ol
+          li Two years of experience working in crypto/Web3 industry.
+          li English native speaker or close to native speaker level.
+          li Strong ability to multitask. You will be helping out with hundreds of relationships at once and stay organized and be accountable for all deadlines and stay responsive in communications. 
+          li Excellent verbal communication and writing skills, good convincing/negotiation, interpersonal and presentations skills.
+          li Curiosity and love for learning.
+          li Apply anyway if you believe you can add value to Winkrypto even you don't meet all of our requirements.
+      .h6.text-uppercase.text-highlight.text-bold.is-reveal.mt-8 Nice to haves
+      p
+        ol
+          li Good understanding of Chinese language and mastery in one or more languages.
+          li Proven experience in sales, BD and teacher.
+          li Existing relationships within crypto and DAO ecosystem.
+          li Have created and aped NFTs.
+      p
+        a.btn.btn-lg(href="mailto:hi@winkrypto.com?subject=Apply%20for%20Crypto%20Market%20Builder%20position") Apply now
+  #researcher.section.section-career
+    .container.grid-lg.text-center
+      .h6.text-uppercase.text-bold.mb-4.is-reveal
+        span.text-error.mr-1 3 positions
+      h1.is-reveal 
+        a(href="#researcher") Researcher
+      
+    .content-container.container.grid-xs.text-center
+      .h6.text-uppercase.text-highlight.text-bold.is-reveal.mt-8 Job Description
+      p
+        ol
+          li Discover new projects at early stage, conduct proactive research and write brief research reports to generate new investment ideas and/or propose investment action.
+          li Be responsible for performing due diligence on product viability, project teams and smart contract, by aggregating information from a variety of sources , including synthesizing data from internet, technical repositories and get feedback from teams, to write internal facing memo for finalizing investment decision making.
+          li Follow up on our team's selected deals, pitch them our product/service, finalize commercials and agreements, on-boarding and maintaining relationships later on.
+          li Write thesis driven thought leadership research pieces on project, category and industry related topics and release them on a regular schedule across external platforms.
+      .h6.text-uppercase.text-highlight.text-bold.is-reveal.mt-8 Qualifications
+      p
+        ol
+          li 3 years of experience working in crypto industry.
+          li Be proactive and stay informed about market trends, investment opportunities, risks and new crypto projects.
+          li Strong analytical and logical skills and experience in analyzing blockchain projects thoroughly. Solid understanding of some of categories in the blockchain ecosystem including infrastructure, Layer 1s, Layer 2s, NFT, DeFi and Web 3.0.
+          li Has a strong attention to detail, identifies associated risks (especially for financial risks) and evaluates the technological value and future potential preciously for projects at early stage.
+          li Apply anyway if you believe you can add value to Winkrypto even you don't meet all of our requirements.
+      .h6.text-uppercase.text-highlight.text-bold.is-reveal.mt-8 Nice to haves
+      p
+        ol
+          li KOL in the English speaking crypto communities, English native speakers and mastery in two languages.
+          li A bachelor (or above) degree in technical (i.e. mathematics, engineering or computer science or equivalent), with financial, blockchain and/or PM experience.
+          li Engage with crypto community groups, influencers, and artists.
+      p
+        a.btn.btn-lg(href="mailto:hi@winkrypto.com?subject=Apply%20for%20Researcher%20position") Apply now
+
+  #editor.section.section-career
+    .container.grid-lg.text-center
+      .h6.text-uppercase.text-bold.mb-4.is-reveal
+        span.text-error.mr-1 5 positions
+      h1.is-reveal 
+        a(href="#editor") English Editor
+      h2.h6.is-reveal
+        div.text-bold.text-uppercase Freelancer
+      
+    .content-container.container.grid-xs.text-center
+      .h6.text-uppercase.text-highlight.text-bold.is-reveal.mt-8 Job Description
+      p
+        ol
+          li Create content in English for news, PR, social media copies , in-depth pieces and other marketing content and promotional materials based on the given Chinese content.
+          li Proofread, translate and localize existing English content.
+      .h6.text-uppercase.text-highlight.text-bold.is-reveal.mt-8 Qualifications
+      p
+        ol
+          li English native speaker or close to native writing skill level.
+          li Able to accurately refine, translate, and edit content to ensure on-time delivery.
+      .h6.text-uppercase.text-highlight.text-bold.is-reveal.mt-8 Nice to haves
+      p
+        ol
+          li Proven experience in copywriter/web3 copywriting and SEO.
+          li Strong understanding of crypto ecosystem and passion for the space.
+          li A Web3 content consumer, and has experience writing engaging content for newsletters, Substack, Mirror and social content.
+      p
+        a.btn.btn-lg(href="mailto:hi@winkrypto.com?subject=Apply%20for%20English%20Editor%20position") Apply now
+
+  #contact.section.section-contact
+    .container.grid-sm
+      .container-contact.text-center.is-reveal
+        h3 Contact
+        p.text-large.text-bold Let’s talk business
+        p
+          i.icon.icon-mail.mr-2.text-primary
+          a(href="mailto:hi@winkrypto.com") hi@winkrypto.com
+
+  #footer.section.section-footer
+    .container.grid-lg.text-center
+      img.winkrypto-logo(src="assets/img/logo-winkrypto-2022.svg")
+      a.btn-social(href="https://twitter.com/winkrypto/" target="_blank")
+        img.mr-1(src="assets/img/icon-twitter.svg")
+    .container.grid-lg.text-center
+      small.text-bold.mr-2 Crypto Integrated Marketing Communication Expert
+    .container.grid-lg.text-center
+      small.ml-2 Copyright &copy; 2022 Winkrypto. All Rights Reserved.

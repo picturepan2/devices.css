@@ -1,7 +1,7 @@
 {
   "name": "devices.css",
-  "version": "0.1.15",
-  "homepage": "http://picturepan2.github.io/devices.css",
+  "version": "0.2.0",
+  "homepage": "https://devicescss.xyz",
   "author": "Yan Zhu <picturepan2@hotmail.com>",
   "description": "Devices.css: Modern devices in pure CSS.",
   "main": "dist/devices.css",
@@ -21,11 +21,14 @@
   },
   "devDependencies": {
     "gulp": "latest",
-    "gulp-autoprefixer": "latest",
-    "gulp-clean-css": "^3.7.0",
-    "gulp-csscomb": "^3.0.8",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "latest"
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-csscomb": "latest",
+    "gulp-plumber": "latest",
+    "gulp-pug": "latest",
+    "gulp-rename": "latest",
+    "gulp-sass": "latest",
+    "node-sass": "^7.0.1"
   },
   "browserslist": [
     "last 4 Chrome versions",

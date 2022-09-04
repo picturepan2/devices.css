@@ -1,0 +1,76 @@
+block global
+  - var domain = 'https://www.winkrypto.com'
+  - var url = domain
+
+block variables
+  - var slug = ''
+  - var parent = ''
+  - var title = 'Winkrypto - Crypto Integrated Marketing Expert'
+  - var description = 'The intergrated marketing agency that reaches the world’s most discerning crypto audience. Brand Consulting & Content Strategy, Communication and Business Development.'
+
+if slug == parent
+  if slug == 'index'
+    - var url = domain 
+  else
+    - var url = domain + slug + '.html'
+else 
+  - var url = domain + parent + '/' + slug + '.html'
+
+doctype html
+html(lang='en')
+  head
+    title= title
+    meta(charset='utf-8')
+    meta(name='robots' content='index, follow')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0, shrink-to-fit=no')
+    meta(http-equiv='x-ua-compatible' content='ie=edge')
+    meta(name='description' content= description)
+    meta(name='author' content='@winkrypto')
+    meta(property='og:url' content= url)
+    meta(property='og:title' content= title)
+    meta(property='og:type' content='website')
+    meta(property='og:description' content= description)
+    meta(property='og:image' content= domain + '/assets/img/winkrypto-image.jpg')
+    meta(name='twitter:card' content='summary')
+    meta(name='twitter:site' content='@winkrypto')
+    meta(name='twitter:creator' content='@winkrypto')
+    if slug != parent
+      link(rel='shortcut icon' href='../assets/favicons/favicon.ico')
+      link(rel='icon' href='../assets/favicons/favicon.png')
+      link(rel='stylesheet' href='../assets/css/winkrypto.min.css') 
+    else 
+      link(rel='shortcut icon' href='assets/favicons/favicon.ico')
+      link(rel='icon' href='assets/favicons/favicon.png')
+      link(rel='stylesheet' href='assets/css/winkrypto.min.css')
+    link(rel='canonical' href= url)
+    script(src="https://unpkg.com/scrollreveal@4.0.5/dist/scrollreveal.min.js")
+    
+
+  body
+    .d-none
+      img(src= domain + '/assets/img/winkrypto-image.jpg', alt='Winkrypto - Crypto Integrated Marketing Expert')
+    block content
+
+    script.
+      options = {
+        distance: '2rem',
+        duration: 1000,
+        easing: "cubic-bezier(0.215, 0.61, 0.355, 1)",
+        interval: 100
+      }
+      ScrollReveal().reveal('.section-hero .is-reveal', options)
+      ScrollReveal().reveal('.section-about .is-reveal', options)
+      ScrollReveal().reveal('.section-services .is-reveal', options)
+      ScrollReveal().reveal('.section-clients .is-reveal', options)
+      ScrollReveal().reveal('.section-team .is-reveal', options)
+      ScrollReveal().reveal('.section-partners .is-reveal', options)
+      ScrollReveal().reveal('.section-contact .is-reveal', options)
+
+
+    script(async="" src="https://www.googletagmanager.com/gtag/js?id=UA-105874577-5")
+    script.
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-105874577-5');
+  
