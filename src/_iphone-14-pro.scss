@@ -1,0 +1,150 @@
+// iPhone 14 Pro
+$device-purple: #342C3F;
+$device-purple-dark: darken($device-purple, 10%);
+$device-purple-panel: #010101;
+$device-silver: #F1F3F2;
+$device-silver-dark: darken($device-purple, 10%);
+$device-silver-panel: #010101;
+$device-black: #76726F;
+$device-black-dark: darken($device-purple, 10%);
+$device-black-panel: #010101;
+$device-gold: #FCF3E2;
+$device-gold-dark: darken($device-purple, 10%);
+$device-gold-panel: #010101;
+
+.device-iphone-14-pro {
+  height: 868px;
+  width: 428px;
+
+  .device-frame {
+    background: $device-purple-panel;
+    border: 1px solid $device-purple-dark;
+    border-radius: 68px;
+    box-shadow: inset 0 0 4px 2px lighten($device-purple, 55%), inset 0 0 0 6px $device-purple;
+    height: 868px;
+    padding: 19px;
+    width: 428px;
+  }
+
+  // 2556‑by‑1179-pixel resolution
+  .device-content {
+    border-radius: 49px;
+    height: 830px;
+    width: 390px;
+  }
+
+  .device-stripe {
+    &::after,
+    &::before {
+      border: solid rgba(#333, .25);
+      border-width: 0 7px;
+      content: "";
+      height: 7px;
+      left: 0;
+      position: absolute;
+      width: 100%;
+      z-index: 9;
+    }
+    &::after {
+      top: 85px;
+    }
+    &::before {
+      bottom: 85px;
+    }
+  }
+
+  .device-header {
+    background: $device-purple-panel;
+    border-radius: 20px;
+    height: 35px;
+    left: 50%;
+    margin-left: -60px;
+    position: absolute;
+    top: 29px;
+    width: 120px;
+  }
+
+  .device-sensors {
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+    }
+    &::after {
+      background: $device-purple-panel;
+      border-radius: 17px;
+      height: 33px;
+      left: 50%;
+      margin-left: -60px;
+      top: 30px;
+      width: 74px;
+    }
+    &::before {
+      background: radial-gradient(farthest-corner at 20% 20%, #6074BF 0, transparent 40%),
+                  radial-gradient(farthest-corner at 80% 80%, #513785 0, #24555E 20%, transparent 50%);
+      box-shadow: 0 0 1px 1px rgba($light-color, .05);
+      border-radius: 50%;
+      height: 9px;
+      left: 50%;
+      margin-left: 36px;
+      top: 42px;
+      width: 9px;
+    }
+  }
+
+  .device-btns {
+    background: $device-purple-dark;
+    height: 32px;
+    left: -3px;
+    position: absolute;
+    top: 115px;
+    width: 3px;
+
+    &::after,
+    &::before {
+      background: $device-purple-dark;
+      content: "";
+      height: 62px;
+      left: 0;
+      position: absolute;
+      width: 3px;
+    }
+
+    &::after {
+      top: 60px;
+    }
+    &::before {
+      top: 140px;
+    }
+  }
+
+  .device-power {
+    background: $device-purple-dark;
+    height: 100px;
+    right: -3px;
+    position: absolute;
+    top: 200px;
+    width: 3px;
+  }
+
+  .device-home {
+    &::after,
+    &::before {
+      border: solid rgba(#333, .25);
+      border-width: 6px 0;
+      content: "";
+      height: 6px;
+      position: absolute;
+      width: 6px;
+      z-index: 9;
+    }
+    &::after {
+      right: 86px;
+      top: 0;
+    }
+    &::before {
+      bottom: 0;
+      left: 86px;
+    }
+  }
+}
