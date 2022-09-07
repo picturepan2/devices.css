@@ -9,14 +9,35 @@ block variables
 block content
   .container.grid-md
     .columns
-      .hero-container
+      .hero-container.column.col-md-12
         .rework-hero
           .hero-content
             h1.hero-title DEVICES.CSS
             h2.hero-subtitle Modern popular devices crafted in pure CSS
         .rework-content
           .hero-content
-          .hero-content
-            p All devices are elegantly developed in pure CSS. More devices are coming. You can use these minimal devices in landing pages and screenshot showcase pages.
+            .hero-demo 
+              //- .device.device-iphone-x
+              //-   .device-frame
+              //-     video.device-content(muted="muted" autoplay loop)
+              //-       source(src="assets/video/bg-01.mp4" type="video/mp4")
+              //-   .device-stripe
+              //-   .device-header
+              //-   .device-sensors
+              //-   .device-btns
+              //-   .device-power
+              //-   .device-home
+              //- .device.device-macbook-pro-2018
+              //-   .device-frame
+              //-     img.device-content(src="assets/img/bg-10.jpg")
+              //-   .device-stripe
+              //-   .device-header
+              //-   .device-sensors
+              //-   .device-btns
+              //-   .device-power
+              //-   .device-home
 
-    
+          .hero-content
+            p All devices are elegantly developed in pure CSS. You can easily embed these minimal devices in landing pages and screenshot showcase pages. More devices are coming.
+
+  include _layout/_ad-sidebar.pug

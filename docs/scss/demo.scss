@@ -536,7 +536,7 @@ body {
   }
 }
 
-.docs-ad {
+.docs-sponsor {
   background: darken($bg-color, 6%);
   border-radius: $border-radius;
   display: block;
@@ -551,8 +551,8 @@ body {
 }
 
 @media (min-width: 1366px) {
-  .docs-ad {
-    &.docs-ad-sidebar {
+  .docs-sponsor {
+    &.docs-sponsor-sidebar {
       bottom: 1rem;
       margin: 0;
       position: fixed;
