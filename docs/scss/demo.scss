@@ -526,10 +526,6 @@ body {
   margin: 1rem auto;
 }
 
-.section-device:nth-of-type(even) {
-  background: #f8f9fa;
-}
-
 @media (max-width: $size-sm) {
   .device-ipad-pro,
   .device-surface-studio,
@@ -541,8 +537,8 @@ body {
 }
 
 .docs-ad {
-  background: $bg-color;
-  border-radius: .1rem;
+  background: darken($bg-color, 6%);
+  border-radius: $border-radius;
   display: block;
   margin: 2rem 0;
   padding: $layout-spacing;
@@ -551,23 +547,6 @@ body {
   ins {
     line-height: 1;
     vertical-align: middle;
-  }
-
-  .carbon-wrap {
-    .carbon-img {
-      display: block;
-    }
-  
-    .carbon-text {
-      color: $gray-color-dark;
-      display: block;
-      font-size: .7rem;
-    }
-  }
-  
-  .carbon-poweredby {
-    color: $gray-color;
-    font-size: .6rem;
   }
 }
 

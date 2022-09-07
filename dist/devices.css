@@ -1229,12 +1229,12 @@
   border-color: #818187;
 }
 
-.device-surface-pro {
+.device-surface-pro-2017 {
   height: 394px;
   width: 561px;
 }
 
-.device-surface-pro .device-frame {
+.device-surface-pro-2017 .device-frame {
   background: #0d0d0d;
   border-radius: 10px;
   box-shadow: inset 0 0 0 2px #c8c8c8;
@@ -1244,15 +1244,15 @@
   width: 561px;
 }
 
-.device-surface-pro .device-content {
+.device-surface-pro-2017 .device-content {
   border: 2px solid #121212;
   border-radius: 2px;
   height: 342px;
   width: 513px;
 }
 
-.device-surface-pro .device-btns::after,
-.device-surface-pro .device-btns::before {
+.device-surface-pro-2017 .device-btns::after,
+.device-surface-pro-2017 .device-btns::before {
   background: #c8c8c8;
   content: "";
   height: 2px;
@@ -1260,17 +1260,17 @@
   top: -2px;
 }
 
-.device-surface-pro .device-btns::after {
+.device-surface-pro-2017 .device-btns::after {
   left: 48px;
   width: 26px;
 }
 
-.device-surface-pro .device-btns::before {
+.device-surface-pro-2017 .device-btns::before {
   left: 94px;
   width: 48px;
 }
 
-.device-surface-pro .device-sensors {
+.device-surface-pro-2017 .device-sensors {
   background: #333;
   border-radius: 50%;
   height: 6px;
