@@ -1,23 +1,20 @@
 // iPhone 14 Pro
 $device-purple: #342C3F;
 $device-purple-dark: darken($device-purple, 10%);
-$device-purple-panel: #010101;
-$device-silver: #F1F3F2;
-$device-silver-dark: darken($device-purple, 10%);
-$device-silver-panel: #010101;
+$device-silver: #e2e3e4;
+$device-silver-dark: darken($device-silver, 10%);
 $device-black: #76726F;
-$device-black-dark: darken($device-purple, 10%);
-$device-black-panel: #010101;
-$device-gold: #FCF3E2;
-$device-gold-dark: darken($device-purple, 10%);
-$device-gold-panel: #010101;
+$device-black-dark: darken($device-black, 10%);
+$device-gold: #F6EEDB;
+$device-gold-dark: darken($device-gold, 15%);
+$device-panel: #010101;
 
 .device-iphone-14-pro {
   height: 868px;
   width: 428px;
 
   .device-frame {
-    background: $device-purple-panel;
+    background: $device-panel;
     border: 1px solid $device-purple-dark;
     border-radius: 68px;
     box-shadow: inset 0 0 4px 2px lighten($device-purple, 55%), inset 0 0 0 6px $device-purple;
@@ -54,7 +51,7 @@ $device-gold-panel: #010101;
   }
 
   .device-header {
-    background: $device-purple-panel;
+    background: $device-panel;
     border-radius: 20px;
     height: 35px;
     left: 50%;
@@ -71,7 +68,7 @@ $device-gold-panel: #010101;
       position: absolute;
     }
     &::after {
-      background: $device-purple-panel;
+      background: $device-panel;
       border-radius: 17px;
       height: 33px;
       left: 50%;
@@ -145,6 +142,69 @@ $device-gold-panel: #010101;
     &::before {
       bottom: 0;
       left: 86px;
+    }
+  }
+
+  // Silver edition
+  &.device-silver {
+    .device-frame {
+      border-color: $device-silver-dark;
+      box-shadow: inset 0 0 4px 2px lighten($device-silver, 55%), inset 0 0 0 6px $device-silver;
+    }
+
+    .device-btns {
+      background: $device-silver-dark;
+  
+      &::after,
+      &::before {
+        background: $device-silver-dark;
+      }
+    }
+  
+    .device-power {
+      background: $device-silver-dark;
+    }
+  }
+
+  // Black edition
+  &.device-black {
+    .device-frame {
+      border-color: $device-black-dark;
+      box-shadow: inset 0 0 4px 2px lighten($device-black, 55%), inset 0 0 0 6px $device-black;
+    }
+
+    .device-btns {
+      background: $device-black-dark;
+  
+      &::after,
+      &::before {
+        background: $device-black-dark;
+      }
+    }
+  
+    .device-power {
+      background: $device-black-dark;
+    }
+  }
+
+  // Gold edition
+  &.device-gold {
+    .device-frame {
+      border-color: $device-gold-dark;
+      box-shadow: inset 0 0 4px 2px lighten($device-gold, 55%), inset 0 0 0 6px darken($device-gold, 35%);
+    }
+
+    .device-btns {
+      background: $device-gold-dark;
+  
+      &::after,
+      &::before {
+        background: $device-gold-dark;
+      }
+    }
+  
+    .device-power {
+      background: $device-gold-dark;
     }
   }
 }
