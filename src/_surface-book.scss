@@ -51,7 +51,7 @@ $device-silver-panel: #0d0d0d;
     border: solid $device-silver-dark;
     border-radius: 2px;
     border-width: 0 2px;
-    height: 12px;
+    height: 16px;
     margin-top: 4px;
     position: relative;
     width: 728px;
@@ -74,7 +74,7 @@ $device-silver-panel: #0d0d0d;
     &::before {
       background: linear-gradient(to bottom, $device-silver, $device-silver-dark);
       border-radius: 2px 2px 0 0;
-      bottom: 12px;
+      bottom: 16px;
       height: 8px;
       left: 50%;
       margin-left: -292px;

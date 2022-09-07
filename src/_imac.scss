@@ -2,6 +2,24 @@
 $device-silver: #EDEEF0;
 $device-silver-dark: #D4D5D7;
 $device-silver-panel: #0d0d0d;
+$device-blue: #EDEEF0;
+$device-blue-dark: #B4C7DA;
+$device-blue-panel: #0d0d0d;
+$device-green: #EDEEF0;
+$device-green-dark: #BBD0C8;
+$device-green-panel: #0d0d0d;
+$device-pink: #EDEEF0;
+$device-pink-dark: #EDCCC6;
+$device-pink-panel: #0d0d0d;
+$device-yellow: #EDEEF0;
+$device-yellow-dark: #F4D595;
+$device-yellow-panel: #0d0d0d;
+$device-orange: #EDEEF0;
+$device-orange-dark: #E9B5A0;
+$device-orange-panel: #0d0d0d;
+$device-purple: #EDEEF0;
+$device-purple-dark: #C4C4E5;
+$device-purple-panel: #0d0d0d;
 
 .device-imac {
   height: 540px;
@@ -28,17 +46,16 @@ $device-silver-panel: #0d0d0d;
       width: 638px;
     }
     &::before {
-      bottom: 15px;
-      color: $device-silver-dark;
+      background: darken($device-silver-panel, 3%);
+      border-radius: 50%;
       content: "";
-      font-size: 24px;
-      height: 24px;
+      height: 6px;
       left: 50%;
-      line-height: 24px;
-      margin-left: -100px;
+      margin-left: -3px;
       position: absolute;
       text-align: center;
-      width: 200px;
+      top: 5px;
+      width: 6px;
       z-index: 9;
     }
   }
@@ -53,7 +70,8 @@ $device-silver-panel: #0d0d0d;
 
   .device-power {
     &::after {
-      background: radial-gradient(circle at center, $device-silver 85%, darken($device-silver-dark, 20%) 100%);
+      background: radial-gradient(circle at center, $device-silver-dark 85%, darken($device-silver-dark, 20%) 100%);
+      border-top: 1px solid $device-silver-dark;
       content: "";
       height: 6px;
       margin: 0 auto;
@@ -67,6 +85,138 @@ $device-silver-panel: #0d0d0d;
       margin: 0 auto;
       position: relative;
       width: 152px;
+    }
+  }
+
+  // Blue edition
+  &.device-blue {
+    .device-frame {
+      box-shadow: inset 0 0 0 2px $device-blue-dark;
+
+      &::after {
+        background: $device-blue-dark;
+        box-shadow: inset 0 0 18px 0 darken($device-blue-dark, 5%);
+      }
+    }
+
+    .device-power {
+      &::after {
+        background: radial-gradient(circle at center, $device-blue-dark 85%, darken($device-blue-dark, 20%) 100%);
+        border-top-color: $device-blue-dark;
+      }
+      &::before {
+        background: linear-gradient(to bottom, darken($device-blue-dark, 20%) 0, darken($device-blue-dark, 5%) 40%, darken($device-blue-dark, 5%) 85%, lighten($device-blue, 15%) 90%, darken($device-blue-dark, 40%) 100%);
+      }
+    }
+  }
+
+  // Green edition
+  &.device-green {
+    .device-frame {
+      box-shadow: inset 0 0 0 2px $device-green-dark;
+
+      &::after {
+        background: $device-green-dark;
+        box-shadow: inset 0 0 18px 0 darken($device-green-dark, 5%);
+      }
+    }
+
+    .device-power {
+      &::after {
+        background: radial-gradient(circle at center, $device-green-dark 85%, darken($device-green-dark, 20%) 100%);
+        border-top-color: $device-green-dark;
+      }
+      &::before {
+        background: linear-gradient(to bottom, darken($device-green-dark, 20%) 0, darken($device-green-dark, 5%) 40%, darken($device-green-dark, 5%) 85%, lighten($device-green, 15%) 90%, darken($device-green-dark, 40%) 100%);
+      }
+    }
+  }
+
+  // Pink edition
+  &.device-pink {
+    .device-frame {
+      box-shadow: inset 0 0 0 2px $device-pink-dark;
+
+      &::after {
+        background: $device-pink-dark;
+        box-shadow: inset 0 0 18px 0 darken($device-pink-dark, 5%);
+      }
+    }
+
+    .device-power {
+      &::after {
+        background: radial-gradient(circle at center, $device-pink-dark 85%, darken($device-pink-dark, 20%) 100%);
+        border-top-color: $device-pink-dark;
+      }
+      &::before {
+        background: linear-gradient(to bottom, darken($device-pink-dark, 20%) 0, darken($device-pink-dark, 5%) 40%, darken($device-pink-dark, 5%) 85%, lighten($device-green, 15%) 90%, darken($device-pink-dark, 40%) 100%);
+      }
+    }
+  }
+
+  // Yello edition
+  &.device-yellow {
+    .device-frame {
+      box-shadow: inset 0 0 0 2px $device-yellow-dark;
+
+      &::after {
+        background: $device-yellow-dark;
+        box-shadow: inset 0 0 18px 0 darken($device-yellow-dark, 5%);
+      }
+    }
+
+    .device-power {
+      &::after {
+        background: radial-gradient(circle at center, $device-yellow-dark 85%, darken($device-yellow-dark, 20%) 100%);
+        border-top-color: $device-yellow-dark;
+      }
+      &::before {
+        background: linear-gradient(to bottom, darken($device-yellow-dark, 20%) 0, darken($device-yellow-dark, 5%) 40%, darken($device-yellow-dark, 5%) 85%, lighten($device-green, 15%) 90%, darken($device-yellow-dark, 40%) 100%);
+      }
+    }
+  }
+
+  // Orange edition
+  &.device-orange {
+    .device-frame {
+      box-shadow: inset 0 0 0 2px $device-orange-dark;
+
+      &::after {
+        background: $device-orange-dark;
+        box-shadow: inset 0 0 18px 0 darken($device-orange-dark, 5%);
+      }
+    }
+
+    .device-power {
+      &::after {
+        background: radial-gradient(circle at center, $device-orange-dark 85%, darken($device-orange-dark, 20%) 100%);
+        border-top-color: $device-orange-dark;
+      }
+      &::before {
+        background: linear-gradient(to bottom, darken($device-orange-dark, 20%) 0, darken($device-orange-dark, 5%) 40%, darken($device-orange-dark, 5%) 85%, lighten($device-green, 15%) 90%, darken($device-orange-dark, 40%) 100%);
+      }
+    }
+  }
+
+  // Purple edition
+  &.device-purple {
+    .device-frame {
+      box-shadow: inset 0 0 0 2px $device-purple-dark;
+
+      &::after {
+        background: $device-purple-dark;
+        box-shadow: inset 0 0 18px 0 darken($device-purple-dark, 5%);
+      }
+    }
+
+    .device-power {
+      &::after {
+        background: radial-gradient(circle at center, $device-purple-dark 85%, darken($device-purple-dark, 20%) 100%);
+        border-top-color: $device-purple-dark;
+      }
+      &::before {
+        background: linear-gradient(to bottom, darken($device-purple-dark, 20%) 0, darken($device-purple-dark, 5%) 40%, darken($device-purple-dark, 5%) 85%, lighten($device-green, 15%) 90%, darken($device-purple-dark, 40%) 100%);
+      }
     }
   }
 }

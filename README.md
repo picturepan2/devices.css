@@ -6,19 +6,22 @@ All devices are elegantly developed in pure CSS. The first are newly announced i
 
 ## Devices
 
-- [iPhone X](https://picturepan2.github.io/devices.css/#iphone-x) (Silver)
-- [iPhone 8](https://picturepan2.github.io/devices.css/#iphone-8) (Silver, Gold and Space Gray)
-- [Google Pixel 2 XL](https://picturepan2.github.io/devices.css/#google-pixel-2-xl) (Black)
-- [Google Pixel](https://picturepan2.github.io/devices.css/#google-pixel) (Very Silver, Quite Black and Really Blue)
-- [Samsung Galaxy S8](https://picturepan2.github.io/devices.css/#galaxy-s8) (Midnight Black and Coral Blue)
-- [iPad Pro](https://picturepan2.github.io/devices.css/#ipad-pro) (Silver, Gold, Rose Gold and Space Gray)
-- [Surface Pro](https://picturepan2.github.io/devices.css/#surface-pro)
-- [Surface Book](https://picturepan2.github.io/devices.css/#surface-book)
-- [MacBook](https://picturepan2.github.io/devices.css/#macbook) (Silver, Gold, Rose Gold and Space Gray)
-- [MacBook Pro](https://picturepan2.github.io/devices.css/#macbook-pro) (Silver and Space Gray)
-- [Surface Studio](https://picturepan2.github.io/devices.css/#surface-studio)
-- [iMac Pro](https://picturepan2.github.io/devices.css/#imac-pro)
-- [Apple Watch](https://picturepan2.github.io/devices.css/#apple-watch)
+### Phones
+- [iPhone X](https://devicescss.xyz/phones.html#iphone-x)
+- [iPhone 8](https://devicescss.xyz/phones.html#iphone-8)
+- [Google Pixel 2 XL](https://devicescss.xyz/phones.html#google-pixel-2-xl)
+- [Google Pixel](https://devicescss.xyz/phones.html#google-pixel)
+- [Samsung Galaxy S8](https://devicescss.xyz/phones.html#galaxy-s8)
+### Computers
+- [MacBook Pro](https://devicescss.xyz/computers.html#macbook-pro)
+- [MacBook Pro (2018)](https://devicescss.xyz/computers.html#macbook-pro-2018)
+- [MacBook](https://devicescss.xyz/computers.html#macbook)
+- [iMac](https://devicescss.xyz/computers.html#imac-pro)
+- [Surface Studio](https://devicescss.xyz/computers.html#surface-studio)
+- [Surface Book](https://devicescss.xyz/computers.html#surface-book)
+### Tablets
+- [iPad Pro](https://devicescss.xyz/#ipad-pro)
+- [Surface Pro](https://devicescss.xyz/#surface-pro)
 
 ## What's next
 
@@ -32,7 +35,7 @@ Download the compiled and minified [Devices.css files](https://github.com/pictur
 
 `<link rel="stylesheet" href="dist/devices.css">`
 
-Go to [Demo page](https://picturepan2.github.io/devices.css/) to copy the device HTML source code and paste it to anywhere you want. All devices use the same HTML structure with different `device-[device-name]` classes.
+Go to [Demo page](https://devicescss.xyz/) to copy the device HTML source code and paste it to anywhere you want. All devices use the same HTML structure with different `device-[device-name]` classes.
 
 ```
 <div class="device device-iphone-x">
