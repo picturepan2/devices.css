@@ -1,4 +1,4 @@
-/*! Devices.css v0.1.16 | MIT License | github.com/picturepan2/devices.css */
+/*! Devices.css v0.2.0 | MIT License | github.com/picturepan2/devices.css */
 .device,
 .device::before,
 .device::after,
@@ -673,214 +673,12 @@
   background: #5192d4;
 }
 
-.device-ipad-pro {
-  height: 804px;
-  width: 560px;
-}
-
-.device-ipad-pro .device-frame {
-  background: #fff;
-  border-radius: 38px;
-  box-shadow: inset 0 0 0 2px #c8cacb, inset 0 0 0 6px #e2e3e4;
-  height: 804px;
-  padding: 62px 25px;
-  width: 560px;
-}
-
-.device-ipad-pro .device-content {
-  border: 2px solid #222;
-  border-radius: 2px;
-  height: 680px;
-  width: 510px;
-}
-
-.device-ipad-pro .device-header {
-  border: 2px solid #c8cacb;
-  border-radius: 50%;
-  bottom: 17px;
-  height: 34px;
-  left: 50%;
-  margin-left: -17px;
-  position: absolute;
-  width: 34px;
-}
-
-.device-ipad-pro .device-sensors {
-  background: #666;
-  border-radius: 50%;
-  height: 10px;
-  left: 50%;
-  margin-left: -5px;
-  margin-top: -5px;
-  position: absolute;
-  top: 34px;
-  width: 10px;
-}
-
-.device-ipad-pro.device-gold .device-frame {
-  box-shadow: inset 0 0 0 2px #e4b08a, inset 0 0 0 6px #f7e8dd;
-}
-
-.device-ipad-pro.device-gold .device-header {
-  border-color: #e4b08a;
-}
-
-.device-ipad-pro.device-rosegold .device-frame {
-  box-shadow: inset 0 0 0 2px #f6a69a, inset 0 0 0 6px #facfc9;
-}
-
-.device-ipad-pro.device-rosegold .device-header {
-  border-color: #f6a69a;
-}
-
-.device-ipad-pro.device-spacegray .device-frame {
-  background: #222;
-  box-shadow: inset 0 0 0 2px #818187, inset 0 0 0 6px #9b9ba0;
-}
-
-.device-ipad-pro.device-spacegray .device-header {
-  border-color: #818187;
-}
-
-.device-surface-pro {
-  height: 394px;
-  width: 561px;
-}
-
-.device-surface-pro .device-frame {
-  background: #0d0d0d;
-  border-radius: 10px;
-  box-shadow: inset 0 0 0 2px #c8c8c8;
-  height: 394px;
-  margin: 0 auto;
-  padding: 26px 24px;
-  width: 561px;
-}
-
-.device-surface-pro .device-content {
-  border: 2px solid #121212;
-  border-radius: 2px;
-  height: 342px;
-  width: 513px;
-}
-
-.device-surface-pro .device-btns::after,
-.device-surface-pro .device-btns::before {
-  background: #c8c8c8;
-  content: "";
-  height: 2px;
-  position: absolute;
-  top: -2px;
-}
-
-.device-surface-pro .device-btns::after {
-  left: 48px;
-  width: 26px;
-}
-
-.device-surface-pro .device-btns::before {
-  left: 94px;
-  width: 48px;
-}
-
-.device-surface-pro .device-sensors {
-  background: #333;
-  border-radius: 50%;
-  height: 6px;
-  left: 50%;
-  margin-left: -3px;
-  margin-top: -3px;
-  position: absolute;
-  top: 14px;
-  width: 6px;
-}
-
-.device-surface-book {
-  height: 424px;
-  width: 728px;
-}
-
-.device-surface-book .device-frame {
-  background: #0d0d0d;
-  border-radius: 12px;
-  box-shadow: inset 0 0 0 2px #c8c8c8;
-  height: 408px;
-  margin: 0 auto;
-  padding: 24px 22px;
-  position: relative;
-  width: 584px;
-}
-
-.device-surface-book .device-content {
-  border: 2px solid #121212;
-  border-radius: 2px;
-  height: 360px;
-  width: 540px;
-}
-
-.device-surface-book .device-btns::after,
-.device-surface-book .device-btns::before {
-  background: #c8c8c8;
-  content: "";
-  height: 2px;
-  position: absolute;
-  top: -2px;
-}
-
-.device-surface-book .device-btns::after {
-  left: 122px;
-  width: 20px;
-}
-
-.device-surface-book .device-btns::before {
-  left: 168px;
-  width: 44px;
-}
-
-.device-surface-book .device-power {
-  background: linear-gradient(to bottom, #eee, #c8c8c8);
-  border: solid #c8c8c8;
-  border-radius: 2px;
-  border-width: 0 2px;
-  height: 12px;
-  margin-top: 4px;
-  position: relative;
-  width: 728px;
-}
-
-.device-surface-book .device-power::after,
-.device-surface-book .device-power::before {
-  content: "";
-  position: absolute;
-}
-
-.device-surface-book .device-power::after {
-  background: radial-gradient(circle at center, #eee 0, #eee 95%, #a2a1a1 100%);
-  border-radius: 0 0 6px 6px;
-  height: 8px;
-  left: 50%;
-  margin-left: -125px;
-  top: 0;
-  width: 250px;
-  z-index: 1;
-}
-
-.device-surface-book .device-power::before {
-  background: linear-gradient(to bottom, #eee, #c8c8c8);
-  border-radius: 2px 2px 0 0;
-  bottom: 12px;
-  height: 8px;
-  left: 50%;
-  margin-left: -292px;
-  width: 584px;
-}
-
-.device-macbook-pro {
+.device-macbook-pro-2018 {
   height: 444px;
   width: 740px;
 }
 
-.device-macbook-pro .device-frame {
+.device-macbook-pro-2018 .device-frame {
   background: #0d0d0d;
   border-radius: 20px;
   box-shadow: inset 0 0 0 2px #c8cacb;
@@ -891,8 +689,8 @@
   width: 614px;
 }
 
-.device-macbook-pro .device-frame::after {
-  background: #272626;
+.device-macbook-pro-2018 .device-frame::after {
+  background: #272727;
   border-radius: 0 0 20px 20px;
   bottom: 2px;
   content: "";
@@ -902,7 +700,7 @@
   width: 610px;
 }
 
-.device-macbook-pro .device-frame::before {
+.device-macbook-pro-2018 .device-frame::before {
   bottom: 10px;
   color: #c8cacb;
   content: "MacBook Pro";
@@ -917,14 +715,14 @@
   z-index: 1;
 }
 
-.device-macbook-pro .device-content {
+.device-macbook-pro-2018 .device-content {
   border: 2px solid #121212;
   border-radius: 2px;
   height: 360px;
   width: 576px;
 }
 
-.device-macbook-pro .device-power {
+.device-macbook-pro-2018 .device-power {
   background: #e2e3e4;
   border: solid #d5d6d8;
   border-radius: 2px 2px 0 0;
@@ -936,13 +734,13 @@
   z-index: 9;
 }
 
-.device-macbook-pro .device-power::after,
-.device-macbook-pro .device-power::before {
+.device-macbook-pro-2018 .device-power::after,
+.device-macbook-pro-2018 .device-power::before {
   content: "";
   position: absolute;
 }
 
-.device-macbook-pro .device-power::after {
+.device-macbook-pro-2018 .device-power::after {
   background: #d5d6d8;
   border-radius: 0 0 10px 10px;
   box-shadow: inset 0 0 4px 2px #babdbf;
@@ -953,7 +751,7 @@
   width: 120px;
 }
 
-.device-macbook-pro .device-power::before {
+.device-macbook-pro-2018 .device-power::before {
   background: #a0a3a7;
   border-radius: 0 0 180px 180px/ 0 0 12px 12px;
   box-shadow: inset 0 -2px 6px 0 #474a4d;
@@ -964,21 +762,21 @@
   width: 740px;
 }
 
-.device-macbook-pro.device-spacegray .device-frame {
+.device-macbook-pro-2018.device-spacegray .device-frame {
   box-shadow: inset 0 0 0 2px #767a7d;
 }
 
-.device-macbook-pro.device-spacegray .device-power {
+.device-macbook-pro-2018.device-spacegray .device-power {
   background: #909496;
   border-color: #767a7d;
 }
 
-.device-macbook-pro.device-spacegray .device-power::after {
+.device-macbook-pro-2018.device-spacegray .device-power::after {
   background: #83878a;
   box-shadow: inset 0 0 4px 2px #6a6d70;
 }
 
-.device-macbook-pro.device-spacegray .device-power::before {
+.device-macbook-pro-2018.device-spacegray .device-power::before {
   background: #515456;
   box-shadow: inset 0 -2px 6px 0 black;
 }
@@ -1000,7 +798,7 @@
 }
 
 .device-macbook .device-frame::after {
-  background: #272626;
+  background: #272727;
   border-radius: 0 0 20px 20px;
   bottom: 2px;
   content: "";
@@ -1128,6 +926,158 @@
   box-shadow: inset 0 -2px 6px 0 black;
 }
 
+.device-imac-pro {
+  height: 484px;
+  width: 624px;
+}
+
+.device-imac-pro .device-frame {
+  background: #0d0d0d;
+  border-radius: 18px;
+  box-shadow: inset 0 0 0 2px #080808;
+  height: 428px;
+  padding: 24px 24px 80px 24px;
+  position: relative;
+  width: 624px;
+}
+
+.device-imac-pro .device-frame::after {
+  background: #2f2e33;
+  border-radius: 0 0 18px 18px;
+  bottom: 2px;
+  content: "";
+  height: 54px;
+  left: 2px;
+  position: absolute;
+  width: 620px;
+}
+
+.device-imac-pro .device-frame::before {
+  bottom: 15px;
+  color: #0d0d0d;
+  content: "";
+  font-size: 24px;
+  height: 24px;
+  left: 50%;
+  line-height: 24px;
+  margin-left: -100px;
+  position: absolute;
+  text-align: center;
+  width: 200px;
+  z-index: 9;
+}
+
+.device-imac-pro .device-content {
+  border: 2px solid #121212;
+  border-radius: 2px;
+  height: 324px;
+  width: 576px;
+}
+
+.device-imac-pro .device-power::after,
+.device-imac-pro .device-power::before {
+  content: "";
+}
+
+.device-imac-pro .device-power::after {
+  background: #222225;
+  border-radius: 2px;
+  height: 6px;
+  margin: 0 auto;
+  position: relative;
+  width: 180px;
+}
+
+.device-imac-pro .device-power::before {
+  border: solid transparent;
+  border-bottom-color: #333;
+  border-width: 0 8px 50px 8px;
+  height: 50px;
+  margin: 0 auto;
+  position: relative;
+  width: 130px;
+}
+
+.device-surface-book {
+  height: 424px;
+  width: 728px;
+}
+
+.device-surface-book .device-frame {
+  background: #0d0d0d;
+  border-radius: 12px;
+  box-shadow: inset 0 0 0 2px #c8c8c8;
+  height: 408px;
+  margin: 0 auto;
+  padding: 24px 22px;
+  position: relative;
+  width: 584px;
+}
+
+.device-surface-book .device-content {
+  border: 2px solid #121212;
+  border-radius: 2px;
+  height: 360px;
+  width: 540px;
+}
+
+.device-surface-book .device-btns::after,
+.device-surface-book .device-btns::before {
+  background: #c8c8c8;
+  content: "";
+  height: 2px;
+  position: absolute;
+  top: -2px;
+}
+
+.device-surface-book .device-btns::after {
+  left: 122px;
+  width: 20px;
+}
+
+.device-surface-book .device-btns::before {
+  left: 168px;
+  width: 44px;
+}
+
+.device-surface-book .device-power {
+  background: linear-gradient(to bottom, #eee, #c8c8c8);
+  border: solid #c8c8c8;
+  border-radius: 2px;
+  border-width: 0 2px;
+  height: 12px;
+  margin-top: 4px;
+  position: relative;
+  width: 728px;
+}
+
+.device-surface-book .device-power::after,
+.device-surface-book .device-power::before {
+  content: "";
+  position: absolute;
+}
+
+.device-surface-book .device-power::after {
+  background: radial-gradient(circle at center, #eee 0, #eee 95%, #a2a2a2 100%);
+  border-radius: 0 0 6px 6px;
+  height: 8px;
+  left: 50%;
+  margin-left: -125px;
+  top: 0;
+  width: 250px;
+  z-index: 1;
+}
+
+.device-surface-book .device-power::before {
+  background: linear-gradient(to bottom, #eee, #c8c8c8);
+  border-radius: 2px 2px 0 0;
+  bottom: 12px;
+  height: 8px;
+  left: 50%;
+  margin-left: -292px;
+  width: 584px;
+}
+
 .device-surface-studio {
   height: 506px;
   width: 640px;
@@ -1210,76 +1160,126 @@
   width: 250px;
 }
 
-.device-imac-pro {
-  height: 484px;
-  width: 624px;
+.device-ipad-pro-2017 {
+  height: 804px;
+  width: 560px;
 }
 
-.device-imac-pro .device-frame {
-  background: #0d0d0d;
-  border-radius: 18px;
-  box-shadow: inset 0 0 0 2px #080808;
-  height: 428px;
-  padding: 24px 24px 80px 24px;
-  position: relative;
-  width: 624px;
+.device-ipad-pro-2017 .device-frame {
+  background: #fff;
+  border-radius: 38px;
+  box-shadow: inset 0 0 0 2px #c8cacb, inset 0 0 0 6px #e2e3e4;
+  height: 804px;
+  padding: 62px 25px;
+  width: 560px;
 }
 
-.device-imac-pro .device-frame::after {
-  background: #2f2e33;
-  border-radius: 0 0 18px 18px;
-  bottom: 2px;
-  content: "";
-  height: 54px;
-  left: 2px;
-  position: absolute;
-  width: 620px;
+.device-ipad-pro-2017 .device-content {
+  border: 2px solid #222;
+  border-radius: 2px;
+  height: 680px;
+  width: 510px;
 }
 
-.device-imac-pro .device-frame::before {
-  bottom: 15px;
-  color: #0d0d0d;
-  content: "";
-  font-size: 24px;
-  height: 24px;
+.device-ipad-pro-2017 .device-header {
+  border: 2px solid #c8cacb;
+  border-radius: 50%;
+  bottom: 17px;
+  height: 34px;
   left: 50%;
-  line-height: 24px;
-  margin-left: -100px;
+  margin-left: -17px;
   position: absolute;
-  text-align: center;
-  width: 200px;
-  z-index: 9;
+  width: 34px;
 }
 
-.device-imac-pro .device-content {
+.device-ipad-pro-2017 .device-sensors {
+  background: #666;
+  border-radius: 50%;
+  height: 10px;
+  left: 50%;
+  margin-left: -5px;
+  margin-top: -5px;
+  position: absolute;
+  top: 34px;
+  width: 10px;
+}
+
+.device-ipad-pro-2017.device-gold .device-frame {
+  box-shadow: inset 0 0 0 2px #e4b08a, inset 0 0 0 6px #f7e8dd;
+}
+
+.device-ipad-pro-2017.device-gold .device-header {
+  border-color: #e4b08a;
+}
+
+.device-ipad-pro-2017.device-rosegold .device-frame {
+  box-shadow: inset 0 0 0 2px #f6a69a, inset 0 0 0 6px #facfc9;
+}
+
+.device-ipad-pro-2017.device-rosegold .device-header {
+  border-color: #f6a69a;
+}
+
+.device-ipad-pro-2017.device-spacegray .device-frame {
+  background: #222;
+  box-shadow: inset 0 0 0 2px #818187, inset 0 0 0 6px #9b9ba0;
+}
+
+.device-ipad-pro-2017.device-spacegray .device-header {
+  border-color: #818187;
+}
+
+.device-surface-pro-2017 {
+  height: 394px;
+  width: 561px;
+}
+
+.device-surface-pro-2017 .device-frame {
+  background: #0d0d0d;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 2px #c8c8c8;
+  height: 394px;
+  margin: 0 auto;
+  padding: 26px 24px;
+  width: 561px;
+}
+
+.device-surface-pro-2017 .device-content {
   border: 2px solid #121212;
   border-radius: 2px;
-  height: 324px;
-  width: 576px;
+  height: 342px;
+  width: 513px;
 }
 
-.device-imac-pro .device-power::after,
-.device-imac-pro .device-power::before {
+.device-surface-pro-2017 .device-btns::after,
+.device-surface-pro-2017 .device-btns::before {
+  background: #c8c8c8;
   content: "";
+  height: 2px;
+  position: absolute;
+  top: -2px;
 }
 
-.device-imac-pro .device-power::after {
-  background: #222225;
-  border-radius: 2px;
+.device-surface-pro-2017 .device-btns::after {
+  left: 48px;
+  width: 26px;
+}
+
+.device-surface-pro-2017 .device-btns::before {
+  left: 94px;
+  width: 48px;
+}
+
+.device-surface-pro-2017 .device-sensors {
+  background: #333;
+  border-radius: 50%;
   height: 6px;
-  margin: 0 auto;
-  position: relative;
-  width: 180px;
-}
-
-.device-imac-pro .device-power::before {
-  border: solid transparent;
-  border-bottom-color: #333;
-  border-width: 0 8px 50px 8px;
-  height: 50px;
-  margin: 0 auto;
-  position: relative;
-  width: 130px;
+  left: 50%;
+  margin-left: -3px;
+  margin-top: -3px;
+  position: absolute;
+  top: 14px;
+  width: 6px;
 }
 
 .device-apple-watch {

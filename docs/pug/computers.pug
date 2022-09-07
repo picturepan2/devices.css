@@ -1,0 +1,123 @@
+extends _layout/_layout.pug
+
+block variables
+  - var slug = 'computers'
+  - var parent = 'computers'
+  - var title = 'Computers - Devices.css - Modern devices crafted in pure CSS'
+  - var description = 'Devices.css - Modern devices crafted in pure CSS'
+
+block content
+  .container.grid-md
+    .columns
+      .hero-container.column.col-md-12
+        .rework-hero
+          .hero-content
+            h1.hero-title Computers
+            h2.hero-subtitle Description
+            h2.text-assistive Description
+    .columns
+      .content-container.column.col-md-12
+        .rework-title#macbook
+          | MacBook
+          a.ml-2(href="#macbook") #
+        .rework-content
+          p The MacBook with Retina display (marketed as "The new MacBook") is a line of portable Macintosh computers announced in a special event on March 9, 2015 by Apple Inc. It was superseded by the 3rd-generation MacBook Air in October 2018.
+        .rework-device
+          .dots
+            .dot.tooltip(style="background:#e2e3e4;" data-tooltip="device-silver (default)")
+            .dot.tooltip(style="background:#f7e8dd;" data-tooltip="device-gold")
+            .dot.tooltip(style="background:#facfc9;" data-tooltip="device-rosegold")
+            .dot.tooltip(style="background:#83878a;" data-tooltip="device-spacegray")
+          .device.device-macbook
+            .device-frame
+              img.device-content(src="assets/img/bg-07.jpg")
+            .device-stripe
+            .device-header
+            .device-sensors
+            .device-btns
+            .device-power
+            .device-home
+
+    .columns
+      .content-container.column.col-md-12
+        .rework-title#macbook-pro-2018
+          | MacBook Pro (2018)
+          a.ml-2(href="#macbook-pro-2018") #
+        .rework-content
+          p 
+        .rework-device
+          .dots
+            .dot.tooltip(style="background:#e2e3e4;" data-tooltip="device-silver (default)")
+            .dot.tooltip(style="background:#83878a;" data-tooltip="device-spacegray")
+          .device.device-macbook-pro-2018
+            .device-frame
+              img.device-content(src="assets/img/bg-10.jpg")
+            .device-stripe
+            .device-header
+            .device-sensors
+            .device-btns
+            .device-power
+            .device-home
+    
+    include _layout/_ad-g.pug
+    
+    .columns
+      .content-container.column.col-md-12
+        .rework-title#imac-pro
+          | iMac Pro
+          a.ml-2(href="#imac-pro") #
+        .rework-content
+          p 
+        .rework-device
+          .device.device-imac-pro
+            .device-frame
+              img.device-content(src="assets/img/bg-08.jpg")
+            .device-stripe
+            .device-header
+            .device-sensors
+            .device-btns
+            .device-power
+            .device-home
+
+    .columns
+      .content-container.column.col-md-12
+        .rework-title#surface-book
+          | Surface Book
+          a.ml-2(href="#surface-book") #
+        .rework-content
+          p 
+        .rework-device
+          .dots
+            .dot.tooltip(style="background:#e2e3e4;" data-tooltip="device-silver (default)")
+            .dot.tooltip(style="background:#83878a;" data-tooltip="device-spacegray")
+          .device.device-surface-book
+            .device-frame
+              img.device-content(src="assets/img/bg-11.jpg")
+            .device-stripe
+            .device-header
+            .device-sensors
+            .device-btns
+            .device-power
+            .device-home
+
+    include _layout/_ad-sidebar.pug
+      
+    .columns
+      .content-container.column.col-md-12
+        .rework-title#surface-studio
+          | Surface Studio
+          a.ml-2(href="#surface-studio") #
+        .rework-content
+          p 
+        .rework-device
+          .device.device-surface-studio
+            .device-frame
+              img.device-content(src="assets/img/bg-12.jpg")
+            .device-stripe
+            .device-header
+            .device-sensors
+            .device-btns
+            .device-power
+            .device-home
+
+    

@@ -1,0 +1,46 @@
+//- Dark Mode
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #1D1B22;
+    color: $light-color;
+  }
+
+  .section-main {
+    .rework-header {
+      color: $light-color;
+    }
+
+    .rework-title {
+      a {
+        color: $light-color;
+        opacity: .75;
+
+        &:focus,
+        &:hover {
+          color: $light-color;
+          opacity: .5;
+        }
+      }
+    }
+  }
+
+  .section-aside {
+    .sidebar-container {
+      background: #292931;
+      box-shadow: none;
+    }
+  }
+  
+  .rework-item {
+    background: #292931;
+    border-color: #292931;
+
+    .tile-content {
+      opacity: .75;
+    }
+
+    .tile-title {
+      color: $light-color;
+    }
+  }
+}

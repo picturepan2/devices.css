@@ -1,0 +1,40 @@
+// CSS Icons
+$icon-border-width: $border-width-lg;
+
+.icon {
+  box-sizing: border-box;
+  display: inline-block;
+  font-size: 1rem;
+  font-style: normal;
+  height: 1em;
+  position: relative;
+  text-indent: -9999px;
+  vertical-align: middle;
+  width: 1em;
+  
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+.icon-mail {
+  &::before {
+    border: $icon-border-width solid currentColor;
+    border-radius: $border-radius;
+    height: .8em;
+    width: 1em;
+  }
+  &::after {
+    border: $icon-border-width solid currentColor;
+    border-right: 0;
+    border-top: 0;
+    height: .5em;
+    transform: translate(-50%, -90%) rotate(-45deg) skew(10deg, 10deg);
+    width: .5em;
+  }
+}

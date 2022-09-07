@@ -11,18 +11,16 @@
 @import "google-pixel";
 @import "galaxy-s8";
 
-// Tablets
-@import "ipad-pro";
-@import "surface-pro";
-
-// Laptops
-@import "surface-book";
-@import "macbook-pro";
+// Computers
+@import "macbook-pro-2018";
 @import "macbook";
-
-// Desktops
-@import "surface-studio";
 @import "imac-pro";
+@import "surface-book";
+@import "surface-studio";
+
+// Tablets
+@import "ipad-pro-2017";
+@import "surface-pro-2017";
 
 // Others
 @import "apple-watch";

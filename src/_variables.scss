@@ -1,5 +1,5 @@
 // Version
-$version: "0.1.16";
+$version: "0.2.0";
 
 // Core variables
 $primary-color: #5764c6 !default;
@@ -10,7 +10,7 @@ $secondary-color-dark: darken($secondary-color, 3%) !default;
 $secondary-color-light: lighten($secondary-color, 3%) !default;
 
 // Gray colors
-$dark-color: #454d5d !default;
+$dark-color: #121212 !default;
 $light-color: #fff !default;
 $gray-color: lighten($dark-color, 40%) !default;
 $gray-color-dark: darken($gray-color, 20%) !default;
