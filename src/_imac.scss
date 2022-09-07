@@ -1,0 +1,72 @@
+// iMac
+$device-silver: #EDEEF0;
+$device-silver-dark: #D4D5D7;
+$device-silver-panel: #0d0d0d;
+
+.device-imac {
+  height: 540px;
+  width: 640px;
+
+  .device-frame {
+    background: $device-silver;
+    border-radius: 18px;
+    box-shadow: inset 0 0 0 2px $device-silver-dark;
+    height: 440px;
+    padding: 16px 16px 80px 16px;
+    position: relative;
+    width: 640px;
+
+    &::after {
+      background: $device-silver-dark;
+      border-radius: 0 0 18px 18px;
+      bottom: 1px;
+      box-shadow: inset 0 0 18px 0 darken($device-silver-dark, 5%);
+      content: "";
+      height: 63px;
+      left: 1px;
+      position: absolute;
+      width: 638px;
+    }
+    &::before {
+      bottom: 15px;
+      color: $device-silver-dark;
+      content: "";
+      font-size: 24px;
+      height: 24px;
+      left: 50%;
+      line-height: 24px;
+      margin-left: -100px;
+      position: absolute;
+      text-align: center;
+      width: 200px;
+      z-index: 9;
+    }
+  }
+
+  // 4480-by-2520-pixel resolution
+  .device-content {
+    border: 2px solid lighten($device-silver-panel, 2%);
+    border-radius: 2px;
+    height: 342px;
+    width: 608px;
+  }
+
+  .device-power {
+    &::after {
+      background: radial-gradient(circle at center, $device-silver 85%, darken($device-silver-dark, 20%) 100%);
+      content: "";
+      height: 6px;
+      margin: 0 auto;
+      position: relative;
+      width: 152px;
+    }
+    &::before {
+      background: linear-gradient(to bottom, darken($device-silver-dark, 20%) 0, darken($device-silver-dark, 5%) 40%, darken($device-silver-dark, 5%) 85%, lighten($device-silver, 15%) 90%, darken($device-silver-dark, 40%) 100%);
+      content: "";
+      height: 94px;
+      margin: 0 auto;
+      position: relative;
+      width: 152px;
+    }
+  }
+}

@@ -20,7 +20,7 @@
 }
 
 .device .device-content {
-  background-color: #fff;
+  background-color: #000;
   background-position: center center;
   background-size: cover;
   object-fit: cover;
@@ -673,6 +673,127 @@
   background: #5192d4;
 }
 
+.device-macbook-pro {
+  height: 452px;
+  width: 740px;
+}
+
+.device-macbook-pro .device-frame {
+  background: #0d0d0d;
+  border-radius: 20px;
+  box-shadow: inset 0 0 0 2px #c8cacb;
+  height: 418px;
+  margin: 0 auto;
+  padding: 9px 9px 23px 9px;
+  position: relative;
+  width: 618px;
+}
+
+.device-macbook-pro .device-frame::after {
+  background: linear-gradient(to bottom, #272727, #0d0d0d);
+  border-radius: 0 0 20px 20px;
+  bottom: 2px;
+  content: "";
+  height: 24px;
+  left: 2px;
+  position: absolute;
+  width: 614px;
+}
+
+.device-macbook-pro .device-header {
+  background: #0d0d0d;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  height: 12px;
+  left: 50%;
+  margin-left: -32px;
+  position: absolute;
+  top: 11px;
+  width: 64px;
+  z-index: 2;
+}
+
+.device-macbook-pro .device-header::after,
+.device-macbook-pro .device-header::before {
+  content: "";
+  height: 4px;
+  position: absolute;
+  top: 0;
+  width: 4px;
+}
+
+.device-macbook-pro .device-header::after {
+  background: radial-gradient(circle at bottom left, transparent 0, transparent 75%, #0d0d0d 75%, #0d0d0d 100%);
+  left: -4px;
+}
+
+.device-macbook-pro .device-header::before {
+  background: radial-gradient(circle at bottom right, transparent 0, transparent 75%, #0d0d0d 75%, #0d0d0d 100%);
+  right: -4px;
+}
+
+.device-macbook-pro .device-content {
+  border: 2px solid #121212;
+  border-radius: 10px 10px 0 0;
+  height: 375px;
+  width: 600px;
+}
+
+.device-macbook-pro .device-power {
+  background: radial-gradient(circle at center, #e2e3e4 85%, #c8cacb 100%);
+  border: solid #a0a3a7;
+  border-radius: 2px 2px 12px 12px;
+  border-width: 1px 2px 0 2px;
+  box-shadow: inset 0 -2px 8px 0 #6c7074;
+  height: 24px;
+  margin-top: -10px;
+  position: relative;
+  width: 740px;
+  z-index: 9;
+}
+
+.device-macbook-pro .device-power::after {
+  background: #e2e3e4;
+  border-radius: 0 0 10px 10px;
+  box-shadow: inset 0 0 4px 2px #babdbf;
+  content: "";
+  height: 10px;
+  left: 50%;
+  margin-left: -60px;
+  position: absolute;
+  top: -1px;
+  width: 120px;
+}
+
+.device-macbook-pro .device-power::before {
+  background: transparent;
+  border-radius: 0 0 2px 2px;
+  bottom: -2px;
+  box-shadow: -300px 0 #272727, 300px 0 #272727;
+  content: "";
+  height: 2px;
+  left: 50%;
+  margin-left: -20px;
+  position: absolute;
+  width: 40px;
+  z-index: 2;
+}
+
+.device-macbook-pro.device-spacegray .device-frame {
+  box-shadow: inset 0 0 0 2px #767a7d;
+}
+
+.device-macbook-pro.device-spacegray .device-power {
+  background: radial-gradient(circle at center, #83878a 85%, #767a7d 100%);
+  border-color: #454749;
+  box-shadow: inset 0 -2px 8px 0 #202121;
+}
+
+.device-macbook-pro.device-spacegray .device-power::after {
+  background: #b7babc;
+  box-shadow: inset 0 0 4px 2px #6a6d70;
+}
+
 .device-macbook-pro-2018 {
   height: 444px;
   width: 740px;
@@ -924,6 +1045,73 @@
 .device-macbook.device-spacegray .device-power::before {
   background: #515456;
   box-shadow: inset 0 -2px 6px 0 black;
+}
+
+.device-imac {
+  height: 540px;
+  width: 640px;
+}
+
+.device-imac .device-frame {
+  background: #edeef0;
+  border-radius: 18px;
+  box-shadow: inset 0 0 0 2px #d4d5d7;
+  height: 440px;
+  padding: 16px 16px 80px 16px;
+  position: relative;
+  width: 640px;
+}
+
+.device-imac .device-frame::after {
+  background: #d4d5d7;
+  border-radius: 0 0 18px 18px;
+  bottom: 1px;
+  box-shadow: inset 0 0 18px 0 #c7c8cb;
+  content: "";
+  height: 63px;
+  left: 1px;
+  position: absolute;
+  width: 638px;
+}
+
+.device-imac .device-frame::before {
+  bottom: 15px;
+  color: #d4d5d7;
+  content: "";
+  font-size: 24px;
+  height: 24px;
+  left: 50%;
+  line-height: 24px;
+  margin-left: -100px;
+  position: absolute;
+  text-align: center;
+  width: 200px;
+  z-index: 9;
+}
+
+.device-imac .device-content {
+  border: 2px solid #121212;
+  border-radius: 2px;
+  height: 342px;
+  width: 608px;
+}
+
+.device-imac .device-power::after {
+  background: radial-gradient(circle at center, #edeef0 85%, #9fa1a6 100%);
+  content: "";
+  height: 6px;
+  margin: 0 auto;
+  position: relative;
+  width: 152px;
+}
+
+.device-imac .device-power::before {
+  background: linear-gradient(to bottom, #9fa1a6 0, #c7c8cb 40%, #c7c8cb 85%, white 90%, #6b6e74 100%);
+  content: "";
+  height: 94px;
+  margin: 0 auto;
+  position: relative;
+  width: 152px;
 }
 
 .device-imac-pro {

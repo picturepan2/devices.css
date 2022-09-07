@@ -1,0 +1,130 @@
+// MacBook Pro
+$device-silver: #e2e3e4;
+$device-silver-dark: darken($device-silver, 10%);
+$device-silver-panel: #0d0d0d;
+$device-spacegray: #83878a;
+$device-spacegray-dark: darken($device-spacegray, 5%);
+$device-spacegray-panel: #0d0d0d;
+
+.device-macbook-pro {
+  height: 452px;
+  width: 740px;
+
+  .device-frame {
+    background: $device-silver-panel;
+    border-radius: 20px;
+    box-shadow: inset 0 0 0 2px $device-silver-dark;
+    height: 418px;
+    margin: 0 auto;
+    padding: 9px 9px 23px 9px;
+    position: relative;
+    width: 618px;
+
+    &::after {
+      background: linear-gradient(to bottom, lighten($device-silver-panel, 10%), $device-silver-panel);
+      border-radius: 0 0 20px 20px;
+      bottom: 2px;
+      content: "";
+      height: 24px;
+      left: 2px;
+      position: absolute;
+      width: 614px;
+    }
+  }
+
+  .device-header {
+    background: $device-silver-panel;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    height: 12px;
+    left: 50%;
+    margin-left: -32px;
+    position: absolute;
+    top: 11px;
+    width: 64px;
+    z-index: 2;
+
+    &::after,
+    &::before {
+      content: "";
+      height: 4px;
+      position: absolute;
+      top: 0;
+      width: 4px;
+    }
+    &::after {
+      background: radial-gradient(circle at bottom left, transparent 0, transparent 75%, $device-silver-panel 75%, $device-silver-panel 100%);
+      left: -4px;
+    }
+    &::before {
+      background: radial-gradient(circle at bottom right, transparent 0, transparent 75%, $device-silver-panel 75%, $device-silver-panel 100%);
+      right: -4px;
+    }
+  }
+
+  // 3456-by-2234-pixel resolution
+  .device-content {
+    border: 2px solid lighten($device-silver-panel, 2%);
+    border-radius: 10px 10px 0 0;
+    height: 375px;
+    width: 600px;
+  }
+
+  .device-power {
+    background: radial-gradient(circle at center, $device-silver 85%, $device-silver-dark 100%);
+    border: solid darken($device-silver, 25%);
+    border-radius: 2px 2px 12px 12px;
+    border-width: 1px 2px 0 2px;
+    box-shadow: inset 0 -2px 8px 0 darken($device-silver-dark, 35%);
+    height: 24px;
+    margin-top: -10px;
+    position: relative;
+    width: 740px;
+    z-index: 9;
+
+    &::after {
+      background: lighten($device-silver-dark, 10%);
+      border-radius: 0 0 10px 10px;
+      box-shadow: inset 0 0 4px 2px darken($device-silver-dark, 5%);
+      content: "";
+      height: 10px;
+      left: 50%;
+      margin-left: -60px;
+      position: absolute;
+      top: -1px;
+      width: 120px;
+    }
+
+    &::before {
+      background: transparent;
+      border-radius: 0 0 2px 2px;
+      bottom: -2px;
+      box-shadow: -300px 0 lighten($device-silver-panel, 10%), 300px 0 lighten($device-silver-panel, 10%);
+      content: "";
+      height: 2px;
+      left: 50%;
+      margin-left: -20px;
+      position: absolute;
+      width: 40px;
+      z-index: 2;
+    }
+  }
+
+  // Space Gray edition
+  &.device-spacegray {
+    .device-frame {
+      box-shadow: inset 0 0 0 2px $device-spacegray-dark;
+    }
+
+    .device-power {
+      background: radial-gradient(circle at center, $device-spacegray 85%, $device-spacegray-dark 100%);
+      border-color: darken($device-spacegray, 25%);
+      box-shadow: inset 0 -2px 8px 0 darken($device-spacegray-dark, 35%);
+
+      &::after {
+        background: lighten($device-spacegray-dark, 25%);
+        box-shadow: inset 0 0 4px 2px darken($device-spacegray-dark, 5%);
+      }
+    }
+  }
+}
