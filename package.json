@@ -3,7 +3,7 @@
   "version": "0.2.0",
   "homepage": "https://devicescss.xyz",
   "author": "Yan Zhu <picturepan2@hotmail.com>",
-  "description": "Devices.css: Modern devices in pure CSS.",
+  "description": "Devices.css: Modern devices crafted in pure CSS.",
   "main": "dist/devices.css",
   "repository": {
     "type": "git",

@@ -34,7 +34,7 @@
 /*  Core style */
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 1rem;
+  scroll-padding-top: 2rem;
 }
 
 body {
@@ -272,7 +272,7 @@ body {
     
     .rework-ad {
       align-items: center;
-      background: rgba($secondary-color, .05);
+      background: rgba($secondary-color, .15);
       border-radius: $border-radius;
       color: $light-color;
       display: flex;
@@ -280,7 +280,7 @@ body {
     }
 
     .btn.btn-link {
-      color: rgba($secondary-color, .5);
+      color: rgba($secondary-color, .75);
     }
   }
 }
@@ -323,10 +323,11 @@ body {
   }
 
   .rework-title {
-    font-size: .7rem;
+    color: $primary-color;
+    font-size: .9rem;
     font-weight: 700;
-    margin-top: 1rem;
-    padding-top: .5rem;
+    margin-bottom: 1rem;
+    padding-top: 1rem;
 
     &:hover .rework-anchor {
       visibility: visible;
@@ -346,8 +347,24 @@ body {
     margin-top: 1rem;
   }
 
-  .rework-list-container {
-    margin-top: .5rem;
+  .rework-device {
+    border-bottom: .05rem solid $border-color-dark;
+    margin-top: 2rem;
+    padding: 2rem;
+
+    .dots {
+      text-align: center;
+  
+      .dot {
+        background: #eee;
+        border: 1px solid rgba(0, 0, 0, .05);
+        border-radius: 50%;
+        display: inline-block;
+        height: 1rem;
+        margin: 0 .2rem;
+        width: 1rem;
+      }
+    }
   }
 }
 
@@ -423,20 +440,6 @@ body {
   .column {
     padding-bottom: 1rem;
     padding-top: 1rem;
-  }
-
-  .dots {
-    text-align: center;
-
-    .dot {
-      background: #eee;
-      border: 1px solid rgba(0, 0, 0, .05);
-      border-radius: 50%;
-      display: inline-block;
-      height: 1rem;
-      margin: 0 .2rem;
-      width: 1rem;
-    }
   }
 }
 

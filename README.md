@@ -1,6 +1,6 @@
 # Devices.css
 
-Devices.css - Modern devices in pure CSS
+Devices.css - Modern devices crafted in pure CSS
 
 All devices are elegantly developed in pure CSS. The first are newly announced iPhone X and iPhone 8. More devices are coming. You can use these minimal devices in landing and screenshot showcase pages.
 

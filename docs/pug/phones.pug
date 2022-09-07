@@ -1,0 +1,118 @@
+extends _layout/_layout.pug
+
+block variables
+  - var slug = 'phones'
+  - var parent = 'phones'
+  - var title = 'Phones - Devices.css - Modern devices crafted in pure CSS'
+  - var description = 'Devices.css - Modern devices crafted in pure CSS'
+
+block content
+  .container.grid-md
+    .columns
+      .hero-container.column.col-md-12
+        .rework-hero
+          .hero-content
+            h1.hero-title Phones
+            h2.hero-subtitle Description
+            h2.text-assistive Description
+    .columns
+      .content-container.column.col-md-12
+        .rework-title#iphone-x
+          | iPhone X
+          a.ml-2(href="#iphone-x") #
+        .rework-content
+          p iPhone X (pronounced "iPhone Ten") is a smartphone in Apple's iPhone lineup. It was announced on September 12, 2017 alongside the iPhone 8 and iPhone 8 Plus at the Steve Jobs Theater in the Apple Park campus. It was released on November 3, 2017 with a starting price of $999.
+        .rework-device
+          .device.device-iphone-x
+            .device-frame
+              video.device-content(muted="muted" autoplay loop)
+                source(src="assets/video/bg-01.mp4" type="video/mp4")
+            .device-stripe
+            .device-header
+            .device-sensors
+            .device-btns
+            .device-power
+            .device-home
+
+    .columns
+      .content-container.column.col-md-12
+        .rework-title#iphone-8
+          | iPhone 8
+          a.ml-2(href="#iphone-8") #
+        .rework-content
+          p The iPhone 8 is a smartphone that was announced alongside the iPhone 8 Plus and iPhone X on September 12, 2017 and was released on September 22. It serves as the successor to the iPhone 7 and predecessor to the iPhone XR. The external design of the iPhone 8 was reused by the 2nd generation iPhone SE in 2020.
+        .rework-device
+          .dots
+            .dot.tooltip(style="background:#e2e3e4;" data-tooltip="device-silver (default)")
+            .dot.tooltip(style="background:#f7e8dd;" data-tooltip="device-gold")
+            .dot.tooltip(style="background:#9b9ba0;" data-tooltip="device-spacegray")
+          .device.device-iphone-8
+            .device-frame
+              img.device-content(src="assets/img/bg-01.jpg")
+            .device-stripe
+            .device-header
+            .device-sensors
+            .device-btns
+            .device-power
+            .device-home
+
+    .columns
+      .content-container.column.col-md-12
+        .rework-title#google-pixel-2-xl
+          | Google Pixel 2 XL
+          a.ml-2(href="#google-pixel-2-xl") #
+        .rework-content
+          p The Pixel 2 and Pixel 2 XL are a pair of Android smartphones designed, developed, and marketed by Google as part of the Google Pixel product line.
+        .rework-device
+          .device.device-google-pixel-2-xl
+            .device-frame
+              img.device-content(src="assets/img/bg-06.jpg")
+            .device-stripe
+            .device-header
+            .device-sensors
+            .device-btns
+            .device-power
+            .device-home
+
+    .columns
+      .content-container.column.col-md-12
+        .rework-title#google-pixel
+          | Google Pixel
+          a.ml-2(href="#google-pixel") #
+        .rework-content
+          p 
+        .rework-device
+          .dots
+            .dot.tooltip(style="background:#e2e3e4;" data-tooltip="device-silver (default)")
+            .dot.tooltip(style="background:#6a6967;" data-tooltip="device-black")
+            .dot.tooltip(style="background:#7695ff;" data-tooltip="device-blue")
+          .device.device-google-pixel
+            .device-frame
+              img.device-content(src="assets/img/bg-06.jpg")
+            .device-stripe
+            .device-header
+            .device-sensors
+            .device-btns
+            .device-power
+            .device-home
+
+    .columns
+      .content-container.column.col-md-12
+        .rework-title#galaxy-s8
+          | Samsung Galaxy S8
+          a.ml-2(href="#galaxy-s8") #
+        .rework-content
+          p 
+        .rework-device
+          .dots
+            .dot.tooltip(style="background:#cfcfcf;" data-tooltip="device-black (default)")
+            .dot.tooltip(style="background:#a3c5e8;" data-tooltip="device-blue")
+          .device.device-galaxy-s8.device-blue
+            .device-frame
+              img.device-content(src="assets/img/bg-04.jpg")
+            .device-stripe
+            .device-header
+            .device-sensors
+            .device-btns
+            .device-power
+            .device-home

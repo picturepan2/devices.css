@@ -1,0 +1,57 @@
+extends _layout/_layout.pug
+
+block variables
+  - var slug = 'tablets'
+  - var parent = 'tablets'
+  - var title = 'Tablets - Devices.css - Modern devices crafted in pure CSS'
+  - var description = 'Devices.css - Modern devices crafted in pure CSS'
+
+block content
+  .container.grid-md
+    .columns
+      .hero-container.column.col-md-12
+        .rework-hero
+          .hero-content
+            h1.hero-title Tablets
+            h2.hero-subtitle Description
+            h2.text-assistive Description
+    .columns
+      .content-container.column.col-md-12
+        .rework-title#ipad-pro-2017
+          | iPad Pro (2017)
+          a.ml-2(href="#macbook") #
+        .rework-content
+          p 
+        .rework-device
+          .dots
+            .dot.tooltip(style="background:#e2e3e4;" data-tooltip="device-silver (default)")
+            .dot.tooltip(style="background:#f7e8dd;" data-tooltip="device-gold")
+            .dot.tooltip(style="background:#facfc9;" data-tooltip="device-rosegold")
+            .dot.tooltip(style="background:#83878a;" data-tooltip="device-spacegray")
+          .device.device-ipad-pro-2017
+            .device-frame
+              img.device-content(src="assets/img/bg-02.jpg")
+            .device-stripe
+            .device-header
+            .device-sensors
+            .device-btns
+            .device-power
+            .device-home
+
+    .columns
+      .content-container.column.col-md-12
+        .rework-title#surface-pro-2017
+          | Surface Pro (2017)
+          a.ml-2(href="#surface-pro-2017") #
+        .rework-content
+          p 
+        .rework-device
+          .device.device-surface-pro-2017
+            .device-frame
+              img.device-content(src="assets/img/bg-02.jpg")
+            .device-stripe
+            .device-header
+            .device-sensors
+            .device-btns
+            .device-power
+            .device-home
