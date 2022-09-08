@@ -17,7 +17,7 @@ $device-silver-panel: #222;
   }
 
   // 2436-by-1125-pixel resolution
-  .device-content {
+  .device-screen {
     border-radius: 40px;
     height: 812px;
     width: 375px;
@@ -26,7 +26,7 @@ $device-silver-panel: #222;
   .device-stripe {
     &::after,
     &::before {
-      border: solid rgba(#333, .25);
+      border: solid rgba($device-panel, .25);
       border-width: 0 7px;
       content: "";
       height: 7px;

@@ -7,6 +7,7 @@ All devices are elegantly developed in pure CSS. The first are newly announced i
 ## Devices
 
 ### Phones
+- [iPhone 14 Pro](https://devicescss.xyz/phones.html#iphone-14-pro)
 - [iPhone X](https://devicescss.xyz/phones.html#iphone-x)
 - [iPhone 8](https://devicescss.xyz/phones.html#iphone-8)
 - [Google Pixel 2 XL](https://devicescss.xyz/phones.html#google-pixel-2-xl)
@@ -16,12 +17,13 @@ All devices are elegantly developed in pure CSS. The first are newly announced i
 - [MacBook Pro](https://devicescss.xyz/computers.html#macbook-pro)
 - [MacBook Pro (2018)](https://devicescss.xyz/computers.html#macbook-pro-2018)
 - [MacBook](https://devicescss.xyz/computers.html#macbook)
-- [iMac](https://devicescss.xyz/computers.html#imac-pro)
-- [Surface Studio](https://devicescss.xyz/computers.html#surface-studio)
+- [iMac](https://devicescss.xyz/computers.html#imac)
 - [Surface Book](https://devicescss.xyz/computers.html#surface-book)
+- [Surface Studio](https://devicescss.xyz/computers.html#surface-studio)
 ### Tablets
 - [iPad Pro](https://devicescss.xyz/#ipad-pro)
-- [Surface Pro](https://devicescss.xyz/#surface-pro)
+- [iPad Pro (2017)](https://devicescss.xyz/#ipad-pro-2017)
+- [Surface Pro (2017)](https://devicescss.xyz/#surface-pro-2017)
 
 ## What's next
 
@@ -40,7 +42,7 @@ Go to [Demo page](https://devicescss.xyz/) to copy the device HTML source code a
 ```
 <div class="device device-iphone-x">
   <div class="device-frame">
-    <img class="device-content" src="...">
+    <img class="device-screen" src="...">
   </div>
   <div class="device-stripe"></div>
   <div class="device-header"></div>
@@ -51,7 +53,7 @@ Go to [Demo page](https://devicescss.xyz/) to copy the device HTML source code a
 ```
 Also, there are optional `device-[device-color]` classes for different color variants.
 
-You can add any screenshot or video with the `device-content` class. The resolution aspect ratios are based on real ones.
+You can add any screenshot or video with the `device-screen` class. The resolution aspect ratios are based on real ones.
 
 ## Custom
 

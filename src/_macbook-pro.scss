@@ -1,4 +1,4 @@
-// MacBook Pro
+// MacBook Pro (2022)
 $device-silver: #e2e3e4;
 $device-silver-dark: darken($device-silver, 10%);
 $device-silver-panel: #0d0d0d;
@@ -63,7 +63,7 @@ $device-spacegray-panel: #0d0d0d;
   }
 
   // 3456-by-2234-pixel resolution
-  .device-content {
+  .device-screen {
     border: 2px solid lighten($device-silver-panel, 2%);
     border-radius: 10px 10px 0 0;
     height: 375px;
