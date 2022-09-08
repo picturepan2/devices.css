@@ -33,7 +33,7 @@ $device-panel: #010101;
   .device-stripe {
     &::after,
     &::before {
-      border: solid rgba(#333, .25);
+      border: solid rgba($device-panel, .25);
       border-width: 0 7px;
       content: "";
       height: 7px;
@@ -127,7 +127,7 @@ $device-panel: #010101;
   .device-home {
     &::after,
     &::before {
-      border: solid rgba(#333, .25);
+      border: solid rgba($device-panel, .25);
       border-width: 6px 0;
       content: "";
       height: 6px;

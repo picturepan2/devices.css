@@ -79,7 +79,7 @@ $device-silver-panel: #222;
       position: absolute;
     }
     &::after {
-      background: #444;
+      background: #333;
       border-radius: 3px;
       height: 6px;
       left: 50%;
@@ -88,13 +88,15 @@ $device-silver-panel: #222;
       width: 50px;
     }
     &::before {
-      background: #444;
+      background: radial-gradient(farthest-corner at 20% 20%, #6074BF 0, transparent 40%),
+                  radial-gradient(farthest-corner at 80% 80%, #513785 0, #24555E 20%, transparent 50%);
+      box-shadow: 0 0 1px 1px rgba($light-color, .05);
       border-radius: 50%;
-      height: 14px;
+      height: 10px;
       left: 50%;
-      margin-left: 40px;
-      top: 28px;
-      width: 14px;
+      margin-left: 42px;
+      top: 30px;
+      width: 10px;
     }
   }
 

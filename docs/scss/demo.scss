@@ -348,7 +348,11 @@ body {
   }
 
   .rework-device {
+    align-items: center;
     border-bottom: .05rem solid $border-color-dark;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin-top: 2rem;
     padding: 2rem;
 
@@ -357,12 +361,33 @@ body {
   
       .dot {
         background: #eee;
-        border: 1px solid rgba(0, 0, 0, .05);
+        border: 2px solid rgba(0, 0, 0, .1);
         border-radius: 50%;
         display: inline-block;
         height: 1rem;
         margin: 0 .2rem;
         width: 1rem;
+
+        &.active {
+          transform: scale(1.25);
+        }
+      }
+    }
+
+    .device {
+      margin: 1rem 0;
+    }
+    
+    @media (max-width: $size-sm) {
+      .device {
+        margin: 0;
+        transform: scale(.75);
+      }
+
+      &.computers {
+        .device {
+          transform: scale(.5);
+        }
       }
     }
   }
@@ -500,7 +525,6 @@ body {
 }
 
 // Old
-
 .grid-hero {
   letter-spacing: -.021em;
   padding-bottom: 2rem;
@@ -521,21 +545,7 @@ body {
   }
 }
 
-// Devices
-.device {
-  margin: 1rem auto;
-}
-
-@media (max-width: $size-sm) {
-  .device-ipad-pro,
-  .device-surface-studio,
-  .device-macbook-pro,
-  .device-imac-pro {
-    left: 50%;
-    transform: translateX(-50%) scale(.5);
-  }
-}
-
+// Extra
 .docs-sponsor {
   background: darken($bg-color, 6%);
   border-radius: $border-radius;

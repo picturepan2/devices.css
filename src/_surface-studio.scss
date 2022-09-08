@@ -42,10 +42,10 @@ $device-silver-panel: #0d0d0d;
       top: -75px;
     }
     &::after {
-      border: 6px solid darken($device-silver, 5%);
+      border: 4px solid darken($device-silver, 5%);
       border-top: 0;
       border-radius: 0 0 18px 18px;
-      box-shadow: inset 0 0 0 4px $device-silver-dark;
+      box-shadow: inset 0 0 4px 2px $device-silver-dark;
       height: 60px;
       margin-left: -140px;
       width: 280px;
@@ -54,7 +54,7 @@ $device-silver-panel: #0d0d0d;
     &::before {
       border: 15px solid $device-silver;
       border-top: 0;
-      border-radius: 0 0 4px 4px;
+      border-radius: 0 0 8px 8px;
       height: 70px;
       margin-left: -150px;
       width: 300px;
@@ -63,10 +63,8 @@ $device-silver-panel: #0d0d0d;
   }
 
   .device-power {
-    background: lighten($device-silver, 5%);
-    border: solid $device-silver;
+    background: radial-gradient(circle at center, $device-silver 85%, $device-silver-dark 100%);
     border-radius: 0 0 2px 2px;
-    border-width: 0 4px 2px 4px;
     height: 32px;
     margin: 30px auto 0 auto;
     position: relative;
@@ -76,7 +74,7 @@ $device-silver-panel: #0d0d0d;
       background: darken($device-silver-dark, 10%);
       content: "";
       height: 2px;
-      left: -4px;
+      left: 0;
       position: absolute;
       top: 4px;
       width: 250px;

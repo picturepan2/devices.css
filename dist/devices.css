@@ -50,7 +50,7 @@
 
 .device-iphone-14-pro .device-stripe::after,
 .device-iphone-14-pro .device-stripe::before {
-  border: solid rgba(51, 51, 51, .25);
+  border: solid rgba(1, 1, 1, .25);
   border-width: 0 7px;
   content: "";
   height: 7px;
@@ -144,7 +144,7 @@
 
 .device-iphone-14-pro .device-home::after,
 .device-iphone-14-pro .device-home::before {
-  border: solid rgba(51, 51, 51, .25);
+  border: solid rgba(1, 1, 1, .25);
   border-width: 6px 0;
   content: "";
   height: 6px;
@@ -295,7 +295,7 @@
 }
 
 .device-iphone-x .device-sensors::after {
-  background: #444;
+  background: #333;
   border-radius: 3px;
   height: 6px;
   left: 50%;
@@ -305,13 +305,14 @@
 }
 
 .device-iphone-x .device-sensors::before {
-  background: #444;
+  background: radial-gradient(farthest-corner at 20% 20%, #6074bf 0, transparent 40%), radial-gradient(farthest-corner at 80% 80%, #513785 0, #24555e 20%, transparent 50%);
   border-radius: 50%;
-  height: 14px;
+  box-shadow: 0 0 1px 1px rgba(255, 255, 255, .05);
+  height: 10px;
   left: 50%;
-  margin-left: 40px;
-  top: 28px;
-  width: 14px;
+  margin-left: 42px;
+  top: 30px;
+  width: 10px;
 }
 
 .device-iphone-x .device-btns {
@@ -1605,10 +1606,10 @@
 }
 
 .device-surface-studio .device-stripe::after {
-  border: 6px solid #d5d6d8;
+  border: 4px solid #d5d6d8;
   border-radius: 0 0 18px 18px;
   border-top: 0;
-  box-shadow: inset 0 0 0 4px #c8cacb;
+  box-shadow: inset 0 0 4px 2px #c8cacb;
   height: 60px;
   margin-left: -140px;
   width: 280px;
@@ -1617,7 +1618,7 @@
 
 .device-surface-studio .device-stripe::before {
   border: 15px solid #e2e3e4;
-  border-radius: 0 0 4px 4px;
+  border-radius: 0 0 8px 8px;
   border-top: 0;
   height: 70px;
   margin-left: -150px;
@@ -1626,10 +1627,8 @@
 }
 
 .device-surface-studio .device-power {
-  background: #eff0f0;
-  border: solid #e2e3e4;
+  background: radial-gradient(circle at center, #e2e3e4 85%, #c8cacb 100%);
   border-radius: 0 0 2px 2px;
-  border-width: 0 4px 2px 4px;
   height: 32px;
   margin: 30px auto 0 auto;
   position: relative;
@@ -1640,7 +1639,7 @@
   background: #adb0b3;
   content: "";
   height: 2px;
-  left: -4px;
+  left: 0;
   position: absolute;
   top: 4px;
   width: 250px;
