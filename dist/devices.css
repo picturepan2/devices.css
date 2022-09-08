@@ -1851,72 +1851,137 @@
   width: 6px;
 }
 
-.device-apple-watch {
-  height: 234px;
-  width: 200px;
+.device-apple-watch-ultra {
+  height: 440px;
+  width: 360px;
 }
 
-.device-apple-watch .device-frame {
+.device-apple-watch-ultra .device-frame {
   background: #0d0d0d;
-  border-radius: 40px;
-  box-shadow: inset 0 0 2px 2px #adb0b3, inset 0 0 0 6px #e2e3e4, inset 0 0 0 8px #e2e3e4;
-  height: 234px;
-  padding: 32px;
+  border-radius: 92px;
+  box-shadow: inset 0 0 12px 1px rgba(13, 13, 13, .75), inset 0 0 0 6px #d6ccc2, inset 0 0 0 12px #d6ccc2;
+  height: 380px;
+  margin: 30px 20px;
+  padding: 38px;
   position: relative;
-  width: 200px;
+  width: 320px;
 }
 
-.device-apple-watch .device-frame::after {
-  border-radius: 30px;
-  box-shadow: inset 0 0 25px 0 rgba(255, 255, 255, .75);
+.device-apple-watch-ultra .device-frame::before {
+  border: 1px solid #f5f2f0;
+  border-radius: 80px;
+  box-shadow: 0 0 6px rgba(13, 13, 13, .2), inset 0 0 4px 1px #f5f2f0, inset 0 0 0 10px #d6ccc2;
   content: "";
-  height: 216px;
-  left: 9px;
+  height: 356px;
+  left: 12px;
   position: absolute;
-  top: 9px;
-  width: 182px;
+  top: 12px;
+  width: 296px;
 }
 
-.device-apple-watch .device-screen {
+.device-apple-watch-ultra .device-screen {
   border: 2px solid #121212;
-  border-radius: 2px;
-  height: 170px;
-  width: 136px;
+  border-radius: 62px;
+  height: 304px;
+  width: 244px;
 }
 
-.device-apple-watch .device-btns {
-  background: #e2e3e4;
-  border-left: 2px solid #adb0b3;
-  border-radius: 8px 4px 4px 8px / 20px 4px 4px 20px;
-  box-shadow: inset 0 0 2px 2px #adb0b3;
-  height: 44px;
+.device-apple-watch-ultra .device-header {
+  background: radial-gradient(circle at center, #d6ccc2 50%, #ebe6e1 85%, #a38c76 100%);
+  border-radius: 4px 4px 4px 4px / 8px 4px 4px 8px;
+  box-shadow: inset 0 0 16px 1px rgba(13, 13, 13, .5), -8px 0 4px rgba(13, 13, 13, .2), inset 4px 0 4px rgba(13, 13, 13, .2);
+  height: 214px;
+  margin-top: -107px;
   position: absolute;
-  right: -10px;
-  top: 52px;
+  right: 4px;
+  top: 50%;
+  width: 18px;
+  z-index: 1;
+}
+
+.device-apple-watch-ultra .device-header::before {
+  border-radius: 8px 4px 4px 8px / 32px 4px 4px 32px;
+  box-shadow: -10px 0 8px rgba(13, 13, 13, .2);
+  content: "";
+  height: 194px;
+  margin-top: -97px;
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  width: 12px;
+}
+
+.device-apple-watch-ultra .device-btns {
+  background: #d6ccc2;
+  border-left: 1px solid #4c4033;
+  border-radius: 8px 6px 6px 8px / 20px 6px 6px 20px;
+  box-shadow: inset 8px 0 8px 0 #5c4d3e, inset -2px 0 6px #a38c76;
+  height: 72px;
+  position: absolute;
+  right: 1px;
+  top: 138px;
+  width: 24px;
+  z-index: 9;
+}
+
+.device-apple-watch-ultra .device-btns::after {
+  background: #d6ccc2;
+  border-radius: 2px 4px 4px 2px / 20px 8px 8px 20px;
+  box-shadow: inset -2px 0 2px 0 #6b5948, inset -6px 0 18px #a38c76;
+  content: "";
+  height: 78px;
+  position: absolute;
+  right: 0;
+  top: -4px;
+  width: 6px;
+}
+
+.device-apple-watch-ultra .device-btns::before {
+  background: #d6ccc2;
+  border-radius: 20%;
+  box-shadow: 0 -30px rgba(163, 140, 118, .5), 0 -27px #d6ccc2, 0 -25px #89735c, 0 -21px rgba(163, 140, 118, .5), 0 -18px #d6ccc2, 0 -16px #89735c, 0 -12px rgba(163, 140, 118, .5), 0 -9px #d6ccc2, 0 -7px #89735c, 0 -3px rgba(163, 140, 118, .5), 0 0 #d6ccc2, 0 2px #89735c, 0 6px rgba(163, 140, 118, .5), 0 9px #d6ccc2, 0 11px #89735c, 0 15px rgba(163, 140, 118, .5), 0 18px #d6ccc2, 0 20px #89735c, 0 24px rgba(163, 140, 118, .5), 0 27px #d6ccc2, 0 29px #89735c;
+  content: "";
+  height: 3px;
+  margin-top: -2px;
+  position: absolute;
+  right: 2px;
+  top: 50%;
   width: 16px;
   z-index: 9;
 }
 
-.device-apple-watch .device-btns::after {
-  background: #e2e3e4;
-  border-radius: 4px 2px 2px 4px / 10px 2px 2px 10px;
-  box-shadow: inset 0 0 1px 2px #adb0b3;
-  content: "";
-  height: 66px;
+.device-apple-watch-ultra .device-stripe {
+  background: #e0d9d1;
+  border-radius: 2px 8px 8px 2px;
+  box-shadow: 0 14px 0 #d6ccc2, 0 28px 0 #d6ccc2;
+  height: 10px;
+  left: 19px;
   position: absolute;
-  right: 6px;
-  top: 68px;
-  width: 8px;
+  top: 128px;
+  width: 4px;
+  z-index: 1;
 }
 
-.device-apple-watch .device-btns::before {
-  background: #adb0b3;
-  box-shadow: 0 -16px #adb0b3, 0 -12px #adb0b3, 0 -8px #adb0b3, 0 -4px #adb0b3, 0 4px #adb0b3, 0 8px #adb0b3, 0 12px #adb0b3, 0 16px #adb0b3;
-  content: "";
-  height: 2px;
-  margin-top: -1px;
+.device-apple-watch-ultra .device-power {
+  background: #d6ccc2;
+  border-radius: 2px 4px 4px 2px / 2px 8px 8px 2px;
+  box-shadow: inset 0 0 2px 1px #a38c76;
+  height: 72px;
   position: absolute;
-  right: 0;
-  top: 50%;
-  width: 6px;
+  right: 1px;
+  top: 242px;
+  width: 4px;
+}
+
+.device-apple-watch-ultra .device-home {
+  background: #f18f42;
+  border: 1px solid #a7500c;
+  border-radius: 2px 4px 4px 2px / 2px 8px 8px 2px;
+  box-shadow: inset 0 0 1px 1px #ef812a;
+  height: 106px;
+  left: 19px;
+  position: absolute;
+  top: 192px;
+  width: 4px;
+  z-index: 1;
 }
