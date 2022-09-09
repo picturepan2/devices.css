@@ -21,9 +21,11 @@ All devices are elegantly developed in pure CSS. The first are newly announced i
 - [Surface Book](https://devicescss.xyz/computers.html#surface-book)
 - [Surface Studio](https://devicescss.xyz/computers.html#surface-studio)
 ### Tablets
-- [iPad Pro](https://devicescss.xyz/#ipad-pro)
-- [iPad Pro (2017)](https://devicescss.xyz/#ipad-pro-2017)
-- [Surface Pro (2017)](https://devicescss.xyz/#surface-pro-2017)
+- [iPad Pro](https://devicescss.xyz/tablets.html#ipad-pro)
+- [iPad Pro (2017)](https://devicescss.xyz/tablets.html#ipad-pro-2017)
+- [Surface Pro (2017)](https://devicescss.xyz/tablets.html#surface-pro-2017)
+### Watches
+- [Apple Watch Ultra](https://devicescss.xyz/watches.html#apple-watch-ultra)
 
 ## What's next
 
