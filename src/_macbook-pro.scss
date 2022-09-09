@@ -97,7 +97,7 @@ $device-spacegray-panel: #0d0d0d;
 
     &::before {
       background: transparent;
-      border-radius: 0 0 2px 2px;
+      border-radius: 0 0 3px 3px;
       bottom: -2px;
       box-shadow: -300px 0 lighten($device-silver-panel, 10%), 300px 0 lighten($device-silver-panel, 10%);
       content: "";
@@ -106,7 +106,6 @@ $device-spacegray-panel: #0d0d0d;
       margin-left: -20px;
       position: absolute;
       width: 40px;
-      z-index: 2;
     }
   }
 

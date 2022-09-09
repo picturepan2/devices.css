@@ -369,6 +369,7 @@ body {
         width: 1rem;
 
         &.active {
+          box-shadow: inset 0 0 0 1.5px $bg-color;
           transform: scale(1.25);
         }
       }

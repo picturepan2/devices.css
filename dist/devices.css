@@ -108,8 +108,9 @@
 
 .device-iphone-14-pro .device-btns {
   background: #1b1721;
+  border-radius: 2px;
   height: 32px;
-  left: -3px;
+  left: -2px;
   position: absolute;
   top: 115px;
   width: 3px;
@@ -118,6 +119,7 @@
 .device-iphone-14-pro .device-btns::after,
 .device-iphone-14-pro .device-btns::before {
   background: #1b1721;
+  border-radius: 2px;
   content: "";
   height: 62px;
   left: 0;
@@ -135,9 +137,10 @@
 
 .device-iphone-14-pro .device-power {
   background: #1b1721;
+  border-radius: 2px;
   height: 100px;
   position: absolute;
-  right: -3px;
+  right: -2px;
   top: 200px;
   width: 3px;
 }
@@ -320,8 +323,9 @@
 
 .device-iphone-14 .device-btns {
   background: #101315;
+  border-radius: 2px;
   height: 32px;
-  left: -3px;
+  left: -2px;
   position: absolute;
   top: 115px;
   width: 3px;
@@ -330,6 +334,7 @@
 .device-iphone-14 .device-btns::after,
 .device-iphone-14 .device-btns::before {
   background: #101315;
+  border-radius: 2px;
   content: "";
   height: 62px;
   left: 0;
@@ -347,9 +352,10 @@
 
 .device-iphone-14 .device-power {
   background: #101315;
+  border-radius: 2px;
   height: 100px;
   position: absolute;
-  right: -3px;
+  right: -2px;
   top: 200px;
   width: 3px;
 }
@@ -1188,7 +1194,7 @@
 
 .device-macbook-pro .device-power::before {
   background: transparent;
-  border-radius: 0 0 2px 2px;
+  border-radius: 0 0 3px 3px;
   bottom: -2px;
   box-shadow: -300px 0 #272727, 300px 0 #272727;
   content: "";
@@ -1197,7 +1203,6 @@
   margin-left: -20px;
   position: absolute;
   width: 40px;
-  z-index: 2;
 }
 
 .device-macbook-pro.device-spacegray .device-frame {
@@ -1476,7 +1481,7 @@
 .device-imac .device-frame {
   background: #edeef0;
   border-radius: 18px;
-  box-shadow: inset 0 0 0 2px #d4d5d7;
+  box-shadow: inset 0 0 0 1px #d4d5d7;
   height: 440px;
   padding: 16px 16px 80px 16px;
   position: relative;
@@ -1504,7 +1509,7 @@
   margin-left: -3px;
   position: absolute;
   text-align: center;
-  top: 5px;
+  top: 6px;
   width: 6px;
   z-index: 9;
 }
@@ -2214,4 +2219,89 @@
   top: 192px;
   width: 4px;
   z-index: 1;
+}
+
+.device-apple-watch-s8 {
+  height: 440px;
+  width: 360px;
+}
+
+.device-apple-watch-s8 .device-frame {
+  background: #0d0d0d;
+  border-radius: 92px;
+  box-shadow: inset 0 0 24px 1px #0d0d0d, inset 0 0 0 12px #606c78;
+  height: 380px;
+  margin: 30px 20px;
+  padding: 28px 26px;
+  position: relative;
+  width: 320px;
+}
+
+.device-apple-watch-s8 .device-frame::before {
+  border: 1px solid #0d0d0d;
+  border-radius: 80px;
+  box-shadow: 0 0 12px rgba(255, 255, 255, .5), inset 0 0 12px 2px rgba(255, 255, 255, .75);
+  content: "";
+  height: 356px;
+  left: 12px;
+  position: absolute;
+  top: 12px;
+  width: 298px;
+}
+
+.device-apple-watch-s8 .device-screen {
+  border: 2px solid #121212;
+  border-radius: 62px;
+  height: 324px;
+  width: 268px;
+}
+
+.device-apple-watch-s8 .device-btns {
+  background: #606c78;
+  border-left: 1px solid black;
+  border-radius: 8px 6px 6px 8px / 20px 6px 6px 20px;
+  box-shadow: inset 8px 0 8px 0 #1c1f23, inset -2px 0 6px #272c31, -4px 0 8px rgba(13, 13, 13, .25);
+  height: 72px;
+  position: absolute;
+  right: 10px;
+  top: 138px;
+  width: 18px;
+  z-index: 9;
+}
+
+.device-apple-watch-s8 .device-btns::after {
+  background: #272c31;
+  border-radius: 2px 4px 4px 2px / 20px 8px 8px 20px;
+  box-shadow: inset -2px 0 2px 0 black, inset -6px 0 18px #272c31;
+  content: "";
+  height: 72px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 6px;
+}
+
+.device-apple-watch-s8 .device-btns::before {
+  background: #272c31;
+  border-radius: 20%;
+  box-shadow: 0 -30px rgba(62, 70, 77, .75), 0 -27px #272c31, 0 -25px black, 0 -21px rgba(62, 70, 77, .75), 0 -18px #272c31, 0 -16px black, 0 -12px rgba(62, 70, 77, .75), 0 -9px #272c31, 0 -7px black, 0 -3px rgba(62, 70, 77, .75), 0 0 #272c31, 0 2px black, 0 6px rgba(62, 70, 77, .75), 0 9px #272c31, 0 11px black, 0 15px rgba(62, 70, 77, .75), 0 18px #272c31, 0 20px black, 0 24px rgba(62, 70, 77, .75), 0 27px #272c31, 0 29px black;
+  content: "";
+  height: 3px;
+  margin-top: -2px;
+  position: absolute;
+  right: 2px;
+  top: 50%;
+  width: 10px;
+  z-index: 9;
+}
+
+.device-apple-watch-s8 .device-power {
+  background: #272c31;
+  border-radius: 2px 4px 4px 2px / 2px 8px 8px 2px;
+  box-shadow: inset 0 0 2px 1px #101315;
+  height: 72px;
+  position: absolute;
+  right: 16px;
+  top: 242px;
+  width: 4px;
 }

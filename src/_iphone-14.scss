@@ -113,8 +113,9 @@ $device-panel: #010101;
 
   .device-btns {
     background: $device-midnight-dark;
+    border-radius: 2px;
     height: 32px;
-    left: -3px;
+    left: -2px;
     position: absolute;
     top: 115px;
     width: 3px;
@@ -122,6 +123,7 @@ $device-panel: #010101;
     &::after,
     &::before {
       background: $device-midnight-dark;
+      border-radius: 2px;
       content: "";
       height: 62px;
       left: 0;
@@ -139,8 +141,9 @@ $device-panel: #010101;
 
   .device-power {
     background: $device-midnight-dark;
+    border-radius: 2px;
     height: 100px;
-    right: -3px;
+    right: -2px;
     position: absolute;
     top: 200px;
     width: 3px;

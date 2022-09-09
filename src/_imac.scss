@@ -28,7 +28,7 @@ $device-purple-panel: #0d0d0d;
   .device-frame {
     background: $device-silver;
     border-radius: 18px;
-    box-shadow: inset 0 0 0 2px $device-silver-dark;
+    box-shadow: inset 0 0 0 1px $device-silver-dark;
     height: 440px;
     padding: 16px 16px 80px 16px;
     position: relative;
@@ -54,7 +54,7 @@ $device-purple-panel: #0d0d0d;
       margin-left: -3px;
       position: absolute;
       text-align: center;
-      top: 5px;
+      top: 6px;
       width: 6px;
       z-index: 9;
     }

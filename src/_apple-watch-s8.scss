@@ -1,0 +1,112 @@
+// Apple Watch Series 8
+$device-midnight: #272C31;
+$device-midnight-dark: darken($device-midnight, 10%);
+$device-panel: #0d0d0d;
+
+.device-apple-watch-s8 {
+  height: 440px;
+  width: 360px;
+
+  .device-frame {
+    background: $device-panel;
+    border-radius: 92px;
+    box-shadow: inset 0 0 24px 1px rgba($device-panel, 1),
+                inset 0 0 0 12px lighten($device-midnight, 25%);
+    height: 380px;
+    margin: 30px 20px;
+    padding: 28px 26px;
+    position: relative;
+    width: 320px;
+
+    &::before {
+      border: 1px solid $device-panel;
+      border-radius: 80px;
+      box-shadow: 0 0 12px rgba($light-color, .5),
+                  inset 0 0 12px 2px rgba($light-color, .75);
+      content: "";
+      height: 356px;
+      left: 12px;
+      position: absolute;
+      top: 12px;
+      width: 298px;
+    }
+  }
+
+  // 410-by-502-pixel resolution
+  .device-screen {
+    border: 2px solid lighten($device-panel, 2%);
+    border-radius: 62px;
+    height: 324px;
+    width: 268px;
+  }
+
+  .device-btns {
+    background: lighten($device-midnight, 25%);
+    border-left: 1px solid darken($device-midnight, 30%);
+    border-radius: 8px 6px 6px 8px / 20px 6px 6px 20px;
+    box-shadow: inset 8px 0 8px 0px darken($device-midnight, 5%), inset -2px 0 6px $device-midnight, -4px 0 8px rgba($device-panel, .25);
+    height: 72px;
+    position: absolute;
+    right: 10px;
+    top: 138px;
+    width: 18px;
+    z-index: 9;
+
+    &::after {
+      background: $device-midnight;
+      border-radius: 2px 4px 4px 2px / 20px 8px 8px 20px;
+      box-shadow: inset -2px 0 2px 0 darken($device-midnight, 20%), inset -6px 0 18px $device-midnight;
+      content: "";
+      height: 72px;
+      right: 0;
+      position: absolute;
+      top: 0px;
+      width: 6px;
+    }
+    
+    &::before {
+      background: $device-midnight;
+      border-radius: 20%;
+      box-shadow: 0 -30px rgba(lighten($device-midnight, 10%), .75),
+                  0 -27px $device-midnight,
+                  0 -25px darken($device-midnight-dark, 10%),
+                  0 -21px rgba(lighten($device-midnight, 10%), .75),
+                  0 -18px $device-midnight,
+                  0 -16px darken($device-midnight-dark, 10%),
+                  0 -12px rgba(lighten($device-midnight, 10%), .75),
+                  0 -9px $device-midnight,
+                  0 -7px darken($device-midnight-dark, 10%),
+                  0 -3px rgba(lighten($device-midnight, 10%), .75),
+                  0 0 $device-midnight,
+                  0 2px darken($device-midnight-dark, 10%),
+                  0 6px rgba(lighten($device-midnight, 10%), .75),
+                  0 9px $device-midnight,
+                  0 11px darken($device-midnight-dark, 10%),
+                  0 15px rgba(lighten($device-midnight, 10%), .75),
+                  0 18px $device-midnight,
+                  0 20px darken($device-midnight-dark, 10%),
+                  0 24px rgba(lighten($device-midnight, 10%), .75),
+                  0 27px $device-midnight,
+                  0 29px darken($device-midnight-dark, 10%);
+      content: "";
+      height: 3px;
+      margin-top: -2px;
+      position: absolute;
+      right: 2px;
+      top: 50%;
+      width: 10px;
+      z-index: 9;
+    }
+  }
+
+  .device-power {
+    background: $device-midnight;
+    border-radius: 2px 4px 4px 2px / 2px 8px 8px 2px;
+    box-shadow: inset 0 0 2px 1px $device-midnight-dark;
+    height: 72px;
+    right: 16px;
+    position: absolute;
+    top: 242px;
+    width: 4px;
+  }
+}
