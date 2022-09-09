@@ -1,0 +1,73 @@
+// Pro Display XDR
+$device-silver: #EDEEF0;
+$device-silver-dark: #D4D5D7;
+$device-panel: #0d0d0d;
+
+.device-pro-display-xdr {
+  height: 475px;
+  width: 640px;
+
+  .device-frame {
+    background: lighten($device-panel, 3%);
+    border-radius: 4px;
+    box-shadow: inset 0 0 2px $device-silver-dark;
+    height: 368px;
+    padding: 8px;
+    position: relative;
+    width: 640px;
+
+    &::before {
+      background: darken($device-silver-panel, 3%);
+      border-radius: 50%;
+      content: "";
+      height: 6px;
+      left: 50%;
+      margin-left: -3px;
+      position: absolute;
+      text-align: center;
+      top: 6px;
+      width: 6px;
+      z-index: 9;
+    }
+  }
+
+  // 6016-by-3384-pixel resolution
+  .device-screen {
+    border: 2px solid lighten($device-silver-panel, 2%);
+    border-radius: 2px;
+    height: 352px;
+    width: 624px;
+  }
+
+  .device-power {
+    &::after {
+      background: radial-gradient(circle at center, $device-silver-dark 85%, darken($device-silver-dark, 20%) 100%);
+      border-top: 1px solid $device-silver-dark;
+      content: "";
+      height: 6px;
+      margin: 0 auto;
+      position: relative;
+      width: 152px;
+    }
+    &::before {
+      background: linear-gradient(to bottom, darken($device-silver-dark, 20%) 0, darken($device-silver-dark, 5%) 40%, darken($device-silver-dark, 5%) 85%, lighten($device-silver, 15%) 90%, darken($device-silver-dark, 40%) 100%);
+      content: "";
+      height: 102px;
+      margin: 0 auto;
+      position: relative;
+      width: 152px;
+    }
+  }
+
+  .device-home {
+    background: transparent;
+    border-radius: 0 0 3px 3px;
+    bottom: -2px;
+    box-shadow: -61px 0 darken($device-silver-dark, 40%), 61px 0 darken($device-silver-dark, 40%);
+    height: 1px;
+    left: 50%;
+    margin-left: -15px;
+    position: absolute;
+    width: 30px;
+  }
+}

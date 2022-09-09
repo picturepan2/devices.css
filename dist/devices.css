@@ -1540,6 +1540,18 @@
   width: 152px;
 }
 
+.device-imac .device-home {
+  background: transparent;
+  border-radius: 0 0 3px 3px;
+  bottom: -2px;
+  box-shadow: -61px 0 #d4d5d7, 61px 0 #d4d5d7;
+  height: 2px;
+  left: 50%;
+  margin-left: -15px;
+  position: absolute;
+  width: 30px;
+}
+
 .device-imac.device-blue .device-frame {
   box-shadow: inset 0 0 0 2px #b4c7da;
 }
@@ -1556,6 +1568,10 @@
 
 .device-imac.device-blue .device-power::before {
   background: linear-gradient(to bottom, #7094b8 0, #a3bad2 40%, #a3bad2 85%, white 90%, #406182 100%);
+}
+
+.device-imac.device-blue .device-home {
+  box-shadow: -61px 0 #b4c7da, 61px 0 #b4c7da;
 }
 
 .device-imac.device-green .device-frame {
@@ -1576,6 +1592,10 @@
   background: linear-gradient(to bottom, #7fa697 0, #acc6bc 40%, #acc6bc 85%, white 90%, #4e7164 100%);
 }
 
+.device-imac.device-green .device-home {
+  box-shadow: -61px 0 #bbd0c8, 61px 0 #bbd0c8;
+}
+
 .device-imac.device-pink .device-frame {
   box-shadow: inset 0 0 0 2px #edccc6;
 }
@@ -1592,6 +1612,10 @@
 
 .device-imac.device-pink .device-power::before {
   background: linear-gradient(to bottom, #d58778 0, #e7bbb3 40%, #e7bbb3 85%, white 90%, #b04a37 100%);
+}
+
+.device-imac.device-pink .device-home {
+  box-shadow: -61px 0 #edccc6, 61px 0 #edccc6;
 }
 
 .device-imac.device-yellow .device-frame {
@@ -1612,6 +1636,10 @@
   background: linear-gradient(to bottom, #eab039 0, #f2cc7e 40%, #f2cc7e 85%, white 90%, #ab7912 100%);
 }
 
+.device-imac.device-yellow .device-home {
+  box-shadow: -61px 0 #f4d595, 61px 0 #f4d595;
+}
+
 .device-imac.device-orange .device-frame {
   box-shadow: inset 0 0 0 2px #e9b5a0;
 }
@@ -1630,6 +1658,10 @@
   background: linear-gradient(to bottom, #d6744d 0, #e4a58b 40%, #e4a58b 85%, white 90%, #994524 100%);
 }
 
+.device-imac.device-orange .device-home {
+  box-shadow: -61px 0 #e9b5a0, 61px 0 #e9b5a0;
+}
+
 .device-imac.device-purple .device-frame {
   box-shadow: inset 0 0 0 2px #c4c4e5;
 }
@@ -1646,6 +1678,10 @@
 
 .device-imac.device-purple .device-power::before {
   background: linear-gradient(to bottom, #7d7dc6 0, #b2b2dd 40%, #b2b2dd 85%, white 90%, #449 100%);
+}
+
+.device-imac.device-purple .device-home {
+  box-shadow: -61px 0 #c4c4e5, 61px 0 #c4c4e5;
 }
 
 .device-imac-pro {
@@ -2301,7 +2337,74 @@
   box-shadow: inset 0 0 2px 1px #101315;
   height: 72px;
   position: absolute;
-  right: 16px;
+  right: 18px;
   top: 242px;
   width: 4px;
+}
+
+.device-pro-display-xdr {
+  height: 475px;
+  width: 640px;
+}
+
+.device-pro-display-xdr .device-frame {
+  background: #151515;
+  border-radius: 4px;
+  box-shadow: inset 0 0 2px #d4d5d7;
+  height: 368px;
+  padding: 8px;
+  position: relative;
+  width: 640px;
+}
+
+.device-pro-display-xdr .device-frame::before {
+  background: #050505;
+  border-radius: 50%;
+  content: "";
+  height: 6px;
+  left: 50%;
+  margin-left: -3px;
+  position: absolute;
+  text-align: center;
+  top: 6px;
+  width: 6px;
+  z-index: 9;
+}
+
+.device-pro-display-xdr .device-screen {
+  border: 2px solid #121212;
+  border-radius: 2px;
+  height: 352px;
+  width: 624px;
+}
+
+.device-pro-display-xdr .device-power::after {
+  background: radial-gradient(circle at center, #d4d5d7 85%, #9fa1a6 100%);
+  border-top: 1px solid #d4d5d7;
+  content: "";
+  height: 6px;
+  margin: 0 auto;
+  position: relative;
+  width: 152px;
+}
+
+.device-pro-display-xdr .device-power::before {
+  background: linear-gradient(to bottom, #9fa1a6 0, #c7c8cb 40%, #c7c8cb 85%, white 90%, #6b6e74 100%);
+  content: "";
+  height: 102px;
+  margin: 0 auto;
+  position: relative;
+  width: 152px;
+}
+
+.device-pro-display-xdr .device-home {
+  background: transparent;
+  border-radius: 0 0 3px 3px;
+  bottom: -2px;
+  box-shadow: -61px 0 #6b6e74, 61px 0 #6b6e74;
+  height: 1px;
+  left: 50%;
+  margin-left: -15px;
+  position: absolute;
+  width: 30px;
 }

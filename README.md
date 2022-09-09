@@ -8,6 +8,7 @@ All devices are elegantly developed in pure CSS. The first are newly announced i
 
 ### Phones
 - [iPhone 14 Pro](https://devicescss.xyz/phones.html#iphone-14-pro)
+- [iPhone 14](https://devicescss.xyz/phones.html#iphone-14)
 - [iPhone X](https://devicescss.xyz/phones.html#iphone-x)
 - [iPhone 8](https://devicescss.xyz/phones.html#iphone-8)
 - [Google Pixel 2 XL](https://devicescss.xyz/phones.html#google-pixel-2-xl)
@@ -26,6 +27,7 @@ All devices are elegantly developed in pure CSS. The first are newly announced i
 - [Surface Pro (2017)](https://devicescss.xyz/tablets.html#surface-pro-2017)
 ### Watches
 - [Apple Watch Ultra](https://devicescss.xyz/watches.html#apple-watch-ultra)
+- [Apple Watch Series 8](https://devicescss.xyz/watches.html#apple-watch-series-8)
 
 ## What's next
 
