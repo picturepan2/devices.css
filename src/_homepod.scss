@@ -1,0 +1,108 @@
+// HomePod
+$device-silver: #36373a;
+$device-silver-light: lighten($device-silver, 35%);
+$device-silver-dark: darken($device-silver, 10%);
+$device-silver-panel: #0d0d0d;
+
+.device-homepod {
+  height: 395px;
+  width: 320px;
+
+  .device-frame {
+    background: linear-gradient(to right, $device-silver 0, lighten($device-silver, 35%) 25%, $device-silver-dark 60%, darken($device-silver-dark, 5%) 90%, $device-silver-dark 100%);
+    border-radius: 80px;
+    box-shadow: inset 0 0 0 2px $device-silver,
+                inset 0 0 40px 1px $device-silver-dark,
+                inset 0 12px 40px 1px lighten($device-silver, 80%),
+                inset 0 -24px 40px 1px darken($device-silver, 80%);
+    height: 385px;
+    margin: 5px auto;
+    overflow: hidden;
+    position: relative;
+    width: 320px;
+  }
+
+  .device-stripe {
+    background: repeating-linear-gradient(
+                  45deg,
+                  rgba($device-silver-light, .35) 0,
+                  rgba($device-silver-light, .35) 2px,
+                  transparent 2px,
+                  transparent 6px
+                ),
+                repeating-linear-gradient(
+                  135deg,
+                  rgba($device-silver-light, .35) 0,
+                  rgba($device-silver-light, .35) 2px,
+                  transparent 2px,
+                  transparent 6px
+                ),
+                repeating-linear-gradient(
+                  45deg,
+                  transparent 0,
+                  transparent 2px,
+                  rgba($device-silver-dark, .35) 2px,
+                  rgba($device-silver-dark, .35) 4px,
+                  transparent 4px,
+                  transparent 6px
+                ),
+                repeating-linear-gradient(
+                  135deg,
+                  transparent 0,
+                  transparent 2px,
+                  rgba($device-silver-dark, .35) 2px,
+                  rgba($device-silver-dark, .35) 4px,
+                  transparent 4px,
+                  transparent 6px
+                );
+    border-radius: 80px;
+    box-shadow: inset 0 0 0 2px $device-silver,
+                inset 0 0 40px 1px $device-silver-dark,
+                inset 0 12px 24px 1px lighten($device-silver, 40%),
+                inset 0 -12px 24px 1px darken($device-silver, 20%);
+    height: 385px;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 5px;
+    width: 320px;
+    z-index: 9;
+
+    &::before {
+      top: 0;
+      transform: translateY(-34%) perspective(500px) rotateX(51deg);
+    }
+
+    &::after {
+      bottom: 0;
+      transform: translateY(34%) perspective(500px) rotateX(-51deg) ;
+    }
+  }
+
+  .device-home {
+    &::before,
+    &::after {
+      background: $device-silver;
+      content: "";
+      left: 50%;
+      position: absolute;
+    }
+
+    &::before {
+      border-radius: 50% 50% 8px 8px;
+      height: 10px;
+      margin-left: -85px;
+      top: 0;
+      width: 170px;
+    }
+
+    &::after {
+      border-radius: 0 0 10% 10% / 0 0 8px 8px;
+      bottom: 0;
+      box-shadow: inset 0 0 4px 0 darken($device-silver-dark, 5%);
+      height: 5px;
+      margin-left: -85px;
+      width: 170px;
+    }
+  }
+}

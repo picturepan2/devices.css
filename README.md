@@ -28,6 +28,9 @@ All devices are elegantly developed in pure CSS. The first are newly announced i
 ### Watches
 - [Apple Watch Ultra](https://devicescss.xyz/watches.html#apple-watch-ultra)
 - [Apple Watch Series 8](https://devicescss.xyz/watches.html#apple-watch-series-8)
+### Accessories
+- [Apple HomePod](https://devicescss.xyz/accessories.html#homepod)
+- [Pro Display XDR](https://devicescss.xyz/accessories.html#pro-display-xdr)
 
 ## What's next
 
