@@ -526,24 +526,62 @@ body {
   }
 }
 
-// Old
-.grid-hero {
-  letter-spacing: -.021em;
-  padding-bottom: 2rem;
-  padding-top: 2rem;
+// Demo
+.hero-demo {
+  height: 600px;
+  margin-bottom: 40px;
   position: relative;
 
-  h1 {
-    color: $dark-color;
-    font-size: 1.6rem;
-    margin-bottom: 1rem;
+  .demo {
+    align-items: center;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    left: 50%;
+    position: absolute;
   }
 
-  h2 {
-    color: $dark-color;
-    font-size: .8rem;
-    font-weight: 400;
-    margin-bottom: 1.5rem;
+  .demo-iphone-14-pro {
+    height: 260.4px;
+    margin-left: -400px;
+    width: 128.4px;
+    z-index: 6;
+
+    .device {
+      transform: scale(.3);
+    }
+  }
+
+  .demo-macbook-pro {
+    height: 325.5px;
+    margin-left: 60px;
+    width: 555px;
+    z-index: 3;
+
+    .device {
+      transform: scale(.75);
+    }
+  }
+
+  .demo-imac {
+    height: 540px;
+    margin-left: -320px;
+    width: 640px;
+
+    .device {
+      transform: scale(1);
+    }
+  }
+
+  .demo-apple-watch-ultra {
+    height: 95px;
+    margin-left: -460px;
+    width: 90px;
+    z-index: 9;
+
+    .device {
+      transform: scale(.25);
+    }
   }
 }
 

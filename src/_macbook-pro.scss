@@ -7,7 +7,7 @@ $device-spacegray-dark: darken($device-spacegray, 5%);
 $device-spacegray-panel: #0d0d0d;
 
 .device-macbook-pro {
-  height: 452px;
+  height: 434px;
   width: 740px;
 
   .device-frame {
@@ -91,7 +91,7 @@ $device-spacegray-panel: #0d0d0d;
       left: 50%;
       margin-left: -60px;
       position: absolute;
-      top: -1px;
+      top: 0;
       width: 120px;
     }
 

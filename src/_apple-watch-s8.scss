@@ -4,7 +4,7 @@ $device-midnight-dark: darken($device-midnight, 10%);
 $device-panel: #0d0d0d;
 
 .device-apple-watch-s8 {
-  height: 440px;
+  height: 380px;
   width: 360px;
 
   .device-frame {
@@ -13,7 +13,7 @@ $device-panel: #0d0d0d;
     box-shadow: inset 0 0 24px 1px rgba($device-panel, 1),
                 inset 0 0 0 12px lighten($device-midnight, 25%);
     height: 380px;
-    margin: 30px 20px;
+    margin: 0 20px;
     padding: 28px 26px;
     position: relative;
     width: 320px;
@@ -48,7 +48,7 @@ $device-panel: #0d0d0d;
     height: 72px;
     position: absolute;
     right: 10px;
-    top: 138px;
+    top: 108px;
     width: 18px;
     z-index: 9;
 
@@ -106,7 +106,7 @@ $device-panel: #0d0d0d;
     height: 72px;
     right: 18px;
     position: absolute;
-    top: 242px;
+    top: 212px;
     width: 4px;
   }
 }

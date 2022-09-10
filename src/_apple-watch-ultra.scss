@@ -4,7 +4,7 @@ $device-titanium-dark: darken($device-titanium, 25%);
 $device-panel: #0d0d0d;
 
 .device-apple-watch-ultra {
-  height: 440px;
+  height: 380px;
   width: 360px;
 
   .device-frame {
@@ -12,7 +12,7 @@ $device-panel: #0d0d0d;
     border-radius: 92px;
     box-shadow: inset 0 0 12px 1px rgba($device-panel, .75), inset 0 0 0 6px $device-titanium, inset 0 0 0 12px $device-titanium;
     height: 380px;
-    margin: 30px 20px;
+    margin: 0 20px;
     padding: 38px;
     position: relative;
     width: 320px;
@@ -71,7 +71,7 @@ $device-panel: #0d0d0d;
     height: 72px;
     position: absolute;
     right: 1px;
-    top: 138px;
+    top: 108px;
     width: 24px;
     z-index: 9;
 
@@ -130,7 +130,7 @@ $device-panel: #0d0d0d;
     height: 10px;
     left: 19px;
     position: absolute;
-    top: 128px;
+    top: 98px;
     width: 4px;
     z-index: 1;
   }
@@ -142,7 +142,7 @@ $device-panel: #0d0d0d;
     height: 72px;
     right: 1px;
     position: absolute;
-    top: 242px;
+    top: 212px;
     width: 4px;
   }
 
@@ -154,7 +154,7 @@ $device-panel: #0d0d0d;
     height: 106px;
     left: 19px;
     position: absolute;
-    top: 192px;
+    top: 162px;
     width: 4px;
     z-index: 1;
   }
