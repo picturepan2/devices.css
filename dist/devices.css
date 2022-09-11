@@ -744,6 +744,117 @@
   background: #74747a;
 }
 
+.device-google-pixel-6-pro {
+  height: 862px;
+  width: 404px;
+}
+
+.device-google-pixel-6-pro .device-frame {
+  background: #121212;
+  border-radius: 28px;
+  box-shadow: inset 0 0 12px #383838, inset 0 7px 0 3px #fdfdfc, inset 0 -6px 0 3px #fdfdfc;
+  height: 862px;
+  margin: 0 2px;
+  padding: 20px 12px 26px 12px;
+  width: 400px;
+}
+
+.device-google-pixel-6-pro .device-screen {
+  border-radius: 27px;
+  height: 816px;
+  width: 376px;
+}
+
+.device-google-pixel-6-pro .device-header::after {
+  background: linear-gradient(to bottom, #8d8d86 0, #cbcbc8 30%, #cbcbc8 100%);
+  content: "";
+  height: 10px;
+  left: 50%;
+  margin-left: -147px;
+  position: absolute;
+  top: 0;
+  width: 294px;
+}
+
+.device-google-pixel-6-pro .device-stripe::after {
+  background: linear-gradient(to top, #121212, #666661);
+  border-radius: 50px 50px 0 0;
+  bottom: 0;
+  content: "";
+  height: 2px;
+  left: 50%;
+  margin-left: -22px;
+  position: absolute;
+  width: 44px;
+}
+
+.device-google-pixel-6-pro .device-stripe::before {
+  background: #cbcbc8;
+  bottom: 0;
+  content: "";
+  height: 9px;
+  left: 50%;
+  margin-left: 40px;
+  position: absolute;
+  width: 11px;
+}
+
+.device-google-pixel-6-pro .device-sensors {
+  background: #121212;
+  border-radius: 50%;
+  height: 22px;
+  left: 50%;
+  margin-left: -11px;
+  margin-top: -11px;
+  position: absolute;
+  top: 39px;
+  width: 22px;
+}
+
+.device-google-pixel-6-pro .device-sensors::after,
+.device-google-pixel-6-pro .device-sensors::before {
+  content: "";
+  position: absolute;
+}
+
+.device-google-pixel-6-pro .device-sensors::after {
+  background: linear-gradient(to bottom, #121212, #666661);
+  border-radius: 0 0 50px 50px;
+  height: 4px;
+  left: 50%;
+  margin-left: -103px;
+  top: -18px;
+  width: 206px;
+}
+
+.device-google-pixel-6-pro .device-sensors::before {
+  background: radial-gradient(farthest-corner at 20% 20%, #6074bf 0, transparent 40%), radial-gradient(farthest-corner at 80% 80%, #513785 0, #24555e 20%, transparent 50%);
+  border-radius: 50%;
+  box-shadow: 0 0 1px 1px rgba(255, 255, 255, .05);
+  height: 8px;
+  left: 7px;
+  top: 7px;
+  width: 8px;
+}
+
+.device-google-pixel-6-pro .device-btns {
+  background: #b2b2ae;
+  height: 102px;
+  position: absolute;
+  right: 0;
+  top: 306px;
+  width: 3px;
+}
+
+.device-google-pixel-6-pro .device-power {
+  background: #b2b2ae;
+  height: 58px;
+  position: absolute;
+  right: 0;
+  top: 194px;
+  width: 3px;
+}
+
 .device-google-pixel-2-xl {
   height: 832px;
   width: 404px;

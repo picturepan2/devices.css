@@ -1,5 +1,5 @@
 block global
-  - var domain = 'https://devicescss.xyz'
+  - var domain = 'https://picturepan2.github.io/devices.css/'
   - var url = domain
 
 block variables
@@ -30,16 +30,16 @@ html(lang='en')
     meta(property='og:title' content= title)
     meta(property='og:type' content='website')
     meta(property='og:description' content= description)
-    //- meta(property='og:image' content= domain + '/assets/img/devices-image.jpg')
+    meta(property='og:image' content= domain + '/assets/social-image.jpg')
     meta(name='twitter:card' content='summary')
     meta(name='twitter:site' content='@picturepan2')
     meta(name='twitter:creator' content='@picturepan2')
     if slug != parent
-      link(rel='icon' href='../assets/favicons/favicon.png')
+      link(rel='icon' href='../assets/favicon.svg')
       link(rel='stylesheet' href='../assets/css/demo.min.css')
       link(rel='stylesheet' href='../assets/css/devices.min.css')
     else 
-      link(rel='icon' href='assets/favicons/favicon.png')
+      link(rel='icon' href='assets/favicon.svg')
       link(rel='stylesheet' href='assets/css/demo.min.css')
       link(rel='stylesheet' href='assets/css/devices.min.css')
     link(rel='canonical' href= url)
@@ -52,7 +52,7 @@ html(lang='en')
         a.brand-logo(href=domain)
           span.brand-primary D
           span.brand-secondary.ml-1 DEVICES
-          span.brand-extra.ml-1 .CSS
+          span.brand-extra .CSS
         label.brand-homebtn.c-hand(for="rework-switch")
           .icon-menu
       .section-aside
@@ -72,7 +72,7 @@ html(lang='en')
               strong GitHub
             span.ml-1.mr-1 ·
             a(href="https://www.paypal.me/picturepan2" target="_blank" rel="noopener noreferrer")
-              strong PayPal Sponsor
+              strong PayPal Donate
             
     script(async="" src="https://www.googletagmanager.com/gtag/js?id=UA-2702768-16")
     script.

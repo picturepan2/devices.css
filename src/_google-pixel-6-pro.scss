@@ -1,0 +1,118 @@
+// Google Pixel 6 Pro
+$device-white: #CBCBC8;
+$device-white-dark: darken($device-white, 10%);
+$device-panel: #121212;
+
+.device-google-pixel-6-pro {
+  height: 862px;
+  width: 404px;
+
+  .device-frame {
+    background: $device-panel;
+    border-radius: 28px;
+    box-shadow: inset 0 0 12px lighten($device-panel, 15%), inset 0 7px 0 3px lighten($device-white, 20%), inset 0 -6px 0 3px lighten($device-white, 20%);
+    height: 862px;
+    margin: 0 2px;
+    padding: 20px 12px 26px 12px;
+    width: 400px;
+  }
+
+  // 3120-by-1440-pixel resolution
+  .device-screen {
+    border-radius: 27px;
+    height: 816px;
+    width: 376px;
+  }
+
+  .device-header {
+    &::after {
+      background: linear-gradient(to bottom, darken($device-white-dark, 15%) 0, $device-white 30%, $device-white 100%);
+      content: "";
+      height: 10px;
+      left: 50%;
+      margin-left: -147px;
+      position: absolute;
+      top: 0;
+      width: 294px;
+    }
+  }
+
+  .device-stripe {
+    &::after {
+      background: linear-gradient(to top, $device-panel, darken($device-white-dark, 30%));
+      border-radius: 50px 50px 0 0;
+      content: "";
+      height: 2px;
+      left: 50%;
+      margin-left: -22px;
+      position: absolute;
+      bottom: 0;
+      width: 44px;
+    }
+    &::before {
+      background: $device-white;
+      bottom: 0;
+      content: "";
+      height: 9px;
+      left: 50%;
+      margin-left: 40px;
+      position: absolute;
+      width: 11px;
+    }
+  }
+
+  .device-sensors {
+    background: $device-panel;
+    border-radius: 50%;
+    height: 22px;
+    left: 50%;
+    margin-left: -11px;
+    margin-top: -11px;
+    position: absolute;
+    top: 39px;
+    width: 22px;
+
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+    }
+    &::after {
+      background: linear-gradient(to bottom, $device-panel, darken($device-white-dark, 30%));
+      border-radius: 0 0 50px 50px;
+      height: 4px;
+      left: 50%;
+      margin-left: -103px;
+      top: -18px;
+      width: 206px;
+    }
+    &::before {
+      background: radial-gradient(farthest-corner at 20% 20%, #6074BF 0, transparent 40%),
+                  radial-gradient(farthest-corner at 80% 80%, #513785 0, #24555E 20%, transparent 50%);
+      box-shadow: 0 0 1px 1px rgba($light-color, .05);
+      border-radius: 50%;
+      height: 8px;
+      left: 7px;
+      top: 7px;
+      width: 8px;
+    }
+  }
+
+  .device-btns {
+    background: $device-white-dark;
+    height: 102px;
+    position: absolute;
+    right: 0;
+    top: 306px;
+    width: 3px;
+  }
+
+  .device-power {
+    background: $device-white-dark;
+    height: 58px;
+    position: absolute;
+    right: 0;
+    top: 194px;
+    width: 3px;
+  }
+}
