@@ -1,6 +1,10 @@
 // Google Pixel 6 Pro
 $device-white: #CBCBC8;
 $device-white-dark: darken($device-white, 10%);
+$device-gold: #FFD6AD;
+$device-gold-dark: darken($device-gold, 10%);
+$device-black: #323334;
+$device-black-dark: darken($device-black, 10%);
 $device-panel: #121212;
 
 .device-google-pixel-6-pro {
@@ -10,7 +14,7 @@ $device-panel: #121212;
   .device-frame {
     background: $device-panel;
     border-radius: 28px;
-    box-shadow: inset 0 0 12px lighten($device-panel, 15%), inset 0 7px 0 3px lighten($device-white, 20%), inset 0 -6px 0 3px lighten($device-white, 20%);
+    box-shadow: inset 0 0 12px darken($device-white-dark, 15%), inset 0 7px 0 3px lighten($device-white, 20%), inset 0 -6px 0 3px lighten($device-white, 20%);
     height: 862px;
     margin: 0 2px;
     padding: 20px 12px 26px 12px;
@@ -25,16 +29,13 @@ $device-panel: #121212;
   }
 
   .device-header {
-    &::after {
-      background: linear-gradient(to bottom, darken($device-white-dark, 15%) 0, $device-white 30%, $device-white 100%);
-      content: "";
-      height: 10px;
-      left: 50%;
-      margin-left: -147px;
-      position: absolute;
-      top: 0;
-      width: 294px;
-    }
+    background: linear-gradient(to bottom, darken($device-white-dark, 15%) 0, $device-white 30%, $device-white 100%);
+    height: 10px;
+    left: 50%;
+    margin-left: -147px;
+    position: absolute;
+    top: 0;
+    width: 294px;
   }
 
   .device-stripe {
@@ -114,5 +115,61 @@ $device-panel: #121212;
     right: 0;
     top: 194px;
     width: 3px;
+  }
+
+  // Gold edition
+  &.device-gold {
+    .device-frame {
+      box-shadow: inset 0 0 12px darken($device-gold-dark, 15%), inset 0 7px 0 3px lighten($device-gold, 20%), inset 0 -6px 0 3px lighten($device-gold, 20%);
+    }
+
+    .device-header {
+      background: linear-gradient(to bottom, darken($device-gold-dark, 15%) 0, $device-gold 30%, $device-gold 100%);
+    }
+
+    .device-stripe {
+      &::after {
+        background: linear-gradient(to top, $device-panel, darken($device-gold-dark, 30%));
+      }
+      &::before {
+        background: $device-gold;
+      }
+    }
+
+    .device-btns {
+      background: $device-gold-dark;
+    }
+  
+    .device-power {
+      background: $device-gold-dark;
+    }
+  }
+
+  // Black edition
+  &.device-black {
+    .device-frame {
+      box-shadow: inset 0 0 12px darken($device-black-dark, 15%), inset 0 7px 0 3px lighten($device-black, 20%), inset 0 -6px 0 3px lighten($device-black, 20%);
+    }
+
+    .device-header {
+      background: linear-gradient(to bottom, darken($device-black-dark, 15%) 0, $device-black 30%, $device-black 100%);
+    }
+
+    .device-stripe {
+      &::after {
+        background: linear-gradient(to top, $device-panel, darken($device-black-dark, 30%));
+      }
+      &::before {
+        background: $device-black;
+      }
+    }
+
+    .device-btns {
+      background: $device-black-dark;
+    }
+  
+    .device-power {
+      background: $device-black-dark;
+    }
   }
 }

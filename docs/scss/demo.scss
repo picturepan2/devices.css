@@ -545,7 +545,7 @@ body {
 
   .demo-iphone-14-pro {
     height: 260.4px;
-    margin-left: -400px;
+    margin-left: -440px;
     width: 128.4px;
     z-index: 6;
 
@@ -556,12 +556,23 @@ body {
 
   .demo-iphone-14 {
     height: 260.4px;
-    margin-left: -300px;
+    margin-left: -360px;
     width: 128.4px;
     z-index: 5;
 
     .device {
       transform: scale(.3);
+    }
+  }
+
+  .demo-google-pixel-6-pro {
+    height: 284.46px;
+    margin-left: -300px;
+    width: 133.32px;
+    z-index: 4;
+
+    .device {
+      transform: scale(.325);
     }
   }
 
@@ -588,7 +599,7 @@ body {
 
   .demo-apple-watch-ultra {
     height: 95px;
-    margin-left: -460px;
+    margin-left: -480px;
     width: 90px;
     z-index: 9;
 

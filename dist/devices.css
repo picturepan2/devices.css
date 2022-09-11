@@ -752,7 +752,7 @@
 .device-google-pixel-6-pro .device-frame {
   background: #121212;
   border-radius: 28px;
-  box-shadow: inset 0 0 12px #383838, inset 0 7px 0 3px #fdfdfc, inset 0 -6px 0 3px #fdfdfc;
+  box-shadow: inset 0 0 12px #8d8d86, inset 0 7px 0 3px #fdfdfc, inset 0 -6px 0 3px #fdfdfc;
   height: 862px;
   margin: 0 2px;
   padding: 20px 12px 26px 12px;
@@ -765,9 +765,8 @@
   width: 376px;
 }
 
-.device-google-pixel-6-pro .device-header::after {
+.device-google-pixel-6-pro .device-header {
   background: linear-gradient(to bottom, #8d8d86 0, #cbcbc8 30%, #cbcbc8 100%);
-  content: "";
   height: 10px;
   left: 50%;
   margin-left: -147px;
@@ -853,6 +852,54 @@
   right: 0;
   top: 194px;
   width: 3px;
+}
+
+.device-google-pixel-6-pro.device-gold .device-frame {
+  box-shadow: inset 0 0 12px #ff962e, inset 0 7px 0 3px white, inset 0 -6px 0 3px white;
+}
+
+.device-google-pixel-6-pro.device-gold .device-header {
+  background: linear-gradient(to bottom, #ff962e 0, #ffd6ad 30%, #ffd6ad 100%);
+}
+
+.device-google-pixel-6-pro.device-gold .device-stripe::after {
+  background: linear-gradient(to top, #121212, #e07000);
+}
+
+.device-google-pixel-6-pro.device-gold .device-stripe::before {
+  background: #ffd6ad;
+}
+
+.device-google-pixel-6-pro.device-gold .device-btns {
+  background: #ffbd7a;
+}
+
+.device-google-pixel-6-pro.device-gold .device-power {
+  background: #ffbd7a;
+}
+
+.device-google-pixel-6-pro.device-black .device-frame {
+  box-shadow: inset 0 0 12px black, inset 0 7px 0 3px #646668, inset 0 -6px 0 3px #646668;
+}
+
+.device-google-pixel-6-pro.device-black .device-header {
+  background: linear-gradient(to bottom, black 0, #323334 30%, #323334 100%);
+}
+
+.device-google-pixel-6-pro.device-black .device-stripe::after {
+  background: linear-gradient(to top, #121212, black);
+}
+
+.device-google-pixel-6-pro.device-black .device-stripe::before {
+  background: #323334;
+}
+
+.device-google-pixel-6-pro.device-black .device-btns {
+  background: #191a1a;
+}
+
+.device-google-pixel-6-pro.device-black .device-power {
+  background: #191a1a;
 }
 
 .device-google-pixel-2-xl {
@@ -1645,7 +1692,7 @@
 .device-imac .device-power::before {
   background: linear-gradient(to bottom, #9fa1a6 0, #c7c8cb 40%, #c7c8cb 85%, white 90%, #6b6e74 100%);
   content: "";
-  height: 94px;
+  height: 92px;
   margin: 0 auto;
   position: relative;
   width: 152px;
@@ -1654,7 +1701,7 @@
 .device-imac .device-home {
   background: transparent;
   border-radius: 0 0 3px 3px;
-  bottom: -2px;
+  bottom: 0;
   box-shadow: -61px 0 #d4d5d7, 61px 0 #d4d5d7;
   height: 2px;
   left: 50%;

@@ -75,7 +75,7 @@ $device-panel: #0d0d0d;
     &::before {
       background: linear-gradient(to bottom, darken($device-silver-dark, 20%) 0, darken($device-silver-dark, 5%) 40%, darken($device-silver-dark, 5%) 85%, lighten($device-silver, 15%) 90%, darken($device-silver-dark, 40%) 100%);
       content: "";
-      height: 94px;
+      height: 92px;
       margin: 0 auto;
       position: relative;
       width: 152px;
@@ -85,7 +85,7 @@ $device-panel: #0d0d0d;
   .device-home {
     background: transparent;
     border-radius: 0 0 3px 3px;
-    bottom: -2px;
+    bottom: 0;
     box-shadow: -61px 0 $device-silver-dark, 61px 0 $device-silver-dark;
     height: 2px;
     left: 50%;
