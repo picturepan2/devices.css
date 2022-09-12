@@ -32,6 +32,8 @@ block content
             .device-btns
             .device-power
             .device-home
+
+    include _layout/_ad-g.pug
     
     .columns
       .content-container.column.col-md-12
@@ -51,9 +53,12 @@ block content
             .device-btns
             .device-power
             .device-home
-    
-    include _layout/_ad-g.pug
 
-   
-    
     include _layout/_ad-sidebar.pug
+
+    .columns  
+      ul.pagination.column
+        .page-item.page-prev
+          a(href="watches.html")
+            .page-item-subtitle Previous
+            .page-item-title.h5 Watches

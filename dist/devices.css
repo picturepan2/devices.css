@@ -2035,10 +2035,10 @@
 }
 
 .device-surface-studio .device-stripe::after {
-  border: 4px solid #d5d6d8;
+  border: 1px solid #e2e3e4;
   border-radius: 0 0 18px 18px;
   border-top: 0;
-  box-shadow: inset 0 0 4px 2px #c8cacb;
+  box-shadow: inset 0 0 4px 1px #c8cacb, inset 0 0 4px 2px #e2e3e4, inset 0 0 0 8px #c8cacb;
   height: 60px;
   margin-left: -140px;
   width: 280px;
@@ -2065,9 +2065,9 @@
 }
 
 .device-surface-studio .device-power::after {
-  background: #adb0b3;
+  background: #babdbf;
   content: "";
-  height: 2px;
+  height: 1px;
   left: 0;
   position: absolute;
   top: 4px;
