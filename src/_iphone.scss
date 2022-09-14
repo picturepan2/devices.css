@@ -1,0 +1,141 @@
+// The iPhone
+$device-silver: #F5F5F5;
+$device-silver-dark: darken($device-silver, 10%);
+$device-panel: #010101;
+
+.device-the-iphone {
+  height: 610px;
+  width: 320px;
+
+  .device-frame {
+    background: $device-panel;
+    border: 1px solid darken($device-silver-dark, 20%);
+    border-radius: 56px;
+    box-shadow: inset 0 0 4px 3px $device-panel, inset 0 0 2px 13px $device-silver;
+    height: 610px;
+    padding: 100px 22px;
+    width: 320px;
+
+    &::before {
+      border: 8px solid $device-panel;
+      border-left-width: 2px;
+      border-radius: 48px;
+      border-right-width: 2px;
+      box-shadow: inset 0 0 8px 2px $device-panel;
+      content: "";
+      height: 594px;
+      left: 2px;
+      position: absolute;
+      top: 9px;
+      width: 316px;
+    }
+
+    &::after {
+      border: 4px solid $device-silver-dark;
+      border-radius: 38px;
+      content: "";
+      height: 590px;
+      left: 13px;
+      position: absolute;
+      top: 11px;
+      width: 294px;
+    }
+  }
+
+  // 320-by-480-pixel resolution
+  .device-screen {
+    border: 2px solid lighten($device-panel, 15%);
+    border-radius: 4px;
+    height: 410px;
+    width: 276px;
+  }
+
+  .device-sensors {
+    &::before {
+      background: linear-gradient(to bottom, lighten($device-panel, 15%) 50%, rgba($device-silver-dark, .25) 50%, darken($device-silver, 30%));
+      border-radius: 5px;
+      content: "";
+      height: 10px;
+      left: 50%;
+    margin-left: -28px;
+      position: absolute;
+      top: 52px;
+      width: 56px;
+    }
+
+    &::after {
+      background: lighten($device-panel, 15%);
+      border: 1px solid $device-panel;
+      border-radius: 3px;
+      content: "";
+      height: 6px;
+      left: 50%;
+      margin-left: -26px;
+      position: absolute;
+      top: 54px;
+      width: 52px;
+    }
+  }
+
+  .device-btns {
+    background: darken($device-silver-dark, 45%);
+    border-radius: 2px 0 0 2px;
+    height: 30px;
+    left: -2px;
+    position: absolute;
+    top: 60px;
+    width: 2px;
+
+    &::after,
+    &::before {
+      background: darken($device-silver-dark, 45%);
+      content: "";
+      height: 56px;
+      left: 0;
+      position: absolute;
+      width: 2px;
+    }
+
+    &::after {
+      border-radius: 2px 0 0 50%;
+      top: 50px;
+    }
+    &::before {
+      border-radius: 50% 0 0 2px;
+      top: 131px;
+    }
+  }
+
+  .device-home {
+    background: radial-gradient(circle at top center, $device-panel 70%, rgba($device-silver-dark, .25) 70%, darken($device-silver, 30%));
+    border: 1px solid darken($device-silver-dark, 70%);
+    border-radius: 50%;
+    bottom: 28px;
+    height: 56px;
+    left: 50%;
+    margin-left: -28px;
+    position: absolute;
+    width: 56px;
+
+    &::before {
+      border: 1px solid $device-silver-dark;
+      border-radius: 4px;
+      content: '';
+      height: 20px;
+      left: 17px;
+      position: absolute;
+      top: 17px;
+      width: 20px;
+    }
+  }
+
+  .device-power {
+    background: darken($device-silver-dark, 45%);
+    border-radius: 2px 2px 0 0;
+    height: 2px;
+    right: 52px;
+    position: absolute;
+    top: -2px;
+    width: 52px;
+  }
+}

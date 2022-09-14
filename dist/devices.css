@@ -628,7 +628,7 @@
   bottom: 68px;
 }
 
-.device-iphone-8 .device-header {
+.device-iphone-8 .device-home {
   border: 2px solid #c8cacb;
   border-radius: 50%;
   bottom: 25px;
@@ -714,7 +714,7 @@
   box-shadow: inset 0 0 0 2px #e4b08a, inset 0 0 0 7px #f7e8dd;
 }
 
-.device-iphone-8.device-gold .device-header {
+.device-iphone-8.device-gold .device-home {
   border-color: #e4b08a;
 }
 
@@ -742,6 +742,141 @@
 .device-iphone-8.device-spacegray .device-btns::after,
 .device-iphone-8.device-spacegray .device-btns::before {
   background: #74747a;
+}
+
+.device-the-iphone {
+  height: 610px;
+  width: 320px;
+}
+
+.device-the-iphone .device-frame {
+  background: #010101;
+  border: 1px solid darkgray;
+  border-radius: 56px;
+  box-shadow: inset 0 0 4px 3px #010101, inset 0 0 2px 13px #f5f5f5;
+  height: 610px;
+  padding: 100px 22px;
+  width: 320px;
+}
+
+.device-the-iphone .device-frame::before {
+  border: 8px solid #010101;
+  border-left-width: 2px;
+  border-radius: 48px;
+  border-right-width: 2px;
+  box-shadow: inset 0 0 8px 2px #010101;
+  content: "";
+  height: 594px;
+  left: 2px;
+  position: absolute;
+  top: 9px;
+  width: 316px;
+}
+
+.device-the-iphone .device-frame::after {
+  border: 4px solid gainsboro;
+  border-radius: 38px;
+  content: "";
+  height: 590px;
+  left: 13px;
+  position: absolute;
+  top: 11px;
+  width: 294px;
+}
+
+.device-the-iphone .device-screen {
+  border: 2px solid #272727;
+  border-radius: 4px;
+  height: 410px;
+  width: 276px;
+}
+
+.device-the-iphone .device-sensors::before {
+  background: linear-gradient(to bottom, #272727 50%, rgba(220, 220, 220, .25) 50%, darkgray);
+  border-radius: 5px;
+  content: "";
+  height: 10px;
+  left: 50%;
+  margin-left: -28px;
+  position: absolute;
+  top: 52px;
+  width: 56px;
+}
+
+.device-the-iphone .device-sensors::after {
+  background: #272727;
+  border: 1px solid #010101;
+  border-radius: 3px;
+  content: "";
+  height: 6px;
+  left: 50%;
+  margin-left: -26px;
+  position: absolute;
+  top: 54px;
+  width: 52px;
+}
+
+.device-the-iphone .device-btns {
+  background: dimgray;
+  border-radius: 2px 0 0 2px;
+  height: 30px;
+  left: -2px;
+  position: absolute;
+  top: 60px;
+  width: 2px;
+}
+
+.device-the-iphone .device-btns::after,
+.device-the-iphone .device-btns::before {
+  background: dimgray;
+  content: "";
+  height: 56px;
+  left: 0;
+  position: absolute;
+  width: 2px;
+}
+
+.device-the-iphone .device-btns::after {
+  border-radius: 2px 0 0 50%;
+  top: 50px;
+}
+
+.device-the-iphone .device-btns::before {
+  border-radius: 50% 0 0 2px;
+  top: 131px;
+}
+
+.device-the-iphone .device-home {
+  background: radial-gradient(circle at top center, #010101 70%, rgba(220, 220, 220, .25) 70%, darkgray);
+  border: 1px solid #292929;
+  border-radius: 50%;
+  bottom: 28px;
+  height: 56px;
+  left: 50%;
+  margin-left: -28px;
+  position: absolute;
+  width: 56px;
+}
+
+.device-the-iphone .device-home::before {
+  border: 1px solid gainsboro;
+  border-radius: 4px;
+  content: "";
+  height: 20px;
+  left: 17px;
+  position: absolute;
+  top: 17px;
+  width: 20px;
+}
+
+.device-the-iphone .device-power {
+  background: dimgray;
+  border-radius: 2px 2px 0 0;
+  height: 2px;
+  position: absolute;
+  right: 52px;
+  top: -2px;
+  width: 52px;
 }
 
 .device-google-pixel-6-pro {
@@ -2179,7 +2314,7 @@
   width: 510px;
 }
 
-.device-ipad-pro-2017 .device-header {
+.device-ipad-pro-2017 .device-home {
   border: 2px solid #c8cacb;
   border-radius: 50%;
   bottom: 17px;
@@ -2214,7 +2349,7 @@
   box-shadow: inset 0 0 0 2px #f6a69a, inset 0 0 0 6px #facfc9;
 }
 
-.device-ipad-pro-2017.device-rosegold .device-header {
+.device-ipad-pro-2017.device-rosegold .device-home {
   border-color: #f6a69a;
 }
 
@@ -2223,7 +2358,7 @@
   box-shadow: inset 0 0 0 2px #818187, inset 0 0 0 6px #9b9ba0;
 }
 
-.device-ipad-pro-2017.device-spacegray .device-header {
+.device-ipad-pro-2017.device-spacegray .device-home {
   border-color: #818187;
 }
 
