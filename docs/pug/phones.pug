@@ -15,24 +15,67 @@ block content
             h1.hero-title Phones
             h2.hero-subtitle Modern phone devices crafted in pure CSS
     
-    .columns
-      .content-container.column.col-md-12
-        h2.rework-title#the-iphone
-          | iPhone
-          a.ml-2(href="#the-iphone") #
-        h3.text-assistive Pure CSS iPhone, iPhone in pure CSS
-        .rework-content
-          p iPhone combines three amazing products — a revolutionary mobile phone, a widescreen iPod with touch controls, and a breakthrough Internet communications device with desktop-class email, web browsing, maps, and searching — into one small and lightweight handheld device.
-        .rework-device.phones
-          .device.device-the-iphone
-            .device-frame
-              img.device-screen(src="assets/img/bg-iphone.jpg" loading="lazy")
-            .device-stripe
-            .device-header
-            .device-sensors
-            .device-btns
-            .device-power
-            .device-home
+        .hero-demo 
+          a.demo.demo-iphone-14-pro(href="phones.html#iphone-14-pro" target="_blank")
+            .device.device-iphone-14-pro
+              .device-frame
+                img.device-screen(src="assets/img/bg-iphone-14-pro.jpg")
+              .device-stripe
+              .device-header
+              .device-sensors
+              .device-btns
+              .device-power
+              .device-home
+          a.demo.demo-iphone-14(href="phones.html#iphone-14" target="_blank")
+            .device.device-iphone-14
+              .device-frame
+                img.device-screen(src="assets/img/bg-iphone-14.jpg")
+              .device-stripe
+              .device-header
+              .device-sensors
+              .device-btns
+              .device-power
+              .device-home
+          a.demo.demo-google-pixel-6-pro(href="phones.html#google-pixel-6-pro" target="_blank")
+            .device.device-google-pixel-6-pro
+              .device-frame
+                img.device-screen(src="assets/img/bg-pixel-6.jpg" loading="lazy")
+              .device-stripe
+              .device-header
+              .device-sensors
+              .device-btns
+              .device-power
+              .device-home
+          a.demo.demo-macbook-pro(href="computers.html#macbook-pro" target="_blank")
+            .device.device-macbook-pro.device-spacegray
+              .device-frame
+                img.device-screen(src="assets/img/bg-10.jpg")
+              .device-stripe
+              .device-header
+              .device-sensors
+              .device-btns
+              .device-power
+              .device-home
+          a.demo.demo-imac(href="computers.html#imac" target="_blank")
+            .device.device-imac
+              .device-frame
+                img.device-screen(src="assets/img/bg-08.jpg")
+              .device-stripe
+              .device-header
+              .device-sensors
+              .device-btns
+              .device-power
+              .device-home
+          a.demo.demo-apple-watch-ultra(href="watches.html#apple-watch-ultra" target="_blank")
+            .device.device-apple-watch-ultra
+              .device-frame
+                img.device-screen(src="assets/img/bg-watch.jpg")
+              .device-stripe
+              .device-header
+              .device-sensors
+              .device-btns
+              .device-power
+              .device-home
 
     .columns
       .content-container.column.col-md-12
@@ -126,7 +169,24 @@ block content
             .device-power
             .device-home
 
-    
+    .columns
+      .content-container.column.col-md-12
+        h2.rework-title#the-iphone
+          | iPhone
+          a.ml-2(href="#the-iphone") #
+        h3.text-assistive Pure CSS iPhone, iPhone in pure CSS
+        .rework-content
+          p iPhone combines three amazing products — a revolutionary mobile phone, a widescreen iPod with touch controls, and a breakthrough Internet communications device with desktop-class email, web browsing, maps, and searching — into one small and lightweight handheld device.
+        .rework-device.phones
+          .device.device-the-iphone
+            .device-frame
+              img.device-screen(src="assets/img/bg-iphone.jpg" loading="lazy")
+            .device-stripe
+            .device-header
+            .device-sensors
+            .device-btns
+            .device-power
+            .device-home
 
     include _layout/_ad-g.pug
 
@@ -195,7 +255,7 @@ block content
             .device-power
             .device-home
 
-    include _layout/_ad-sidebar.pug
+    //- include _layout/_ad-sidebar.pug
 
     .columns
       .content-container.column.col-md-12

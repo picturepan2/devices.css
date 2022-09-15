@@ -431,7 +431,6 @@ body {
   border-radius: $border-radius-lg;
   color: $primary-color;
   display: flex;
-  min-height: 10rem;
   padding: 2rem 0 2rem 0;
   position: relative;
   z-index: 1;
@@ -531,7 +530,7 @@ body {
 
 // Demo
 .hero-demo {
-  height: 600px;
+  height: 400px;
   margin-bottom: 40px;
   position: relative;
 
@@ -545,67 +544,134 @@ body {
   }
 
   .demo-iphone-14-pro {
-    height: 260.4px;
-    margin-left: -440px;
-    width: 128.4px;
+    height: 217px;
+    margin-left: -380px;
+    width: 107px;
     z-index: 6;
 
     .device {
-      transform: scale(.3);
+      transform: scale(.25);
     }
   }
 
   .demo-iphone-14 {
-    height: 260.4px;
-    margin-left: -360px;
-    width: 128.4px;
+    height: 217px;
+    margin-left: -320px;
+    width: 107px;
     z-index: 5;
 
     .device {
-      transform: scale(.3);
+      transform: scale(.25);
     }
   }
 
   .demo-google-pixel-6-pro {
-    height: 284.46px;
-    margin-left: -300px;
-    width: 133.32px;
+    height: 241.36px;
+    margin-left: -240px;
+    width:  113.12px;
     z-index: 4;
 
     .device {
-      transform: scale(.325);
+      transform: scale(.275);
     }
   }
 
   .demo-macbook-pro {
-    height: 325.5px;
-    margin-left: 0px;
-    width: 555px;
+    height: 217px;
+    margin-left: 60px;
+    width: 370px;
     z-index: 3;
+
+    .device {
+      transform: scale(.5);
+    }
+  }
+
+  .demo-imac {
+    height: 405px;
+    margin-left: -240px;
+    width: 480px;
 
     .device {
       transform: scale(.75);
     }
   }
 
-  .demo-imac {
-    height: 540px;
-    margin-left: -320px;
-    width: 640px;
-
-    .device {
-      transform: scale(1);
-    }
-  }
-
   .demo-apple-watch-ultra {
     height: 95px;
-    margin-left: -480px;
+    margin-left: -420px;
     width: 90px;
     z-index: 9;
 
     .device {
       transform: scale(.25);
+    }
+  }
+}
+
+.hero-section {
+  align-items: flex-end;
+  background: $bg-color-dark;
+  border-radius: 1rem;
+  display: flex;
+  height: 14rem;
+  justify-content: center;
+  margin: .4rem;
+  overflow: hidden;
+  position: relative;
+  transition: all .2s ease-in;
+  width: 100%;
+
+  &:focus,
+  &:hover {
+    transform: translateY(-.2rem);
+  }
+
+  .demo {
+    align-items: center;
+    bottom: 0;
+    display: flex;
+    height: 4rem;
+    justify-content: center;
+    width: 5rem;
+    z-index: 999;
+
+    &.demo-macbook-pro {
+      height: 11rem;
+    }
+
+    &.demo-imac {
+      height: 10rem;
+    }
+
+    &.demo-apple-watch {
+      height: 11rem;
+    }
+
+    &.demo-the-iphone {
+      height: 8rem;
+    }
+
+    &.demo-homepod {
+      height: 10rem;
+    }
+
+    .device {
+      transform: scale(.4);
+    }
+  }
+
+  .demo-title {
+    align-items: center;
+    display: flex;
+    font-size: 1rem;
+    font-weight: 700;
+    left: 1rem;
+    position: absolute;
+    top: 1rem;
+
+    small {
+      font-size: .6rem;
     }
   }
 }
