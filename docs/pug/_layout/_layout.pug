@@ -1,5 +1,5 @@
 block global
-  - var domain = 'https://picturepan2.github.io/devices.css/'
+  - var domain = 'https://devicescss.xyz'
   - var url = domain
 
 block variables
@@ -12,9 +12,9 @@ if slug == parent
   if slug == 'index'
     - var url = domain 
   else
-    - var url = domain + slug + '.html'
+    - var url = domain + '/' + slug + '.html'
 else 
-  - var url = domain + parent + '/' + slug + '.html'
+  - var url = domain + '/' + parent + '/' + slug + '.html'
 
 doctype html
 html(lang='en')
