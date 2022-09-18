@@ -35,7 +35,7 @@
 /*  Core style */
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 2rem;
+  scroll-padding-top: 4rem;
 }
 
 body {
@@ -81,6 +81,7 @@ body {
       position: fixed;
       top: 3rem;
       width: 100vw;
+      z-index: 9999;
   
       .rework-menu {
         .menu-parent {
@@ -101,6 +102,7 @@ body {
     .rework-brand {
       &.rework-brand-fixed {
         display: block;
+        position: fixed;
         z-index: 9999;
       }
     }
@@ -116,7 +118,6 @@ body {
         .section-aside {
           animation: slide-down .15s ease 1;
           display: flex;
-          z-index: 999;
 
           .rework-brand {
             display: none;
@@ -290,9 +291,14 @@ body {
 .section-main {
   flex: 1 1 auto;
   height: 100vh;
-  overflow: auto;
-  padding: .4rem;
+  padding: 4rem .4rem .4rem .4rem;
   scroll-behavior: smooth;
+
+  @media screen and (min-width: $size-sm) {
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: .4rem;
+  }
 
   .rework-emoji {
     align-items: center;
