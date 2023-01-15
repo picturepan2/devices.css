@@ -5,6 +5,7 @@
 .device *,
 .device *::before,
 .device *::after {
+  --devices-scale: 1; 
   box-sizing: border-box;
   display: block;
 }
