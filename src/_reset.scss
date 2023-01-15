@@ -1,4 +1,7 @@
 // Reset
+.device {
+  --devices-scale: 1;
+}
 .device,
 .device * {
   &,
@@ -6,7 +9,6 @@
   &::after {
     box-sizing: border-box;
     display: block;
-    --devices-scale: 1;
   }
 }
 

@@ -1,11 +1,14 @@
 /*! Devices.css v0.2.0 | MIT License | github.com/picturepan2/devices.css */
+.device {
+  --devices-scale: 1;
+}
+
 .device,
 .device::before,
 .device::after,
 .device *,
 .device *::before,
 .device *::after {
-  --devices-scale: 1; 
   box-sizing: border-box;
   display: block;
 }
