@@ -5,6 +5,7 @@ const csscomb = require('gulp-csscomb');
 const rename = require('gulp-rename');
 const autoprefixer = require('gulp-autoprefixer');
 const pug = require('gulp-pug');
+const replace = require('gulp-replace')
 const plumber = require('gulp-plumber');
 const { exec } = require('child_process');
 
@@ -14,6 +15,9 @@ function css() {
     .pipe(sass({outputStyle: 'compact', precision: 2})
       .on('error', sass.logError)
     )
+    .pipe(replace(/(-?[0-9]*px)/g, (_, p1) => {
+      return `calc(var(--devices-scale)*${p1})`
+    }))
     .pipe(autoprefixer())
     .pipe(csscomb())
     .pipe(gulp.dest('./dist'))

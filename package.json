@@ -27,6 +27,7 @@
     "gulp-plumber": "latest",
     "gulp-pug": "latest",
     "gulp-rename": "latest",
+    "gulp-replace": "^1.1.4",
     "gulp-sass": "latest",
     "node-sass": "^7.0.1"
   },
