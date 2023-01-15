@@ -15,9 +15,9 @@ function css() {
     .pipe(sass({outputStyle: 'compact', precision: 2})
       .on('error', sass.logError)
     )
-    // .pipe(replace(/(-?[0-9]*px)/g, (_, p1) => {
-    //   return `calc(var(--devices-scale)*${p1})`
-    // }))
+    .pipe(replace(/(-?[0-9]*px)/g, (_, p1) => {
+      return `calc(var(--devices-scale)*${p1})`
+    }))
     .pipe(autoprefixer())
     .pipe(csscomb())
     .pipe(gulp.dest('./dist'))
@@ -32,9 +32,6 @@ function css() {
 function web_css() {
   return gulp
     .src(['./src/devices.scss', './docs/scss/demo.scss'])
-    .pipe(replace(/(-?[0-9]*px)/g, (_, p1) => {
-      return `calc(var(--devices-scale)*${p1})`
-    }))
     .pipe(sass({outputStyle: 'compact', precision: 2})
       .on('error', sass.logError)
     )
