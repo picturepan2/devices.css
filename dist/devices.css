@@ -1403,183 +1403,185 @@
 }
 
 .device-macbook-pro {
-  height: 434px;
-  width: 740px;
+  --device-width: 740;
+  height: calc(434 * 1cqi / var(--device-width) * 100);
+  width: 100cqi;
 }
 
 .device-macbook-pro .device-frame {
   background: #0d0d0d;
-  border-radius: 20px;
-  box-shadow: inset 0 0 0 2px #c8cacb;
-  height: 418px;
+  border-radius: calc(20 * 1cqi / var(--device-width) * 100);
+  box-shadow: inset 0 0 0 calc(2 * 1cqi / var(--device-width) * 100) #c8cacb;
+  height: calc(418 * 1cqi / var(--device-width) * 100);
   margin: 0 auto;
-  padding: 9px 9px 23px 9px;
+  padding: calc(9 * 1cqi / var(--device-width) * 100) calc(9 * 1cqi / var(--device-width) * 100) calc(23 * 1cqi / var(--device-width) * 100) calc(9 * 1cqi / var(--device-width) * 100);
   position: relative;
-  width: 618px;
+  width: calc(618 * 1cqi / var(--device-width) * 100);
 }
 
 .device-macbook-pro .device-frame::after {
   background: linear-gradient(to bottom, #272727, #0d0d0d);
-  border-radius: 0 0 20px 20px;
-  bottom: 2px;
+  border-radius: 0 0 calc(20 * 1cqi / var(--device-width) * 100) calc(20 * 1cqi / var(--device-width) * 100);
+  bottom: calc(2 * 1cqi / var(--device-width) * 100);
   content: "";
-  height: 24px;
-  left: 2px;
+  height: calc(24 * 1cqi / var(--device-width) * 100);
+  left: calc(2 * 1cqi / var(--device-width) * 100);
   position: absolute;
-  width: 614px;
+  width: calc(614 * 1cqi / var(--device-width) * 100);
 }
 
 .device-macbook-pro .device-header {
   background: #0d0d0d;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
-  height: 12px;
+  border-bottom-left-radius: calc(4 * 1cqi / var(--device-width) * 100);
+  border-bottom-right-radius: calc(4 * 1cqi / var(--device-width) * 100);
+  height: calc(12 * 1cqi / var(--device-width) * 100);
   left: 50%;
-  margin-left: -32px;
+  margin-left: calc(-32 * 1cqi / var(--device-width) * 100);
   position: absolute;
-  top: 11px;
-  width: 64px;
+  top: calc(11 * 1cqi / var(--device-width) * 100);
+  width: calc(64 * 1cqi / var(--device-width) * 100);
   z-index: 2;
 }
 
 .device-macbook-pro .device-header::after,
 .device-macbook-pro .device-header::before {
   content: "";
-  height: 4px;
+  height: calc(4 * 1cqi / var(--device-width) * 100);
   position: absolute;
   top: 0;
-  width: 4px;
+  width: calc(4 * 1cqi / var(--device-width) * 100);
 }
 
 .device-macbook-pro .device-header::after {
   background: radial-gradient(circle at bottom left, transparent 0, transparent 75%, #0d0d0d 75%, #0d0d0d 100%);
-  left: -4px;
+  left: calc(-4 * 1cqi / var(--device-width) * 100);
 }
 
 .device-macbook-pro .device-header::before {
   background: radial-gradient(circle at bottom right, transparent 0, transparent 75%, #0d0d0d 75%, #0d0d0d 100%);
-  right: -4px;
+  right: calc(-4 * 1cqi / var(--device-width) * 100);
 }
 
 .device-macbook-pro .device-screen {
-  border: 2px solid #121212;
-  border-radius: 10px 10px 0 0;
-  height: 375px;
-  width: 600px;
+  border: calc(2 * 1cqi / var(--device-width) * 100) solid #121212;
+  border-radius: calc(10 * 1cqi / var(--device-width) * 100) calc(10 * 1cqi / var(--device-width) * 100) 0 0;
+  height: calc(375 * 1cqi / var(--device-width) * 100);
+  width: calc(600 * 1cqi / var(--device-width) * 100);
 }
 
 .device-macbook-pro .device-power {
   background: radial-gradient(circle at center, #e2e3e4 85%, #c8cacb 100%);
   border: solid #a0a3a7;
-  border-radius: 2px 2px 12px 12px;
-  border-width: 1px 2px 0 2px;
-  box-shadow: inset 0 -2px 8px 0 #6c7074;
-  height: 24px;
-  margin-top: -10px;
+  border-radius: calc(2 * 1cqi / var(--device-width) * 100) calc(2 * 1cqi / var(--device-width) * 100) calc(12 * 1cqi / var(--device-width) * 100) calc(12 * 1cqi / var(--device-width) * 100);
+  border-width: calc(1 * 1cqi / var(--device-width) * 100) calc(2 * 1cqi / var(--device-width) * 100) 0 calc(2 * 1cqi / var(--device-width) * 100);
+  box-shadow: inset 0 calc(-2 * 1cqi / var(--device-width) * 100) calc(8 * 1cqi / var(--device-width) * 100) 0 #6c7074;
+  height: calc(24 * 1cqi / var(--device-width) * 100);
+  margin-top: calc(-10 * 1cqi / var(--device-width) * 100);
   position: relative;
-  width: 740px;
+  width: calc(740 * 1cqi / var(--device-width) * 100);
   z-index: 9;
 }
 
 .device-macbook-pro .device-power::after {
   background: #e2e3e4;
-  border-radius: 0 0 10px 10px;
-  box-shadow: inset 0 0 4px 2px #babdbf;
+  border-radius: 0 0 calc(10 * 1cqi / var(--device-width) * 100) calc(10 * 1cqi / var(--device-width) * 100);
+  box-shadow: inset 0 0 calc(4 * 1cqi / var(--device-width) * 100) calc(2 * 1cqi / var(--device-width) * 100) #babdbf;
   content: "";
-  height: 10px;
+  height: calc(10 * 1cqi / var(--device-width) * 100);
   left: 50%;
-  margin-left: -60px;
+  margin-left: calc(-60 * 1cqi / var(--device-width) * 100);
   position: absolute;
   top: 0;
-  width: 120px;
+  width: calc(120 * 1cqi / var(--device-width) * 100);
 }
 
 .device-macbook-pro .device-power::before {
   background: transparent;
-  border-radius: 0 0 3px 3px;
-  bottom: -2px;
-  box-shadow: -300px 0 #272727, 300px 0 #272727;
+  border-radius: 0 0 calc(3 * 1cqi / var(--device-width) * 100) calc(3 * 1cqi / var(--device-width) * 100);
+  bottom: calc(-2 * 1cqi / var(--device-width) * 100);
+  box-shadow: calc(-300 * 1cqi / var(--device-width) * 100) 0 #272727, calc(300 * 1cqi / var(--device-width) * 100) 0 #272727;
   content: "";
-  height: 2px;
+  height: calc(2 * 1cqi / var(--device-width) * 100);
   left: 50%;
-  margin-left: -20px;
+  margin-left: calc(-20 * 1cqi / var(--device-width) * 100);
   position: absolute;
-  width: 40px;
+  width: calc(40 * 1cqi / var(--device-width) * 100);
 }
 
 .device-macbook-pro.device-spacegray .device-frame {
-  box-shadow: inset 0 0 0 2px #767a7d;
+  box-shadow: inset 0 0 0 calc(2 * 1cqi / var(--device-width) * 100) #767a7d;
 }
 
 .device-macbook-pro.device-spacegray .device-power {
   background: radial-gradient(circle at center, #83878a 85%, #767a7d 100%);
   border-color: #454749;
-  box-shadow: inset 0 -2px 8px 0 #202121;
+  box-shadow: inset 0 calc(-2 * 1cqi / var(--device-width) * 100) calc(8 * 1cqi / var(--device-width) * 100) 0 #202121;
 }
 
 .device-macbook-pro.device-spacegray .device-power::after {
   background: #b7babc;
-  box-shadow: inset 0 0 4px 2px #6a6d70;
+  box-shadow: inset 0 0 calc(4 * 1cqi / var(--device-width) * 100) calc(2 * 1cqi / var(--device-width) * 100) #6a6d70;
 }
 
 .device-macbook-pro-2018 {
-  height: 444px;
-  width: 740px;
+  --device-width: 740;
+  height: calc(444 * 1cqi / var(--device-width) * 100);
+  width: 100cqi;
 }
 
 .device-macbook-pro-2018 .device-frame {
   background: #0d0d0d;
-  border-radius: 20px;
-  box-shadow: inset 0 0 0 2px #c8cacb;
-  height: 428px;
+  border-radius: calc(20 * 1cqi / var(--device-width) * 100);
+  box-shadow: inset 0 0 0 calc(2 * 1cqi / var(--device-width) * 100) #c8cacb;
+  height: calc(428 * 1cqi / var(--device-width) * 100);
   margin: 0 auto;
-  padding: 29px 19px 39px 19px;
+  padding: calc(29 * 1cqi / var(--device-width) * 100) calc(19 * 1cqi / var(--device-width) * 100) calc(39 * 1cqi / var(--device-width) * 100) calc(19 * 1cqi / var(--device-width) * 100);
   position: relative;
-  width: 614px;
+  width: calc(614 * 1cqi / var(--device-width) * 100);
 }
 
 .device-macbook-pro-2018 .device-frame::after {
   background: #272727;
-  border-radius: 0 0 20px 20px;
-  bottom: 2px;
+  border-radius: 0 0 calc(20 * 1cqi / var(--device-width) * 100) calc(20 * 1cqi / var(--device-width) * 100);
+  bottom: calc(2 * 1cqi / var(--device-width) * 100);
   content: "";
-  height: 26px;
-  left: 2px;
+  height: calc(26 * 1cqi / var(--device-width) * 100);
+  left: calc(2 * 1cqi / var(--device-width) * 100);
   position: absolute;
-  width: 610px;
+  width: calc(610 * 1cqi / var(--device-width) * 100);
 }
 
 .device-macbook-pro-2018 .device-frame::before {
-  bottom: 10px;
+  bottom: calc(10 * 1cqi / var(--device-width) * 100);
   color: #c8cacb;
   content: "MacBook Pro";
-  font-size: 12px;
-  height: 16px;
+  font-size: calc(12 * 1cqi / var(--device-width) * 100);
+  height: calc(16 * 1cqi / var(--device-width) * 100);
   left: 50%;
-  line-height: 16px;
-  margin-left: -100px;
+  line-height: calc(16 * 1cqi / var(--device-width) * 100);
+  margin-left: calc(-100 * 1cqi / var(--device-width) * 100);
   position: absolute;
   text-align: center;
-  width: 200px;
+  width: calc(200 * 1cqi / var(--device-width) * 100);
   z-index: 1;
 }
 
 .device-macbook-pro-2018 .device-screen {
-  border: 2px solid #121212;
-  border-radius: 2px;
-  height: 360px;
-  width: 576px;
+  border: calc(2 * 1cqi / var(--device-width) * 100) solid #121212;
+  border-radius: calc(2 * 1cqi / var(--device-width) * 100);
+  height: calc(360 * 1cqi / var(--device-width) * 100);
+  width: calc(576 * 1cqi / var(--device-width) * 100);
 }
 
 .device-macbook-pro-2018 .device-power {
   background: #e2e3e4;
   border: solid #d5d6d8;
-  border-radius: 2px 2px 0 0;
-  border-width: 2px 4px 0 4px;
-  height: 14px;
-  margin-top: -10px;
+  border-radius: calc(2 * 1cqi / var(--device-width) * 100) calc(2 * 1cqi / var(--device-width) * 100) 0 0;
+  border-width: calc(2 * 1cqi / var(--device-width) * 100) calc(4 * 1cqi / var(--device-width) * 100) 0 calc(4 * 1cqi / var(--device-width) * 100);
+  height: calc(14 * 1cqi / var(--device-width) * 100);
+  margin-top: calc(-10 * 1cqi / var(--device-width) * 100);
   position: relative;
-  width: 740px;
+  width: calc(740 * 1cqi / var(--device-width) * 100);
   z-index: 9;
 }
 
@@ -1591,28 +1593,28 @@
 
 .device-macbook-pro-2018 .device-power::after {
   background: #d5d6d8;
-  border-radius: 0 0 10px 10px;
-  box-shadow: inset 0 0 4px 2px #babdbf;
-  height: 10px;
+  border-radius: 0 0 calc(10 * 1cqi / var(--device-width) * 100) calc(10 * 1cqi / var(--device-width) * 100);
+  box-shadow: inset 0 0 calc(4 * 1cqi / var(--device-width) * 100) calc(2 * 1cqi / var(--device-width) * 100) #babdbf;
+  height: calc(10 * 1cqi / var(--device-width) * 100);
   left: 50%;
-  margin-left: -60px;
-  top: -2px;
-  width: 120px;
+  margin-left: calc(-60 * 1cqi / var(--device-width) * 100);
+  top: calc(-2 * 1cqi / var(--device-width) * 100);
+  width: calc(120 * 1cqi / var(--device-width) * 100);
 }
 
 .device-macbook-pro-2018 .device-power::before {
   background: #a0a3a7;
-  border-radius: 0 0 180px 180px/ 0 0 12px 12px;
-  box-shadow: inset 0 -2px 6px 0 #474a4d;
-  height: 12px;
-  left: -4px;
+  border-radius: 0 0 calc(180 * 1cqi / var(--device-width) * 100) calc(180 * 1cqi / var(--device-width) * 100)/0 0 calc(12 * 1cqi / var(--device-width) * 100) calc(12 * 1cqi / var(--device-width) * 100);
+  box-shadow: inset 0 calc(-2 * 1cqi / var(--device-width) * 100) calc(6 * 1cqi / var(--device-width) * 100) 0 #474a4d;
+  height: calc(12 * 1cqi / var(--device-width) * 100);
+  left: calc(-4 * 1cqi / var(--device-width) * 100);
   margin: 0 auto;
-  top: 10px;
-  width: 740px;
+  top: calc(10 * 1cqi / var(--device-width) * 100);
+  width: calc(740 * 1cqi / var(--device-width) * 100);
 }
 
 .device-macbook-pro-2018.device-spacegray .device-frame {
-  box-shadow: inset 0 0 0 2px #767a7d;
+  box-shadow: inset 0 0 0 calc(2 * 1cqi / var(--device-width) * 100) #767a7d;
 }
 
 .device-macbook-pro-2018.device-spacegray .device-power {
@@ -1622,72 +1624,73 @@
 
 .device-macbook-pro-2018.device-spacegray .device-power::after {
   background: #83878a;
-  box-shadow: inset 0 0 4px 2px #6a6d70;
+  box-shadow: inset 0 0 calc(4 * 1cqi / var(--device-width) * 100) calc(2 * 1cqi / var(--device-width) * 100) #6a6d70;
 }
 
 .device-macbook-pro-2018.device-spacegray .device-power::before {
   background: #515456;
-  box-shadow: inset 0 -2px 6px 0 black;
+  box-shadow: inset 0 calc(-2 * 1cqi / var(--device-width) * 100) calc(6 * 1cqi / var(--device-width) * 100) 0 black;
 }
 
 .device-macbook {
-  height: 432px;
-  width: 740px;
+  --device-width: 740;
+  height: calc(432 * 1cqi / var(--device-width) * 100);
+  width: 100cqi;
 }
 
 .device-macbook .device-frame {
   background: #0d0d0d;
-  border-radius: 20px;
-  box-shadow: inset 0 0 0 2px #c8cacb;
-  height: 428px;
+  border-radius: calc(20 * 1cqi / var(--device-width) * 100);
+  box-shadow: inset 0 0 0 calc(2 * 1cqi / var(--device-width) * 100) #c8cacb;
+  height: calc(428 * 1cqi / var(--device-width) * 100);
   margin: 0 auto;
-  padding: 29px 19px 39px 19px;
+  padding: calc(29 * 1cqi / var(--device-width) * 100) calc(19 * 1cqi / var(--device-width) * 100) calc(39 * 1cqi / var(--device-width) * 100) calc(19 * 1cqi / var(--device-width) * 100);
   position: relative;
-  width: 614px;
+  width: calc(614 * 1cqi / var(--device-width) * 100);
 }
 
 .device-macbook .device-frame::after {
   background: #272727;
-  border-radius: 0 0 20px 20px;
-  bottom: 2px;
+  border-radius: 0 0 calc(20 * 1cqi / var(--device-width) * 100) calc(20 * 1cqi / var(--device-width) * 100);
+  bottom: calc(2 * 1cqi / var(--device-width) * 100);
   content: "";
-  height: 26px;
-  left: 2px;
+  height: calc(26 * 1cqi / var(--device-width) * 100);
+  left: calc(2 * 1cqi / var(--device-width) * 100);
   position: absolute;
-  width: 610px;
+  width: calc(610 * 1cqi / var(--device-width) * 100);
 }
 
 .device-macbook .device-frame::before {
-  bottom: 10px;
+  bottom: calc(10 * 1cqi / var(--device-width) * 100);
   color: #c8cacb;
   content: "MacBook";
-  font-size: 12px;
-  height: 16px;
+  font-size: calc(12 * 1cqi / var(--device-width) * 100);
+  height: calc(16 * 1cqi / var(--device-width) * 100);
   left: 50%;
-  line-height: 16px;
-  margin-left: -100px;
+  line-height: calc(16 * 1cqi / var(--device-width) * 100);
+  margin-left: calc(-100 * 1cqi / var(--device-width) * 100);
   position: absolute;
   text-align: center;
-  width: 200px;
+  width: calc(200 * 1cqi / var(--device-width) * 100);
   z-index: 1;
 }
 
 .device-macbook .device-screen {
-  border: 2px solid #121212;
-  border-radius: 2px;
-  height: 360px;
-  width: 576px;
+  border: calc(2 * 1cqi / var(--device-width) * 100) solid #121212;
+  border-radius: calc(2 * 1cqi / var(--device-width) * 100);
+  height: calc(360 * 1cqi / var(--device-width) * 100);
+  width: calc(576 * 1cqi / var(--device-width) * 100);
 }
 
 .device-macbook .device-power {
   background: #e2e3e4;
   border: solid #d5d6d8;
-  border-radius: 2px 2px 0 0;
-  border-width: 0 4px;
-  height: 4px;
-  margin-top: -10px;
+  border-radius: calc(2 * 1cqi / var(--device-width) * 100) calc(2 * 1cqi / var(--device-width) * 100) 0 0;
+  border-width: 0 calc(4 * 1cqi / var(--device-width) * 100);
+  height: calc(4 * 1cqi / var(--device-width) * 100);
+  margin-top: calc(-10 * 1cqi / var(--device-width) * 100);
   position: relative;
-  width: 740px;
+  width: calc(740 * 1cqi / var(--device-width) * 100);
   z-index: 9;
 }
 
@@ -1700,26 +1703,26 @@
 .device-macbook .device-power::after {
   background: radial-gradient(circle at center, #e2e3e4 0, #e2e3e4 85%, #a0a3a7 100%);
   border: solid #adb0b3;
-  border-width: 0 2px;
-  height: 4px;
+  border-width: 0 calc(2 * 1cqi / var(--device-width) * 100);
+  height: calc(4 * 1cqi / var(--device-width) * 100);
   left: 50%;
-  margin-left: -60px;
-  width: 120px;
+  margin-left: calc(-60 * 1cqi / var(--device-width) * 100);
+  width: calc(120 * 1cqi / var(--device-width) * 100);
 }
 
 .device-macbook .device-power::before {
   background: #a0a3a7;
-  border-radius: 0 0 180px 180px/ 0 0 10px 10px;
-  box-shadow: inset 0 -2px 6px 0 #474a4d;
-  height: 10px;
-  left: -4px;
+  border-radius: 0 0 calc(180 * 1cqi / var(--device-width) * 100) calc(180 * 1cqi / var(--device-width) * 100)/0 0 calc(10 * 1cqi / var(--device-width) * 100) calc(10 * 1cqi / var(--device-width) * 100);
+  box-shadow: inset 0 calc(-2 * 1cqi / var(--device-width) * 100) calc(6 * 1cqi / var(--device-width) * 100) 0 #474a4d;
+  height: calc(10 * 1cqi / var(--device-width) * 100);
+  left: calc(-4 * 1cqi / var(--device-width) * 100);
   margin: 0 auto;
-  top: 4px;
-  width: 740px;
+  top: calc(4 * 1cqi / var(--device-width) * 100);
+  width: calc(740 * 1cqi / var(--device-width) * 100);
 }
 
 .device-macbook.device-gold .device-frame {
-  box-shadow: inset 0 0 0 2px #edccb4;
+  box-shadow: inset 0 0 0 calc(2 * 1cqi / var(--device-width) * 100) #edccb4;
 }
 
 .device-macbook.device-gold .device-power {
@@ -1734,11 +1737,11 @@
 
 .device-macbook.device-gold .device-power::before {
   background: #edccb4;
-  box-shadow: inset 0 -2px 6px 0 #83491f;
+  box-shadow: inset 0 calc(-2 * 1cqi / var(--device-width) * 100) calc(6 * 1cqi / var(--device-width) * 100) 0 #83491f;
 }
 
 .device-macbook.device-rosegold .device-frame {
-  box-shadow: inset 0 0 0 2px #f6a69a;
+  box-shadow: inset 0 0 0 calc(2 * 1cqi / var(--device-width) * 100) #f6a69a;
 }
 
 .device-macbook.device-rosegold .device-power {
@@ -1753,11 +1756,11 @@
 
 .device-macbook.device-rosegold .device-power::before {
   background: #f6a69a;
-  box-shadow: inset 0 -2px 6px 0 #851b0c;
+  box-shadow: inset 0 calc(-2 * 1cqi / var(--device-width) * 100) calc(6 * 1cqi / var(--device-width) * 100) 0 #851b0c;
 }
 
 .device-macbook.device-spacegray .device-frame {
-  box-shadow: inset 0 0 0 2px #767a7d;
+  box-shadow: inset 0 0 0 calc(2 * 1cqi / var(--device-width) * 100) #767a7d;
 }
 
 .device-macbook.device-spacegray .device-power {
@@ -1772,95 +1775,96 @@
 
 .device-macbook.device-spacegray .device-power::before {
   background: #515456;
-  box-shadow: inset 0 -2px 6px 0 black;
+  box-shadow: inset 0 calc(-2 * 1cqi / var(--device-width) * 100) calc(6 * 1cqi / var(--device-width) * 100) 0 black;
 }
 
 .device-imac {
-  height: 540px;
-  width: 640px;
+  --device-width: 640;
+  height: calc(540 * 1cqi / var(--device-width) * 100);
+  width: 100cqi;
 }
 
 .device-imac .device-frame {
   background: #edeef0;
-  border-radius: 18px;
-  box-shadow: inset 0 0 0 1px #d4d5d7;
-  height: 440px;
-  padding: 16px 16px 80px 16px;
+  border-radius: calc(18 * 1cqi / var(--device-width) * 100);
+  box-shadow: inset 0 0 0 calc(1 * 1cqi / var(--device-width) * 100) #d4d5d7;
+  height: calc(440 * 1cqi / var(--device-width) * 100);
+  padding: calc(16 * 1cqi / var(--device-width) * 100) calc(16 * 1cqi / var(--device-width) * 100) calc(80 * 1cqi / var(--device-width) * 100) calc(16 * 1cqi / var(--device-width) * 100);
   position: relative;
-  width: 640px;
+  width: calc(640 * 1cqi / var(--device-width) * 100);
 }
 
 .device-imac .device-frame::after {
   background: #d4d5d7;
-  border-radius: 0 0 18px 18px;
-  bottom: 1px;
-  box-shadow: inset 0 0 18px 0 #c7c8cb;
+  border-radius: 0 0 calc(18 * 1cqi / var(--device-width) * 100) calc(18 * 1cqi / var(--device-width) * 100);
+  bottom: calc(1 * 1cqi / var(--device-width) * 100);
+  box-shadow: inset 0 0 calc(18 * 1cqi / var(--device-width) * 100) 0 #c7c8cb;
   content: "";
-  height: 63px;
-  left: 1px;
+  height: calc(63 * 1cqi / var(--device-width) * 100);
+  left: calc(1 * 1cqi / var(--device-width) * 100);
   position: absolute;
-  width: 638px;
+  width: calc(638 * 1cqi / var(--device-width) * 100);
 }
 
 .device-imac .device-frame::before {
   background: #050505;
   border-radius: 50%;
   content: "";
-  height: 6px;
+  height: calc(6 * 1cqi / var(--device-width) * 100);
   left: 50%;
-  margin-left: -3px;
+  margin-left: calc(-3 * 1cqi / var(--device-width) * 100);
   position: absolute;
   text-align: center;
-  top: 6px;
-  width: 6px;
+  top: calc(6 * 1cqi / var(--device-width) * 100);
+  width: calc(6 * 1cqi / var(--device-width) * 100);
   z-index: 9;
 }
 
 .device-imac .device-screen {
-  border: 2px solid #121212;
-  border-radius: 2px;
-  height: 342px;
-  width: 608px;
+  border: calc(2 * 1cqi / var(--device-width) * 100) solid #121212;
+  border-radius: calc(2 * 1cqi / var(--device-width) * 100);
+  height: calc(342 * 1cqi / var(--device-width) * 100);
+  width: calc(608 * 1cqi / var(--device-width) * 100);
 }
 
 .device-imac .device-power::after {
   background: radial-gradient(circle at center, #d4d5d7 85%, #9fa1a6 100%);
-  border-top: 1px solid #d4d5d7;
+  border-top: calc(1 * 1cqi / var(--device-width) * 100) solid #d4d5d7;
   content: "";
-  height: 6px;
+  height: calc(6 * 1cqi / var(--device-width) * 100);
   margin: 0 auto;
   position: relative;
-  width: 152px;
+  width: calc(152 * 1cqi / var(--device-width) * 100);
 }
 
 .device-imac .device-power::before {
   background: linear-gradient(to bottom, #9fa1a6 0, #c7c8cb 40%, #c7c8cb 85%, white 90%, #6b6e74 100%);
   content: "";
-  height: 92px;
+  height: calc(92 * 1cqi / var(--device-width) * 100);
   margin: 0 auto;
   position: relative;
-  width: 152px;
+  width: calc(152 * 1cqi / var(--device-width) * 100);
 }
 
 .device-imac .device-home {
   background: transparent;
-  border-radius: 0 0 3px 3px;
+  border-radius: 0 0 calc(3 * 1cqi / var(--device-width) * 100) calc(3 * 1cqi / var(--device-width) * 100);
   bottom: 0;
-  box-shadow: -61px 0 #d4d5d7, 61px 0 #d4d5d7;
-  height: 2px;
+  box-shadow: calc(-61 * 1cqi / var(--device-width) * 100) 0 #d4d5d7, calc(61 * 1cqi / var(--device-width) * 100) 0 #d4d5d7;
+  height: calc(2 * 1cqi / var(--device-width) * 100);
   left: 50%;
-  margin-left: -15px;
+  margin-left: calc(-15 * 1cqi / var(--device-width) * 100);
   position: absolute;
-  width: 30px;
+  width: calc(30 * 1cqi / var(--device-width) * 100);
 }
 
 .device-imac.device-blue .device-frame {
-  box-shadow: inset 0 0 0 2px #b4c7da;
+  box-shadow: inset 0 0 0 calc(2 * 1cqi / var(--device-width) * 100) #b4c7da;
 }
 
 .device-imac.device-blue .device-frame::after {
   background: #b4c7da;
-  box-shadow: inset 0 0 18px 0 #a3bad2;
+  box-shadow: inset 0 0 calc(18 * 1cqi / var(--device-width) * 100) 0 #a3bad2;
 }
 
 .device-imac.device-blue .device-power::after {
@@ -1873,16 +1877,16 @@
 }
 
 .device-imac.device-blue .device-home {
-  box-shadow: -61px 0 #b4c7da, 61px 0 #b4c7da;
+  box-shadow: calc(-61 * 1cqi / var(--device-width) * 100) 0 #b4c7da, calc(61 * 1cqi / var(--device-width) * 100) 0 #b4c7da;
 }
 
 .device-imac.device-green .device-frame {
-  box-shadow: inset 0 0 0 2px #bbd0c8;
+  box-shadow: inset 0 0 0 calc(2 * 1cqi / var(--device-width) * 100) #bbd0c8;
 }
 
 .device-imac.device-green .device-frame::after {
   background: #bbd0c8;
-  box-shadow: inset 0 0 18px 0 #acc6bc;
+  box-shadow: inset 0 0 calc(18 * 1cqi / var(--device-width) * 100) 0 #acc6bc;
 }
 
 .device-imac.device-green .device-power::after {
@@ -1895,16 +1899,16 @@
 }
 
 .device-imac.device-green .device-home {
-  box-shadow: -61px 0 #bbd0c8, 61px 0 #bbd0c8;
+  box-shadow: calc(-61 * 1cqi / var(--device-width) * 100) 0 #bbd0c8, calc(61 * 1cqi / var(--device-width) * 100) 0 #bbd0c8;
 }
 
 .device-imac.device-pink .device-frame {
-  box-shadow: inset 0 0 0 2px #edccc6;
+  box-shadow: inset 0 0 0 calc(2 * 1cqi / var(--device-width) * 100) #edccc6;
 }
 
 .device-imac.device-pink .device-frame::after {
   background: #edccc6;
-  box-shadow: inset 0 0 18px 0 #e7bbb3;
+  box-shadow: inset 0 0 calc(18 * 1cqi / var(--device-width) * 100) 0 #e7bbb3;
 }
 
 .device-imac.device-pink .device-power::after {
@@ -1917,16 +1921,16 @@
 }
 
 .device-imac.device-pink .device-home {
-  box-shadow: -61px 0 #edccc6, 61px 0 #edccc6;
+  box-shadow: calc(-61 * 1cqi / var(--device-width) * 100) 0 #edccc6, calc(61 * 1cqi / var(--device-width) * 100) 0 #edccc6;
 }
 
 .device-imac.device-yellow .device-frame {
-  box-shadow: inset 0 0 0 2px #f4d595;
+  box-shadow: inset 0 0 0 calc(2 * 1cqi / var(--device-width) * 100) #f4d595;
 }
 
 .device-imac.device-yellow .device-frame::after {
   background: #f4d595;
-  box-shadow: inset 0 0 18px 0 #f2cc7e;
+  box-shadow: inset 0 0 calc(18 * 1cqi / var(--device-width) * 100) 0 #f2cc7e;
 }
 
 .device-imac.device-yellow .device-power::after {
@@ -1939,16 +1943,16 @@
 }
 
 .device-imac.device-yellow .device-home {
-  box-shadow: -61px 0 #f4d595, 61px 0 #f4d595;
+  box-shadow: calc(-61 * 1cqi / var(--device-width) * 100) 0 #f4d595, calc(61 * 1cqi / var(--device-width) * 100) 0 #f4d595;
 }
 
 .device-imac.device-orange .device-frame {
-  box-shadow: inset 0 0 0 2px #e9b5a0;
+  box-shadow: inset 0 0 0 calc(2 * 1cqi / var(--device-width) * 100) #e9b5a0;
 }
 
 .device-imac.device-orange .device-frame::after {
   background: #e9b5a0;
-  box-shadow: inset 0 0 18px 0 #e4a58b;
+  box-shadow: inset 0 0 calc(18 * 1cqi / var(--device-width) * 100) 0 #e4a58b;
 }
 
 .device-imac.device-orange .device-power::after {
@@ -1961,16 +1965,16 @@
 }
 
 .device-imac.device-orange .device-home {
-  box-shadow: -61px 0 #e9b5a0, 61px 0 #e9b5a0;
+  box-shadow: calc(-61 * 1cqi / var(--device-width) * 100) 0 #e9b5a0, calc(61 * 1cqi / var(--device-width) * 100) 0 #e9b5a0;
 }
 
 .device-imac.device-purple .device-frame {
-  box-shadow: inset 0 0 0 2px #c4c4e5;
+  box-shadow: inset 0 0 0 calc(2 * 1cqi / var(--device-width) * 100) #c4c4e5;
 }
 
 .device-imac.device-purple .device-frame::after {
   background: #c4c4e5;
-  box-shadow: inset 0 0 18px 0 #b2b2dd;
+  box-shadow: inset 0 0 calc(18 * 1cqi / var(--device-width) * 100) 0 #b2b2dd;
 }
 
 .device-imac.device-purple .device-power::after {
@@ -1983,7 +1987,7 @@
 }
 
 .device-imac.device-purple .device-home {
-  box-shadow: -61px 0 #c4c4e5, 61px 0 #c4c4e5;
+  box-shadow: calc(-61 * 1cqi / var(--device-width) * 100) 0 #c4c4e5, calc(61 * 1cqi / var(--device-width) * 100) 0 #c4c4e5;
 }
 
 .device-imac-pro {
@@ -2059,56 +2063,57 @@
 }
 
 .device-surface-book {
-  height: 424px;
-  width: 728px;
+  --device-width: 728;
+  height: calc(424 * 1cqi / var(--device-width) * 100);
+  width: 100cqi;
 }
 
 .device-surface-book .device-frame {
   background: #0d0d0d;
-  border-radius: 12px;
-  box-shadow: inset 0 0 0 2px #c8c8c8;
-  height: 408px;
+  border-radius: calc(12 * 1cqi / var(--device-width) * 100);
+  box-shadow: inset 0 0 0 calc(2 * 1cqi / var(--device-width) * 100) #c8c8c8;
+  height: calc(408 * 1cqi / var(--device-width) * 100);
   margin: 0 auto;
-  padding: 24px 22px;
+  padding: calc(24 * 1cqi / var(--device-width) * 100) calc(22 * 1cqi / var(--device-width) * 100);
   position: relative;
-  width: 584px;
+  width: calc(584 * 1cqi / var(--device-width) * 100);
 }
 
 .device-surface-book .device-screen {
-  border: 2px solid #121212;
-  border-radius: 2px;
-  height: 360px;
-  width: 540px;
+  border: calc(2 * 1cqi / var(--device-width) * 100) solid #121212;
+  border-radius: calc(2 * 1cqi / var(--device-width) * 100);
+  height: calc(360 * 1cqi / var(--device-width) * 100);
+  width: calc(540 * 1cqi / var(--device-width) * 100);
 }
 
 .device-surface-book .device-btns::after,
 .device-surface-book .device-btns::before {
   background: #c8c8c8;
   content: "";
-  height: 2px;
+  height: calc(2 * 1cqi / var(--device-width) * 100);
   position: absolute;
-  top: -2px;
+  top: calc(-2 * 1cqi / var(--device-width) * 100);
 }
 
 .device-surface-book .device-btns::after {
-  left: 122px;
-  width: 20px;
+  left: calc(122 * 1cqi / var(--device-width) * 100);
+  width: calc(20 * 1cqi / var(--device-width) * 100);
 }
 
 .device-surface-book .device-btns::before {
-  left: 168px;
-  width: 44px;
+  left: calc(168 * 1cqi / var(--device-width) * 100);
+  width: calc(44 * 1cqi / var(--device-width) * 100);
 }
 
 .device-surface-book .device-power {
   background: linear-gradient(to bottom, #eee, #c8c8c8);
   border: solid #c8c8c8;
-  border-radius: 2px;
-  border-width: 0 2px;
-  height: 16px;
-  margin-top: 4px;
+  border-radius: calc(2 * 1cqi / var(--device-width) * 100);
+  border-width: 0 calc(2 * 1cqi / var(--device-width) * 100);
+  height: calc(16 * 1cqi / var(--device-width) * 100);
+  margin-top: calc(4 * 1cqi / var(--device-width) * 100);
   position: relative;
-  width: 728px;
+  width: calc(728 * 1cqi / var(--device-width) * 100);
 }
 
 .device-surface-book .device-power::after,
@@ -2119,55 +2124,56 @@
 
 .device-surface-book .device-power::after {
   background: radial-gradient(circle at center, #eee 0, #eee 95%, #a2a2a2 100%);
-  border-radius: 0 0 6px 6px;
-  height: 8px;
+  border-radius: 0 0 calc(6 * 1cqi / var(--device-width) * 100) calc(6 * 1cqi / var(--device-width) * 100);
+  height: calc(8 * 1cqi / var(--device-width) * 100);
   left: 50%;
-  margin-left: -125px;
+  margin-left: calc(-125 * 1cqi / var(--device-width) * 100);
   top: 0;
-  width: 250px;
+  width: calc(250 * 1cqi / var(--device-width) * 100);
   z-index: 1;
 }
 
 .device-surface-book .device-power::before {
   background: linear-gradient(to bottom, #eee, #c8c8c8);
-  border-radius: 2px 2px 0 0;
-  bottom: 16px;
-  height: 8px;
+  border-radius: calc(2 * 1cqi / var(--device-width) * 100) calc(2 * 1cqi / var(--device-width) * 100) 0 0;
+  bottom: calc(16 * 1cqi / var(--device-width) * 100);
+  height: calc(8 * 1cqi / var(--device-width) * 100);
   left: 50%;
-  margin-left: -292px;
-  width: 584px;
+  margin-left: calc(-292 * 1cqi / var(--device-width) * 100);
+  width: calc(584 * 1cqi / var(--device-width) * 100);
 }
 
 .device-surface-studio {
-  height: 506px;
-  width: 640px;
+  --device-width: 640;
+  height: calc(506 * 1cqi / var(--device-width) * 100);
+  width: 100cqi;
 }
 
 .device-surface-studio .device-frame {
   background: #0d0d0d;
-  border-radius: 10px;
-  box-shadow: inset 0 0 0 2px black;
-  height: 440px;
-  padding: 20px;
-  width: 640px;
+  border-radius: calc(10 * 1cqi / var(--device-width) * 100);
+  box-shadow: inset 0 0 0 calc(2 * 1cqi / var(--device-width) * 100) black;
+  height: calc(440 * 1cqi / var(--device-width) * 100);
+  padding: calc(20 * 1cqi / var(--device-width) * 100);
+  width: calc(640 * 1cqi / var(--device-width) * 100);
 }
 
 .device-surface-studio .device-screen {
-  border: 2px solid #121212;
-  border-radius: 2px;
-  height: 400px;
-  width: 600px;
+  border: calc(2 * 1cqi / var(--device-width) * 100) solid #121212;
+  border-radius: calc(2 * 1cqi / var(--device-width) * 100);
+  height: calc(400 * 1cqi / var(--device-width) * 100);
+  width: calc(600 * 1cqi / var(--device-width) * 100);
 }
 
 .device-surface-studio .device-stripe {
   background: #444;
-  border-radius: 0 0 2px 2px;
+  border-radius: 0 0 calc(2 * 1cqi / var(--device-width) * 100) calc(2 * 1cqi / var(--device-width) * 100);
   bottom: 0;
-  height: 4px;
+  height: calc(4 * 1cqi / var(--device-width) * 100);
   left: 50%;
-  margin-left: -117px;
+  margin-left: calc(-117 * 1cqi / var(--device-width) * 100);
   position: absolute;
-  width: 234px;
+  width: calc(234 * 1cqi / var(--device-width) * 100);
 }
 
 .device-surface-studio .device-stripe::after,
@@ -2175,47 +2181,47 @@
   content: "";
   left: 50%;
   position: absolute;
-  top: -75px;
+  top: calc(-75 * 1cqi / var(--device-width) * 100);
 }
 
 .device-surface-studio .device-stripe::after {
-  border: 1px solid #e2e3e4;
-  border-radius: 0 0 18px 18px;
+  border: calc(1 * 1cqi / var(--device-width) * 100) solid #e2e3e4;
+  border-radius: 0 0 calc(18 * 1cqi / var(--device-width) * 100) calc(18 * 1cqi / var(--device-width) * 100);
   border-top: 0;
-  box-shadow: inset 0 0 4px 1px #c8cacb, inset 0 0 4px 2px #e2e3e4, inset 0 0 0 8px #c8cacb;
-  height: 60px;
-  margin-left: -140px;
-  width: 280px;
+  box-shadow: inset 0 0 calc(4 * 1cqi / var(--device-width) * 100) calc(1 * 1cqi / var(--device-width) * 100) #c8cacb, inset 0 0 calc(4 * 1cqi / var(--device-width) * 100) calc(2 * 1cqi / var(--device-width) * 100) #e2e3e4, inset 0 0 0 calc(8 * 1cqi / var(--device-width) * 100) #c8cacb;
+  height: calc(60 * 1cqi / var(--device-width) * 100);
+  margin-left: calc(-140 * 1cqi / var(--device-width) * 100);
+  width: calc(280 * 1cqi / var(--device-width) * 100);
   z-index: -1;
 }
 
 .device-surface-studio .device-stripe::before {
-  border: 15px solid #e2e3e4;
-  border-radius: 0 0 8px 8px;
+  border: calc(15 * 1cqi / var(--device-width) * 100) solid #e2e3e4;
+  border-radius: 0 0 calc(8 * 1cqi / var(--device-width) * 100) calc(8 * 1cqi / var(--device-width) * 100);
   border-top: 0;
-  height: 70px;
-  margin-left: -150px;
-  width: 300px;
+  height: calc(70 * 1cqi / var(--device-width) * 100);
+  margin-left: calc(-150 * 1cqi / var(--device-width) * 100);
+  width: calc(300 * 1cqi / var(--device-width) * 100);
   z-index: -2;
 }
 
 .device-surface-studio .device-power {
   background: radial-gradient(circle at center, #e2e3e4 85%, #c8cacb 100%);
-  border-radius: 0 0 2px 2px;
-  height: 32px;
-  margin: 30px auto 0 auto;
+  border-radius: 0 0 calc(2 * 1cqi / var(--device-width) * 100) calc(2 * 1cqi / var(--device-width) * 100);
+  height: calc(32 * 1cqi / var(--device-width) * 100);
+  margin: calc(30 * 1cqi / var(--device-width) * 100) auto 0 auto;
   position: relative;
-  width: 250px;
+  width: calc(250 * 1cqi / var(--device-width) * 100);
 }
 
 .device-surface-studio .device-power::after {
   background: #babdbf;
   content: "";
-  height: 1px;
+  height: calc(1 * 1cqi / var(--device-width) * 100);
   left: 0;
   position: absolute;
-  top: 4px;
-  width: 250px;
+  top: calc(4 * 1cqi / var(--device-width) * 100);
+  width: calc(250 * 1cqi / var(--device-width) * 100);
 }
 
 .device-ipad-pro {

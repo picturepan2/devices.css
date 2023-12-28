@@ -1,3 +1,5 @@
+@import "functions";
+
 // MacBook
 $device-silver: #e2e3e4;
 $device-silver-dark: darken($device-silver, 10%);
@@ -13,62 +15,63 @@ $device-rosegold-dark: darken($device-rosegold, 10%);
 $device-rosegold-panel: #0d0d0d;
 
 .device-macbook {
-  height: 432px;
-  width: 740px;
+  --device-width: 740;
+  height: getCqi(432);
+  width: 100cqi;
 
   .device-frame {
     background: $device-silver-panel;
-    border-radius: 20px;
-    box-shadow: inset 0 0 0 2px $device-silver-dark;
-    height: 428px;
+    border-radius: getCqi(20);
+    box-shadow: inset 0 0 0 getCqi(2) $device-silver-dark;
+    height: getCqi(428);
     margin: 0 auto;
-    padding: 29px 19px 39px 19px;
+    padding: getCqi(29) getCqi(19) getCqi(39) getCqi(19);
     position: relative;
-    width: 614px;
+    width: getCqi(614);
 
     &::after {
       background: lighten($device-silver-panel, 10%);
-      border-radius: 0 0 20px 20px;
-      bottom: 2px;
+      border-radius: 0 0 getCqi(20) getCqi(20);
+      bottom: getCqi(2);
       content: "";
-      height: 26px;
-      left: 2px;
+      height: getCqi(26);
+      left: getCqi(2);
       position: absolute;
-      width: 610px;
+      width: getCqi(610);
     }
     &::before {
-      bottom: 10px;
+      bottom: getCqi(10);
       color: $device-silver-dark;
       content: "MacBook";
-      font-size: 12px;
-      height: 16px;
+      font-size: getCqi(12);
+      height: getCqi(16);
       left: 50%;
-      line-height: 16px;
-      margin-left: -100px;
+      line-height: getCqi(16);
+      margin-left: getCqi(-100);
       position: absolute;
       text-align: center;
-      width: 200px;
+      width: getCqi(200);
       z-index: 1;
     }
   }
 
   // 1440-by-900-pixel resolution
   .device-screen {
-    border: 2px solid lighten($device-silver-panel, 2%);
-    border-radius: 2px;
-    height: 360px;
-    width: 576px;
+    border: getCqi(2) solid lighten($device-silver-panel, 2%);
+    border-radius: getCqi(2);
+    height: getCqi(360);
+    width: getCqi(576);
   }
 
   .device-power {
     background: $device-silver;
     border: solid darken($device-silver, 5%);
-    border-radius: 2px 2px 0 0;
-    border-width: 0 4px;
-    height: 4px;
-    margin-top: -10px;
+    border-radius: getCqi(2) getCqi(2) 0 0;
+    border-width: 0 getCqi(4);
+    height: getCqi(4);
+    margin-top: getCqi(-10);
     position: relative;
-    width: 740px;
+    width: getCqi(740);
     z-index: 9;
 
     &::after,
@@ -79,28 +82,28 @@ $device-rosegold-panel: #0d0d0d;
     &::after {
       background: radial-gradient(circle at center, $device-silver 0, $device-silver 85%, darken($device-silver-dark, 15%) 100%);
       border: solid darken($device-silver-dark, 10%);
-      border-width: 0 2px;
-      height: 4px;
+      border-width: 0 getCqi(2);
+      height: getCqi(4);
       left: 50%;
-      margin-left: -60px;
-      width: 120px;
+      margin-left: getCqi(-60);
+      width: getCqi(120);
     }
     &::before {
       background: darken($device-silver-dark, 15%);
-      border-radius: 0 0 180px 180px/ 0 0 10px 10px;
-      box-shadow: inset 0 -2px 6px 0 darken($device-silver-dark, 50%);
-      height: 10px;
-      left: -4px;
+      border-radius: 0 0 getCqi(180) getCqi(180)/ 0 0 getCqi(10) getCqi(10);
+      box-shadow: inset 0 getCqi(-2) getCqi(6) 0 darken($device-silver-dark, 50%);
+      height: getCqi(10);
+      left: getCqi(-4);
       margin: 0 auto;
-      top: 4px;
-      width: 740px;
+      top: getCqi(4);
+      width: getCqi(740);
     }
   }
 
   // Gold edition
   &.device-gold {
     .device-frame {
-      box-shadow: inset 0 0 0 2px $device-gold-dark;
+      box-shadow: inset 0 0 0 getCqi(2) $device-gold-dark;
     }
 
     .device-power {
@@ -113,15 +116,15 @@ $device-rosegold-panel: #0d0d0d;
       }
       &::before {
         background: $device-gold-dark;
-        box-shadow: inset 0 -2px 6px 0 darken($device-gold-dark, 50%);
+        box-shadow: inset 0 getCqi(-2) getCqi(6) 0 darken($device-gold-dark, 50%);
       }
     }
   }
 
-  // Rose Gold edition 
+  // Rose Gold edition
   &.device-rosegold {
     .device-frame {
-      box-shadow: inset 0 0 0 2px $device-rosegold-dark;
+      box-shadow: inset 0 0 0 getCqi(2) $device-rosegold-dark;
     }
 
     .device-power {
@@ -134,7 +137,7 @@ $device-rosegold-panel: #0d0d0d;
       }
       &::before {
         background: $device-rosegold-dark;
-        box-shadow: inset 0 -2px 6px 0 darken($device-rosegold-dark, 50%);
+        box-shadow: inset 0 getCqi(-2) getCqi(6) 0 darken($device-rosegold-dark, 50%);
       }
     }
   }
@@ -142,7 +145,7 @@ $device-rosegold-panel: #0d0d0d;
   // Space Gray edition
   &.device-spacegray {
     .device-frame {
-      box-shadow: inset 0 0 0 2px $device-spacegray-dark;
+      box-shadow: inset 0 0 0 getCqi(2) $device-spacegray-dark;
     }
 
     .device-power {
@@ -155,7 +158,7 @@ $device-rosegold-panel: #0d0d0d;
       }
       &::before {
         background: darken($device-spacegray-dark, 15%);
-        box-shadow: inset 0 -2px 6px 0 darken($device-spacegray-dark, 50%);
+        box-shadow: inset 0 getCqi(-2) getCqi(6) 0 darken($device-spacegray-dark, 50%);
       }
     }
   }

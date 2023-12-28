@@ -1,29 +1,32 @@
+@import "functions";
+
 // Surface Book
 $device-silver: #eee;
 $device-silver-dark: darken($device-silver, 15%);
 $device-silver-panel: #0d0d0d;
 
 .device-surface-book {
-  height: 424px;
-  width: 728px;
+  --device-width: 728;
+  height: getCqi(424);
+  width: 100cqi;
 
   .device-frame {
     background: $device-silver-panel;
-    border-radius: 12px;
-    box-shadow: inset 0 0 0 2px $device-silver-dark;
-    height: 408px;
+    border-radius: getCqi(12);
+    box-shadow: inset 0 0 0 getCqi(2) $device-silver-dark;
+    height: getCqi(408);
     margin: 0 auto;
-    padding: 24px 22px;
+    padding: getCqi(24) getCqi(22);
     position: relative;
-    width: 584px;
+    width: getCqi(584);
   }
 
   // 3000-by-2000-pixel resolution
   .device-screen {
-    border: 2px solid lighten($device-silver-panel, 2%);
-    border-radius: 2px;
-    height: 360px;
-    width: 540px;
+    border: getCqi(2) solid lighten($device-silver-panel, 2%);
+    border-radius: getCqi(2);
+    height: getCqi(360);
+    width: getCqi(540);
   }
 
   .device-btns {
@@ -31,30 +34,30 @@ $device-silver-panel: #0d0d0d;
     &::before {
       background: $device-silver-dark;
       content: "";
-      height: 2px;
+      height: getCqi(2);
       position: absolute;
-      top: -2px;
+      top: getCqi(-2);
     }
 
     &::after {
-      left: 122px;
-      width: 20px;
+      left: getCqi(122);
+      width: getCqi(20);
     }
     &::before {
-      left: 168px;
-      width: 44px;
+      left: getCqi(168);
+      width: getCqi(44);
     }
   }
 
   .device-power {
     background: linear-gradient(to bottom, $device-silver, $device-silver-dark);
     border: solid $device-silver-dark;
-    border-radius: 2px;
-    border-width: 0 2px;
-    height: 16px;
-    margin-top: 4px;
+    border-radius: getCqi(2);
+    border-width: 0 getCqi(2);
+    height: getCqi(16);
+    margin-top: getCqi(4);
     position: relative;
-    width: 728px;
+    width: getCqi(728);
 
     &::after,
     &::before {
@@ -63,22 +66,22 @@ $device-silver-panel: #0d0d0d;
     }
     &::after {
       background: radial-gradient(circle at center, $device-silver 0, $device-silver 95%, darken($device-silver-dark, 15%) 100%);;
-      border-radius: 0 0 6px 6px;
-      height: 8px;
+      border-radius: 0 0 getCqi(6) getCqi(6);
+      height: getCqi(8);
       left: 50%;
-      margin-left: -125px;
+      margin-left: getCqi(-125);
       top: 0;
-      width: 250px;
+      width: getCqi(250);
       z-index: 1;
     }
     &::before {
       background: linear-gradient(to bottom, $device-silver, $device-silver-dark);
-      border-radius: 2px 2px 0 0;
-      bottom: 16px;
-      height: 8px;
+      border-radius: getCqi(2) getCqi(2) 0 0;
+      bottom: getCqi(16);
+      height: getCqi(8);
       left: 50%;
-      margin-left: -292px;
-      width: 584px;
+      margin-left: getCqi(-292);
+      width: getCqi(584);
     }
   }
 }
