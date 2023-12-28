@@ -1,82 +1,85 @@
+@import "functions";
+
 // Google Pixel 2 XL
 $device-black: #cfcfcf;
 $device-black-dark: darken($device-black, 20%);
 $device-black-panel: #121212;
 
 .device-google-pixel-2-xl {
-  height: 832px;
-  width: 404px;
+  --device-width: 404;
+  height: getCqi(832);
+  width: 100cqi;
 
   .device-frame {
     background: $device-black-panel;
-    border-radius: 36px;
-    box-shadow: inset 0 0 0 2px $device-black, inset 0 0 0 7px $device-black-dark;
-    height: 832px;
-    padding: 56px 22px;
-    width: 404px;
+    border-radius: getCqi(36);
+    box-shadow: inset 0 0 0 getCqi(2) $device-black, inset 0 0 0 getCqi(7) $device-black-dark;
+    height: getCqi(832);
+    padding: getCqi(56) getCqi(22);
+    width: getCqi(404);
   }
 
   // 2880-by-1440-pixel resolution
   .device-screen {
-    border-radius: 27px;
-    height: 720px;
-    width: 360px;
+    border-radius: getCqi(27);
+    height: getCqi(720);
+    width: getCqi(360);
   }
 
   .device-header {
-    height: 832px;
+    height: getCqi(832);
     left: 50%;
-    margin-left: -150px;
+    margin-left: getCqi(-150);
     position: absolute;
     top: 0;
-    width: 300px;
+    width: getCqi(300);
 
     &::after,
     &::before {
       background: #333;
-      border-radius: 3px;
+      border-radius: getCqi(3);
       content: "";
-      height: 6px;
+      height: getCqi(6);
       left: 50%;
-      margin-left: -73px;
-      margin-top: -3px;
+      margin-left: getCqi(-73);
+      margin-top: getCqi(-3);
       position: absolute;
-      width: 146px;
+      width: getCqi(146);
     }
     &::after {
-      top: 24px;
+      top: getCqi(24);
     }
     &::before {
-      bottom: 28px;
+      bottom: getCqi(28);
     }
   }
 
   .device-sensors {
     background: #333;
-    border-radius: 7px;
-    height: 14px;
-    left: 54px;
-    margin-top: -7px;
+    border-radius: getCqi(7);
+    height: getCqi(14);
+    left: getCqi(54);
+    margin-top: getCqi(-7);
     position: absolute;
-    top: 36px;
-    width: 14px;
+    top: getCqi(36);
+    width: getCqi(14);
   }
 
   .device-btns {
     background: $device-black;
-    height: 102px;
+    height: getCqi(102);
     position: absolute;
-    right: -3px;
-    top: 306px;
-    width: 3px;
+    right: getCqi(-3);
+    top: getCqi(306);
+    width: getCqi(3);
   }
 
   .device-power {
     background: $device-black;
-    height: 58px;
+    height: getCqi(58);
     position: absolute;
-    right: -3px;
-    top: 194px;
-    width: 3px;
+    right: getCqi(-3);
+    top: getCqi(194);
+    width: getCqi(3);
   }
 }

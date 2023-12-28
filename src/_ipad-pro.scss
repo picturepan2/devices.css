@@ -9,8 +9,8 @@ $device-panel: #0d0d0d;
 
 .device-ipad-pro {
   --device-width: 560;
-  height: getCqi(778); // 778px
-  width: 100cqi; // 560px
+  height: getCqi(778);
+  width: 100cqi;
 
   .device-frame {
     background: $device-panel;

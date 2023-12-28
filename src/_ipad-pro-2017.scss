@@ -16,8 +16,8 @@ $device-spacegray-panel: #222;
 
 .device-ipad-pro-2017 {
   --device-width: 560;
-  height: getCqi(804); // 804)
-  width: 100cqi; // 560)
+  height: getCqi(804);
+  width: 100cqi;
 
   .device-frame {
     background: $device-silver-panel;

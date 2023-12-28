@@ -1,3 +1,5 @@
+@import "functions";
+
 // iPhone 14
 $device-midnight: #272C31;
 $device-midnight-dark: darken($device-midnight, 10%);
@@ -12,72 +14,73 @@ $device-blue-dark: darken($device-blue, 10%);
 $device-panel: #010101;
 
 .device-iphone-14 {
-  height: 868px;
-  width: 428px;
+  --device-width: 428;
+  height: getCqi(868);
+  width: 100cqi;
 
   .device-frame {
     background: $device-panel;
-    border: 1px solid $device-midnight-dark;
-    border-radius: 68px;
-    box-shadow: inset 0 0 4px 2px lighten($device-midnight, 55%), inset 0 0 0 6px $device-midnight;
-    height: 868px;
-    padding: 19px;
-    width: 428px;
+    border: getCqi(1) solid $device-midnight-dark;
+    border-radius: getCqi(68);
+    box-shadow: inset 0 0 getCqi(4) getCqi(2) lighten($device-midnight, 55%), inset 0 0 0 getCqi(6) $device-midnight;
+    height: getCqi(868);
+    padding: getCqi(19);
+    width: getCqi(428);
   }
 
   // 2532‑by‑1170-pixel resolution
   .device-screen {
-    border-radius: 49px;
-    height: 830px;
-    width: 390px;
+    border-radius: getCqi(49);
+    height: getCqi(830);
+    width: getCqi(390);
   }
 
   .device-stripe {
     &::after,
     &::before {
       border: solid rgba($device-panel, .25);
-      border-width: 0 7px;
+      border-width: 0 getCqi(7);
       content: "";
-      height: 7px;
+      height: getCqi(7);
       left: 0;
       position: absolute;
       width: 100%;
       z-index: 9;
     }
     &::after {
-      top: 85px;
+      top: getCqi(85);
     }
     &::before {
-      bottom: 85px;
+      bottom: getCqi(85);
     }
   }
 
   .device-header {
     background: $device-panel;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    height: 30px;
+    border-bottom-left-radius: getCqi(20);
+    border-bottom-right-radius: getCqi(20);
+    height: getCqi(30);
     left: 50%;
-    margin-left: -80px;
+    margin-left: getCqi(-80);
     position: absolute;
-    top: 20px;
-    width: 160px;
+    top: getCqi(20);
+    width: getCqi(160);
 
     &::after,
     &::before {
       content: "";
-      height: 10px;
+      height: getCqi(10);
       position: absolute;
       top: 0;
-      width: 10px;
+      width: getCqi(10);
     }
     &::after {
       background: radial-gradient(circle at bottom left, transparent 0, transparent 75%, $device-panel 75%, $device-panel 100%);
-      left: -10px;
+      left: getCqi(-10);
     }
     &::before {
       background: radial-gradient(circle at bottom right, transparent 0, transparent 75%, $device-panel 75%, $device-panel 100%);
-      right: -10px;
+      right: getCqi(-10);
     }
   }
 
@@ -89,84 +92,84 @@ $device-panel: #010101;
     }
     &::after {
       background: lighten($device-panel, 8%);
-      border: 1px solid $device-panel;
-      border-radius: 4px;
-      box-shadow: 0 0 4px lighten($device-panel, 8%);
-      height: 7px;
+      border: getCqi(1) solid $device-panel;
+      border-radius: getCqi(4);
+      box-shadow: 0 0 getCqi(4) lighten($device-panel, 8%);
+      height: getCqi(7);
       left: 50%;
-      margin-left: -35px;
-      top: 8px;
-      width: 70px;
+      margin-left: getCqi(-35);
+      top: getCqi(8);
+      width: getCqi(70);
     }
     &::before {
       background: radial-gradient(farthest-corner at 20% 20%, #6074BF 0, transparent 40%),
                   radial-gradient(farthest-corner at 80% 80%, #513785 0, #24555E 20%, transparent 50%);
-      box-shadow: 0 0 1px 1px rgba($light-color, .05);
+      box-shadow: 0 0 getCqi(1) getCqi(1) rgba($light-color, .05);
       border-radius: 50%;
-      height: 9px;
+      height: getCqi(9);
       left: 50%;
-      margin-left: -60px;
-      top: 26px;
-      width: 9px;
+      margin-left: getCqi(-60);
+      top: getCqi(26);
+      width: getCqi(9);
     }
   }
 
   .device-btns {
     background: $device-midnight-dark;
-    border-radius: 2px;
-    height: 32px;
-    left: -2px;
+    border-radius: getCqi(2);
+    height: getCqi(32);
+    left: getCqi(-2);
     position: absolute;
-    top: 115px;
-    width: 3px;
+    top: getCqi(115);
+    width: getCqi(3);
 
     &::after,
     &::before {
       background: $device-midnight-dark;
-      border-radius: 2px;
+      border-radius: getCqi(2);
       content: "";
-      height: 62px;
+      height: getCqi(62);
       left: 0;
       position: absolute;
-      width: 3px;
+      width: getCqi(3);
     }
 
     &::after {
-      top: 60px;
+      top: getCqi(60);
     }
     &::before {
-      top: 140px;
+      top: getCqi(140);
     }
   }
 
   .device-power {
     background: $device-midnight-dark;
-    border-radius: 2px;
-    height: 100px;
-    right: -2px;
+    border-radius: getCqi(2);
+    height: getCqi(100);
+    right: getCqi(-2);
     position: absolute;
-    top: 200px;
-    width: 3px;
+    top: getCqi(200);
+    width: getCqi(3);
   }
 
   .device-home {
     &::after,
     &::before {
       border: solid rgba($device-panel, .25);
-      border-width: 6px 0;
+      border-width: getCqi(6) 0;
       content: "";
-      height: 6px;
+      height: getCqi(6);
       position: absolute;
-      width: 6px;
+      width: getCqi(6);
       z-index: 9;
     }
     &::after {
-      right: 86px;
+      right: getCqi(86);
       top: 0;
     }
     &::before {
       bottom: 0;
-      left: 86px;
+      left: getCqi(86);
     }
   }
 
@@ -174,18 +177,18 @@ $device-panel: #010101;
   &.device-purple {
     .device-frame {
       border-color: $device-purple-dark;
-      box-shadow: inset 0 0 4px 2px lighten($device-purple, 55%), inset 0 0 0 6px $device-purple;
+      box-shadow: inset 0 0 getCqi(4) getCqi(2) lighten($device-purple, 55%), inset 0 0 0 getCqi(6) $device-purple;
     }
 
     .device-btns {
       background: $device-purple-dark;
-  
+
       &::after,
       &::before {
         background: $device-purple-dark;
       }
     }
-  
+
     .device-power {
       background: $device-purple-dark;
     }
@@ -195,18 +198,18 @@ $device-panel: #010101;
   &.device-starlight {
     .device-frame {
       border-color: $device-starlight-dark;
-      box-shadow: inset 0 0 4px 2px lighten($device-starlight, 55%), inset 0 0 0 6px $device-starlight;
+      box-shadow: inset 0 0 getCqi(4) getCqi(2) lighten($device-starlight, 55%), inset 0 0 0 getCqi(6) $device-starlight;
     }
 
     .device-btns {
       background: $device-starlight-dark;
-  
+
       &::after,
       &::before {
         background: $device-starlight-dark;
       }
     }
-  
+
     .device-power {
       background: $device-starlight-dark;
     }
@@ -216,18 +219,18 @@ $device-panel: #010101;
   &.device-red {
     .device-frame {
       border-color: $device-red-dark;
-      box-shadow: inset 0 0 4px 2px lighten($device-red, 55%), inset 0 0 0 6px $device-red;
+      box-shadow: inset 0 0 getCqi(4) getCqi(2) lighten($device-red, 55%), inset 0 0 0 getCqi(6) $device-red;
     }
 
     .device-btns {
       background: $device-red-dark;
-  
+
       &::after,
       &::before {
         background: $device-red-dark;
       }
     }
-  
+
     .device-power {
       background: $device-red-dark;
     }
@@ -237,18 +240,18 @@ $device-panel: #010101;
   &.device-blue {
     .device-frame {
       border-color: $device-blue-dark;
-      box-shadow: inset 0 0 4px 2px lighten($device-blue, 55%), inset 0 0 0 6px $device-blue;
+      box-shadow: inset 0 0 getCqi(4) getCqi(2) lighten($device-blue, 55%), inset 0 0 0 getCqi(6) $device-blue;
     }
 
     .device-btns {
       background: $device-blue-dark;
-  
+
       &::after,
       &::before {
         background: $device-blue-dark;
       }
     }
-  
+
     .device-power {
       background: $device-blue-dark;
     }

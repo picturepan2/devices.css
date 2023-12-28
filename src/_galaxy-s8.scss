@@ -1,3 +1,5 @@
+@import "functions";
+
 // Galaxy S8
 $device-black: #cfcfcf;
 $device-black-dark: darken($device-black, 20%);
@@ -7,58 +9,59 @@ $device-blue-dark: darken($device-blue, 20%);
 $device-blue-panel: #222;
 
 .device-galaxy-s8 {
-  height: 828px;
-  width: 380px;
+  --device-width: 380;
+  height: getCqi(828);
+  width: 100cqi;
 
   .device-frame {
     background: $device-black-panel;
     border: solid $device-black;
-    border-radius: 55px;
-    border-width: 5px 0;
-    box-shadow: inset 0 0 0 2px $device-black-dark;
-    height: 828px;
-    padding: 48px 10px 40px 10px;
-    width: 380px;
+    border-radius: getCqi(55);
+    border-width: getCqi(5) 0;
+    box-shadow: inset 0 0 0 getCqi(2) $device-black-dark;
+    height: getCqi(828);
+    padding: getCqi(48) getCqi(10) getCqi(40) getCqi(10);
+    width: getCqi(380);
   }
 
   // 2960-by-1440-pixel resolution
   .device-screen {
-    border: 2px solid #222;
-    border-radius: 34px;
-    height: 740px;
-    width: 360px;
+    border: getCqi(2) solid #222;
+    border-radius: getCqi(34);
+    height: getCqi(740);
+    width: getCqi(360);
   }
 
   .device-stripe {
     &::after,
     &::before {
       border: solid rgba(#333, .15);
-      border-width: 5px 0;
+      border-width: getCqi(5) 0;
       content: "";
-      height: 828px;
+      height: getCqi(828);
       position: absolute;
       top: 0;
-      width: 6px;
+      width: getCqi(6);
       z-index: 9;
     }
     &::after {
-      left: 48px;
+      left: getCqi(48);
     }
     &::before {
-      right: 48px;
+      right: getCqi(48);
     }
   }
 
   .device-sensors {
     background: #666;
-    border-radius: 3px;
-    height: 6px;
+    border-radius: getCqi(3);
+    height: getCqi(6);
     left: 50%;
-    margin-left: -24px;
-    margin-top: -3px;
+    margin-left: getCqi(-24);
+    margin-top: getCqi(-3);
     position: absolute;
-    top: 32px;
-    width: 48px;
+    top: getCqi(32);
+    width: getCqi(48);
 
     &::after,
     &::before {
@@ -69,57 +72,57 @@ $device-blue-panel: #222;
       top: 50%;
     }
     &::after {
-      box-shadow: -192px 0 #333, -174px 0 #333, -240px 0 #333;
-      height: 8px;
-      right: -90px;
-      margin-top: -4px;
-      width: 8px;
+      box-shadow: getCqi(-192) 0 #333, getCqi(-174) 0 #333, getCqi(-240) 0 #333;
+      height: getCqi(8);
+      right: getCqi(-90);
+      margin-top: getCqi(-4);
+      width: getCqi(8);
     }
     &::before {
-      box-shadow: 186px 0 #666;
-      height: 12px;
-      left: -90px;
-      margin-top: -6px;
-      width: 12px;
+      box-shadow: getCqi(186) 0 #666;
+      height: getCqi(12);
+      left: getCqi(-90);
+      margin-top: getCqi(-6);
+      width: getCqi(12);
     }
   }
 
   .device-btns {
     background: $device-black-dark;
-    border-radius: 3px 0 0 3px;
-    height: 116px;
-    left: -3px;
+    border-radius: getCqi(3) 0 0 getCqi(3);
+    height: getCqi(116);
+    left: getCqi(-3);
     position: absolute;
-    top: 144px;
-    width: 3px;
+    top: getCqi(144);
+    width: getCqi(3);
 
     &::after {
       background: $device-black-dark;
-      border-radius: 3px 0 0 3px;
+      border-radius: getCqi(3) 0 0 getCqi(3);
       content: "";
-      height: 54px;
+      height: getCqi(54);
       left: 0;
       position: absolute;
-      top: 164px;
-      width: 3px;
+      top: getCqi(164);
+      width: getCqi(3);
     }
   }
 
   .device-power {
     background: $device-black-dark;
-    border-radius: 0 3px 3px 0;
-    height: 54px;
-    right: -3px;
+    border-radius: 0 getCqi(3) getCqi(3) 0;
+    height: getCqi(54);
+    right: getCqi(-3);
     position: absolute;
-    top: 260px;
-    width: 3px;
+    top: getCqi(260);
+    width: getCqi(3);
   }
 
   // Coral Blue edition
   &.device-blue {
     .device-frame {
       border-color: $device-blue;
-      box-shadow: inset 0 0 0 2px $device-blue-dark;
+      box-shadow: inset 0 0 0 getCqi(2) $device-blue-dark;
     }
 
     .device-stripe {

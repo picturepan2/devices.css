@@ -7,8 +7,8 @@ $device-silver-panel: #0d0d0d;
 
 .device-surface-pro-2017 {
   --device-width: 561;
-  height: getCqi(394); // 394)
-  width: 100cqi; // 561)
+  height: getCqi(394);
+  width: 100cqi;
 
   .device-frame {
     background: $device-silver-panel;

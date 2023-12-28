@@ -1,3 +1,5 @@
+@import "functions";
+
 // iPhone 14 Pro
 $device-purple: #342C3F;
 $device-purple-dark: darken($device-purple, 10%);
@@ -10,55 +12,56 @@ $device-gold-dark: darken($device-gold, 15%);
 $device-panel: #010101;
 
 .device-iphone-14-pro {
-  height: 868px;
-  width: 428px;
+  --device-width: 428;
+  height: getCqi(868);
+  width: 100cqi;
 
   .device-frame {
     background: $device-panel;
-    border: 1px solid $device-purple-dark;
-    border-radius: 68px;
-    box-shadow: inset 0 0 4px 2px lighten($device-purple, 55%), inset 0 0 0 6px $device-purple;
-    height: 868px;
-    padding: 19px;
-    width: 428px;
+    border: getCqi(1) solid $device-purple-dark;
+    border-radius: getCqi(68);
+    box-shadow: inset 0 0 getCqi(4) getCqi(2) lighten($device-purple, 55%), inset 0 0 0 getCqi(6) $device-purple;
+    height: getCqi(868);
+    padding: getCqi(19);
+    width: getCqi(428);
   }
 
   // 2556‑by‑1179-pixel resolution
   .device-screen {
-    border-radius: 49px;
-    height: 830px;
-    width: 390px;
+    border-radius: getCqi(49);
+    height: getCqi(830);
+    width: getCqi(390);
   }
 
   .device-stripe {
     &::after,
     &::before {
       border: solid rgba($device-panel, .25);
-      border-width: 0 7px;
+      border-width: 0 getCqi(7);
       content: "";
-      height: 7px;
+      height: getCqi(7);
       left: 0;
       position: absolute;
       width: 100%;
       z-index: 9;
     }
     &::after {
-      top: 85px;
+      top: getCqi(85);
     }
     &::before {
-      bottom: 85px;
+      bottom: getCqi(85);
     }
   }
 
   .device-header {
     background: $device-panel;
-    border-radius: 20px;
-    height: 35px;
+    border-radius: getCqi(20);
+    height: getCqi(35);
     left: 50%;
-    margin-left: -60px;
+    margin-left: getCqi(-60);
     position: absolute;
-    top: 29px;
-    width: 120px;
+    top: getCqi(29);
+    width: getCqi(120);
   }
 
   .device-sensors {
@@ -69,82 +72,82 @@ $device-panel: #010101;
     }
     &::after {
       background: $device-panel;
-      border-radius: 17px;
-      height: 33px;
+      border-radius: getCqi(17);
+      height: getCqi(33);
       left: 50%;
-      margin-left: -60px;
-      top: 30px;
-      width: 74px;
+      margin-left: getCqi(-60);
+      top: getCqi(30);
+      width: getCqi(74);
     }
     &::before {
       background: radial-gradient(farthest-corner at 20% 20%, #6074BF 0, transparent 40%),
                   radial-gradient(farthest-corner at 80% 80%, #513785 0, #24555E 20%, transparent 50%);
-      box-shadow: 0 0 1px 1px rgba($light-color, .05);
+      box-shadow: 0 0 getCqi(1) getCqi(1) rgba($light-color, .05);
       border-radius: 50%;
-      height: 9px;
+      height: getCqi(9);
       left: 50%;
-      margin-left: 36px;
-      top: 42px;
-      width: 9px;
+      margin-left: getCqi(36);
+      top: getCqi(42);
+      width: getCqi(9);
     }
   }
 
   .device-btns {
     background: $device-purple-dark;
-    border-radius: 2px;
-    height: 32px;
-    left: -2px;
+    border-radius: getCqi(2);
+    height: getCqi(32);
+    left: getCqi(-2);
     position: absolute;
-    top: 115px;
-    width: 3px;
+    top: getCqi(115);
+    width: getCqi(3);
 
     &::after,
     &::before {
       background: $device-purple-dark;
-      border-radius: 2px;
+      border-radius: getCqi(2);
       content: "";
-      height: 62px;
+      height: getCqi(62);
       left: 0;
       position: absolute;
-      width: 3px;
+      width: getCqi(3);
     }
 
     &::after {
-      top: 60px;
+      top: getCqi(60);
     }
     &::before {
-      top: 140px;
+      top: getCqi(140);
     }
   }
 
   .device-power {
     background: $device-purple-dark;
-    border-radius: 2px;
-    height: 100px;
-    right: -2px;
+    border-radius: getCqi(2);
+    height: getCqi(100);
+    right: getCqi(-2);
     position: absolute;
-    top: 200px;
-    width: 3px;
+    top: getCqi(200);
+    width: getCqi(3);
   }
 
   .device-home {
     &::after,
     &::before {
       border: solid rgba($device-panel, .25);
-      border-width: 6px 0;
+      border-width: getCqi(6) 0;
       content: "";
-      height: 6px;
+      height: getCqi(6);
       position: absolute;
-      width: 6px;
+      width: getCqi(6);
       z-index: 9;
     }
     &::after {
-      right: 86px;
+      right: getCqi(86);
       top: 0;
     }
     &::before {
       bottom: 0;
-      left: 86px;
+      left: getCqi(86);
     }
   }
 
@@ -152,18 +155,18 @@ $device-panel: #010101;
   &.device-silver {
     .device-frame {
       border-color: $device-silver-dark;
-      box-shadow: inset 0 0 4px 2px lighten($device-silver, 55%), inset 0 0 0 6px $device-silver;
+      box-shadow: inset 0 0 getCqi(4) getCqi(2) lighten($device-silver, 55%), inset 0 0 0 getCqi(6) $device-silver;
     }
 
     .device-btns {
       background: $device-silver-dark;
-  
+
       &::after,
       &::before {
         background: $device-silver-dark;
       }
     }
-  
+
     .device-power {
       background: $device-silver-dark;
     }
@@ -173,18 +176,18 @@ $device-panel: #010101;
   &.device-black {
     .device-frame {
       border-color: $device-black-dark;
-      box-shadow: inset 0 0 4px 2px lighten($device-black, 55%), inset 0 0 0 6px $device-black;
+      box-shadow: inset 0 0 getCqi(4) getCqi(2) lighten($device-black, 55%), inset 0 0 0 getCqi(6) $device-black;
     }
 
     .device-btns {
       background: $device-black-dark;
-  
+
       &::after,
       &::before {
         background: $device-black-dark;
       }
     }
-  
+
     .device-power {
       background: $device-black-dark;
     }
@@ -194,18 +197,18 @@ $device-panel: #010101;
   &.device-gold {
     .device-frame {
       border-color: $device-gold-dark;
-      box-shadow: inset 0 0 4px 2px lighten($device-gold, 55%), inset 0 0 0 6px darken($device-gold, 35%);
+      box-shadow: inset 0 0 getCqi(4) getCqi(2) lighten($device-gold, 55%), inset 0 0 0 getCqi(6) darken($device-gold, 35%);
     }
 
     .device-btns {
       background: $device-gold-dark;
-  
+
       &::after,
       &::before {
         background: $device-gold-dark;
       }
     }
-  
+
     .device-power {
       background: $device-gold-dark;
     }

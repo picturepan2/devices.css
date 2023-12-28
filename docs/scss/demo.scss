@@ -492,6 +492,10 @@ body {
   container-type: inline-size;
   width: 100%;
   padding-inline: 10%;
+
+  &--phones {
+    padding-inline: 20%;
+  }
 }
 
 .rework-device {

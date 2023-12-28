@@ -1,74 +1,77 @@
+@import "functions";
+
 // iPhone X
 $device-silver: #e2e3e4;
 $device-silver-dark: darken($device-silver, 10%);
 $device-silver-panel: #222;
 
 .device-iphone-x {
-  height: 868px;
-  width: 428px;
+  --device-width: 428;
+  height: getCqi(868);
+  width: 100cqi;
 
   .device-frame {
     background: $device-silver-panel;
-    border-radius: 68px;
-    box-shadow: inset 0 0 2px 2px $device-silver-dark, inset 0 0 0 7px $device-silver;
-    height: 868px;
-    padding: 28px;
-    width: 428px;
+    border-radius: getCqi(68);
+    box-shadow: inset 0 0 getCqi(2) getCqi(2) $device-silver-dark, inset 0 0 0 getCqi(7) $device-silver;
+    height: getCqi(868);
+    padding: getCqi(28);
+    width: getCqi(428);
   }
 
   // 2436-by-1125-pixel resolution
   .device-screen {
-    border-radius: 40px;
-    height: 812px;
-    width: 375px;
+    border-radius: getCqi(40);
+    height: getCqi(812);
+    width: getCqi(375);
   }
 
   .device-stripe {
     &::after,
     &::before {
       border: solid rgba($device-panel, .25);
-      border-width: 0 7px;
+      border-width: 0 getCqi(7);
       content: "";
-      height: 7px;
+      height: getCqi(7);
       left: 0;
       position: absolute;
       width: 100%;
       z-index: 9;
     }
     &::after {
-      top: 85px;
+      top: getCqi(85);
     }
     &::before {
-      bottom: 85px;
+      bottom: getCqi(85);
     }
   }
 
   .device-header {
     background: $device-silver-panel;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    height: 30px;
+    border-bottom-left-radius: getCqi(20);
+    border-bottom-right-radius: getCqi(20);
+    height: getCqi(30);
     left: 50%;
-    margin-left: -102px;
+    margin-left: getCqi(-102);
     position: absolute;
-    top: 28px;
-    width: 204px;
+    top: getCqi(28);
+    width: getCqi(204);
 
     &::after,
     &::before {
       content: "";
-      height: 10px;
+      height: getCqi(10);
       position: absolute;
       top: 0;
-      width: 10px;
+      width: getCqi(10);
     }
     &::after {
       background: radial-gradient(circle at bottom left, transparent 0, transparent 75%, $device-silver-panel 75%, $device-silver-panel 100%);
-      left: -10px;
+      left: getCqi(-10);
     }
     &::before {
       background: radial-gradient(circle at bottom right, transparent 0, transparent 75%, $device-silver-panel 75%, $device-silver-panel 100%);
-      right: -10px;
+      right: getCqi(-10);
     }
   }
 
@@ -80,58 +83,58 @@ $device-silver-panel: #222;
     }
     &::after {
       background: #333;
-      border-radius: 3px;
-      height: 6px;
+      border-radius: getCqi(3);
+      height: getCqi(6);
       left: 50%;
-      margin-left: -25px;
-      top: 32px;
-      width: 50px;
+      margin-left: getCqi(-25);
+      top: getCqi(32);
+      width: getCqi(50);
     }
     &::before {
       background: radial-gradient(farthest-corner at 20% 20%, #6074BF 0, transparent 40%),
                   radial-gradient(farthest-corner at 80% 80%, #513785 0, #24555E 20%, transparent 50%);
-      box-shadow: 0 0 1px 1px rgba($light-color, .05);
+      box-shadow: 0 0 getCqi(1) getCqi(1) rgba($light-color, .05);
       border-radius: 50%;
-      height: 10px;
+      height: getCqi(10);
       left: 50%;
-      margin-left: 42px;
-      top: 30px;
-      width: 10px;
+      margin-left: getCqi(42);
+      top: getCqi(30);
+      width: getCqi(10);
     }
   }
 
   .device-btns {
     background: $device-silver-dark;
-    height: 32px;
-    left: -3px;
+    height: getCqi(32);
+    left: getCqi(-3);
     position: absolute;
-    top: 115px;
-    width: 3px;
+    top: getCqi(115);
+    width: getCqi(3);
 
     &::after,
     &::before {
       background: $device-silver-dark;
       content: "";
-      height: 62px;
+      height: getCqi(62);
       left: 0;
       position: absolute;
-      width: 3px;
+      width: getCqi(3);
     }
 
     &::after {
-      top: 60px;
+      top: getCqi(60);
     }
     &::before {
-      top: 140px;
+      top: getCqi(140);
     }
   }
 
   .device-power {
     background: $device-silver-dark;
-    height: 100px;
-    right: -3px;
+    height: getCqi(100);
+    right: getCqi(-3);
     position: absolute;
-    top: 200px;
-    width: 3px;
+    top: getCqi(200);
+    width: getCqi(3);
   }
 }
