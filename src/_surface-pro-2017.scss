@@ -1,28 +1,31 @@
+@import "functions";
+
 // Surface Pro (2017)
 $device-silver: #eee;
 $device-silver-dark: darken($device-silver, 15%);
 $device-silver-panel: #0d0d0d;
 
 .device-surface-pro-2017 {
-  height: 394px;
-  width: 561px;
+  --device-width: 561;
+  height: getCqi(394); // 394)
+  width: 100cqi; // 561)
 
   .device-frame {
     background: $device-silver-panel;
-    border-radius: 10px;
-    box-shadow: inset 0 0 0 2px $device-silver-dark;
-    height: 394px;
+    border-radius: getCqi(10);
+    box-shadow: inset 0 0 0 getCqi(2) $device-silver-dark;
+    height: getCqi(394);
     margin: 0 auto;
-    padding: 26px 24px;
-    width: 561px;
+    padding: getCqi(26) getCqi(24);
+    width: getCqi(561);
   }
 
   // 2736-by-1824-pixel resolution
   .device-screen {
-    border: 2px solid lighten($device-silver-panel, 2%);
-    border-radius: 2px;
-    height: 342px;
-    width: 513px;
+    border: getCqi(2) solid lighten($device-silver-panel, 2%);
+    border-radius: getCqi(2);
+    height: getCqi(342);
+    width: getCqi(513);
   }
 
   .device-btns {
@@ -30,30 +33,30 @@ $device-silver-panel: #0d0d0d;
     &::before {
       background: $device-silver-dark;
       content: "";
-      height: 2px;
+      height: getCqi(2);
       position: absolute;
-      top: -2px;
+      top: getCqi(-2);
     }
 
     &::after {
-      left: 48px;
-      width: 26px;
+      left: getCqi(48);
+      width: getCqi(26);
     }
     &::before {
-      left: 94px;
-      width: 48px;
+      left: getCqi(94);
+      width: getCqi(48);
     }
   }
 
   .device-sensors {
     background: #333;
     border-radius: 50%;
-    height: 6px;
+    height: getCqi(6);
     left: 50%;
-    margin-left: -3px;
-    margin-top: -3px;
+    margin-left: getCqi(-3);
+    margin-top: getCqi(-3);
     position: absolute;
-    top: 14px;
-    width: 6px;
+    top: getCqi(14);
+    width: getCqi(6);
   }
 }

@@ -1,0 +1,3 @@
+@function getCqi($initialValue) {
+  @return calc(#{$initialValue} * 1cqi / var(--device-width) * 100);
+}

@@ -23,20 +23,21 @@ block content
           a.ml-2(href="#ipad-pro") #
         h3.text-assistive Pure CSS Apple iPad Pro, Apple iPad Pro in pure CSS
         .rework-content
-          p 
+          p
         .rework-device.tablets
           .dots
             .dot.tooltip.active(style="background:#e2e3e4;" data-tooltip="device-silver (default)")
             .dot.tooltip(style="background:#83878a;" data-tooltip="device-spacegray")
-          .device.device-ipad-pro
-            .device-frame
-              img.device-screen(src="assets/img/bg-01.jpg" loading="lazy")
-            .device-stripe
-            .device-header
-            .device-sensors
-            .device-btns
-            .device-power
-            .device-home
+          .rework-device-container
+            .device.device-ipad-pro
+              .device-frame
+                img.device-screen(src="assets/img/bg-01.jpg" loading="lazy")
+              .device-stripe
+              .device-header
+              .device-sensors
+              .device-btns
+              .device-power
+              .device-home
     .columns
       .content-container.column.col-md-12
         h2.rework-title#ipad-pro-2017
@@ -44,25 +45,26 @@ block content
           a.ml-2(href="#ipad-pro-2017") #
         h3.text-assistive Pure CSS Apple iPad Pro (2017), Apple iPad Pro (2017) in pure CSS
         .rework-content
-          p 
+          p
         .rework-device.tablets
           .dots
             .dot.tooltip.active(style="background:#e2e3e4;" data-tooltip="device-silver (default)")
             .dot.tooltip(style="background:#f7e8dd;" data-tooltip="device-gold")
             .dot.tooltip(style="background:#facfc9;" data-tooltip="device-rosegold")
             .dot.tooltip(style="background:#83878a;" data-tooltip="device-spacegray")
-          .device.device-ipad-pro-2017
-            .device-frame
-              img.device-screen(src="assets/img/bg-02.jpg" loading="lazy")
-            .device-stripe
-            .device-header
-            .device-sensors
-            .device-btns
-            .device-power
-            .device-home
-    
+          .rework-device-container
+            .device.device-ipad-pro-2017
+              .device-frame
+                img.device-screen(src="assets/img/bg-02.jpg" loading="lazy")
+              .device-stripe
+              .device-header
+              .device-sensors
+              .device-btns
+              .device-power
+              .device-home
+
     include _layout/_ad-g.pug
-    
+
     .columns
       .content-container.column.col-md-12
         h2.rework-title#surface-pro-2017
@@ -70,22 +72,23 @@ block content
           a.ml-2(href="#surface-pro-2017") #
         h3.text-assistive Pure CSS Surface Pro (2017), Surface Pro (2017) in pure CSS
         .rework-content
-          p 
+          p
         .rework-device.tablets
-          .device.device-surface-pro-2017
-            .device-frame
-              img.device-screen(src="assets/img/bg-09.jpg" loading="lazy")
-            .device-stripe
-            .device-header
-            .device-sensors
-            .device-btns
-            .device-power
-            .device-home
-    
+          .rework-device-container
+            .device.device-surface-pro-2017
+              .device-frame
+                img.device-screen(src="assets/img/bg-09.jpg" loading="lazy")
+              .device-stripe
+              .device-header
+              .device-sensors
+              .device-btns
+              .device-power
+              .device-home
+
     include _layout/_ad-sidebar.pug
 
-    .columns 
-      ul.pagination.column 
+    .columns
+      ul.pagination.column
         .page-item.page-prev
           a(href="computers.html")
             .page-item-subtitle Previous

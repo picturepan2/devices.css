@@ -82,12 +82,12 @@ body {
       top: 3rem;
       width: 100vw;
       z-index: 9999;
-  
+
       .rework-menu {
         .menu-parent {
           padding: .6rem .4rem;
         }
-  
+
         .menu-nav,
         .menu-parent.active + .menu-nav {
           display: none;
@@ -107,7 +107,7 @@ body {
       }
     }
   }
-  
+
   .rework-switch {
     &:checked {
       & + .rework-container {
@@ -272,7 +272,7 @@ body {
   .rework-actions {
     flex: 0 0;
     padding: .4rem;
-    
+
     .rework-action {
       align-items: center;
       background: rgba($secondary-color, .15);
@@ -323,7 +323,7 @@ body {
       line-height: 1;
       margin-bottom: 0;
     }
-  
+
     h2 {
       font-size: .8rem;
       line-height: 1.25;
@@ -344,7 +344,7 @@ body {
 
     a {
       text-decoration: none;
-      
+
       &:focus,
       &:hover {
         color: $primary-color;
@@ -409,7 +409,7 @@ body {
       width: 2em;
     }
   }
-  
+
   .s-title {
     color: $dark-color;
     line-height: 1.6rem;
@@ -488,6 +488,12 @@ body {
   }
 }
 
+.rework-device-container {
+  container-type: inline-size;
+  width: 100%;
+  padding-inline: 10%;
+}
+
 .rework-device {
   align-items: center;
   border-bottom: .05rem solid $border-color-dark;
@@ -519,7 +525,7 @@ body {
   .device {
     margin: 1rem 0;
   }
-  
+
   @media (max-width: $size-sm) {
     .device {
       margin: 0;
