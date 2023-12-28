@@ -2656,31 +2656,34 @@
 }
 
 .device-homepod {
-  height: 395px;
-  width: 320px;
+  --device-width: 320;
+  display: -ms-flexbox;
+  display: flex; 
+  height: calc(395 * 1cqi / var(--device-width) * 100);
+  width: 100cqi;
 }
 
 .device-homepod .device-frame {
   background: linear-gradient(to right, #36373a 0, #8d8f95 25%, #1d1e20 60%, #111112 90%, #1d1e20 100%);
-  border-radius: 80px;
-  box-shadow: inset 0 0 0 2px #36373a, inset 0 0 40px 1px #1d1e20, inset 0 12px 40px 1px white, inset 0 -24px 40px 1px black;
-  height: 385px;
-  margin: 5px auto;
+  border-radius: calc(80 * 1cqi / var(--device-width) * 100);
+  box-shadow: inset 0 0 0 calc(2 * 1cqi / var(--device-width) * 100) #36373a, inset 0 0 calc(40 * 1cqi / var(--device-width) * 100) calc(1 * 1cqi / var(--device-width) * 100) #1d1e20, inset 0 calc(12 * 1cqi / var(--device-width) * 100) calc(40 * 1cqi / var(--device-width) * 100) calc(1 * 1cqi / var(--device-width) * 100) white, inset 0 calc(-24 * 1cqi / var(--device-width) * 100) calc(40 * 1cqi / var(--device-width) * 100) calc(1 * 1cqi / var(--device-width) * 100) black;
+  height: calc(385 * 1cqi / var(--device-width) * 100);
+  margin: calc(5 * 1cqi / var(--device-width) * 100) auto;
   overflow: hidden;
   position: relative;
-  width: 320px;
+  width: calc(320 * 1cqi / var(--device-width) * 100);
 }
 
 .device-homepod .device-stripe {
-  background: repeating-linear-gradient(45deg, rgba(141, 143, 149, .35) 0, rgba(141, 143, 149, .35) 2px, transparent 2px, transparent 6px), repeating-linear-gradient(135deg, rgba(141, 143, 149, .35) 0, rgba(141, 143, 149, .35) 2px, transparent 2px, transparent 6px), repeating-linear-gradient(45deg, transparent 0, transparent 2px, rgba(29, 30, 32, .35) 2px, rgba(29, 30, 32, .35) 4px, transparent 4px, transparent 6px), repeating-linear-gradient(135deg, transparent 0, transparent 2px, rgba(29, 30, 32, .35) 2px, rgba(29, 30, 32, .35) 4px, transparent 4px, transparent 6px);
-  border-radius: 80px;
-  box-shadow: inset 0 0 0 2px #36373a, inset 0 0 40px 1px #1d1e20, inset 0 12px 24px 1px #9b9ca1, inset 0 -12px 24px 1px #050505;
-  height: 385px;
+  background: repeating-linear-gradient(45deg, rgba(141, 143, 149, .35) 0, rgba(141, 143, 149, .35) calc(2 * 1cqi / var(--device-width) * 100), transparent calc(2 * 1cqi / var(--device-width) * 100), transparent calc(6 * 1cqi / var(--device-width) * 100)), repeating-linear-gradient(135deg, rgba(141, 143, 149, .35) 0, rgba(141, 143, 149, .35) calc(2 * 1cqi / var(--device-width) * 100), transparent calc(2 * 1cqi / var(--device-width) * 100), transparent calc(6 * 1cqi / var(--device-width) * 100)), repeating-linear-gradient(45deg, transparent 0, transparent calc(2 * 1cqi / var(--device-width) * 100), rgba(29, 30, 32, .35) calc(2 * 1cqi / var(--device-width) * 100), rgba(29, 30, 32, .35) calc(4 * 1cqi / var(--device-width) * 100), transparent calc(4 * 1cqi / var(--device-width) * 100), transparent calc(6 * 1cqi / var(--device-width) * 100)), repeating-linear-gradient(135deg, transparent 0, transparent calc(2 * 1cqi / var(--device-width) * 100), rgba(29, 30, 32, .35) calc(2 * 1cqi / var(--device-width) * 100), rgba(29, 30, 32, .35) calc(4 * 1cqi / var(--device-width) * 100), transparent calc(4 * 1cqi / var(--device-width) * 100), transparent calc(6 * 1cqi / var(--device-width) * 100));
+  border-radius: calc(80 * 1cqi / var(--device-width) * 100);
+  box-shadow: inset 0 0 0 calc(2 * 1cqi / var(--device-width) * 100) #36373a, inset 0 0 calc(40 * 1cqi / var(--device-width) * 100) calc(1 * 1cqi / var(--device-width) * 100) #1d1e20, inset 0 calc(12 * 1cqi / var(--device-width) * 100) calc(24 * 1cqi / var(--device-width) * 100) calc(1 * 1cqi / var(--device-width) * 100) #9b9ca1, inset 0 calc(-12 * 1cqi / var(--device-width) * 100) calc(24 * 1cqi / var(--device-width) * 100) calc(1 * 1cqi / var(--device-width) * 100) #050505;
+  height: calc(385 * 1cqi / var(--device-width) * 100);
   left: 0;
   overflow: hidden;
   position: absolute;
-  top: 5px;
-  width: 320px;
+  top: calc(5 * 1cqi / var(--device-width) * 100);
+  width: calc(320 * 1cqi / var(--device-width) * 100);
   z-index: 9;
 }
 
@@ -2703,85 +2706,86 @@
 }
 
 .device-homepod .device-home::before {
-  border-radius: 50% 50% 8px 8px;
-  height: 10px;
-  margin-left: -85px;
+  border-radius: 50% 50% calc(8 * 1cqi / var(--device-width) * 100) calc(8 * 1cqi / var(--device-width) * 100);
+  height: calc(10 * 1cqi / var(--device-width) * 100);
+  margin-left: calc(-85 * 1cqi / var(--device-width) * 100);
   top: 0;
-  width: 170px;
+  width: calc(170 * 1cqi / var(--device-width) * 100);
 }
 
 .device-homepod .device-home::after {
-  border-radius: 0 0 10% 10% / 0 0 8px 8px;
+  border-radius: 0 0 10% 10%/0 0 calc(8 * 1cqi / var(--device-width) * 100) calc(8 * 1cqi / var(--device-width) * 100);
   bottom: 0;
-  box-shadow: inset 0 0 4px 0 #111112;
-  height: 5px;
-  margin-left: -85px;
-  width: 170px;
+  box-shadow: inset 0 0 calc(4 * 1cqi / var(--device-width) * 100) 0 #111112;
+  height: calc(5 * 1cqi / var(--device-width) * 100);
+  margin-left: calc(-85 * 1cqi / var(--device-width) * 100);
+  width: calc(170 * 1cqi / var(--device-width) * 100);
 }
 
 .device-pro-display-xdr {
-  height: 475px;
-  width: 640px;
+  --device-width: 640;
+  height: calc(475 * 1cqi / var(--device-width) * 100);
+  width: 100cqi;
 }
 
 .device-pro-display-xdr .device-frame {
   background: #151515;
-  border-radius: 4px;
-  box-shadow: inset 0 0 2px #d4d5d7;
-  height: 368px;
-  padding: 8px;
+  border-radius: calc(4 * 1cqi / var(--device-width) * 100);
+  box-shadow: inset 0 0 calc(2 * 1cqi / var(--device-width) * 100) #d4d5d7;
+  height: calc(368 * 1cqi / var(--device-width) * 100);
+  padding: calc(8 * 1cqi / var(--device-width) * 100);
   position: relative;
-  width: 640px;
+  width: calc(640 * 1cqi / var(--device-width) * 100);
 }
 
 .device-pro-display-xdr .device-frame::before {
   background: #050505;
   border-radius: 50%;
   content: "";
-  height: 6px;
+  height: calc(6 * 1cqi / var(--device-width) * 100);
   left: 50%;
-  margin-left: -3px;
+  margin-left: calc(-3 * 1cqi / var(--device-width) * 100);
   position: absolute;
   text-align: center;
-  top: 6px;
-  width: 6px;
+  top: calc(6 * 1cqi / var(--device-width) * 100);
+  width: calc(6 * 1cqi / var(--device-width) * 100);
   z-index: 9;
 }
 
 .device-pro-display-xdr .device-screen {
-  border: 2px solid #121212;
-  border-radius: 2px;
-  height: 352px;
-  width: 624px;
+  border: calc(2 * 1cqi / var(--device-width) * 100) solid #121212;
+  border-radius: calc(2 * 1cqi / var(--device-width) * 100);
+  height: calc(352 * 1cqi / var(--device-width) * 100);
+  width: calc(624 * 1cqi / var(--device-width) * 100);
 }
 
 .device-pro-display-xdr .device-power::after {
   background: radial-gradient(circle at center, #d4d5d7 85%, #9fa1a6 100%);
-  border-top: 1px solid #d4d5d7;
+  border-top: calc(1 * 1cqi / var(--device-width) * 100) solid #d4d5d7;
   content: "";
-  height: 6px;
+  height: calc(6 * 1cqi / var(--device-width) * 100);
   margin: 0 auto;
   position: relative;
-  width: 152px;
+  width: calc(152 * 1cqi / var(--device-width) * 100);
 }
 
 .device-pro-display-xdr .device-power::before {
   background: linear-gradient(to bottom, #9fa1a6 0, #c7c8cb 40%, #c7c8cb 85%, white 90%, #6b6e74 100%);
   content: "";
-  height: 102px;
+  height: calc(102 * 1cqi / var(--device-width) * 100);
   margin: 0 auto;
   position: relative;
-  width: 152px;
+  width: calc(152 * 1cqi / var(--device-width) * 100);
 }
 
 .device-pro-display-xdr .device-home {
   background: transparent;
-  border-radius: 0 0 3px 3px;
-  bottom: -2px;
-  box-shadow: -61px 0 #6b6e74, 61px 0 #6b6e74;
-  height: 1px;
+  border-radius: 0 0 calc(3 * 1cqi / var(--device-width) * 100) calc(3 * 1cqi / var(--device-width) * 100);
+  bottom: calc(-2 * 1cqi / var(--device-width) * 100);
+  box-shadow: calc(-61 * 1cqi / var(--device-width) * 100) 0 #6b6e74, calc(61 * 1cqi / var(--device-width) * 100) 0 #6b6e74;
+  height: calc(1 * 1cqi / var(--device-width) * 100);
   left: 50%;
-  margin-left: -15px;
+  margin-left: calc(-15 * 1cqi / var(--device-width) * 100);
   position: absolute;
-  width: 30px;
+  width: calc(30 * 1cqi / var(--device-width) * 100);
 }
