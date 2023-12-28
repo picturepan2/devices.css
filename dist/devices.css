@@ -2434,223 +2434,225 @@
 }
 
 .device-apple-watch-ultra {
-  height: 380px;
-  width: 360px;
+  --device-width: 360;
+  height: calc(380 * 1cqi / var(--device-width) * 100);
+  width: 100cqi;
 }
 
 .device-apple-watch-ultra .device-frame {
   background: #0d0d0d;
-  border-radius: 92px;
-  box-shadow: inset 0 0 12px 1px rgba(13, 13, 13, .75), inset 0 0 0 6px #d6ccc2, inset 0 0 0 12px #d6ccc2;
-  height: 380px;
-  margin: 0 20px;
-  padding: 38px;
+  border-radius: calc(92 * 1cqi / var(--device-width) * 100);
+  box-shadow: inset 0 0 calc(12 * 1cqi / var(--device-width) * 100) calc(1 * 1cqi / var(--device-width) * 100) rgba(13, 13, 13, .75), inset 0 0 0 calc(6 * 1cqi / var(--device-width) * 100) #d6ccc2, inset 0 0 0 calc(12 * 1cqi / var(--device-width) * 100) #d6ccc2;
+  height: calc(380 * 1cqi / var(--device-width) * 100);
+  margin: 0 calc(20 * 1cqi / var(--device-width) * 100);
+  padding: calc(38 * 1cqi / var(--device-width) * 100);
   position: relative;
-  width: 320px;
+  width: calc(320 * 1cqi / var(--device-width) * 100);
 }
 
 .device-apple-watch-ultra .device-frame::before {
-  border: 1px solid #f5f2f0;
-  border-radius: 80px;
-  box-shadow: 0 0 6px rgba(13, 13, 13, .2), inset 0 0 4px 1px #f5f2f0, inset 0 0 0 10px #d6ccc2;
+  border: calc(1 * 1cqi / var(--device-width) * 100) solid #f5f2f0;
+  border-radius: calc(80 * 1cqi / var(--device-width) * 100);
+  box-shadow: 0 0 calc(6 * 1cqi / var(--device-width) * 100) rgba(13, 13, 13, .2), inset 0 0 calc(4 * 1cqi / var(--device-width) * 100) calc(1 * 1cqi / var(--device-width) * 100) #f5f2f0, inset 0 0 0 calc(10 * 1cqi / var(--device-width) * 100) #d6ccc2;
   content: "";
-  height: 356px;
-  left: 12px;
+  height: calc(356 * 1cqi / var(--device-width) * 100);
+  left: calc(12 * 1cqi / var(--device-width) * 100);
   position: absolute;
-  top: 12px;
-  width: 296px;
+  top: calc(12 * 1cqi / var(--device-width) * 100);
+  width: calc(296 * 1cqi / var(--device-width) * 100);
 }
 
 .device-apple-watch-ultra .device-screen {
-  border: 2px solid #121212;
-  border-radius: 62px;
-  height: 304px;
-  width: 244px;
+  border: calc(2 * 1cqi / var(--device-width) * 100) solid #121212;
+  border-radius: calc(62 * 1cqi / var(--device-width) * 100);
+  height: calc(304 * 1cqi / var(--device-width) * 100);
+  width: calc(244 * 1cqi / var(--device-width) * 100);
 }
 
 .device-apple-watch-ultra .device-header {
   background: radial-gradient(circle at center, #d6ccc2 50%, #ebe6e1 85%, #a38c76 100%);
-  border-radius: 4px 4px 4px 4px / 8px 4px 4px 8px;
-  box-shadow: inset 0 0 16px 1px rgba(13, 13, 13, .5), -8px 0 4px rgba(13, 13, 13, .2), inset 4px 0 4px rgba(13, 13, 13, .2);
-  height: 214px;
-  margin-top: -107px;
+  border-radius: calc(4 * 1cqi / var(--device-width) * 100) calc(4 * 1cqi / var(--device-width) * 100) calc(4 * 1cqi / var(--device-width) * 100) calc(4 * 1cqi / var(--device-width) * 100)/calc(8 * 1cqi / var(--device-width) * 100) calc(4 * 1cqi / var(--device-width) * 100) calc(4 * 1cqi / var(--device-width) * 100) calc(8 * 1cqi / var(--device-width) * 100);
+  box-shadow: inset 0 0 calc(16 * 1cqi / var(--device-width) * 100) calc(1 * 1cqi / var(--device-width) * 100) rgba(13, 13, 13, .5), calc(-8 * 1cqi / var(--device-width) * 100) 0 calc(4 * 1cqi / var(--device-width) * 100) rgba(13, 13, 13, .2), inset calc(4 * 1cqi / var(--device-width) * 100) 0 calc(4 * 1cqi / var(--device-width) * 100) rgba(13, 13, 13, .2);
+  height: calc(214 * 1cqi / var(--device-width) * 100);
+  margin-top: calc(-107 * 1cqi / var(--device-width) * 100);
   position: absolute;
-  right: 4px;
+  right: calc(4 * 1cqi / var(--device-width) * 100);
   top: 50%;
-  width: 18px;
+  width: calc(18 * 1cqi / var(--device-width) * 100);
   z-index: 1;
 }
 
 .device-apple-watch-ultra .device-header::before {
-  border-radius: 8px 4px 4px 8px / 32px 4px 4px 32px;
-  box-shadow: -10px 0 8px rgba(13, 13, 13, .2);
+  border-radius: calc(8 * 1cqi / var(--device-width) * 100) calc(4 * 1cqi / var(--device-width) * 100) calc(4 * 1cqi / var(--device-width) * 100) calc(8 * 1cqi / var(--device-width) * 100)/calc(32 * 1cqi / var(--device-width) * 100) calc(4 * 1cqi / var(--device-width) * 100) calc(4 * 1cqi / var(--device-width) * 100) calc(32 * 1cqi / var(--device-width) * 100);
+  box-shadow: calc(-10 * 1cqi / var(--device-width) * 100) 0 calc(8 * 1cqi / var(--device-width) * 100) rgba(13, 13, 13, .2);
   content: "";
-  height: 194px;
-  margin-top: -97px;
+  height: calc(194 * 1cqi / var(--device-width) * 100);
+  margin-top: calc(-97 * 1cqi / var(--device-width) * 100);
   position: absolute;
-  right: 8px;
+  right: calc(8 * 1cqi / var(--device-width) * 100);
   top: 50%;
-  width: 12px;
+  width: calc(12 * 1cqi / var(--device-width) * 100);
 }
 
 .device-apple-watch-ultra .device-btns {
   background: #d6ccc2;
-  border-left: 1px solid #4c4033;
-  border-radius: 8px 6px 6px 8px / 20px 6px 6px 20px;
-  box-shadow: inset 8px 0 8px 0 #5c4d3e, inset -2px 0 6px #a38c76;
-  height: 72px;
+  border-left: calc(1 * 1cqi / var(--device-width) * 100) solid #4c4033;
+  border-radius: calc(8 * 1cqi / var(--device-width) * 100) calc(6 * 1cqi / var(--device-width) * 100) calc(6 * 1cqi / var(--device-width) * 100) calc(8 * 1cqi / var(--device-width) * 100)/calc(20 * 1cqi / var(--device-width) * 100) calc(6 * 1cqi / var(--device-width) * 100) calc(6 * 1cqi / var(--device-width) * 100) calc(20 * 1cqi / var(--device-width) * 100);
+  box-shadow: inset calc(8 * 1cqi / var(--device-width) * 100) 0 calc(8 * 1cqi / var(--device-width) * 100) 0 #5c4d3e, inset calc(-2 * 1cqi / var(--device-width) * 100) 0 calc(6 * 1cqi / var(--device-width) * 100) #a38c76;
+  height: calc(72 * 1cqi / var(--device-width) * 100);
   position: absolute;
-  right: 1px;
-  top: 108px;
-  width: 24px;
+  right: calc(1 * 1cqi / var(--device-width) * 100);
+  top: calc(108 * 1cqi / var(--device-width) * 100);
+  width: calc(24 * 1cqi / var(--device-width) * 100);
   z-index: 9;
 }
 
 .device-apple-watch-ultra .device-btns::after {
   background: #d6ccc2;
-  border-radius: 2px 4px 4px 2px / 20px 8px 8px 20px;
-  box-shadow: inset -2px 0 2px 0 #6b5948, inset -6px 0 18px #a38c76;
+  border-radius: calc(2 * 1cqi / var(--device-width) * 100) calc(4 * 1cqi / var(--device-width) * 100) calc(4 * 1cqi / var(--device-width) * 100) calc(2 * 1cqi / var(--device-width) * 100)/calc(20 * 1cqi / var(--device-width) * 100) calc(8 * 1cqi / var(--device-width) * 100) calc(8 * 1cqi / var(--device-width) * 100) calc(20 * 1cqi / var(--device-width) * 100);
+  box-shadow: inset calc(-2 * 1cqi / var(--device-width) * 100) 0 calc(2 * 1cqi / var(--device-width) * 100) 0 #6b5948, inset calc(-6 * 1cqi / var(--device-width) * 100) 0 calc(18 * 1cqi / var(--device-width) * 100) #a38c76;
   content: "";
-  height: 78px;
+  height: calc(78 * 1cqi / var(--device-width) * 100);
   position: absolute;
   right: 0;
-  top: -4px;
-  width: 6px;
+  top: calc(-4 * 1cqi / var(--device-width) * 100);
+  width: calc(6 * 1cqi / var(--device-width) * 100);
 }
 
 .device-apple-watch-ultra .device-btns::before {
   background: #d6ccc2;
   border-radius: 20%;
-  box-shadow: 0 -30px rgba(163, 140, 118, .5), 0 -27px #d6ccc2, 0 -25px #89735c, 0 -21px rgba(163, 140, 118, .5), 0 -18px #d6ccc2, 0 -16px #89735c, 0 -12px rgba(163, 140, 118, .5), 0 -9px #d6ccc2, 0 -7px #89735c, 0 -3px rgba(163, 140, 118, .5), 0 0 #d6ccc2, 0 2px #89735c, 0 6px rgba(163, 140, 118, .5), 0 9px #d6ccc2, 0 11px #89735c, 0 15px rgba(163, 140, 118, .5), 0 18px #d6ccc2, 0 20px #89735c, 0 24px rgba(163, 140, 118, .5), 0 27px #d6ccc2, 0 29px #89735c;
+  box-shadow: 0 calc(-30 * 1cqi / var(--device-width) * 100) rgba(163, 140, 118, .5), 0 calc(-27 * 1cqi / var(--device-width) * 100) #d6ccc2, 0 calc(-25 * 1cqi / var(--device-width) * 100) #89735c, 0 calc(-21 * 1cqi / var(--device-width) * 100) rgba(163, 140, 118, .5), 0 calc(-18 * 1cqi / var(--device-width) * 100) #d6ccc2, 0 calc(-16 * 1cqi / var(--device-width) * 100) #89735c, 0 calc(-12 * 1cqi / var(--device-width) * 100) rgba(163, 140, 118, .5), 0 calc(-9 * 1cqi / var(--device-width) * 100) #d6ccc2, 0 calc(-7 * 1cqi / var(--device-width) * 100) #89735c, 0 calc(-3 * 1cqi / var(--device-width) * 100) rgba(163, 140, 118, .5), 0 0 #d6ccc2, 0 calc(2 * 1cqi / var(--device-width) * 100) #89735c, 0 calc(6 * 1cqi / var(--device-width) * 100) rgba(163, 140, 118, .5), 0 calc(9 * 1cqi / var(--device-width) * 100) #d6ccc2, 0 calc(11 * 1cqi / var(--device-width) * 100) #89735c, 0 calc(15 * 1cqi / var(--device-width) * 100) rgba(163, 140, 118, .5), 0 calc(18 * 1cqi / var(--device-width) * 100) #d6ccc2, 0 calc(20 * 1cqi / var(--device-width) * 100) #89735c, 0 calc(24 * 1cqi / var(--device-width) * 100) rgba(163, 140, 118, .5), 0 calc(27 * 1cqi / var(--device-width) * 100) #d6ccc2, 0 calc(29 * 1cqi / var(--device-width) * 100) #89735c;
   content: "";
-  height: 3px;
-  margin-top: -2px;
+  height: calc(3 * 1cqi / var(--device-width) * 100);
+  margin-top: calc(-2 * 1cqi / var(--device-width) * 100);
   position: absolute;
-  right: 2px;
+  right: calc(2 * 1cqi / var(--device-width) * 100);
   top: 50%;
-  width: 16px;
+  width: calc(16 * 1cqi / var(--device-width) * 100);
   z-index: 9;
 }
 
 .device-apple-watch-ultra .device-stripe {
   background: #e0d9d1;
-  border-radius: 2px 8px 8px 2px;
-  box-shadow: 0 14px 0 #d6ccc2, 0 28px 0 #d6ccc2;
-  height: 10px;
-  left: 19px;
+  border-radius: calc(2 * 1cqi / var(--device-width) * 100) calc(8 * 1cqi / var(--device-width) * 100) calc(8 * 1cqi / var(--device-width) * 100) calc(2 * 1cqi / var(--device-width) * 100);
+  box-shadow: 0 calc(14 * 1cqi / var(--device-width) * 100) 0 #d6ccc2, 0 calc(28 * 1cqi / var(--device-width) * 100) 0 #d6ccc2;
+  height: calc(10 * 1cqi / var(--device-width) * 100);
+  left: calc(19 * 1cqi / var(--device-width) * 100);
   position: absolute;
-  top: 98px;
-  width: 4px;
+  top: calc(98 * 1cqi / var(--device-width) * 100);
+  width: calc(4 * 1cqi / var(--device-width) * 100);
   z-index: 1;
 }
 
 .device-apple-watch-ultra .device-power {
   background: #d6ccc2;
-  border-radius: 2px 4px 4px 2px / 2px 8px 8px 2px;
-  box-shadow: inset 0 0 2px 1px #a38c76;
-  height: 72px;
+  border-radius: calc(2 * 1cqi / var(--device-width) * 100) calc(4 * 1cqi / var(--device-width) * 100) calc(4 * 1cqi / var(--device-width) * 100) calc(2 * 1cqi / var(--device-width) * 100)/calc(2 * 1cqi / var(--device-width) * 100) calc(8 * 1cqi / var(--device-width) * 100) calc(8 * 1cqi / var(--device-width) * 100) calc(2 * 1cqi / var(--device-width) * 100);
+  box-shadow: inset 0 0 calc(2 * 1cqi / var(--device-width) * 100) calc(1 * 1cqi / var(--device-width) * 100) #a38c76;
+  height: calc(72 * 1cqi / var(--device-width) * 100);
   position: absolute;
-  right: 1px;
-  top: 212px;
-  width: 4px;
+  right: calc(1 * 1cqi / var(--device-width) * 100);
+  top: calc(212 * 1cqi / var(--device-width) * 100);
+  width: calc(4 * 1cqi / var(--device-width) * 100);
 }
 
 .device-apple-watch-ultra .device-home {
   background: #f18f42;
-  border: 1px solid #a7500c;
-  border-radius: 2px 4px 4px 2px / 2px 8px 8px 2px;
-  box-shadow: inset 0 0 1px 1px #ef812a;
-  height: 106px;
-  left: 19px;
+  border: calc(1 * 1cqi / var(--device-width) * 100) solid #a7500c;
+  border-radius: calc(2 * 1cqi / var(--device-width) * 100) calc(4 * 1cqi / var(--device-width) * 100) calc(4 * 1cqi / var(--device-width) * 100) calc(2 * 1cqi / var(--device-width) * 100)/calc(2 * 1cqi / var(--device-width) * 100) calc(8 * 1cqi / var(--device-width) * 100) calc(8 * 1cqi / var(--device-width) * 100) calc(2 * 1cqi / var(--device-width) * 100);
+  box-shadow: inset 0 0 calc(1 * 1cqi / var(--device-width) * 100) calc(1 * 1cqi / var(--device-width) * 100) #ef812a;
+  height: calc(106 * 1cqi / var(--device-width) * 100);
+  left: calc(19 * 1cqi / var(--device-width) * 100);
   position: absolute;
-  top: 162px;
-  width: 4px;
+  top: calc(162 * 1cqi / var(--device-width) * 100);
+  width: calc(4 * 1cqi / var(--device-width) * 100);
   z-index: 1;
 }
 
 .device-apple-watch-s8 {
-  height: 380px;
-  width: 360px;
+  --device-width: 360;
+  height: calc(380 * 1cqi / var(--device-width) * 100);
+  width: 100cqi;
 }
 
 .device-apple-watch-s8 .device-frame {
   background: #0d0d0d;
-  border-radius: 92px;
-  box-shadow: inset 0 0 24px 1px #0d0d0d, inset 0 0 0 12px #606c78;
-  height: 380px;
-  margin: 0 20px;
-  padding: 28px 26px;
+  border-radius: calc(92 * 1cqi / var(--device-width) * 100);
+  box-shadow: inset 0 0 calc(24 * 1cqi / var(--device-width) * 100) calc(1 * 1cqi / var(--device-width) * 100) #0d0d0d, inset 0 0 0 calc(12 * 1cqi / var(--device-width) * 100) #606c78;
+  height: calc(380 * 1cqi / var(--device-width) * 100);
+  margin: 0 calc(20 * 1cqi / var(--device-width) * 100);
+  padding: calc(28 * 1cqi / var(--device-width) * 100) calc(26 * 1cqi / var(--device-width) * 100);
   position: relative;
-  width: 320px;
+  width: calc(320 * 1cqi / var(--device-width) * 100);
 }
 
 .device-apple-watch-s8 .device-frame::before {
-  border: 1px solid #0d0d0d;
-  border-radius: 80px;
-  box-shadow: 0 0 12px rgba(255, 255, 255, .5), inset 0 0 12px 2px rgba(255, 255, 255, .75);
+  border: calc(1 * 1cqi / var(--device-width) * 100) solid #0d0d0d;
+  border-radius: calc(80 * 1cqi / var(--device-width) * 100);
+  box-shadow: 0 0 calc(12 * 1cqi / var(--device-width) * 100) rgba(255, 255, 255, .5), inset 0 0 calc(12 * 1cqi / var(--device-width) * 100) calc(2 * 1cqi / var(--device-width) * 100) rgba(255, 255, 255, .75);
   content: "";
-  height: 356px;
-  left: 12px;
+  height: calc(356 * 1cqi / var(--device-width) * 100);
+  left: calc(12 * 1cqi / var(--device-width) * 100);
   position: absolute;
-  top: 12px;
-  width: 298px;
+  top: calc(12 * 1cqi / var(--device-width) * 100);
+  width: calc(298 * 1cqi / var(--device-width) * 100);
 }
 
 .device-apple-watch-s8 .device-screen {
-  border: 2px solid #121212;
-  border-radius: 62px;
-  height: 324px;
-  width: 268px;
+  border: calc(2 * 1cqi / var(--device-width) * 100) solid #121212;
+  border-radius: calc(62 * 1cqi / var(--device-width) * 100);
+  height: calc(324 * 1cqi / var(--device-width) * 100);
+  width: calc(268 * 1cqi / var(--device-width) * 100);
 }
 
 .device-apple-watch-s8 .device-btns {
   background: #606c78;
-  border-left: 1px solid black;
-  border-radius: 8px 6px 6px 8px / 20px 6px 6px 20px;
-  box-shadow: inset 8px 0 8px 0 #1c1f23, inset -2px 0 6px #272c31, -4px 0 8px rgba(13, 13, 13, .25);
-  height: 72px;
+  border-left: calc(1 * 1cqi / var(--device-width) * 100) solid black;
+  border-radius: calc(8 * 1cqi / var(--device-width) * 100) calc(6 * 1cqi / var(--device-width) * 100) calc(6 * 1cqi / var(--device-width) * 100) calc(8 * 1cqi / var(--device-width) * 100)/calc(20 * 1cqi / var(--device-width) * 100) calc(6 * 1cqi / var(--device-width) * 100) calc(6 * 1cqi / var(--device-width) * 100) calc(20 * 1cqi / var(--device-width) * 100);
+  box-shadow: inset calc(8 * 1cqi / var(--device-width) * 100) 0 calc(8 * 1cqi / var(--device-width) * 100) 0 #1c1f23, inset calc(-2 * 1cqi / var(--device-width) * 100) 0 calc(6 * 1cqi / var(--device-width) * 100) #272c31, calc(-4 * 1cqi / var(--device-width) * 100) 0 calc(8 * 1cqi / var(--device-width) * 100) rgba(13, 13, 13, .25);
+  height: calc(72 * 1cqi / var(--device-width) * 100);
   position: absolute;
-  right: 10px;
-  top: 108px;
-  width: 18px;
+  right: calc(10 * 1cqi / var(--device-width) * 100);
+  top: calc(108 * 1cqi / var(--device-width) * 100);
+  width: calc(18 * 1cqi / var(--device-width) * 100);
   z-index: 9;
 }
 
 .device-apple-watch-s8 .device-btns::after {
   background: #272c31;
-  border-radius: 2px 4px 4px 2px / 20px 8px 8px 20px;
-  box-shadow: inset -2px 0 2px 0 black, inset -6px 0 18px #272c31;
+  border-radius: calc(2 * 1cqi / var(--device-width) * 100) calc(4 * 1cqi / var(--device-width) * 100) calc(4 * 1cqi / var(--device-width) * 100) calc(2 * 1cqi / var(--device-width) * 100)/calc(20 * 1cqi / var(--device-width) * 100) calc(8 * 1cqi / var(--device-width) * 100) calc(8 * 1cqi / var(--device-width) * 100) calc(20 * 1cqi / var(--device-width) * 100);
+  box-shadow: inset calc(-2 * 1cqi / var(--device-width) * 100) 0 calc(2 * 1cqi / var(--device-width) * 100) 0 black, inset calc(-6 * 1cqi / var(--device-width) * 100) 0 calc(18 * 1cqi / var(--device-width) * 100) #272c31;
   content: "";
-  height: 72px;
+  height: calc(72 * 1cqi / var(--device-width) * 100);
   position: absolute;
   right: 0;
   top: 0;
-  width: 6px;
+  width: calc(6 * 1cqi / var(--device-width) * 100);
 }
 
 .device-apple-watch-s8 .device-btns::before {
   background: #272c31;
   border-radius: 20%;
-  box-shadow: 0 -30px rgba(62, 70, 77, .75), 0 -27px #272c31, 0 -25px black, 0 -21px rgba(62, 70, 77, .75), 0 -18px #272c31, 0 -16px black, 0 -12px rgba(62, 70, 77, .75), 0 -9px #272c31, 0 -7px black, 0 -3px rgba(62, 70, 77, .75), 0 0 #272c31, 0 2px black, 0 6px rgba(62, 70, 77, .75), 0 9px #272c31, 0 11px black, 0 15px rgba(62, 70, 77, .75), 0 18px #272c31, 0 20px black, 0 24px rgba(62, 70, 77, .75), 0 27px #272c31, 0 29px black;
+  box-shadow: 0 calc(-30 * 1cqi / var(--device-width) * 100) rgba(62, 70, 77, .75), 0 calc(-27 * 1cqi / var(--device-width) * 100) #272c31, 0 calc(-25 * 1cqi / var(--device-width) * 100) black, 0 calc(-21 * 1cqi / var(--device-width) * 100) rgba(62, 70, 77, .75), 0 calc(-18 * 1cqi / var(--device-width) * 100) #272c31, 0 calc(-16 * 1cqi / var(--device-width) * 100) black, 0 calc(-12 * 1cqi / var(--device-width) * 100) rgba(62, 70, 77, .75), 0 calc(-9 * 1cqi / var(--device-width) * 100) #272c31, 0 calc(-7 * 1cqi / var(--device-width) * 100) black, 0 calc(-3 * 1cqi / var(--device-width) * 100) rgba(62, 70, 77, .75), 0 0 #272c31, 0 calc(2 * 1cqi / var(--device-width) * 100) black, 0 calc(6 * 1cqi / var(--device-width) * 100) rgba(62, 70, 77, .75), 0 calc(9 * 1cqi / var(--device-width) * 100) #272c31, 0 calc(11 * 1cqi / var(--device-width) * 100) black, 0 calc(15 * 1cqi / var(--device-width) * 100) rgba(62, 70, 77, .75), 0 calc(18 * 1cqi / var(--device-width) * 100) #272c31, 0 calc(20 * 1cqi / var(--device-width) * 100) black, 0 calc(24 * 1cqi / var(--device-width) * 100) rgba(62, 70, 77, .75), 0 calc(27 * 1cqi / var(--device-width) * 100) #272c31, 0 calc(29 * 1cqi / var(--device-width) * 100) black;
   content: "";
-  height: 3px;
-  margin-top: -2px;
+  height: calc(3 * 1cqi / var(--device-width) * 100);
+  margin-top: calc(-2 * 1cqi / var(--device-width) * 100);
   position: absolute;
-  right: 2px;
+  right: calc(2 * 1cqi / var(--device-width) * 100);
   top: 50%;
-  width: 10px;
+  width: calc(10 * 1cqi / var(--device-width) * 100);
   z-index: 9;
 }
 
 .device-apple-watch-s8 .device-power {
   background: #272c31;
-  border-radius: 2px 4px 4px 2px / 2px 8px 8px 2px;
-  box-shadow: inset 0 0 2px 1px #101315;
-  height: 72px;
+  border-radius: calc(2 * 1cqi / var(--device-width) * 100) calc(4 * 1cqi / var(--device-width) * 100) calc(4 * 1cqi / var(--device-width) * 100) calc(2 * 1cqi / var(--device-width) * 100)/calc(2 * 1cqi / var(--device-width) * 100) calc(8 * 1cqi / var(--device-width) * 100) calc(8 * 1cqi / var(--device-width) * 100) calc(2 * 1cqi / var(--device-width) * 100);
+  box-shadow: inset 0 0 calc(2 * 1cqi / var(--device-width) * 100) calc(1 * 1cqi / var(--device-width) * 100) #101315;
+  height: calc(72 * 1cqi / var(--device-width) * 100);
   position: absolute;
-  right: 18px;
-  top: 212px;
-  width: 4px;
+  right: calc(18 * 1cqi / var(--device-width) * 100);
+  top: calc(212 * 1cqi / var(--device-width) * 100);
+  width: calc(4 * 1cqi / var(--device-width) * 100);
 }
 
 .device-homepod {

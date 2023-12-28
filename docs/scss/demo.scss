@@ -493,11 +493,15 @@ body {
   width: 100%;
 
   &--phones {
-    padding-inline: 20%;
+    max-inline-size: 400px;
   }
 
   &--tablets {
-    padding-inline: 10%;
+    max-inline-size: 500px;
+  }
+
+  &--watches {
+    max-inline-size: 400px;
   }
 }
 

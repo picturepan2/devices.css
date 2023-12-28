@@ -25,16 +25,17 @@ block content
         .rework-content
           p Apple Watch Ultra. Rugged and capable, with precision dual-frequency GPS, up to 36-hour battery life, and three bands for athletes of all kinds.
         .rework-device.watches
-          .device.device-apple-watch-ultra
-            .device-frame
-              img.device-screen(src="assets/img/bg-watch.jpg" loading="lazy")
-            .device-stripe
-            .device-header
-            .device-sensors
-            .device-btns
-            .device-power
-            .device-home
-    
+          .rework-device-container.rework-device-container--watches
+            .device.device-apple-watch-ultra
+              .device-frame
+                img.device-screen(src="assets/img/bg-watch.jpg" loading="lazy")
+              .device-stripe
+              .device-header
+              .device-sensors
+              .device-btns
+              .device-power
+              .device-home
+
     include _layout/_ad-g.pug
 
     .columns
@@ -44,23 +45,24 @@ block content
           a.ml-2(href="#apple-watch-series-8") #
         h3.text-assistive Pure CSS Apple Watch Series 8, Apple Watch Series 8 in pure CSS
         .rework-content
-          p Apple Watch Series 8 features temperature sensing for insights into women’s health, Car Crash Detection, and sleep stages to understand your sleep. 
+          p Apple Watch Series 8 features temperature sensing for insights into women’s health, Car Crash Detection, and sleep stages to understand your sleep.
         .rework-device.watches
           .dots
             .dot.tooltip.active(style="background:#272C31;" data-tooltip="device-midnight (default)")
-          .device.device-apple-watch-s8
-            .device-frame
-              img.device-screen(src="assets/img/bg-watch.jpg" loading="lazy")
-            .device-stripe
-            .device-header
-            .device-sensors
-            .device-btns
-            .device-power
-            .device-home
-    
+          .rework-device-container.rework-device-container--watches
+            .device.device-apple-watch-s8
+              .device-frame
+                img.device-screen(src="assets/img/bg-watch.jpg" loading="lazy")
+              .device-stripe
+              .device-header
+              .device-sensors
+              .device-btns
+              .device-power
+              .device-home
+
     include _layout/_ad-sidebar.pug
 
-    .columns  
+    .columns
       ul.pagination.column
         .page-item.page-prev
           a(href="tablets.html")
