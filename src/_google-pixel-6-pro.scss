@@ -1,3 +1,5 @@
+@import "functions";
+
 // Google Pixel 6 Pro
 $device-white: #CBCBC8;
 $device-white-dark: darken($device-white, 10%);
@@ -8,70 +10,71 @@ $device-black-dark: darken($device-black, 10%);
 $device-panel: #121212;
 
 .device-google-pixel-6-pro {
-  height: 862px;
-  width: 404px;
+  --device-width: 404;
+  height: getCqi(862);
+  width: 100cqi;
 
   .device-frame {
     background: $device-panel;
-    border-radius: 28px;
-    box-shadow: inset 0 0 12px darken($device-white-dark, 15%), inset 0 7px 0 3px lighten($device-white, 20%), inset 0 -6px 0 3px lighten($device-white, 20%);
-    height: 862px;
-    margin: 0 2px;
-    padding: 20px 12px 26px 12px;
-    width: 400px;
+    border-radius: getCqi(28);
+    box-shadow: inset 0 0 getCqi(12) darken($device-white-dark, 15%), inset 0 getCqi(7) 0 getCqi(3) lighten($device-white, 20%), inset 0 getCqi(-6) 0 getCqi(3) lighten($device-white, 20%);
+    height: getCqi(862);
+    margin: 0 getCqi(2);
+    padding: getCqi(20) getCqi(12) getCqi(26) getCqi(12);
+    width: getCqi(400);
   }
 
   // 3120-by-1440-pixel resolution
   .device-screen {
-    border-radius: 27px;
-    height: 816px;
-    width: 376px;
+    border-radius: getCqi(27);
+    height: getCqi(816);
+    width: getCqi(376);
   }
 
   .device-header {
     background: linear-gradient(to bottom, darken($device-white-dark, 15%) 0, $device-white 30%, $device-white 100%);
-    height: 10px;
+    height: getCqi(10);
     left: 50%;
-    margin-left: -147px;
+    margin-left: getCqi(-147);
     position: absolute;
     top: 0;
-    width: 294px;
+    width: getCqi(294);
   }
 
   .device-stripe {
     &::after {
       background: linear-gradient(to top, $device-panel, darken($device-white-dark, 30%));
-      border-radius: 50px 50px 0 0;
+      border-radius: getCqi(50) getCqi(50) 0 0;
       content: "";
-      height: 2px;
+      height: getCqi(2);
       left: 50%;
-      margin-left: -22px;
+      margin-left: getCqi(-22);
       position: absolute;
       bottom: 0;
-      width: 44px;
+      width: getCqi(44);
     }
     &::before {
       background: $device-white;
       bottom: 0;
       content: "";
-      height: 9px;
+      height: getCqi(9);
       left: 50%;
-      margin-left: 40px;
+      margin-left: getCqi(40);
       position: absolute;
-      width: 11px;
+      width: getCqi(11);
     }
   }
 
   .device-sensors {
     background: $device-panel;
     border-radius: 50%;
-    height: 22px;
+    height: getCqi(22);
     left: 50%;
-    margin-left: -11px;
-    margin-top: -11px;
+    margin-left: getCqi(-11);
+    margin-top: getCqi(-11);
     position: absolute;
-    top: 39px;
-    width: 22px;
+    top: getCqi(39);
+    width: getCqi(22);
 
     &::after,
     &::before {
@@ -80,47 +83,47 @@ $device-panel: #121212;
     }
     &::after {
       background: linear-gradient(to bottom, $device-panel, darken($device-white-dark, 30%));
-      border-radius: 0 0 50px 50px;
-      height: 4px;
+      border-radius: 0 0 getCqi(50) getCqi(50);
+      height: getCqi(4);
       left: 50%;
-      margin-left: -103px;
-      top: -18px;
-      width: 206px;
+      margin-left: getCqi(-103);
+      top: getCqi(-18);
+      width: getCqi(206);
     }
     &::before {
       background: radial-gradient(farthest-corner at 20% 20%, #6074BF 0, transparent 40%),
                   radial-gradient(farthest-corner at 80% 80%, #513785 0, #24555E 20%, transparent 50%);
-      box-shadow: 0 0 1px 1px rgba($light-color, .05);
+      box-shadow: 0 0 getCqi(1) getCqi(1) rgba($light-color, .05);
       border-radius: 50%;
-      height: 8px;
-      left: 7px;
-      top: 7px;
-      width: 8px;
+      height: getCqi(8);
+      left: getCqi(7);
+      top: getCqi(7);
+      width: getCqi(8);
     }
   }
 
   .device-btns {
     background: $device-white-dark;
-    height: 102px;
+    height: getCqi(102);
     position: absolute;
     right: 0;
-    top: 306px;
-    width: 3px;
+    top: getCqi(306);
+    width: getCqi(3);
   }
 
   .device-power {
     background: $device-white-dark;
-    height: 58px;
+    height: getCqi(58);
     position: absolute;
     right: 0;
-    top: 194px;
-    width: 3px;
+    top: getCqi(194);
+    width: getCqi(3);
   }
 
   // Gold edition
   &.device-gold {
     .device-frame {
-      box-shadow: inset 0 0 12px darken($device-gold-dark, 15%), inset 0 7px 0 3px lighten($device-gold, 20%), inset 0 -6px 0 3px lighten($device-gold, 20%);
+      box-shadow: inset 0 0 getCqi(12) darken($device-gold-dark, 15%), inset 0 getCqi(7) 0 getCqi(3) lighten($device-gold, 20%), inset 0 getCqi(-6) 0 getCqi(3) lighten($device-gold, 20%);
     }
 
     .device-header {
@@ -139,7 +142,7 @@ $device-panel: #121212;
     .device-btns {
       background: $device-gold-dark;
     }
-  
+
     .device-power {
       background: $device-gold-dark;
     }
@@ -148,7 +151,7 @@ $device-panel: #121212;
   // Black edition
   &.device-black {
     .device-frame {
-      box-shadow: inset 0 0 12px darken($device-black-dark, 15%), inset 0 7px 0 3px lighten($device-black, 20%), inset 0 -6px 0 3px lighten($device-black, 20%);
+      box-shadow: inset 0 0 getCqi(12) darken($device-black-dark, 15%), inset 0 getCqi(7) 0 getCqi(3) lighten($device-black, 20%), inset 0 getCqi(-6) 0 getCqi(3) lighten($device-black, 20%);
     }
 
     .device-header {
@@ -167,7 +170,7 @@ $device-panel: #121212;
     .device-btns {
       background: $device-black-dark;
     }
-  
+
     .device-power {
       background: $device-black-dark;
     }

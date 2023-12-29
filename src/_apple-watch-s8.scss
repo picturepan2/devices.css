@@ -1,112 +1,115 @@
+@import "functions";
+
 // Apple Watch Series 8
 $device-midnight: #272C31;
 $device-midnight-dark: darken($device-midnight, 10%);
 $device-panel: #0d0d0d;
 
 .device-apple-watch-s8 {
-  height: 380px;
-  width: 360px;
+  --device-width: 360;
+  height: getCqi(380);
+  width: 100cqi;
 
   .device-frame {
     background: $device-panel;
-    border-radius: 92px;
-    box-shadow: inset 0 0 24px 1px rgba($device-panel, 1),
-                inset 0 0 0 12px lighten($device-midnight, 25%);
-    height: 380px;
-    margin: 0 20px;
-    padding: 28px 26px;
+    border-radius: getCqi(92);
+    box-shadow: inset 0 0 getCqi(24) getCqi(1) rgba($device-panel, 1),
+                inset 0 0 0 getCqi(12) lighten($device-midnight, 25%);
+    height: getCqi(380);
+    margin: 0 getCqi(20);
+    padding: getCqi(28) getCqi(26);
     position: relative;
-    width: 320px;
+    width: getCqi(320);
 
     &::before {
-      border: 1px solid $device-panel;
-      border-radius: 80px;
-      box-shadow: 0 0 12px rgba($light-color, .5),
-                  inset 0 0 12px 2px rgba($light-color, .75);
+      border: getCqi(1) solid $device-panel;
+      border-radius: getCqi(80);
+      box-shadow: 0 0 getCqi(12) rgba($light-color, .5),
+                  inset 0 0 getCqi(12) getCqi(2) rgba($light-color, .75);
       content: "";
-      height: 356px;
-      left: 12px;
+      height: getCqi(356);
+      left: getCqi(12);
       position: absolute;
-      top: 12px;
-      width: 298px;
+      top: getCqi(12);
+      width: getCqi(298);
     }
   }
 
   // 410-by-502-pixel resolution
   .device-screen {
-    border: 2px solid lighten($device-panel, 2%);
-    border-radius: 62px;
-    height: 324px;
-    width: 268px;
+    border: getCqi(2) solid lighten($device-panel, 2%);
+    border-radius: getCqi(62);
+    height: getCqi(324);
+    width: getCqi(268);
   }
 
   .device-btns {
     background: lighten($device-midnight, 25%);
-    border-left: 1px solid darken($device-midnight, 30%);
-    border-radius: 8px 6px 6px 8px / 20px 6px 6px 20px;
-    box-shadow: inset 8px 0 8px 0px darken($device-midnight, 5%), inset -2px 0 6px $device-midnight, -4px 0 8px rgba($device-panel, .25);
-    height: 72px;
+    border-left: getCqi(1) solid darken($device-midnight, 30%);
+    border-radius: getCqi(8) getCqi(6) getCqi(6) getCqi(8) / getCqi(20) getCqi(6) getCqi(6) getCqi(20);
+    box-shadow: inset getCqi(8) 0 getCqi(8) 0 darken($device-midnight, 5%), inset getCqi(-2) 0 getCqi(6) $device-midnight, getCqi(-4) 0 getCqi(8) rgba($device-panel, .25);
+    height: getCqi(72);
     position: absolute;
-    right: 10px;
-    top: 108px;
-    width: 18px;
+    right: getCqi(10);
+    top: getCqi(108);
+    width: getCqi(18);
     z-index: 9;
 
     &::after {
       background: $device-midnight;
-      border-radius: 2px 4px 4px 2px / 20px 8px 8px 20px;
-      box-shadow: inset -2px 0 2px 0 darken($device-midnight, 20%), inset -6px 0 18px $device-midnight;
+      border-radius: getCqi(2) getCqi(4) getCqi(4) getCqi(2) / getCqi(20) getCqi(8) getCqi(8) getCqi(20);
+      box-shadow: inset getCqi(-2) 0 getCqi(2) 0 darken($device-midnight, 20%), inset getCqi(-6) 0 getCqi(18) $device-midnight;
       content: "";
-      height: 72px;
+      height: getCqi(72);
       right: 0;
       position: absolute;
-      top: 0px;
-      width: 6px;
+      top: 0;
+      width: getCqi(6);
     }
-    
+
     &::before {
       background: $device-midnight;
       border-radius: 20%;
-      box-shadow: 0 -30px rgba(lighten($device-midnight, 10%), .75),
-                  0 -27px $device-midnight,
-                  0 -25px darken($device-midnight-dark, 10%),
-                  0 -21px rgba(lighten($device-midnight, 10%), .75),
-                  0 -18px $device-midnight,
-                  0 -16px darken($device-midnight-dark, 10%),
-                  0 -12px rgba(lighten($device-midnight, 10%), .75),
-                  0 -9px $device-midnight,
-                  0 -7px darken($device-midnight-dark, 10%),
-                  0 -3px rgba(lighten($device-midnight, 10%), .75),
+      box-shadow: 0 getCqi(-30) rgba(lighten($device-midnight, 10%), .75),
+                  0 getCqi(-27) $device-midnight,
+                  0 getCqi(-25) darken($device-midnight-dark, 10%),
+                  0 getCqi(-21) rgba(lighten($device-midnight, 10%), .75),
+                  0 getCqi(-18) $device-midnight,
+                  0 getCqi(-16) darken($device-midnight-dark, 10%),
+                  0 getCqi(-12) rgba(lighten($device-midnight, 10%), .75),
+                  0 getCqi(-9) $device-midnight,
+                  0 getCqi(-7) darken($device-midnight-dark, 10%),
+                  0 getCqi(-3) rgba(lighten($device-midnight, 10%), .75),
                   0 0 $device-midnight,
-                  0 2px darken($device-midnight-dark, 10%),
-                  0 6px rgba(lighten($device-midnight, 10%), .75),
-                  0 9px $device-midnight,
-                  0 11px darken($device-midnight-dark, 10%),
-                  0 15px rgba(lighten($device-midnight, 10%), .75),
-                  0 18px $device-midnight,
-                  0 20px darken($device-midnight-dark, 10%),
-                  0 24px rgba(lighten($device-midnight, 10%), .75),
-                  0 27px $device-midnight,
-                  0 29px darken($device-midnight-dark, 10%);
+                  0 getCqi(2) darken($device-midnight-dark, 10%),
+                  0 getCqi(6) rgba(lighten($device-midnight, 10%), .75),
+                  0 getCqi(9) $device-midnight,
+                  0 getCqi(11) darken($device-midnight-dark, 10%),
+                  0 getCqi(15) rgba(lighten($device-midnight, 10%), .75),
+                  0 getCqi(18) $device-midnight,
+                  0 getCqi(20) darken($device-midnight-dark, 10%),
+                  0 getCqi(24) rgba(lighten($device-midnight, 10%), .75),
+                  0 getCqi(27) $device-midnight,
+                  0 getCqi(29) darken($device-midnight-dark, 10%);
       content: "";
-      height: 3px;
-      margin-top: -2px;
+      height: getCqi(3);
+      margin-top: getCqi(-2);
       position: absolute;
-      right: 2px;
+      right: getCqi(2);
       top: 50%;
-      width: 10px;
+      width: getCqi(10);
       z-index: 9;
     }
   }
 
   .device-power {
     background: $device-midnight;
-    border-radius: 2px 4px 4px 2px / 2px 8px 8px 2px;
-    box-shadow: inset 0 0 2px 1px $device-midnight-dark;
-    height: 72px;
-    right: 18px;
+    border-radius: getCqi(2) getCqi(4) getCqi(4) getCqi(2) / getCqi(2) getCqi(8) getCqi(8) getCqi(2);
+    box-shadow: inset 0 0 getCqi(2) getCqi(1) $device-midnight-dark;
+    height: getCqi(72);
+    right: getCqi(18);
     position: absolute;
-    top: 212px;
-    width: 4px;
+    top: getCqi(212);
+    width: getCqi(4);
   }
 }

@@ -1,3 +1,5 @@
+@import "functions";
+
 // MacBook Pro (2018)
 $device-silver: #e2e3e4;
 $device-silver-dark: darken($device-silver, 10%);
@@ -7,64 +9,65 @@ $device-spacegray-dark: darken($device-spacegray, 5%);
 $device-spacegray-panel: #0d0d0d;
 
 .device-macbook-pro-2018 {
-  height: 444px;
-  width: 740px;
+  --device-width: 740;
+  height: getCqi(444);
+  width: 100cqi;
 
   .device-frame {
     background: $device-silver-panel;
-    border-radius: 20px;
-    box-shadow: inset 0 0 0 2px $device-silver-dark;
-    height: 428px;
+    border-radius: getCqi(20);
+    box-shadow: inset 0 0 0 getCqi(2) $device-silver-dark;
+    height: getCqi(428);
     margin: 0 auto;
-    padding: 29px 19px 39px 19px;
+    padding: getCqi(29) getCqi(19) getCqi(39) getCqi(19);
     position: relative;
-    width: 614px;
+    width: getCqi(614);
 
     &::after {
       background: lighten($device-silver-panel, 10%);
-      border-radius: 0 0 20px 20px;
-      bottom: 2px;
+      border-radius: 0 0 getCqi(20) getCqi(20);
+      bottom: getCqi(2);
       content: "";
-      height: 26px;
-      left: 2px;
+      height: getCqi(26);
+      left: getCqi(2);
       position: absolute;
-      width: 610px;
+      width: getCqi(610);
     }
     &::before {
-      bottom: 10px;
+      bottom: getCqi(10);
       color: $device-silver-dark;
       content: "MacBook Pro";
-      font-size: 12px;
-      height: 16px;
+      font-size: getCqi(12);
+      height: getCqi(16);
       left: 50%;
-      line-height: 16px;
-      margin-left: -100px;
+      line-height: getCqi(16);
+      margin-left: getCqi(-100);
       position: absolute;
       text-align: center;
-      width: 200px;
+      width: getCqi(200);
       z-index: 1;
     }
   }
 
   // 1680-by-1050-pixel resolution
   .device-screen {
-    border: 2px solid lighten($device-silver-panel, 2%);
-    border-radius: 2px;
-    height: 360px;
-    width: 576px;
+    border: getCqi(2) solid lighten($device-silver-panel, 2%);
+    border-radius: getCqi(2);
+    height: getCqi(360);
+    width: getCqi(576);
   }
 
   .device-power {
     background: $device-silver;
     border: solid darken($device-silver, 5%);
-    border-radius: 2px 2px 0 0;
-    border-width: 2px 4px 0 4px;
-    height: 14px;
-    margin-top: -10px;
+    border-radius: getCqi(2) getCqi(2) 0 0;
+    border-width: getCqi(2) getCqi(4) 0 getCqi(4);
+    height: getCqi(14);
+    margin-top: getCqi(-10);
     position: relative;
-    width: 740px;
+    width: getCqi(740);
     z-index: 9;
-    
+
     &::after,
     &::before {
       content: "";
@@ -72,30 +75,30 @@ $device-spacegray-panel: #0d0d0d;
     }
     &::after {
       background: lighten($device-silver-dark, 5%);
-      border-radius: 0 0 10px 10px;
-      box-shadow: inset 0 0 4px 2px darken($device-silver-dark, 5%);
-      height: 10px;
+      border-radius: 0 0 getCqi(10) getCqi(10);
+      box-shadow: inset 0 0 getCqi(4) getCqi(2) darken($device-silver-dark, 5%);
+      height: getCqi(10);
       left: 50%;
-      margin-left: -60px;
-      top: -2px;
-      width: 120px;
+      margin-left: getCqi(-60);
+      top: getCqi(-2);
+      width: getCqi(120);
     }
     &::before {
       background: darken($device-silver-dark, 15%);
-      border-radius: 0 0 180px 180px/ 0 0 12px 12px;
-      box-shadow: inset 0 -2px 6px 0 darken($device-silver-dark, 50%);
-      height: 12px;
-      left: -4px;
+      border-radius: 0 0 getCqi(180) getCqi(180)/ 0 0 getCqi(12) getCqi(12);
+      box-shadow: inset 0 getCqi(-2) getCqi(6) 0 darken($device-silver-dark, 50%);
+      height: getCqi(12);
+      left: getCqi(-4);
       margin: 0 auto;
-      top: 10px;
-      width: 740px;
+      top: getCqi(10);
+      width: getCqi(740);
     }
   }
 
   // Space Gray edition
   &.device-spacegray {
     .device-frame {
-      box-shadow: inset 0 0 0 2px $device-spacegray-dark;
+      box-shadow: inset 0 0 0 getCqi(2) $device-spacegray-dark;
     }
 
     .device-power {
@@ -104,11 +107,11 @@ $device-spacegray-panel: #0d0d0d;
 
       &::after {
         background: lighten($device-spacegray-dark, 5%);
-        box-shadow: inset 0 0 4px 2px darken($device-spacegray-dark, 5%);
+        box-shadow: inset 0 0 getCqi(4) getCqi(2) darken($device-spacegray-dark, 5%);
       }
       &::before {
         background: darken($device-spacegray-dark, 15%);
-        box-shadow: inset 0 -2px 6px 0 darken($device-spacegray-dark, 50%);
+        box-shadow: inset 0 getCqi(-2) getCqi(6) 0 darken($device-spacegray-dark, 50%);
       }
     }
   }

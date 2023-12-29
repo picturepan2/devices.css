@@ -1,3 +1,5 @@
+@import "functions";
+
 // HomePod
 $device-silver: #36373a;
 $device-silver-light: lighten($device-silver, 35%);
@@ -5,67 +7,69 @@ $device-silver-dark: darken($device-silver, 10%);
 $device-silver-panel: #0d0d0d;
 
 .device-homepod {
-  height: 395px;
-  width: 320px;
+  --device-width: 320;
+  height: getCqi(395);
+  width: 100cqi;
+  display: flex;
 
   .device-frame {
     background: linear-gradient(to right, $device-silver 0, lighten($device-silver, 35%) 25%, $device-silver-dark 60%, darken($device-silver-dark, 5%) 90%, $device-silver-dark 100%);
-    border-radius: 80px;
-    box-shadow: inset 0 0 0 2px $device-silver,
-                inset 0 0 40px 1px $device-silver-dark,
-                inset 0 12px 40px 1px lighten($device-silver, 80%),
-                inset 0 -24px 40px 1px darken($device-silver, 80%);
-    height: 385px;
-    margin: 5px auto;
+    border-radius: getCqi(80);
+    box-shadow: inset 0 0 0 getCqi(2) $device-silver,
+    inset 0 0 getCqi(40) getCqi(1) $device-silver-dark,
+    inset 0 getCqi(12) getCqi(40) getCqi(1) lighten($device-silver, 80%),
+    inset 0 getCqi(-24) getCqi(40) getCqi(1) darken($device-silver, 80%);
+    height: getCqi(385);
+    margin: getCqi(5) auto;
     overflow: hidden;
     position: relative;
-    width: 320px;
+    width: getCqi(320);
   }
 
   .device-stripe {
     background: repeating-linear-gradient(
-                  45deg,
-                  rgba($device-silver-light, .35) 0,
-                  rgba($device-silver-light, .35) 2px,
-                  transparent 2px,
-                  transparent 6px
-                ),
-                repeating-linear-gradient(
-                  135deg,
-                  rgba($device-silver-light, .35) 0,
-                  rgba($device-silver-light, .35) 2px,
-                  transparent 2px,
-                  transparent 6px
-                ),
-                repeating-linear-gradient(
-                  45deg,
-                  transparent 0,
-                  transparent 2px,
-                  rgba($device-silver-dark, .35) 2px,
-                  rgba($device-silver-dark, .35) 4px,
-                  transparent 4px,
-                  transparent 6px
-                ),
-                repeating-linear-gradient(
-                  135deg,
-                  transparent 0,
-                  transparent 2px,
-                  rgba($device-silver-dark, .35) 2px,
-                  rgba($device-silver-dark, .35) 4px,
-                  transparent 4px,
-                  transparent 6px
-                );
-    border-radius: 80px;
-    box-shadow: inset 0 0 0 2px $device-silver,
-                inset 0 0 40px 1px $device-silver-dark,
-                inset 0 12px 24px 1px lighten($device-silver, 40%),
-                inset 0 -12px 24px 1px darken($device-silver, 20%);
-    height: 385px;
+                    45deg,
+                    rgba($device-silver-light, .35) 0,
+                    rgba($device-silver-light, .35) getCqi(2),
+                    transparent getCqi(2),
+                    transparent getCqi(6)
+    ),
+    repeating-linear-gradient(
+                    135deg,
+                    rgba($device-silver-light, .35) 0,
+                    rgba($device-silver-light, .35) getCqi(2),
+                    transparent getCqi(2),
+                    transparent getCqi(6)
+    ),
+    repeating-linear-gradient(
+                    45deg,
+                    transparent 0,
+                    transparent getCqi(2),
+                    rgba($device-silver-dark, .35) getCqi(2),
+                    rgba($device-silver-dark, .35) getCqi(4),
+                    transparent getCqi(4),
+                    transparent getCqi(6)
+    ),
+    repeating-linear-gradient(
+                    135deg,
+                    transparent 0,
+                    transparent getCqi(2),
+                    rgba($device-silver-dark, .35) getCqi(2),
+                    rgba($device-silver-dark, .35) getCqi(4),
+                    transparent getCqi(4),
+                    transparent getCqi(6)
+    );
+    border-radius: getCqi(80);
+    box-shadow: inset 0 0 0 getCqi(2) $device-silver,
+    inset 0 0 getCqi(40) getCqi(1) $device-silver-dark,
+    inset 0 getCqi(12) getCqi(24) getCqi(1) lighten($device-silver, 40%),
+    inset 0 getCqi(-12) getCqi(24) getCqi(1) darken($device-silver, 20%);
+    height: getCqi(385);
     left: 0;
     overflow: hidden;
     position: absolute;
-    top: 5px;
-    width: 320px;
+    top: getCqi(5);
+    width: getCqi(320);
     z-index: 9;
 
     &::before {
@@ -89,20 +93,20 @@ $device-silver-panel: #0d0d0d;
     }
 
     &::before {
-      border-radius: 50% 50% 8px 8px;
-      height: 10px;
-      margin-left: -85px;
+      border-radius: 50% 50% getCqi(8) getCqi(8);
+      height: getCqi(10);
+      margin-left: getCqi(-85);
       top: 0;
-      width: 170px;
+      width: getCqi(170);
     }
 
     &::after {
-      border-radius: 0 0 10% 10% / 0 0 8px 8px;
+      border-radius: 0 0 10% 10% / 0 0 getCqi(8) getCqi(8);
       bottom: 0;
-      box-shadow: inset 0 0 4px 0 darken($device-silver-dark, 5%);
-      height: 5px;
-      margin-left: -85px;
-      width: 170px;
+      box-shadow: inset 0 0 getCqi(4) 0 darken($device-silver-dark, 5%);
+      height: getCqi(5);
+      margin-left: getCqi(-85);
+      width: getCqi(170);
     }
   }
 }

@@ -1,73 +1,76 @@
+@import "functions";
+
 // Pro Display XDR
 $device-silver: #EDEEF0;
 $device-silver-dark: #D4D5D7;
 $device-panel: #0d0d0d;
 
 .device-pro-display-xdr {
-  height: 475px;
-  width: 640px;
+  --device-width: 640;
+  height: getCqi(475);
+  width: 100cqi;
 
   .device-frame {
     background: lighten($device-panel, 3%);
-    border-radius: 4px;
-    box-shadow: inset 0 0 2px $device-silver-dark;
-    height: 368px;
-    padding: 8px;
+    border-radius: getCqi(4);
+    box-shadow: inset 0 0 getCqi(2) $device-silver-dark;
+    height: getCqi(368);
+    padding: getCqi(8);
     position: relative;
-    width: 640px;
+    width: getCqi(640);
 
     &::before {
       background: darken($device-silver-panel, 3%);
       border-radius: 50%;
       content: "";
-      height: 6px;
+      height: getCqi(6);
       left: 50%;
-      margin-left: -3px;
+      margin-left: getCqi(-3);
       position: absolute;
       text-align: center;
-      top: 6px;
-      width: 6px;
+      top: getCqi(6);
+      width: getCqi(6);
       z-index: 9;
     }
   }
 
   // 6016-by-3384-pixel resolution
   .device-screen {
-    border: 2px solid lighten($device-silver-panel, 2%);
-    border-radius: 2px;
-    height: 352px;
-    width: 624px;
+    border: getCqi(2) solid lighten($device-silver-panel, 2%);
+    border-radius: getCqi(2);
+    height: getCqi(352);
+    width: getCqi(624);
   }
 
   .device-power {
     &::after {
       background: radial-gradient(circle at center, $device-silver-dark 85%, darken($device-silver-dark, 20%) 100%);
-      border-top: 1px solid $device-silver-dark;
+      border-top: getCqi(1) solid $device-silver-dark;
       content: "";
-      height: 6px;
+      height: getCqi(6);
       margin: 0 auto;
       position: relative;
-      width: 152px;
+      width: getCqi(152);
     }
     &::before {
       background: linear-gradient(to bottom, darken($device-silver-dark, 20%) 0, darken($device-silver-dark, 5%) 40%, darken($device-silver-dark, 5%) 85%, lighten($device-silver, 15%) 90%, darken($device-silver-dark, 40%) 100%);
       content: "";
-      height: 102px;
+      height: getCqi(102);
       margin: 0 auto;
       position: relative;
-      width: 152px;
+      width: getCqi(152);
     }
   }
 
   .device-home {
     background: transparent;
-    border-radius: 0 0 3px 3px;
-    bottom: -2px;
-    box-shadow: -61px 0 darken($device-silver-dark, 40%), 61px 0 darken($device-silver-dark, 40%);
-    height: 1px;
+    border-radius: 0 0 getCqi(3) getCqi(3);
+    bottom: getCqi(-2);
+    box-shadow: getCqi(-61) 0 darken($device-silver-dark, 40%), getCqi(61) 0 darken($device-silver-dark, 40%);
+    height: getCqi(1);
     left: 50%;
-    margin-left: -15px;
+    margin-left: getCqi(-15);
     position: absolute;
-    width: 30px;
+    width: getCqi(30);
   }
 }
